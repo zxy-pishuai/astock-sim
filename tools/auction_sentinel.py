@@ -50,15 +50,6 @@ def main():
                     help="撤单/加单增量告警阈值（股）")
     args = ap.parse_args()
     codes = [c.strip() for c in args.codes.split(",") if c.strip()]
-    if not codes:
-        try:
-            with open("data/logs/auction_watch_codes.txt", encoding="utf-8") as f:
-                codes = [c.strip() for c in f.read().split(",") if c.strip()][:20]
-        except Exception:
-            codes = []
-    if not codes:
-        print("无候选名单：等打板热窗转储 data/logs/auction_watch_codes.txt，或用 --codes 指定")
-        return
     log = open("data/logs/auction_sentinel.jsonl", "a", encoding="utf-8", buffering=1)
     try:
         while True:

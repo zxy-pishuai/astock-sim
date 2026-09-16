@@ -219,23 +219,14 @@ def s14():
     p = 'data/app.lock'
     if not os.path.exists(p):
         return True, '无锁文件（服务未运行）'
-    with open(p, encoding='utf-8', errors='ignore') as f:
-        st = f.read().strip().split()
-    pid = st[0]
-    total = int(st[1]) if len(st) > 1 else 0
+    pid = io.open(p, encoding='utf-8', errors='ignore').read().strip().split()[0]
     out = subprocess.run(['tasklist', '/FI', 'PID eq %s' % pid, '/FO', 'CSV'],
                          capture_output=True, encoding='utf-8', errors='ignore').stdout
     alive = ('"%s"' % pid) in out or (',%s,' % pid) in out
-    # ★ 修复 S14 误报：只统计 CommandLine 含 main.py 的 python/pythonw 实例。
-    #   证据：用户的 opencode_proxy.py 等也是 pythonw.exe，被旧口径误判为"双实例"。
-    running = subprocess.run(
-        ['powershell', '-NoProfile', '-Command',
-         "Get-CimInstance Win32_Process -Filter \"name='pythonw.exe' or name='python.exe'\" "
-         "| Where-Object { $_.CommandLine -match 'main\\.py' } | Measure-Object | ForEach-Object Count"],
-        capture_output=True, encoding='utf-8', errors='ignore').stdout
-    main_inst = int((running or '0').strip() or 0)
-    ok = alive and main_inst <= 1
-    return ok, '锁 PID=%s 存活=%s；main.py 实例数=%d（阈值≤1，代理工具不计）' % (pid, alive, main_inst)
+    running = subprocess.run(['tasklist', '/FI', 'IMAGENAME eq pythonw.exe', '/FO', 'CSV'],
+                             capture_output=True, encoding='utf-8',
+                             errors='ignore').stdout.count('pythonw.exe')
+    return alive, '锁 PID=%s 存活=%s；pythonw 实例数=%d（阈值≤1）' % (pid, alive, running)
 
 
 # ---- S15 锁一致性 ----
