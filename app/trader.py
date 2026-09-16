@@ -1654,6 +1654,13 @@ class TradingEngine:
                 ][: int(getattr(C, "BOARD_HOT_WATCH_N", 20))]
             except Exception:
                 self._board_watch_codes = []
+            # ★K15-裁：热窗候选同步转储，供竞价哨兵工具 默认 名单
+            try:
+                with open("data/logs/auction_watch_codes.txt", "w",
+                          encoding="utf-8") as f:
+                    f.write(",".join(self._board_watch_codes))
+            except Exception:
+                pass
             # ★ Phase47+50：指数择时 board 专属（config.INDEX_TIMING_BOARD_ONLY，
             #   全局 INDEX_TIMING_ENABLED 维持 False 不影响 score 路径）。
             #   乘数只作用于 board 开仓预算（只缩不扩）；实盘信号即时点即 PIT
@@ -2729,6 +2736,13 @@ class TradingEngine:
         if not quotes:
             return
         log_path = "data/logs/diverg_watch.jsonl"
+        # ★ORD-6：哨兵台账按 5MB 轮转（防数月堆积；保留单代）
+        try:
+            if os.path.exists(log_path) and os.path.getsize(log_path) > 5 * 1024 * 1024:
+                os.replace(log_path, log_path.replace(
+                    ".jsonl", "_%s.jsonl" % time.strftime("%Y%m%d_%H%M")))
+        except Exception:
+            pass
         import json as _jj
         for code, q in quotes.items():
             c = code[2:] if code[:2] in ("sz", "sh", "SH", "SZ") else code

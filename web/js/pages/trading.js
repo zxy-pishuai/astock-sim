@@ -77,7 +77,17 @@ async function refreshTrading() {
     // 竞价公示
     const au = s.auction || {};
     if (au.results && au.results.length) {
-      setHtml($("trAuction"), `<div class="auction-head">${au.time} 共 ${au.results.length} 只候选（大盘竞价高开 ${((au.breadth || 0) * 100).toFixed(0)}%）</div>` +
+      const canc = r.cancel_ratio;
+      const cls = canc == null ? "" :
+        (canc <= 0.40 ? "td-up" : (canc >= 0.70 ? "td-down" : "td-weak"));
+      const ct = canc == null ? "" :
+        `<span class="a-sec ${cls}">撤${(100 * canc).toFixed(0)}%${r.cancel_dir < 0 ? "卖撤" : "买撤"}</span>`;
+      const canc = r.cancel_ratio;
+      const cls = canc == null ? "" :
+        (canc <= 0.40 ? "td-up" : (canc >= 0.70 ? "td-down" : "td-weak"));
+      const ct = canc == null ? "" :
+        `<span class="a-sec ${cls}">撤${(100 * canc).toFixed(0)}%${r.cancel_dir < 0 ? "卖撤" : "买撤"}</span>`;
+      setHtml($("trAuction"), `<div class="auction-head">${au.time} 共 ${au.results.length} 只候选（大盘竞价高开 ${((au.breadth || 0) * 100).toFixed(0)}% · 撤单率≤40%真承接 /≥70%假高开）</div>` +
         au.results.map((r, i) => `
         <div class="auction-item" data-code="${r.code}">
           <span class="a-rank">${i + 1}</span>
@@ -86,6 +96,7 @@ async function refreshTrading() {
           <span class="a-pct up">${r.auction_pct > 0 ? "+" : ""}${r.auction_pct}%</span>
           <span class="a-score">${r.score}分</span>
           <span class="a-sec">${r.sector}</span>
+          ${ct}
         </div>`).join(""));
       $("trAuction").querySelectorAll(".auction-item").forEach(el =>
         el.addEventListener("click", () => { state.code = el.dataset.code; switchPage("chart"); }));
