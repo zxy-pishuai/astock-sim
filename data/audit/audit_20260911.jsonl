@@ -1,0 +1,52 @@
+{"t": "2026-09-11 08:19:51", "kind": "daily", "event": "watchdog_recovered", "level": "INFO", "streak_s": 606, "detail": "watchdog 心跳恢复（断更持续 606s）", "hash": "30f5146de220e772", "prev": ""}
+{"t": "2026-09-11 09:10:07", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "交易引擎已启动（自动交易）", "hash": "c3d6b950125f39cb", "prev": "30f5146de220e772"}
+{"t": "2026-09-11 09:10:07", "kind": "alert", "event": "trading_event", "level": "OK", "msg": "⏰ 开盘自动开启交易引擎（09:10）", "hash": "2607772f31e7b5db", "prev": "c3d6b950125f39cb"}
+{"t": "2026-09-11 09:25:19", "kind": "alert", "event": "trading_event", "level": "OK", "msg": "竞价打板公示：9只候选（高开占比10%）", "hash": "167a8c6164ac1894", "prev": "2607772f31e7b5db"}
+{"t": "2026-09-11 09:30:07", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "情绪[冰点]禁开仓：涨停少、炸板多或跌停潮，管住手", "hash": "51988f2502958471", "prev": "167a8c6164ac1894"}
+{"t": "2026-09-11 09:30:27", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 华天科技(002185) 下跌-3.0%，注意风险", "hash": "941b2c0b99b544be", "prev": "51988f2502958471"}
+{"t": "2026-09-11 09:30:37", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 太极实业(600667) 下跌-3.1%，注意风险", "hash": "55efacc892d2e1fa", "prev": "941b2c0b99b544be"}
+{"t": "2026-09-11 09:30:43", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 放量下跌或受板块拖累，关注是否有持续抛压。", "hash": "af56e9c0a6b2b988", "prev": "55efacc892d2e1fa"}
+{"t": "2026-09-11 09:30:44", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 002185 AI点评: 量比异常放大引发抛售，需关注后续走势。", "hash": "055576da0c6dd790", "prev": "af56e9c0a6b2b988"}
+{"t": "2026-09-11 09:32:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "09:32:00", "hash": "f3027054d7e9da9c", "prev": "055576da0c6dd790"}
+{"t": "2026-09-11 09:32:26", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 太极实业(600667) 冲高回落3.1%（高点19.60）", "hash": "162803c8afa5f4b3", "prev": "f3027054d7e9da9c"}
+{"t": "2026-09-11 09:32:30", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 放量冲高回落，资金出逃明显，短线需警惕风险。", "hash": "07c59dc764727c0c", "prev": "162803c8afa5f4b3"}
+{"t": "2026-09-11 09:36:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "09:36:00", "hash": "9c1c8d6675ca9c23", "prev": "07c59dc764727c0c"}
+{"t": "2026-09-11 09:40:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "09:40:00", "hash": "429e139a9c55e4b7", "prev": "9c1c8d6675ca9c23"}
+{"t": "2026-09-11 09:44:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "09:44:00", "hash": "62100514aa4a3105", "prev": "429e139a9c55e4b7"}
+{"t": "2026-09-11 09:44:56", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落3.1%（高点32.28）", "hash": "ced821991b5de2ff", "prev": "62100514aa4a3105"}
+{"t": "2026-09-11 09:45:31", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600353 AI点评: 冲高回落或因获利回吐，量比放大但冲高回落，短线需警惕回调风险。", "hash": "0de6ce1415843043", "prev": "ced821991b5de2ff"}
+{"t": "2026-09-11 09:45:42", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 太极实业(600667) 下跌-4.0%，注意风险", "hash": "883a77fba135a47a", "prev": "0de6ce1415843043"}
+{"t": "2026-09-11 10:14:43", "kind": "daily", "event": "watchdog_stale", "level": "CRITICAL", "streak_s": 0, "watchdog_stale_reason": "stale", "detail": "watchdog 断更 29 分钟（>10min），首次告警", "hash": "16dbf8bd9569cb61", "prev": "883a77fba135a47a"}
+{"t": "2026-09-11 10:14:43", "kind": "trading", "event": "loop_stall", "level": "WARN", "phase": "monitor", "since": 1789091188.2270234, "loop_seq": 91, "streak_s": 1694, "detail": "主循环停摆：阶段=monitor 持续1694s", "hash": "f011aec5b10e25dc", "prev": "16dbf8bd9569cb61"}
+{"t": "2026-09-11 10:14:43", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 旭光电子(600353) 下跌-4.2%，注意风险", "hash": "a2f597b340a46545", "prev": "f011aec5b10e25dc"}
+{"t": "2026-09-11 10:14:43", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落6.0%（高点32.28）", "hash": "dcef3193072ca712", "prev": "a2f597b340a46545"}
+{"t": "2026-09-11 10:14:43", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 通威股份(600438) 下跌-3.9%，注意风险", "hash": "71cfcafdafe01cfa", "prev": "dcef3193072ca712"}
+{"t": "2026-09-11 10:14:44", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 通威股份(600438) 冲高回落3.6%（高点11.45）", "hash": "58698057a08fc5c6", "prev": "71cfcafdafe01cfa"}
+{"t": "2026-09-11 10:14:44", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 太极实业(600667) 下跌-4.3%，注意风险", "hash": "7dc494bf44ffe83f", "prev": "58698057a08fc5c6"}
+{"t": "2026-09-11 10:14:44", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 华天科技(002185) 下跌-3.4%，注意风险", "hash": "965c5f23a6759209", "prev": "7dc494bf44ffe83f"}
+{"t": "2026-09-11 10:14:48", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600353 AI点评: 量增价跌或存抛压，短线观望为宜。", "hash": "942600616deba33b", "prev": "965c5f23a6759209"}
+{"t": "2026-09-11 10:14:48", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600438 AI点评: 光伏板块承压，资金出逃导致放量下跌，短期风险显著，需高度关注。", "hash": "65fa574840e93406", "prev": "942600616deba33b"}
+{"t": "2026-09-11 10:14:50", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600438 AI点评: 弱势反弹遇抛压，缺乏持续性支撑。", "hash": "4072bfeadefbb3f9", "prev": "65fa574840e93406"}
+{"t": "2026-09-11 10:14:57", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 002185 AI点评: 放量下跌，疑受抛压或利空影响，短期风险较高，需谨慎关注。", "hash": "e65a66e921b0ca95", "prev": "4072bfeadefbb3f9"}
+{"t": "2026-09-11 10:14:59", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 放量下跌，抛压显著，短期风险较高，需警惕。", "hash": "216b9b1a6e4b5030", "prev": "e65a66e921b0ca95"}
+{"t": "2026-09-11 10:16:59", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 太极实业(600667) 冲高回落3.2%（高点19.60）", "hash": "3676221e7b49403c", "prev": "216b9b1a6e4b5030"}
+{"t": "2026-09-11 10:50:26", "kind": "trading", "event": "loop_stall_cleared", "level": "INFO", "phase": "board", "streak_s": 2142, "detail": "主循环恢复：停摆总时长2142s", "hash": "baf57baffb359e6e", "prev": "3676221e7b49403c"}
+{"t": "2026-09-11 10:50:29", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 旭光电子(600353) 下跌-5.3%，注意风险", "hash": "b0d4923c2c3ab56f", "prev": "baf57baffb359e6e"}
+{"t": "2026-09-11 10:50:29", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落7.2%（高点32.28）", "hash": "d737b442075a98fb", "prev": "b0d4923c2c3ab56f"}
+{"t": "2026-09-11 10:50:29", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 通威股份(600438) 下跌-4.0%，注意风险", "hash": "dead4a3bd3d52863", "prev": "d737b442075a98fb"}
+{"t": "2026-09-11 10:50:30", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 通威股份(600438) 冲高回落3.7%（高点11.45）", "hash": "d7c6ca487ae2f167", "prev": "dead4a3bd3d52863"}
+{"t": "2026-09-11 10:50:30", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 太极实业(600667) 下跌-4.2%，注意风险", "hash": "319c0da4d271431e", "prev": "d7c6ca487ae2f167"}
+{"t": "2026-09-11 10:50:30", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "🚨 华天科技(002185) 下跌-4.0%，注意风险", "hash": "c7b9cbc469adc53c", "prev": "319c0da4d271431e"}
+{"t": "2026-09-11 10:50:30", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 华天科技(002185) 冲高回落3.3%（高点16.24）", "hash": "ca49da2b9320a607", "prev": "c7b9cbc469adc53c"}
+{"t": "2026-09-11 10:50:35", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 放量下跌，主力出逃迹象明显，短线风险加剧，建议核实原因。", "hash": "a4cf9869ab2093ec", "prev": "ca49da2b9320a607"}
+{"t": "2026-09-11 10:50:36", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 002185 AI点评: 放量调整，板块拖累明显，短期注意风险。", "hash": "4feb6483e77586b5", "prev": "a4cf9869ab2093ec"}
+{"t": "2026-09-11 10:50:36", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 002185 AI点评: 触及前期压力位放量回落，短线可关注支撑有效性。", "hash": "bd7061ede4afb9e9", "prev": "4feb6483e77586b5"}
+{"t": "2026-09-11 10:50:40", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600353 AI点评: 旭光电子冲高回落，量比放大显示抛压，短线调整风险，关注后续量能变化。", "hash": "1621ff5f3f08ce39", "prev": "bd7061ede4afb9e9"}
+{"t": "2026-09-11 10:50:41", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600438 AI点评: 通威股份冲高回落，量比放大显示抛压，短线需谨慎。", "hash": "8e44b1ad1c79303e", "prev": "1621ff5f3f08ce39"}
+{"t": "2026-09-11 10:50:45", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600438 AI点评: 卖压引发下跌4.0%，量比高示成交异常，短线可关注但风险高。", "hash": "d01ab1d5bf9904ed", "prev": "8e44b1ad1c79303e"}
+{"t": "2026-09-11 19:24:07", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "开盘自动开启：19:24 非 09:10-15:05 窗口，待明晨自动启动", "hash": "489ae6006a64a469", "prev": "d01ab1d5bf9904ed"}
+{"t": "2026-09-11 19:24:07", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "开盘自动开启已启用（交易日 9:15 自动启动引擎）", "hash": "b20fb7565b59ab81", "prev": "489ae6006a64a469"}
+{"t": "2026-09-11 20:09:27", "kind": "daily", "event": "stale_first_budget_exceeded", "level": "WARN", "pending_remain": 2775, "elapsed_s": 1912.9, "budget_sec": 1800, "note": "stale-first 预算耗尽仍有待追平票，收盘更新未完成，KPI/快照延后，兜底任务将按覆盖率判据接力", "hash": "fa6bc6604c5a66c1", "prev": "b20fb7565b59ab81"}
+{"t": "2026-09-11 20:11:12", "kind": "daily", "event": "daily_coverage_pending", "level": "INFO", "fresh": 2242, "total": 5328, "ratio": 0.4208, "missing": 3086, "pending_remain": 2775, "target": "2026-09-11", "daily_updated": 2250, "note": "收盘更新未完成（stale-first 仍有待追平票），KPI 延后重评、不落快照，由兜底任务按覆盖率接力", "hash": "302de1f88fbfe8d0", "prev": "fa6bc6604c5a66c1"}
+{"t": "2026-09-11 20:11:47", "kind": "daily", "event": "data_update", "level": "INFO", "min5_updated": 1007, "min5_total": 1012, "min5_rows": 48336, "min5_errors": 0, "min5_empty": 3, "daily_updated": 2250, "daily_errors": 0, "hash": "66f67a986aef2665", "prev": "302de1f88fbfe8d0"}
+{"t": "2026-09-11 20:11:47", "kind": "daily", "event": "data_snapshot_deferred", "level": "INFO", "pending_remain": 2775, "note": "日K未追平，快照延后，追平后由兜底任务落盘", "hash": "d31a79adf2e0f9fc", "prev": "66f67a986aef2665"}

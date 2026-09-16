@@ -1,0 +1,767 @@
+{
+  "meta": {
+    "task": "Z4 updater 双跑签名诊断",
+    "date": "2026-09-02",
+    "audit_events_total": 3541,
+    "data_update_events": 54,
+    "read_only": true
+  },
+  "daily_signature_table": {
+    "2026-08-19": [
+      {
+        "t": "2026-08-19 00:22:36",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 494,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-19 00:22:36",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-19 00:23:54",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 494,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-19 20:35:30",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 132,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-19 20:35:30",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 132,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-19 20:35:32",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 364,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      }
+    ],
+    "2026-08-20": [
+      {
+        "t": "2026-08-20 15:10:57",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 496,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-20 15:11:01",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-20 15:11:01",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      }
+    ],
+    "2026-08-21": [
+      {
+        "t": "2026-08-21 16:01:13",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 496,
+        "daily_updated": 0,
+        "daily_errors": 300
+      },
+      {
+        "t": "2026-08-21 16:01:13",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      }
+    ],
+    "2026-08-22": [
+      {
+        "t": "2026-08-22 21:00:40",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-22 21:00:40",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      }
+    ],
+    "2026-08-23": [
+      {
+        "t": "2026-08-23 00:32:13",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 00:32:13",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 01:37:39",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 01:37:39",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 01:53:41",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 01:53:41",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 02:16:44",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 02:16:44",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 02:17:59",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 02:17:59",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 02:22:10",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 02:22:10",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 02:31:23",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 02:31:23",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 02:37:55",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 02:37:55",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 03:09:04",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 03:09:04",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 14:25:20",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 14:25:20",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-23 16:35:40",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-23 16:35:40",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      }
+    ],
+    "2026-08-24": [
+      {
+        "t": "2026-08-24 09:48:57",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 496,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-24 16:01:10",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 496,
+        "daily_updated": 0,
+        "daily_errors": 300
+      },
+      {
+        "t": "2026-08-24 16:01:10",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 496,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      }
+    ],
+    "2026-08-25": [
+      {
+        "t": "2026-08-25 10:28:37",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 420,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-25 15:11:14",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 496,
+        "min5_total": 496,
+        "min5_errors": 0,
+        "min5_empty": 0,
+        "daily_updated": 300,
+        "daily_errors": 0
+      }
+    ],
+    "2026-08-26": [
+      {
+        "t": "2026-08-26 15:11:51",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 1002,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-08-26 15:11:51",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 1002,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      },
+      {
+        "t": "2026-08-26 15:14:46",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 999,
+        "min5_total": 1002,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      }
+    ],
+    "2026-08-27": [
+      {
+        "t": "2026-08-27 15:18:11",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 999,
+        "min5_total": 1002,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      }
+    ],
+    "2026-08-28": [
+      {
+        "t": "2026-08-28 17:08:07",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 1004,
+        "min5_errors": 0,
+        "min5_empty": 1004,
+        "daily_updated": 0,
+        "daily_errors": 300
+      },
+      {
+        "t": "2026-08-28 17:08:07",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 1004,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      }
+    ],
+    "2026-08-30": [
+      {
+        "t": "2026-08-30 22:08:22",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 1001,
+        "min5_total": 1004,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      }
+    ],
+    "2026-08-31": [
+      {
+        "t": "2026-08-31 22:21:58",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 950,
+        "min5_total": 1004,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      }
+    ],
+    "2026-09-01": [
+      {
+        "t": "2026-09-01 15:12:22",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 1002,
+        "min5_total": 1005,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-09-01 15:12:57",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 1005,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-09-01 15:12:57",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 1005,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      }
+    ],
+    "2026-09-02": [
+      {
+        "t": "2026-09-02 15:34:07",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 1003,
+        "min5_total": 1006,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-09-02 15:34:09",
+        "event": "data_update",
+        "level": "INFO",
+        "min5_updated": 0,
+        "min5_total": 1006,
+        "min5_errors": 0,
+        "min5_empty": 3,
+        "daily_updated": 300,
+        "daily_errors": 0
+      },
+      {
+        "t": "2026-09-02 15:34:09",
+        "event": "data_update_failed",
+        "level": "WARN",
+        "min5_updated": 0,
+        "min5_total": 1006,
+        "min5_errors": null,
+        "min5_empty": null,
+        "daily_updated": null,
+        "daily_errors": null
+      }
+    ]
+  },
+  "close_trigger_events_per_day": {
+    "2026-08-25": [
+      "15:10:00"
+    ],
+    "2026-08-26": [
+      "15:10:00",
+      "15:10:05"
+    ],
+    "2026-08-27": [
+      "15:10:04"
+    ],
+    "2026-08-28": [
+      "15:10:23"
+    ],
+    "2026-08-31": [
+      "15:10:02"
+    ],
+    "2026-09-01": [
+      "15:10:04",
+      "15:10:05"
+    ],
+    "2026-09-02": [
+      "15:31:28",
+      "15:31:28"
+    ]
+  },
+  "engine_start_events_per_day": {
+    "2026-09-01": [
+      "09:38:02",
+      "13:00:47",
+      "13:09:22",
+      "13:09:29"
+    ],
+    "2026-09-02": [
+      "09:16:45",
+      "09:54:57",
+      "10:10:12"
+    ]
+  },
+  "heartbeat_stats": {
+    "2026-08-27": {
+      "count": 32,
+      "median_gap_s": 360,
+      "min_gap_s": 60,
+      "max_gap_s": 6900
+    },
+    "2026-09-01": {
+      "count": 53,
+      "median_gap_s": 240,
+      "min_gap_s": 60,
+      "max_gap_s": 6420
+    },
+    "2026-09-02": {
+      "count": 33,
+      "median_gap_s": 180,
+      "min_gap_s": 59,
+      "max_gap_s": 540
+    }
+  },
+  "quiet_window_9_2": {
+    "12:00-15:31_events": 2,
+    "13h_events": 0,
+    "14h_events": 0,
+    "8_27_13h_events": 97,
+    "8_27_14h_events": 96
+  },
+  "trigger_chain_code": {
+    "pathA_close_trigger": "trader.py L329-334: if 1510<=hm<=1540 and today!=_last_data_upd: _last_data_upd=today; updater.start_background_update(); _event('收盘数据增量更新已触发')",
+    "pathA_dedup_var": "_last_data_upd 为 _loop 局部变量(L309)，每个 _loop 实例各自计数 → 多 _loop 时同日多次触发",
+    "pathB_auto_start_compensate": "trader.py L241 enable_auto_start._monitor 在 09:10-15:05 窗口内调 start_background_update（启动补偿）",
+    "run_update_reentry": "updater.py L590: if _UPDATE_STATE['running']: return skipped —— 进程内变量，检查-设置非原子；跨进程完全失效",
+    "success_criteria": "updater.py L625: ok = min5_updated >= max(1, total*0.5)；第二遍 u=0 → 误报 failed",
+    "needs_update": "updater.py L578-582: last_day != _target_day()；第一遍成功后 last_day=当天 → 后续触发应 skip（但跨进程/竞态下失效）",
+    "scheduled_task": "无独立 updater 计划任务（仅 forward_eval/ml_scores_ledger/risk_daily/watchdog/nightly）——收盘更新纯靠进程内触发器"
+  },
+  "root_cause": {
+    "primary": "多个 trader._loop 实例在 15:10-15:40 窗口各触发一次收盘更新 → 两次 start_background_update → run_update 防重入仅进程内(updater.py L590 _UPDATE_STATE['running'])，双实例(9/1 确认 44104+53208；9/2 疑似 heartbeat 双频)跨进程双跑",
+    "reentry_hole": "L590 检查-设置非原子 + _UPDATE_STATE 进程内 → 竞态穿透(同进程) + 跨进程完全无防",
+    "failed_noise": "第二遍 min5 u=0/empty=3（第一遍已写，第二遍全'已最新'跳过）→ 达标判定只看 min5 → 误报 data_update_failed",
+    "9_2_delay_15_31": "引擎 12:00-15:31 审计静默(13/14时交易时段0事件 vs 8/27同段90+)，15:31 恢复首次进非交易分支触发 → 触发延迟根因未定(引擎为何静默3.5h)，列明晨复采",
+    "data_integrity": "完整无损坏：update_min5 L239 INSERT OR REPLACE 幂等只增不删；update_daily L293 _kline_save 幂等 upsert；第二遍不覆盖/清空第一遍数据"
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "name": "双进程/双引擎双 _loop 触发",
+      "support": "9/1 双实例确认(X1 44104+53208)；9/2 heartbeat 中位180s≈8/27的360s一半(双源)；每日'收盘触发'事件成对出现",
+      "against": "9/2 8528 单进程(10:10启动)且10:10后无新 enable 事件；单实例锁应拦第二实例",
+      "verify": "明晨看'收盘触发'次数；Get-Process 看是否多 main.py"
+    },
+    {
+      "id": "H2",
+      "name": "run_update 跨进程/竞态双跑",
+      "support": "L590 running 仅进程内；两遍均完整跑完(9/1 2m18s+2m52s；9/2 2m39s+2m41s)；第二遍 u=0=第一遍已写",
+      "against": "单进程内 L590 有 GIL 竞争窗口但极小",
+      "verify": "代码评审：将 L590 改为文件锁/原子标记"
+    },
+    {
+      "id": "H3",
+      "name": "第二遍是启动补偿(路径B)",
+      "support": "enable_auto_start._monitor 09:10-15:05 也调 start_background_update",
+      "against": "15:31/15:10 均在 15:05 窗口外，_monitor 不触发；且 9/2 10:10 启动后 12:00-15:31 引擎静默",
+      "verify": "确认 _monitor 窗口逻辑 L235-245"
+    },
+    {
+      "id": "H4",
+      "name": "failed 是数据未就绪/限流误报",
+      "support": "8/28 全池空 empty=1004 是真失败",
+      "against": "9/1/9/2 第二遍 empty=3(非全空)+daily 300 成功 → 数据已完整，非限流/未就绪",
+      "verify": "empty=3 vs empty=1004 对比已排除"
+    }
+  ],
+  "conclusion": "双跑=多 _loop 触发 + run_update 跨进程防重入失效；数据完整(幂等写)；failed 为重复空跑误报(狼来了)；9/2 触发延迟根因未定",
+  "fix_proposals": [
+    "F1 触发去重：_last_data_upd 提升为进程级/文件持久化标记（写 data/update_state.json 或内存模块级），防多 _loop 同日重复触发",
+    "F2 run_update 跨进程防重入：加 OS 文件锁(msvcrt.locking/fcntl.flock，同 Y2 方案)或 DB 原子标记，检查-设置加 threading.Lock 原子化",
+    "F3 failed 降噪：run_update 判定'重复空跑'(min5_updated==0 且 min5_empty 小 且 daily 成功 且 last_day 已==target) → 记 INFO 级 skip_duplicate 而非 data_update_failed，面板区分'真失败'与'重复触发'",
+    "F4 达标判定引入 daily 信号：min5 全命中时(updated=0 但 daily 成功)不判 failed"
+  ],
+  "morning_recheck_20260903": {
+    "checklist": [
+      "09:15-15:05 看 audit '交易引擎已启动' 出现几次(确认引擎数)",
+      "15:10-15:40 看 '收盘数据增量更新已触发' 出现几次：1次=单 _loop 正常；2次=双触发仍在",
+      "data_update 是否成对(成功+u=0 failed)出现",
+      "13:00-14:59 trading_event/heartbeat 是否正常(9/2 静默是否复现)",
+      "update_state.json last_day 是否推进到 09-03",
+      "Get-Process 过滤 main.py 确认进程数(唯一性)"
+    ],
+    "reproduce_definition": "15:10-15:40 出现≥2次'收盘数据增量更新已触发' 且 data_update 成对(一成一败) = 复现"
+  },
+  "deliverables": [
+    "docs/reports/updater_double_run_diag.md",
+    "data/updater_diag_20260902.json"
+  ]
+}

@@ -1,0 +1,3079 @@
+{
+ "file": "data\\audit\\audit.jsonl",
+ "lines": 2671,
+ "checked": 2331,
+ "breaks_total": 340,
+ "breaks": [
+  {
+   "line": 9,
+   "t": "2026-08-16 19:07:19",
+   "kind": "order",
+   "event": "manual_buy",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0332",
+   "actual_prev_tail4": ""
+  },
+  {
+   "line": 11,
+   "t": "2026-08-16 19:07:35",
+   "kind": "order",
+   "event": "manual_buy",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c111",
+   "actual_prev_tail4": ""
+  },
+  {
+   "line": 13,
+   "t": "2026-08-16 22:42:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "56a8",
+   "actual_prev_tail4": ""
+  },
+  {
+   "line": 18,
+   "t": "2026-08-17 02:39:53",
+   "kind": "test",
+   "event": "ev2",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2f67",
+   "actual_prev_tail4": ""
+  },
+  {
+   "line": 19,
+   "t": "2026-08-17 02:49:35",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "09e4",
+   "actual_prev_tail4": ""
+  },
+  {
+   "line": 20,
+   "t": "2026-08-17 09:55:12",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8c7a",
+   "actual_prev_tail4": ""
+  },
+  {
+   "line": 129,
+   "t": "2026-08-18 01:37:38",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c1cf",
+   "actual_prev_tail4": ""
+  },
+  {
+   "line": 130,
+   "t": "2026-08-18 01:45:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "38c1",
+   "actual_prev_tail4": ""
+  },
+  {
+   "line": 439,
+   "t": "2026-08-19 20:35:32",
+   "kind": "daily",
+   "event": "data_update",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9078",
+   "actual_prev_tail4": "43f2"
+  },
+  {
+   "line": 465,
+   "t": "2026-08-20 09:51:06",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0635",
+   "actual_prev_tail4": "77ac"
+  },
+  {
+   "line": 467,
+   "t": "2026-08-20 09:51:12",
+   "kind": "order",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "592a",
+   "actual_prev_tail4": "631e"
+  },
+  {
+   "line": 470,
+   "t": "2026-08-20 09:51:13",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "96ac",
+   "actual_prev_tail4": "592a"
+  },
+  {
+   "line": 471,
+   "t": "2026-08-20 09:51:13",
+   "kind": "order",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c321",
+   "actual_prev_tail4": "0635"
+  },
+  {
+   "line": 476,
+   "t": "2026-08-20 09:56:14",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e53c",
+   "actual_prev_tail4": "96ac"
+  },
+  {
+   "line": 479,
+   "t": "2026-08-20 09:56:21",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2b1c",
+   "actual_prev_tail4": "e53c"
+  },
+  {
+   "line": 480,
+   "t": "2026-08-20 09:56:30",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1509",
+   "actual_prev_tail4": "2b1c"
+  },
+  {
+   "line": 481,
+   "t": "2026-08-20 09:56:37",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6659",
+   "actual_prev_tail4": "1509"
+  },
+  {
+   "line": 482,
+   "t": "2026-08-20 10:01:53",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "04ee",
+   "actual_prev_tail4": "6659"
+  },
+  {
+   "line": 483,
+   "t": "2026-08-20 10:01:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "988c",
+   "actual_prev_tail4": "04ee"
+  },
+  {
+   "line": 484,
+   "t": "2026-08-20 10:02:06",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "d30c",
+   "actual_prev_tail4": "988c"
+  },
+  {
+   "line": 485,
+   "t": "2026-08-20 10:02:16",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "aa50",
+   "actual_prev_tail4": "d30c"
+  },
+  {
+   "line": 486,
+   "t": "2026-08-20 10:08:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2468",
+   "actual_prev_tail4": "aa50"
+  },
+  {
+   "line": 489,
+   "t": "2026-08-20 10:24:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "969e",
+   "actual_prev_tail4": "2468"
+  },
+  {
+   "line": 490,
+   "t": "2026-08-20 10:31:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9272",
+   "actual_prev_tail4": "969e"
+  },
+  {
+   "line": 493,
+   "t": "2026-08-20 10:38:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4a4a",
+   "actual_prev_tail4": "9272"
+  },
+  {
+   "line": 495,
+   "t": "2026-08-20 10:44:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "70fb",
+   "actual_prev_tail4": "4a4a"
+  },
+  {
+   "line": 497,
+   "t": "2026-08-20 10:58:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8e0d",
+   "actual_prev_tail4": "70fb"
+  },
+  {
+   "line": 500,
+   "t": "2026-08-20 11:00:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f1b3",
+   "actual_prev_tail4": "8e0d"
+  },
+  {
+   "line": 502,
+   "t": "2026-08-20 11:08:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "02e8",
+   "actual_prev_tail4": "f1b3"
+  },
+  {
+   "line": 509,
+   "t": "2026-08-20 11:30:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2159",
+   "actual_prev_tail4": "02e8"
+  },
+  {
+   "line": 513,
+   "t": "2026-08-20 13:14:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "49b4",
+   "actual_prev_tail4": "2159"
+  },
+  {
+   "line": 516,
+   "t": "2026-08-20 13:19:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "255e",
+   "actual_prev_tail4": "49b4"
+  },
+  {
+   "line": 517,
+   "t": "2026-08-20 13:20:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3d75",
+   "actual_prev_tail4": "255e"
+  },
+  {
+   "line": 519,
+   "t": "2026-08-20 13:21:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "5adc",
+   "actual_prev_tail4": "3d75"
+  },
+  {
+   "line": 520,
+   "t": "2026-08-20 13:31:25",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f98d",
+   "actual_prev_tail4": "5adc"
+  },
+  {
+   "line": 521,
+   "t": "2026-08-20 13:31:26",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4b29",
+   "actual_prev_tail4": "f98d"
+  },
+  {
+   "line": 522,
+   "t": "2026-08-20 13:31:38",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9718",
+   "actual_prev_tail4": "4b29"
+  },
+  {
+   "line": 523,
+   "t": "2026-08-20 13:31:43",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "abdb",
+   "actual_prev_tail4": "9718"
+  },
+  {
+   "line": 524,
+   "t": "2026-08-20 13:31:58",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "5a5d",
+   "actual_prev_tail4": "abdb"
+  },
+  {
+   "line": 525,
+   "t": "2026-08-20 13:31:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "cf7c",
+   "actual_prev_tail4": "5a5d"
+  },
+  {
+   "line": 526,
+   "t": "2026-08-20 13:32:09",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3db4",
+   "actual_prev_tail4": "cf7c"
+  },
+  {
+   "line": 527,
+   "t": "2026-08-20 13:32:24",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4583",
+   "actual_prev_tail4": "3db4"
+  },
+  {
+   "line": 530,
+   "t": "2026-08-20 13:38:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b603",
+   "actual_prev_tail4": "4583"
+  },
+  {
+   "line": 538,
+   "t": "2026-08-20 13:47:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "ed8c",
+   "actual_prev_tail4": "b603"
+  },
+  {
+   "line": 539,
+   "t": "2026-08-20 13:48:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "389a",
+   "actual_prev_tail4": "ed8c"
+  },
+  {
+   "line": 541,
+   "t": "2026-08-20 13:48:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "502a",
+   "actual_prev_tail4": "389a"
+  },
+  {
+   "line": 543,
+   "t": "2026-08-20 13:50:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3732",
+   "actual_prev_tail4": "502a"
+  },
+  {
+   "line": 545,
+   "t": "2026-08-20 13:54:22",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b0df",
+   "actual_prev_tail4": "3732"
+  },
+  {
+   "line": 546,
+   "t": "2026-08-20 13:56:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1a93",
+   "actual_prev_tail4": "b0df"
+  },
+  {
+   "line": 547,
+   "t": "2026-08-20 13:56:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4e5c",
+   "actual_prev_tail4": "1a93"
+  },
+  {
+   "line": 548,
+   "t": "2026-08-20 13:57:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b0de",
+   "actual_prev_tail4": "4e5c"
+  },
+  {
+   "line": 556,
+   "t": "2026-08-20 14:03:04",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8b3f",
+   "actual_prev_tail4": "b0de"
+  },
+  {
+   "line": 557,
+   "t": "2026-08-20 14:03:09",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9d44",
+   "actual_prev_tail4": "8b3f"
+  },
+  {
+   "line": 558,
+   "t": "2026-08-20 14:03:28",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "582b",
+   "actual_prev_tail4": "9d44"
+  },
+  {
+   "line": 559,
+   "t": "2026-08-20 14:08:40",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "69c8",
+   "actual_prev_tail4": "582b"
+  },
+  {
+   "line": 561,
+   "t": "2026-08-20 14:09:24",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "5e8c",
+   "actual_prev_tail4": "69c8"
+  },
+  {
+   "line": 564,
+   "t": "2026-08-20 14:18:02",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2e83",
+   "actual_prev_tail4": "5e8c"
+  },
+  {
+   "line": 565,
+   "t": "2026-08-20 14:18:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a209",
+   "actual_prev_tail4": "2e83"
+  },
+  {
+   "line": 567,
+   "t": "2026-08-20 14:20:07",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b63c",
+   "actual_prev_tail4": "a209"
+  },
+  {
+   "line": 568,
+   "t": "2026-08-20 14:20:07",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a885",
+   "actual_prev_tail4": "b63c"
+  },
+  {
+   "line": 569,
+   "t": "2026-08-20 14:23:45",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f294",
+   "actual_prev_tail4": "a885"
+  },
+  {
+   "line": 570,
+   "t": "2026-08-20 14:24:25",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2083",
+   "actual_prev_tail4": "f294"
+  },
+  {
+   "line": 573,
+   "t": "2026-08-20 14:33:03",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8822",
+   "actual_prev_tail4": "2083"
+  },
+  {
+   "line": 574,
+   "t": "2026-08-20 14:33:08",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f245",
+   "actual_prev_tail4": "8822"
+  },
+  {
+   "line": 575,
+   "t": "2026-08-20 14:33:22",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "364e",
+   "actual_prev_tail4": "f245"
+  },
+  {
+   "line": 576,
+   "t": "2026-08-20 14:33:27",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b355",
+   "actual_prev_tail4": "364e"
+  },
+  {
+   "line": 581,
+   "t": "2026-08-20 14:45:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "735d",
+   "actual_prev_tail4": "b355"
+  },
+  {
+   "line": 584,
+   "t": "2026-08-20 14:50:04",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b17f",
+   "actual_prev_tail4": "735d"
+  },
+  {
+   "line": 585,
+   "t": "2026-08-20 14:51:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "56c2",
+   "actual_prev_tail4": "b17f"
+  },
+  {
+   "line": 586,
+   "t": "2026-08-20 14:52:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8f1d",
+   "actual_prev_tail4": "56c2"
+  },
+  {
+   "line": 588,
+   "t": "2026-08-20 14:58:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "53c1",
+   "actual_prev_tail4": "8f1d"
+  },
+  {
+   "line": 592,
+   "t": "2026-08-20 15:01:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e00c",
+   "actual_prev_tail4": "53c1"
+  },
+  {
+   "line": 593,
+   "t": "2026-08-20 15:01:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "09e1",
+   "actual_prev_tail4": "e00c"
+  },
+  {
+   "line": 594,
+   "t": "2026-08-20 15:10:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2d8c",
+   "actual_prev_tail4": "09e1"
+  },
+  {
+   "line": 595,
+   "t": "2026-08-20 15:10:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6a70",
+   "actual_prev_tail4": "2d8c"
+  },
+  {
+   "line": 597,
+   "t": "2026-08-20 15:11:01",
+   "kind": "daily",
+   "event": "data_update",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "d352",
+   "actual_prev_tail4": "6a70"
+  },
+  {
+   "line": 890,
+   "t": "2026-08-25 10:27:29",
+   "kind": "position",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6d12",
+   "actual_prev_tail4": "4885"
+  },
+  {
+   "line": 891,
+   "t": "2026-08-25 10:27:30",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7bbd",
+   "actual_prev_tail4": "6d12"
+  },
+  {
+   "line": 894,
+   "t": "2026-08-25 10:27:37",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a45e",
+   "actual_prev_tail4": "7bbd"
+  },
+  {
+   "line": 898,
+   "t": "2026-08-25 10:27:40",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0ccb",
+   "actual_prev_tail4": "a45e"
+  },
+  {
+   "line": 899,
+   "t": "2026-08-25 10:27:41",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "84ec",
+   "actual_prev_tail4": "ac54"
+  },
+  {
+   "line": 902,
+   "t": "2026-08-25 10:27:45",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "510e",
+   "actual_prev_tail4": "84ec"
+  },
+  {
+   "line": 903,
+   "t": "2026-08-25 10:27:47",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1957",
+   "actual_prev_tail4": "510e"
+  },
+  {
+   "line": 904,
+   "t": "2026-08-25 10:27:50",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1c84",
+   "actual_prev_tail4": "0ccb"
+  },
+  {
+   "line": 906,
+   "t": "2026-08-25 10:27:52",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "229f",
+   "actual_prev_tail4": "1c84"
+  },
+  {
+   "line": 907,
+   "t": "2026-08-25 10:28:37",
+   "kind": "daily",
+   "event": "data_update",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e9d1",
+   "actual_prev_tail4": "229f"
+  },
+  {
+   "line": 1385,
+   "t": "2026-08-26 09:15:12",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3f50",
+   "actual_prev_tail4": "630c"
+  },
+  {
+   "line": 1520,
+   "t": "2026-08-26 10:14:57",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "bc38",
+   "actual_prev_tail4": "c134"
+  },
+  {
+   "line": 1521,
+   "t": "2026-08-26 10:15:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4f2f",
+   "actual_prev_tail4": "bc38"
+  },
+  {
+   "line": 1523,
+   "t": "2026-08-26 10:15:56",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9480",
+   "actual_prev_tail4": "4f2f"
+  },
+  {
+   "line": 1525,
+   "t": "2026-08-26 10:16:38",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8bb1",
+   "actual_prev_tail4": "9480"
+  },
+  {
+   "line": 1526,
+   "t": "2026-08-26 10:16:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "5598",
+   "actual_prev_tail4": "8bb1"
+  },
+  {
+   "line": 1527,
+   "t": "2026-08-26 10:17:47",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "409a",
+   "actual_prev_tail4": "5598"
+  },
+  {
+   "line": 1528,
+   "t": "2026-08-26 10:17:56",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6088",
+   "actual_prev_tail4": "409a"
+  },
+  {
+   "line": 1530,
+   "t": "2026-08-26 10:18:46",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "36b7",
+   "actual_prev_tail4": "6088"
+  },
+  {
+   "line": 1531,
+   "t": "2026-08-26 10:19:02",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "fd1a",
+   "actual_prev_tail4": "36b7"
+  },
+  {
+   "line": 1532,
+   "t": "2026-08-26 10:19:46",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8683",
+   "actual_prev_tail4": "fd1a"
+  },
+  {
+   "line": 1533,
+   "t": "2026-08-26 10:20:09",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0a54",
+   "actual_prev_tail4": "8683"
+  },
+  {
+   "line": 1534,
+   "t": "2026-08-26 10:20:58",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "ca05",
+   "actual_prev_tail4": "0a54"
+  },
+  {
+   "line": 1535,
+   "t": "2026-08-26 10:21:26",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "069d",
+   "actual_prev_tail4": "ca05"
+  },
+  {
+   "line": 1536,
+   "t": "2026-08-26 10:21:55",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2910",
+   "actual_prev_tail4": "069d"
+  },
+  {
+   "line": 1537,
+   "t": "2026-08-26 10:22:40",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "418e",
+   "actual_prev_tail4": "2910"
+  },
+  {
+   "line": 1539,
+   "t": "2026-08-26 10:22:50",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "cc9f",
+   "actual_prev_tail4": "418e"
+  },
+  {
+   "line": 1540,
+   "t": "2026-08-26 10:23:22",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "111f",
+   "actual_prev_tail4": "cc9f"
+  },
+  {
+   "line": 1543,
+   "t": "2026-08-26 10:23:52",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b25b",
+   "actual_prev_tail4": "111f"
+  },
+  {
+   "line": 1544,
+   "t": "2026-08-26 10:24:33",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0db2",
+   "actual_prev_tail4": "b25b"
+  },
+  {
+   "line": 1545,
+   "t": "2026-08-26 10:25:17",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "d6e3",
+   "actual_prev_tail4": "0db2"
+  },
+  {
+   "line": 1546,
+   "t": "2026-08-26 10:25:52",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "696a",
+   "actual_prev_tail4": "d6e3"
+  },
+  {
+   "line": 1548,
+   "t": "2026-08-26 10:26:08",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4be3",
+   "actual_prev_tail4": "696a"
+  },
+  {
+   "line": 1550,
+   "t": "2026-08-26 10:26:56",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6c5e",
+   "actual_prev_tail4": "4be3"
+  },
+  {
+   "line": 1551,
+   "t": "2026-08-26 10:27:09",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "efda",
+   "actual_prev_tail4": "6c5e"
+  },
+  {
+   "line": 1552,
+   "t": "2026-08-26 10:27:42",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "165d",
+   "actual_prev_tail4": "efda"
+  },
+  {
+   "line": 1553,
+   "t": "2026-08-26 10:28:10",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "aefb",
+   "actual_prev_tail4": "165d"
+  },
+  {
+   "line": 1554,
+   "t": "2026-08-26 10:28:39",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a976",
+   "actual_prev_tail4": "aefb"
+  },
+  {
+   "line": 1555,
+   "t": "2026-08-26 10:28:56",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c203",
+   "actual_prev_tail4": "a976"
+  },
+  {
+   "line": 1559,
+   "t": "2026-08-26 10:29:30",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e476",
+   "actual_prev_tail4": "c203"
+  },
+  {
+   "line": 1560,
+   "t": "2026-08-26 10:29:47",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2c52",
+   "actual_prev_tail4": "e476"
+  },
+  {
+   "line": 1563,
+   "t": "2026-08-26 10:30:21",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e3ba",
+   "actual_prev_tail4": "2c52"
+  },
+  {
+   "line": 1564,
+   "t": "2026-08-26 10:30:39",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6140",
+   "actual_prev_tail4": "6e59"
+  },
+  {
+   "line": 1566,
+   "t": "2026-08-26 10:31:13",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7749",
+   "actual_prev_tail4": "6140"
+  },
+  {
+   "line": 1568,
+   "t": "2026-08-26 10:31:29",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8eef",
+   "actual_prev_tail4": "7749"
+  },
+  {
+   "line": 1569,
+   "t": "2026-08-26 10:31:33",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a597",
+   "actual_prev_tail4": "8eef"
+  },
+  {
+   "line": 1571,
+   "t": "2026-08-26 10:32:23",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "5725",
+   "actual_prev_tail4": "a597"
+  },
+  {
+   "line": 1572,
+   "t": "2026-08-26 10:32:56",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e7a9",
+   "actual_prev_tail4": "5725"
+  },
+  {
+   "line": 1576,
+   "t": "2026-08-26 10:33:14",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a7e1",
+   "actual_prev_tail4": "e7a9"
+  },
+  {
+   "line": 1577,
+   "t": "2026-08-26 10:33:51",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f9f7",
+   "actual_prev_tail4": "a7e1"
+  },
+  {
+   "line": 1578,
+   "t": "2026-08-26 10:34:06",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "945d",
+   "actual_prev_tail4": "f9f7"
+  },
+  {
+   "line": 1579,
+   "t": "2026-08-26 10:34:44",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2a59",
+   "actual_prev_tail4": "945d"
+  },
+  {
+   "line": 1580,
+   "t": "2026-08-26 10:34:58",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8ee9",
+   "actual_prev_tail4": "2a59"
+  },
+  {
+   "line": 1581,
+   "t": "2026-08-26 10:35:36",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "bdf6",
+   "actual_prev_tail4": "8ee9"
+  },
+  {
+   "line": 1582,
+   "t": "2026-08-26 10:36:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "842d",
+   "actual_prev_tail4": "bdf6"
+  },
+  {
+   "line": 1584,
+   "t": "2026-08-26 10:36:30",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3a0d",
+   "actual_prev_tail4": "842d"
+  },
+  {
+   "line": 1585,
+   "t": "2026-08-26 10:36:39",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "49db",
+   "actual_prev_tail4": "3a0d"
+  },
+  {
+   "line": 1586,
+   "t": "2026-08-26 10:37:19",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a63a",
+   "actual_prev_tail4": "49db"
+  },
+  {
+   "line": 1587,
+   "t": "2026-08-26 10:37:31",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "74c4",
+   "actual_prev_tail4": "a63a"
+  },
+  {
+   "line": 1588,
+   "t": "2026-08-26 10:38:10",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8bfd",
+   "actual_prev_tail4": "74c4"
+  },
+  {
+   "line": 1589,
+   "t": "2026-08-26 10:38:22",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c8e2",
+   "actual_prev_tail4": "8bfd"
+  },
+  {
+   "line": 1590,
+   "t": "2026-08-26 10:38:33",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0321",
+   "actual_prev_tail4": "c8e2"
+  },
+  {
+   "line": 1592,
+   "t": "2026-08-26 10:39:14",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8d46",
+   "actual_prev_tail4": "0321"
+  },
+  {
+   "line": 1593,
+   "t": "2026-08-26 10:39:55",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c74f",
+   "actual_prev_tail4": "8d46"
+  },
+  {
+   "line": 1594,
+   "t": "2026-08-26 10:40:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "ee9b",
+   "actual_prev_tail4": "c74f"
+  },
+  {
+   "line": 1595,
+   "t": "2026-08-26 10:40:46",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "55f0",
+   "actual_prev_tail4": "ee9b"
+  },
+  {
+   "line": 1597,
+   "t": "2026-08-26 10:40:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "006c",
+   "actual_prev_tail4": "55f0"
+  },
+  {
+   "line": 1598,
+   "t": "2026-08-26 10:41:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "af82",
+   "actual_prev_tail4": "006c"
+  },
+  {
+   "line": 1599,
+   "t": "2026-08-26 10:41:12",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "bb94",
+   "actual_prev_tail4": "af82"
+  },
+  {
+   "line": 1600,
+   "t": "2026-08-26 10:41:38",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9693",
+   "actual_prev_tail4": "bb94"
+  },
+  {
+   "line": 1601,
+   "t": "2026-08-26 10:41:48",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1e1d",
+   "actual_prev_tail4": "9693"
+  },
+  {
+   "line": 1603,
+   "t": "2026-08-26 10:42:27",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "671e",
+   "actual_prev_tail4": "1e1d"
+  },
+  {
+   "line": 1605,
+   "t": "2026-08-26 10:42:39",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1e8f",
+   "actual_prev_tail4": "671e"
+  },
+  {
+   "line": 1607,
+   "t": "2026-08-26 10:43:20",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "60b7",
+   "actual_prev_tail4": "1e8f"
+  },
+  {
+   "line": 1608,
+   "t": "2026-08-26 10:43:30",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b453",
+   "actual_prev_tail4": "60b7"
+  },
+  {
+   "line": 1609,
+   "t": "2026-08-26 10:44:12",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2eb5",
+   "actual_prev_tail4": "b453"
+  },
+  {
+   "line": 1610,
+   "t": "2026-08-26 10:44:20",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0e4c",
+   "actual_prev_tail4": "2eb5"
+  },
+  {
+   "line": 1612,
+   "t": "2026-08-26 10:45:02",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "99c1",
+   "actual_prev_tail4": "0e4c"
+  },
+  {
+   "line": 1613,
+   "t": "2026-08-26 10:45:11",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2c46",
+   "actual_prev_tail4": "99c1"
+  },
+  {
+   "line": 1614,
+   "t": "2026-08-26 10:45:54",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b2e9",
+   "actual_prev_tail4": "2c46"
+  },
+  {
+   "line": 1615,
+   "t": "2026-08-26 10:46:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0ced",
+   "actual_prev_tail4": "b2e9"
+  },
+  {
+   "line": 1617,
+   "t": "2026-08-26 10:46:48",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0d40",
+   "actual_prev_tail4": "0ced"
+  },
+  {
+   "line": 1618,
+   "t": "2026-08-26 10:46:56",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f163",
+   "actual_prev_tail4": "0d40"
+  },
+  {
+   "line": 1619,
+   "t": "2026-08-26 10:47:37",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "ef9a",
+   "actual_prev_tail4": "f163"
+  },
+  {
+   "line": 1620,
+   "t": "2026-08-26 10:47:49",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2dcd",
+   "actual_prev_tail4": "ef9a"
+  },
+  {
+   "line": 1621,
+   "t": "2026-08-26 10:48:29",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2f61",
+   "actual_prev_tail4": "2dcd"
+  },
+  {
+   "line": 1622,
+   "t": "2026-08-26 10:48:38",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1c3e",
+   "actual_prev_tail4": "2f61"
+  },
+  {
+   "line": 1623,
+   "t": "2026-08-26 10:49:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "cf40",
+   "actual_prev_tail4": "1c3e"
+  },
+  {
+   "line": 1625,
+   "t": "2026-08-26 10:49:28",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9204",
+   "actual_prev_tail4": "cf40"
+  },
+  {
+   "line": 1626,
+   "t": "2026-08-26 10:50:11",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c3e6",
+   "actual_prev_tail4": "9204"
+  },
+  {
+   "line": 1627,
+   "t": "2026-08-26 10:50:19",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f043",
+   "actual_prev_tail4": "c3e6"
+  },
+  {
+   "line": 1629,
+   "t": "2026-08-26 10:51:03",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c438",
+   "actual_prev_tail4": "f043"
+  },
+  {
+   "line": 1630,
+   "t": "2026-08-26 10:51:10",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "24d3",
+   "actual_prev_tail4": "c438"
+  },
+  {
+   "line": 1631,
+   "t": "2026-08-26 10:51:54",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9abe",
+   "actual_prev_tail4": "24d3"
+  },
+  {
+   "line": 1632,
+   "t": "2026-08-26 10:52:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "99a0",
+   "actual_prev_tail4": "9abe"
+  },
+  {
+   "line": 1633,
+   "t": "2026-08-26 10:52:46",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b604",
+   "actual_prev_tail4": "99a0"
+  },
+  {
+   "line": 1634,
+   "t": "2026-08-26 10:52:52",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "34e1",
+   "actual_prev_tail4": "b604"
+  },
+  {
+   "line": 1635,
+   "t": "2026-08-26 10:53:33",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c0a2",
+   "actual_prev_tail4": "34e1"
+  },
+  {
+   "line": 1637,
+   "t": "2026-08-26 10:53:45",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "d185",
+   "actual_prev_tail4": "c0a2"
+  },
+  {
+   "line": 1638,
+   "t": "2026-08-26 10:54:36",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "944b",
+   "actual_prev_tail4": "d185"
+  },
+  {
+   "line": 1639,
+   "t": "2026-08-26 10:54:43",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8223",
+   "actual_prev_tail4": "944b"
+  },
+  {
+   "line": 1640,
+   "t": "2026-08-26 10:55:29",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "dfa9",
+   "actual_prev_tail4": "8223"
+  },
+  {
+   "line": 1641,
+   "t": "2026-08-26 10:55:36",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f597",
+   "actual_prev_tail4": "dfa9"
+  },
+  {
+   "line": 1642,
+   "t": "2026-08-26 10:55:56",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "021e",
+   "actual_prev_tail4": "f597"
+  },
+  {
+   "line": 1643,
+   "t": "2026-08-26 10:56:12",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "ee77",
+   "actual_prev_tail4": "021e"
+  },
+  {
+   "line": 1644,
+   "t": "2026-08-26 10:56:28",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f342",
+   "actual_prev_tail4": "ee77"
+  },
+  {
+   "line": 1645,
+   "t": "2026-08-26 10:56:47",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "070b",
+   "actual_prev_tail4": "f342"
+  },
+  {
+   "line": 1648,
+   "t": "2026-08-26 10:57:28",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9fd3",
+   "actual_prev_tail4": "070b"
+  },
+  {
+   "line": 1650,
+   "t": "2026-08-26 10:57:43",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1b53",
+   "actual_prev_tail4": "9fd3"
+  },
+  {
+   "line": 1651,
+   "t": "2026-08-26 10:58:41",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1647",
+   "actual_prev_tail4": "1b53"
+  },
+  {
+   "line": 1652,
+   "t": "2026-08-26 10:58:46",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "42db",
+   "actual_prev_tail4": "1647"
+  },
+  {
+   "line": 1654,
+   "t": "2026-08-26 10:59:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "471a",
+   "actual_prev_tail4": "42db"
+  },
+  {
+   "line": 1656,
+   "t": "2026-08-26 10:59:47",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "62e1",
+   "actual_prev_tail4": "471a"
+  },
+  {
+   "line": 1660,
+   "t": "2026-08-26 11:00:38",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "59e4",
+   "actual_prev_tail4": "62e1"
+  },
+  {
+   "line": 1663,
+   "t": "2026-08-26 11:00:50",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0b66",
+   "actual_prev_tail4": "59e4"
+  },
+  {
+   "line": 1667,
+   "t": "2026-08-26 11:01:57",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e5b5",
+   "actual_prev_tail4": "0b66"
+  },
+  {
+   "line": 1668,
+   "t": "2026-08-26 11:03:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6e9c",
+   "actual_prev_tail4": "e5b5"
+  },
+  {
+   "line": 1669,
+   "t": "2026-08-26 11:03:09",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8133",
+   "actual_prev_tail4": "6e9c"
+  },
+  {
+   "line": 1670,
+   "t": "2026-08-26 11:04:01",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c1e2",
+   "actual_prev_tail4": "8133"
+  },
+  {
+   "line": 1671,
+   "t": "2026-08-26 11:04:18",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6731",
+   "actual_prev_tail4": "c1e2"
+  },
+  {
+   "line": 1672,
+   "t": "2026-08-26 11:05:07",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "43e5",
+   "actual_prev_tail4": "6731"
+  },
+  {
+   "line": 1673,
+   "t": "2026-08-26 11:05:19",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "d53a",
+   "actual_prev_tail4": "43e5"
+  },
+  {
+   "line": 1674,
+   "t": "2026-08-26 11:06:06",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9cc8",
+   "actual_prev_tail4": "d53a"
+  },
+  {
+   "line": 1675,
+   "t": "2026-08-26 11:06:27",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f217",
+   "actual_prev_tail4": "9cc8"
+  },
+  {
+   "line": 1677,
+   "t": "2026-08-26 11:07:19",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "aa33",
+   "actual_prev_tail4": "f217"
+  },
+  {
+   "line": 1678,
+   "t": "2026-08-26 11:07:25",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "cf0a",
+   "actual_prev_tail4": "aa33"
+  },
+  {
+   "line": 1679,
+   "t": "2026-08-26 11:08:17",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7dec",
+   "actual_prev_tail4": "cf0a"
+  },
+  {
+   "line": 1680,
+   "t": "2026-08-26 11:08:31",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3e57",
+   "actual_prev_tail4": "7dec"
+  },
+  {
+   "line": 1682,
+   "t": "2026-08-26 11:09:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9aa6",
+   "actual_prev_tail4": "3e57"
+  },
+  {
+   "line": 1684,
+   "t": "2026-08-26 11:09:40",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "94d9",
+   "actual_prev_tail4": "9aa6"
+  },
+  {
+   "line": 1685,
+   "t": "2026-08-26 11:10:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9c7b",
+   "actual_prev_tail4": "94d9"
+  },
+  {
+   "line": 1687,
+   "t": "2026-08-26 11:10:55",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9039",
+   "actual_prev_tail4": "9c7b"
+  },
+  {
+   "line": 1689,
+   "t": "2026-08-26 11:11:12",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "05dd",
+   "actual_prev_tail4": "9039"
+  },
+  {
+   "line": 1691,
+   "t": "2026-08-26 11:11:57",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6547",
+   "actual_prev_tail4": "05dd"
+  },
+  {
+   "line": 1692,
+   "t": "2026-08-26 11:12:24",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "abe5",
+   "actual_prev_tail4": "6547"
+  },
+  {
+   "line": 1694,
+   "t": "2026-08-26 11:12:29",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4322",
+   "actual_prev_tail4": "abe5"
+  },
+  {
+   "line": 1696,
+   "t": "2026-08-26 11:13:32",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "907d",
+   "actual_prev_tail4": "4322"
+  },
+  {
+   "line": 1697,
+   "t": "2026-08-26 11:14:21",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "fa9c",
+   "actual_prev_tail4": "907d"
+  },
+  {
+   "line": 1698,
+   "t": "2026-08-26 11:14:35",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9810",
+   "actual_prev_tail4": "fa9c"
+  },
+  {
+   "line": 1701,
+   "t": "2026-08-26 11:15:18",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e8b8",
+   "actual_prev_tail4": "9810"
+  },
+  {
+   "line": 1702,
+   "t": "2026-08-26 11:15:30",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9400",
+   "actual_prev_tail4": "e8b8"
+  },
+  {
+   "line": 1704,
+   "t": "2026-08-26 11:16:33",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0ce8",
+   "actual_prev_tail4": "9400"
+  },
+  {
+   "line": 1705,
+   "t": "2026-08-26 11:17:40",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3ce4",
+   "actual_prev_tail4": "0ce8"
+  },
+  {
+   "line": 1706,
+   "t": "2026-08-26 11:17:40",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "bd9e",
+   "actual_prev_tail4": "3ce4"
+  },
+  {
+   "line": 1708,
+   "t": "2026-08-26 11:18:35",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9948",
+   "actual_prev_tail4": "bd9e"
+  },
+  {
+   "line": 1709,
+   "t": "2026-08-26 11:18:52",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b1af",
+   "actual_prev_tail4": "9948"
+  },
+  {
+   "line": 1710,
+   "t": "2026-08-26 11:19:29",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b065",
+   "actual_prev_tail4": "b1af"
+  },
+  {
+   "line": 1711,
+   "t": "2026-08-26 11:20:08",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "68db",
+   "actual_prev_tail4": "b065"
+  },
+  {
+   "line": 1712,
+   "t": "2026-08-26 11:20:36",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "75aa",
+   "actual_prev_tail4": "68db"
+  },
+  {
+   "line": 1713,
+   "t": "2026-08-26 11:21:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e621",
+   "actual_prev_tail4": "75aa"
+  },
+  {
+   "line": 1715,
+   "t": "2026-08-26 11:21:34",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9873",
+   "actual_prev_tail4": "e621"
+  },
+  {
+   "line": 1716,
+   "t": "2026-08-26 11:22:12",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1989",
+   "actual_prev_tail4": "9873"
+  },
+  {
+   "line": 1717,
+   "t": "2026-08-26 11:22:32",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9a76",
+   "actual_prev_tail4": "1989"
+  },
+  {
+   "line": 1718,
+   "t": "2026-08-26 11:23:10",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3434",
+   "actual_prev_tail4": "9a76"
+  },
+  {
+   "line": 1720,
+   "t": "2026-08-26 11:23:37",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "31cc",
+   "actual_prev_tail4": "3434"
+  },
+  {
+   "line": 1721,
+   "t": "2026-08-26 11:24:06",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a53b",
+   "actual_prev_tail4": "31cc"
+  },
+  {
+   "line": 1722,
+   "t": "2026-08-26 11:24:34",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b2ac",
+   "actual_prev_tail4": "a53b"
+  },
+  {
+   "line": 1723,
+   "t": "2026-08-26 11:25:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9014",
+   "actual_prev_tail4": "b2ac"
+  },
+  {
+   "line": 1725,
+   "t": "2026-08-26 11:25:35",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "d451",
+   "actual_prev_tail4": "9014"
+  },
+  {
+   "line": 1726,
+   "t": "2026-08-26 11:25:58",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4e93",
+   "actual_prev_tail4": "d451"
+  },
+  {
+   "line": 1727,
+   "t": "2026-08-26 11:26:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6951",
+   "actual_prev_tail4": "4e93"
+  },
+  {
+   "line": 1728,
+   "t": "2026-08-26 11:26:02",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a579",
+   "actual_prev_tail4": "6951"
+  },
+  {
+   "line": 1729,
+   "t": "2026-08-26 11:26:14",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7ab3",
+   "actual_prev_tail4": "a579"
+  },
+  {
+   "line": 1731,
+   "t": "2026-08-26 11:27:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "bd41",
+   "actual_prev_tail4": "7ab3"
+  },
+  {
+   "line": 1732,
+   "t": "2026-08-26 11:27:20",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6bc2",
+   "actual_prev_tail4": "bd41"
+  },
+  {
+   "line": 1734,
+   "t": "2026-08-26 11:27:32",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e450",
+   "actual_prev_tail4": "6bc2"
+  },
+  {
+   "line": 1735,
+   "t": "2026-08-26 13:11:33",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3f10",
+   "actual_prev_tail4": "e450"
+  },
+  {
+   "line": 1736,
+   "t": "2026-08-26 13:34:54",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "ba13",
+   "actual_prev_tail4": "3f10"
+  },
+  {
+   "line": 1737,
+   "t": "2026-08-26 14:08:13",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e725",
+   "actual_prev_tail4": "ba13"
+  },
+  {
+   "line": 1738,
+   "t": "2026-08-26 14:25:20",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8d5b",
+   "actual_prev_tail4": "e725"
+  },
+  {
+   "line": 1741,
+   "t": "2026-08-26 14:25:21",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2251",
+   "actual_prev_tail4": "8d5b"
+  },
+  {
+   "line": 1744,
+   "t": "2026-08-26 14:25:26",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "369b",
+   "actual_prev_tail4": "2251"
+  },
+  {
+   "line": 1747,
+   "t": "2026-08-26 14:25:43",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a679",
+   "actual_prev_tail4": "369b"
+  },
+  {
+   "line": 1753,
+   "t": "2026-08-26 14:26:41",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "afe8",
+   "actual_prev_tail4": "a679"
+  },
+  {
+   "line": 1756,
+   "t": "2026-08-26 14:27:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b002",
+   "actual_prev_tail4": "afe8"
+  },
+  {
+   "line": 1758,
+   "t": "2026-08-26 14:27:24",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "002f",
+   "actual_prev_tail4": "b002"
+  },
+  {
+   "line": 1759,
+   "t": "2026-08-26 14:27:54",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a311",
+   "actual_prev_tail4": "002f"
+  },
+  {
+   "line": 1760,
+   "t": "2026-08-26 14:28:16",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9a7d",
+   "actual_prev_tail4": "a311"
+  },
+  {
+   "line": 1761,
+   "t": "2026-08-26 14:28:46",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "10fa",
+   "actual_prev_tail4": "9a7d"
+  },
+  {
+   "line": 1762,
+   "t": "2026-08-26 14:29:09",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a117",
+   "actual_prev_tail4": "10fa"
+  },
+  {
+   "line": 1763,
+   "t": "2026-08-26 14:29:36",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7fee",
+   "actual_prev_tail4": "a117"
+  },
+  {
+   "line": 1764,
+   "t": "2026-08-26 14:29:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a125",
+   "actual_prev_tail4": "7fee"
+  },
+  {
+   "line": 1765,
+   "t": "2026-08-26 14:30:27",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "5341",
+   "actual_prev_tail4": "a125"
+  },
+  {
+   "line": 1766,
+   "t": "2026-08-26 14:30:52",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b49e",
+   "actual_prev_tail4": "5341"
+  },
+  {
+   "line": 1767,
+   "t": "2026-08-26 14:31:18",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "43c8",
+   "actual_prev_tail4": "b49e"
+  },
+  {
+   "line": 1768,
+   "t": "2026-08-26 14:31:44",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2bf5",
+   "actual_prev_tail4": "43c8"
+  },
+  {
+   "line": 1770,
+   "t": "2026-08-26 14:32:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f7e0",
+   "actual_prev_tail4": "2bf5"
+  },
+  {
+   "line": 1772,
+   "t": "2026-08-26 14:32:36",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f36f",
+   "actual_prev_tail4": "f7e0"
+  },
+  {
+   "line": 1773,
+   "t": "2026-08-26 14:32:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "92e6",
+   "actual_prev_tail4": "f36f"
+  },
+  {
+   "line": 1774,
+   "t": "2026-08-26 14:33:26",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2810",
+   "actual_prev_tail4": "92e6"
+  },
+  {
+   "line": 1775,
+   "t": "2026-08-26 14:33:51",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6b25",
+   "actual_prev_tail4": "2810"
+  },
+  {
+   "line": 1776,
+   "t": "2026-08-26 14:34:17",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b9c0",
+   "actual_prev_tail4": "6b25"
+  },
+  {
+   "line": 1777,
+   "t": "2026-08-26 14:34:42",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "cd24",
+   "actual_prev_tail4": "b9c0"
+  },
+  {
+   "line": 1778,
+   "t": "2026-08-26 14:35:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "87b8",
+   "actual_prev_tail4": "cd24"
+  },
+  {
+   "line": 1780,
+   "t": "2026-08-26 14:35:34",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7a3b",
+   "actual_prev_tail4": "87b8"
+  },
+  {
+   "line": 1781,
+   "t": "2026-08-26 14:36:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "714c",
+   "actual_prev_tail4": "7a3b"
+  },
+  {
+   "line": 1782,
+   "t": "2026-08-26 14:36:34",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3eb3",
+   "actual_prev_tail4": "714c"
+  },
+  {
+   "line": 1783,
+   "t": "2026-08-26 14:37:01",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f0a8",
+   "actual_prev_tail4": "3eb3"
+  },
+  {
+   "line": 1784,
+   "t": "2026-08-26 14:37:17",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8ee4",
+   "actual_prev_tail4": "f0a8"
+  },
+  {
+   "line": 1785,
+   "t": "2026-08-26 14:37:44",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2de3",
+   "actual_prev_tail4": "8ee4"
+  },
+  {
+   "line": 1786,
+   "t": "2026-08-26 14:38:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6fe5",
+   "actual_prev_tail4": "2de3"
+  },
+  {
+   "line": 1787,
+   "t": "2026-08-26 14:38:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6d14",
+   "actual_prev_tail4": "6fe5"
+  },
+  {
+   "line": 1788,
+   "t": "2026-08-26 14:38:09",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9d6f",
+   "actual_prev_tail4": "6d14"
+  },
+  {
+   "line": 1789,
+   "t": "2026-08-26 14:38:35",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "29d4",
+   "actual_prev_tail4": "9d6f"
+  },
+  {
+   "line": 1790,
+   "t": "2026-08-26 14:38:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8a15",
+   "actual_prev_tail4": "29d4"
+  },
+  {
+   "line": 1791,
+   "t": "2026-08-26 14:39:26",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e0ae",
+   "actual_prev_tail4": "8a15"
+  },
+  {
+   "line": 1792,
+   "t": "2026-08-26 14:39:52",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "512c",
+   "actual_prev_tail4": "e0ae"
+  },
+  {
+   "line": 1793,
+   "t": "2026-08-26 14:40:19",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2699",
+   "actual_prev_tail4": "512c"
+  },
+  {
+   "line": 1797,
+   "t": "2026-08-26 14:40:23",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "ff22",
+   "actual_prev_tail4": "2699"
+  },
+  {
+   "line": 1802,
+   "t": "2026-08-26 14:41:10",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b14f",
+   "actual_prev_tail4": "ff22"
+  },
+  {
+   "line": 1803,
+   "t": "2026-08-26 14:41:25",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "87a5",
+   "actual_prev_tail4": "b14f"
+  },
+  {
+   "line": 1806,
+   "t": "2026-08-26 14:41:42",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8f65",
+   "actual_prev_tail4": "87a5"
+  },
+  {
+   "line": 1809,
+   "t": "2026-08-26 14:42:26",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "fd1f",
+   "actual_prev_tail4": "8f65"
+  },
+  {
+   "line": 1810,
+   "t": "2026-08-26 14:42:58",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "39f7",
+   "actual_prev_tail4": "fd1f"
+  },
+  {
+   "line": 1811,
+   "t": "2026-08-26 14:43:17",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "5dec",
+   "actual_prev_tail4": "39f7"
+  },
+  {
+   "line": 1812,
+   "t": "2026-08-26 14:43:48",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0056",
+   "actual_prev_tail4": "5dec"
+  },
+  {
+   "line": 1813,
+   "t": "2026-08-26 14:44:08",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f0f5",
+   "actual_prev_tail4": "0056"
+  },
+  {
+   "line": 1814,
+   "t": "2026-08-26 14:44:40",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9b16",
+   "actual_prev_tail4": "f0f5"
+  },
+  {
+   "line": 1815,
+   "t": "2026-08-26 14:45:01",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "cb52",
+   "actual_prev_tail4": "9b16"
+  },
+  {
+   "line": 1816,
+   "t": "2026-08-26 14:45:33",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9fc9",
+   "actual_prev_tail4": "cb52"
+  },
+  {
+   "line": 1817,
+   "t": "2026-08-26 14:45:52",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "ff01",
+   "actual_prev_tail4": "9fc9"
+  },
+  {
+   "line": 1818,
+   "t": "2026-08-26 14:46:27",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "fc15",
+   "actual_prev_tail4": "ff01"
+  },
+  {
+   "line": 1819,
+   "t": "2026-08-26 14:46:50",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "4f06",
+   "actual_prev_tail4": "fc15"
+  },
+  {
+   "line": 1820,
+   "t": "2026-08-26 14:47:28",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f392",
+   "actual_prev_tail4": "4f06"
+  },
+  {
+   "line": 1821,
+   "t": "2026-08-26 14:47:32",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "d2c5",
+   "actual_prev_tail4": "f392"
+  },
+  {
+   "line": 1822,
+   "t": "2026-08-26 14:48:07",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "15eb",
+   "actual_prev_tail4": "d2c5"
+  },
+  {
+   "line": 1823,
+   "t": "2026-08-26 14:48:24",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "d157",
+   "actual_prev_tail4": "15eb"
+  },
+  {
+   "line": 1824,
+   "t": "2026-08-26 14:48:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7a99",
+   "actual_prev_tail4": "d157"
+  },
+  {
+   "line": 1825,
+   "t": "2026-08-26 14:49:15",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "53ab",
+   "actual_prev_tail4": "7a99"
+  },
+  {
+   "line": 1826,
+   "t": "2026-08-26 14:49:51",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f64d",
+   "actual_prev_tail4": "53ab"
+  },
+  {
+   "line": 1827,
+   "t": "2026-08-26 14:50:07",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6000",
+   "actual_prev_tail4": "f64d"
+  },
+  {
+   "line": 1828,
+   "t": "2026-08-26 14:50:43",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "f372",
+   "actual_prev_tail4": "6000"
+  },
+  {
+   "line": 1829,
+   "t": "2026-08-26 14:50:58",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "54ca",
+   "actual_prev_tail4": "f372"
+  },
+  {
+   "line": 1830,
+   "t": "2026-08-26 14:51:35",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "feec",
+   "actual_prev_tail4": "54ca"
+  },
+  {
+   "line": 1831,
+   "t": "2026-08-26 14:51:50",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8a53",
+   "actual_prev_tail4": "feec"
+  },
+  {
+   "line": 1832,
+   "t": "2026-08-26 14:52:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b0a1",
+   "actual_prev_tail4": "8a53"
+  },
+  {
+   "line": 1834,
+   "t": "2026-08-26 14:52:41",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "25fc",
+   "actual_prev_tail4": "b0a1"
+  },
+  {
+   "line": 1835,
+   "t": "2026-08-26 14:53:16",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "3de3",
+   "actual_prev_tail4": "25fc"
+  },
+  {
+   "line": 1836,
+   "t": "2026-08-26 14:53:32",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "29a9",
+   "actual_prev_tail4": "3de3"
+  },
+  {
+   "line": 1838,
+   "t": "2026-08-26 14:54:07",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "94dc",
+   "actual_prev_tail4": "29a9"
+  },
+  {
+   "line": 1839,
+   "t": "2026-08-26 14:54:23",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "44cb",
+   "actual_prev_tail4": "94dc"
+  },
+  {
+   "line": 1840,
+   "t": "2026-08-26 14:54:58",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2b03",
+   "actual_prev_tail4": "44cb"
+  },
+  {
+   "line": 1841,
+   "t": "2026-08-26 14:55:14",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9f76",
+   "actual_prev_tail4": "2b03"
+  },
+  {
+   "line": 1842,
+   "t": "2026-08-26 14:55:22",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b59d",
+   "actual_prev_tail4": "9f76"
+  },
+  {
+   "line": 1845,
+   "t": "2026-08-26 14:55:24",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c11b",
+   "actual_prev_tail4": "b59d"
+  },
+  {
+   "line": 1848,
+   "t": "2026-08-26 14:55:50",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9318",
+   "actual_prev_tail4": "c11b"
+  },
+  {
+   "line": 1849,
+   "t": "2026-08-26 14:56:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "2682",
+   "actual_prev_tail4": "9318"
+  },
+  {
+   "line": 1852,
+   "t": "2026-08-26 14:56:41",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "e17e",
+   "actual_prev_tail4": "2682"
+  },
+  {
+   "line": 1855,
+   "t": "2026-08-26 14:57:01",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0d93",
+   "actual_prev_tail4": "e17e"
+  },
+  {
+   "line": 1856,
+   "t": "2026-08-26 14:57:46",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "0332",
+   "actual_prev_tail4": "0d93"
+  },
+  {
+   "line": 1857,
+   "t": "2026-08-26 14:57:46",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c087",
+   "actual_prev_tail4": "0332"
+  },
+  {
+   "line": 1858,
+   "t": "2026-08-26 14:58:00",
+   "kind": "alert",
+   "event": "heartbeat",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7707",
+   "actual_prev_tail4": "c087"
+  },
+  {
+   "line": 1860,
+   "t": "2026-08-26 14:58:39",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "8745",
+   "actual_prev_tail4": "7707"
+  },
+  {
+   "line": 1861,
+   "t": "2026-08-26 14:59:16",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "fd05",
+   "actual_prev_tail4": "8745"
+  },
+  {
+   "line": 1862,
+   "t": "2026-08-26 14:59:30",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "7e45",
+   "actual_prev_tail4": "fd05"
+  },
+  {
+   "line": 1863,
+   "t": "2026-08-26 15:00:08",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "1107",
+   "actual_prev_tail4": "7e45"
+  },
+  {
+   "line": 1864,
+   "t": "2026-08-26 15:00:21",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "51a5",
+   "actual_prev_tail4": "1107"
+  },
+  {
+   "line": 1865,
+   "t": "2026-08-26 15:00:59",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "c9b0",
+   "actual_prev_tail4": "51a5"
+  },
+  {
+   "line": 1867,
+   "t": "2026-08-26 15:01:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "a0db",
+   "actual_prev_tail4": "c9b0"
+  },
+  {
+   "line": 1868,
+   "t": "2026-08-26 15:10:00",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "fbd3",
+   "actual_prev_tail4": "a0db"
+  },
+  {
+   "line": 1869,
+   "t": "2026-08-26 15:10:05",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "da3c",
+   "actual_prev_tail4": "fbd3"
+  },
+  {
+   "line": 1870,
+   "t": "2026-08-26 15:11:51",
+   "kind": "daily",
+   "event": "data_update",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "9a03",
+   "actual_prev_tail4": "da3c"
+  },
+  {
+   "line": 1872,
+   "t": "2026-08-26 15:14:46",
+   "kind": "daily",
+   "event": "data_update",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "b4c9",
+   "actual_prev_tail4": "9a03"
+  },
+  {
+   "line": 2124,
+   "t": "2026-08-27 10:58:18",
+   "kind": "alert",
+   "event": "trading_event",
+   "nature": "prev_mismatch+hash_mismatch",
+   "expected_prev_tail4": "6420",
+   "actual_prev_tail4": "005e"
+  }
+ ],
+ "by_day": {
+  "2026-08-16": 3,
+  "2026-08-17": 3,
+  "2026-08-18": 2,
+  "2026-08-19": 1,
+  "2026-08-20": 67,
+  "2026-08-25": 10,
+  "2026-08-26": 253,
+  "2026-08-27": 1
+ },
+ "resumed_after_break": 340
+}

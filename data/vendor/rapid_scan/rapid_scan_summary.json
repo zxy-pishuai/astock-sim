@@ -1,0 +1,10 @@
+{
+  "rounds": 3,
+  "universe": 1878,
+  "scan_ms": {
+    "p50": 64,
+    "mean": 279
+  },
+  "events_total": 0,
+  "universe_note": "bt_pool top500；全市场版把 codes 换成全 A 列表即可（tdx 55ms/百只，2607 只理论 ~1.8s/环）"
+}

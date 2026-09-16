@@ -1,0 +1,64 @@
+{
+ "runs": [
+  {
+   "arm": "base",
+   "strategy": "score",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-26"
+   ],
+   "total_return": 0.2635,
+   "annual_return": 0.2576,
+   "max_drawdown": -0.1906,
+   "sharpe": 0.896,
+   "trade_count": 744,
+   "elapsed": 170.6
+  },
+  {
+   "arm": "base",
+   "strategy": "score",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.296,
+   "annual_return": -0.1613,
+   "max_drawdown": -0.3631,
+   "sharpe": -0.498,
+   "trade_count": 1339,
+   "elapsed": 341.5
+  },
+  {
+   "arm": "base",
+   "strategy": "score",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.2956,
+   "annual_return": -0.1619,
+   "max_drawdown": -0.4542,
+   "sharpe": -0.637,
+   "trade_count": 1239,
+   "elapsed": 374.0
+  },
+  {
+   "arm": "base",
+   "strategy": "score",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.5317,
+   "annual_return": -0.3173,
+   "max_drawdown": -0.5679,
+   "sharpe": -1.411,
+   "trade_count": 1361,
+   "elapsed": 385.4
+  }
+ ]
+}

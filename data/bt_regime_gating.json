@@ -1,0 +1,787 @@
+{
+  "generated_at": "2026-08-27 11:31:12",
+  "phase": "T4-regime-gating",
+  "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-26\\market.db",
+  "universe": "bt_pool top500 ∩ 非 DATA_EXCLUDE_CODES（等权线同口径）",
+  "label_rule_preregistered": {
+    "bear": "r20<=-0.05 或 (r20<=-0.02 且 sigma20>=0.022)",
+    "bull": "r20>=+0.04 且 sigma20<=0.028",
+    "else": "CHOP",
+    "note": "常数 a priori 固定；量能比 q=V5/V60 记录不参与判态"
+  },
+  "state_shares": {
+    "BULL": 0.2666,
+    "CHOP": 0.4776,
+    "BEAR": 0.2557
+  },
+  "state_shares_by_year": {
+    "2010": {
+      "BULL": 15,
+      "CHOP": 92,
+      "BEAR": 27
+    },
+    "2011": {
+      "BULL": 17,
+      "CHOP": 78,
+      "BEAR": 149
+    },
+    "2012": {
+      "BULL": 39,
+      "CHOP": 112,
+      "BEAR": 92
+    },
+    "2013": {
+      "BULL": 81,
+      "CHOP": 94,
+      "BEAR": 63
+    },
+    "2014": {
+      "BULL": 84,
+      "CHOP": 111,
+      "BEAR": 50
+    },
+    "2015": {
+      "BULL": 1,
+      "CHOP": 165,
+      "BEAR": 78
+    },
+    "2016": {
+      "BULL": 17,
+      "CHOP": 131,
+      "BEAR": 96
+    },
+    "2017": {
+      "BULL": 100,
+      "CHOP": 74,
+      "BEAR": 70
+    },
+    "2018": {
+      "BULL": 19,
+      "CHOP": 120,
+      "BEAR": 104
+    },
+    "2019": {
+      "BULL": 104,
+      "CHOP": 111,
+      "BEAR": 29
+    },
+    "2020": {
+      "BULL": 102,
+      "CHOP": 113,
+      "BEAR": 28
+    },
+    "2021": {
+      "BULL": 92,
+      "CHOP": 139,
+      "BEAR": 12
+    },
+    "2022": {
+      "BULL": 63,
+      "CHOP": 101,
+      "BEAR": 78
+    },
+    "2023": {
+      "BULL": 50,
+      "CHOP": 161,
+      "BEAR": 31
+    },
+    "2024": {
+      "BULL": 37,
+      "CHOP": 157,
+      "BEAR": 48
+    },
+    "2025": {
+      "BULL": 134,
+      "CHOP": 83,
+      "BEAR": 26
+    },
+    "2026": {
+      "BULL": 94,
+      "CHOP": 37,
+      "BEAR": 25
+    }
+  },
+  "regime_sample": {
+    "2026-08-19": {
+      "r20": 0.0892,
+      "sigma20": 0.0314,
+      "q_vol": 0.93
+    },
+    "2026-08-20": {
+      "r20": 0.1022,
+      "sigma20": 0.0314,
+      "q_vol": 0.923
+    },
+    "2026-08-21": {
+      "r20": 0.1447,
+      "sigma20": 0.0305,
+      "q_vol": 0.929
+    },
+    "2026-08-24": {
+      "r20": 0.085,
+      "sigma20": 0.0303,
+      "q_vol": 0.901
+    },
+    "2026-08-25": {
+      "r20": 0.1404,
+      "sigma20": 0.028,
+      "q_vol": 0.745
+    }
+  },
+  "state_ic": {
+    "BULL": {
+      "days_with_ic": 625,
+      "months": 64,
+      "monthly_ic_mean": -0.0357,
+      "monthly_ic_std": 0.0666,
+      "icir": -0.536,
+      "ls_top_q_mean_bp": 19.5,
+      "ls_bottom_q_mean_bp": 40.6,
+      "ls_spread_bp": -21.1,
+      "board_trigger_n": 4662,
+      "board_trigger_fwd5_bp": 66.9,
+      "board_base_fwd5_bp": 54.8,
+      "board_excess_bp": 12.1,
+      "trade_freq": {
+        "score_days": 676,
+        "score_cands_total": 84203,
+        "score_cands_per_day": 124.56,
+        "board_days": 605,
+        "board_pass_per_day": 2.28
+      }
+    },
+    "CHOP": {
+      "days_with_ic": 891,
+      "months": 80,
+      "monthly_ic_mean": -0.0249,
+      "monthly_ic_std": 0.058,
+      "icir": -0.43,
+      "ls_top_q_mean_bp": 8.3,
+      "ls_bottom_q_mean_bp": 36.8,
+      "ls_spread_bp": -28.5,
+      "board_trigger_n": 4330,
+      "board_trigger_fwd5_bp": 61.8,
+      "board_base_fwd5_bp": 96.6,
+      "board_excess_bp": -34.8,
+      "trade_freq": {
+        "score_days": 911,
+        "score_cands_total": 89572,
+        "score_cands_per_day": 98.32,
+        "board_days": 797,
+        "board_pass_per_day": 1.87
+      }
+    },
+    "BEAR": {
+      "days_with_ic": 275,
+      "months": 40,
+      "monthly_ic_mean": -0.0356,
+      "monthly_ic_std": 0.0837,
+      "icir": -0.425,
+      "ls_top_q_mean_bp": 58.7,
+      "ls_bottom_q_mean_bp": 114.9,
+      "ls_spread_bp": -56.3,
+      "board_trigger_n": 1713,
+      "board_trigger_fwd5_bp": 294.4,
+      "board_base_fwd5_bp": 286.9,
+      "board_excess_bp": 7.5,
+      "trade_freq": {
+        "score_days": 283,
+        "score_cands_total": 15716,
+        "score_cands_per_day": 55.53,
+        "board_days": 220,
+        "board_pass_per_day": 1.73
+      }
+    }
+  },
+  "ic_note": "score 代理 = score_stock 18 个K线成分带符号权重和（P28A 管线复用）；board = 触发带样本 fwd5 相对当日全体的超额",
+  "gated_backtests": [
+    {
+      "variant": "V1_no_bear",
+      "strategy": "board",
+      "widx": 0,
+      "window_tag": "2019-20",
+      "allowed": [
+        "BULL",
+        "CHOP"
+      ],
+      "gated": {
+        "total_return": -0.0916,
+        "max_drawdown": -0.1706,
+        "sharpe": -0.382,
+        "trade_count": 448,
+        "buy_count": 180
+      },
+      "ungated_baseline": {
+        "total_return": -0.1127,
+        "max_drawdown": -0.1597,
+        "sharpe": -0.446,
+        "trade_count": 503,
+        "win_rate": 0.6433,
+        "annual_return": -0.0582
+      },
+      "delta_return_pp": 2.11,
+      "trade_reduction": 0.109
+    },
+    {
+      "variant": "V1_no_bear",
+      "strategy": "board",
+      "widx": 1,
+      "window_tag": "2021-22",
+      "allowed": [
+        "BULL",
+        "CHOP"
+      ],
+      "gated": {
+        "total_return": 0.1657,
+        "max_drawdown": -0.1208,
+        "sharpe": 0.703,
+        "trade_count": 531,
+        "buy_count": 212
+      },
+      "ungated_baseline": {
+        "total_return": 0.1185,
+        "max_drawdown": -0.1494,
+        "sharpe": 0.491,
+        "trade_count": 616,
+        "win_rate": 0.6423,
+        "annual_return": 0.058
+      },
+      "delta_return_pp": 4.72,
+      "trade_reduction": 0.138
+    },
+    {
+      "variant": "V1_no_bear",
+      "strategy": "board",
+      "widx": 2,
+      "window_tag": "2023-24",
+      "allowed": [
+        "BULL",
+        "CHOP"
+      ],
+      "gated": {
+        "total_return": 0.0289,
+        "max_drawdown": -0.2193,
+        "sharpe": 0.178,
+        "trade_count": 425,
+        "buy_count": 173
+      },
+      "ungated_baseline": {
+        "total_return": 0.0546,
+        "max_drawdown": -0.2017,
+        "sharpe": 0.269,
+        "trade_count": 487,
+        "win_rate": 0.6289,
+        "annual_return": 0.0271
+      },
+      "delta_return_pp": -2.57,
+      "trade_reduction": 0.127
+    },
+    {
+      "variant": "V1_no_bear",
+      "strategy": "board",
+      "widx": 3,
+      "window_tag": "近1年",
+      "allowed": [
+        "BULL",
+        "CHOP"
+      ],
+      "gated": {
+        "total_return": 0.4538,
+        "max_drawdown": -0.1172,
+        "sharpe": 2.227,
+        "trade_count": 373,
+        "buy_count": 141
+      },
+      "ungated_baseline": {
+        "total_return": 0.631,
+        "max_drawdown": -0.1172,
+        "sharpe": 2.633,
+        "trade_count": 416,
+        "win_rate": 0.75,
+        "annual_return": 0.6245
+      },
+      "delta_return_pp": -17.72,
+      "trade_reduction": 0.103
+    },
+    {
+      "variant": "V1_no_bear",
+      "strategy": "score",
+      "widx": 0,
+      "window_tag": "2019-20",
+      "allowed": [
+        "BULL",
+        "CHOP"
+      ],
+      "gated": {
+        "total_return": -0.1533,
+        "max_drawdown": -0.4009,
+        "sharpe": -0.188,
+        "trade_count": 1147,
+        "buy_count": 468
+      },
+      "ungated_baseline": {
+        "total_return": -0.0249,
+        "max_drawdown": -0.3779,
+        "sharpe": 0.103,
+        "trade_count": 1362,
+        "win_rate": 0.6458,
+        "annual_return": -0.0126
+      },
+      "delta_return_pp": -12.84,
+      "trade_reduction": 0.158
+    },
+    {
+      "variant": "V1_no_bear",
+      "strategy": "score",
+      "widx": 1,
+      "window_tag": "2021-22",
+      "allowed": [
+        "BULL",
+        "CHOP"
+      ],
+      "gated": {
+        "total_return": -0.3822,
+        "max_drawdown": -0.4749,
+        "sharpe": -0.962,
+        "trade_count": 1181,
+        "buy_count": 488
+      },
+      "ungated_baseline": {
+        "total_return": -0.536,
+        "max_drawdown": -0.5697,
+        "sharpe": -1.411,
+        "trade_count": 1398,
+        "win_rate": 0.5735,
+        "annual_return": -0.3204
+      },
+      "delta_return_pp": 15.38,
+      "trade_reduction": 0.155
+    },
+    {
+      "variant": "V1_no_bear",
+      "strategy": "score",
+      "widx": 2,
+      "window_tag": "2023-24",
+      "allowed": [
+        "BULL",
+        "CHOP"
+      ],
+      "gated": {
+        "total_return": -0.3691,
+        "max_drawdown": -0.5013,
+        "sharpe": -0.94,
+        "trade_count": 1090,
+        "buy_count": 463
+      },
+      "ungated_baseline": {
+        "total_return": -0.459,
+        "max_drawdown": -0.5728,
+        "sharpe": -1.183,
+        "trade_count": 1280,
+        "win_rate": 0.5732,
+        "annual_return": -0.2664
+      },
+      "delta_return_pp": 8.99,
+      "trade_reduction": 0.148
+    },
+    {
+      "variant": "V1_no_bear",
+      "strategy": "score",
+      "widx": 3,
+      "window_tag": "近1年",
+      "allowed": [
+        "BULL",
+        "CHOP"
+      ],
+      "gated": {
+        "total_return": 0.1722,
+        "max_drawdown": -0.2035,
+        "sharpe": 0.687,
+        "trade_count": 679,
+        "buy_count": 268
+      },
+      "ungated_baseline": {
+        "total_return": 0.189,
+        "max_drawdown": -0.1764,
+        "sharpe": 0.7,
+        "trade_count": 783,
+        "win_rate": 0.6821,
+        "annual_return": 0.1873
+      },
+      "delta_return_pp": -1.68,
+      "trade_reduction": 0.133
+    },
+    {
+      "variant": "V2_bull_only",
+      "strategy": "board",
+      "widx": 0,
+      "window_tag": "2019-20",
+      "allowed": [
+        "BULL"
+      ],
+      "gated": {
+        "total_return": -0.0281,
+        "max_drawdown": -0.0974,
+        "sharpe": -0.124,
+        "trade_count": 235,
+        "buy_count": 95
+      },
+      "ungated_baseline": {
+        "total_return": -0.1127,
+        "max_drawdown": -0.1597,
+        "sharpe": -0.446,
+        "trade_count": 503,
+        "win_rate": 0.6433,
+        "annual_return": -0.0582
+      },
+      "delta_return_pp": 8.46,
+      "trade_reduction": 0.533
+    },
+    {
+      "variant": "V2_bull_only",
+      "strategy": "board",
+      "widx": 1,
+      "window_tag": "2021-22",
+      "allowed": [
+        "BULL"
+      ],
+      "gated": {
+        "total_return": 0.0883,
+        "max_drawdown": -0.0764,
+        "sharpe": 0.573,
+        "trade_count": 245,
+        "buy_count": 95
+      },
+      "ungated_baseline": {
+        "total_return": 0.1185,
+        "max_drawdown": -0.1494,
+        "sharpe": 0.491,
+        "trade_count": 616,
+        "win_rate": 0.6423,
+        "annual_return": 0.058
+      },
+      "delta_return_pp": -3.02,
+      "trade_reduction": 0.602
+    },
+    {
+      "variant": "V2_bull_only",
+      "strategy": "board",
+      "widx": 2,
+      "window_tag": "2023-24",
+      "allowed": [
+        "BULL"
+      ],
+      "gated": {
+        "total_return": 0.1856,
+        "max_drawdown": -0.0776,
+        "sharpe": 1.168,
+        "trade_count": 129,
+        "buy_count": 50
+      },
+      "ungated_baseline": {
+        "total_return": 0.0546,
+        "max_drawdown": -0.2017,
+        "sharpe": 0.269,
+        "trade_count": 487,
+        "win_rate": 0.6289,
+        "annual_return": 0.0271
+      },
+      "delta_return_pp": 13.1,
+      "trade_reduction": 0.735
+    },
+    {
+      "variant": "V2_bull_only",
+      "strategy": "board",
+      "widx": 3,
+      "window_tag": "近1年",
+      "allowed": [
+        "BULL"
+      ],
+      "gated": {
+        "total_return": 0.2728,
+        "max_drawdown": -0.0741,
+        "sharpe": 1.688,
+        "trade_count": 275,
+        "buy_count": 106
+      },
+      "ungated_baseline": {
+        "total_return": 0.631,
+        "max_drawdown": -0.1172,
+        "sharpe": 2.633,
+        "trade_count": 416,
+        "win_rate": 0.75,
+        "annual_return": 0.6245
+      },
+      "delta_return_pp": -35.82,
+      "trade_reduction": 0.339
+    },
+    {
+      "variant": "V2_bull_only",
+      "strategy": "score",
+      "widx": 0,
+      "window_tag": "2019-20",
+      "allowed": [
+        "BULL"
+      ],
+      "gated": {
+        "total_return": 0.0031,
+        "max_drawdown": -0.2455,
+        "sharpe": 0.103,
+        "trade_count": 608,
+        "buy_count": 248
+      },
+      "ungated_baseline": {
+        "total_return": -0.0249,
+        "max_drawdown": -0.3779,
+        "sharpe": 0.103,
+        "trade_count": 1362,
+        "win_rate": 0.6458,
+        "annual_return": -0.0126
+      },
+      "delta_return_pp": 2.8,
+      "trade_reduction": 0.554
+    },
+    {
+      "variant": "V2_bull_only",
+      "strategy": "score",
+      "widx": 1,
+      "window_tag": "2021-22",
+      "allowed": [
+        "BULL"
+      ],
+      "gated": {
+        "total_return": -0.0675,
+        "max_drawdown": -0.1549,
+        "sharpe": -0.225,
+        "trade_count": 501,
+        "buy_count": 206
+      },
+      "ungated_baseline": {
+        "total_return": -0.536,
+        "max_drawdown": -0.5697,
+        "sharpe": -1.411,
+        "trade_count": 1398,
+        "win_rate": 0.5735,
+        "annual_return": -0.3204
+      },
+      "delta_return_pp": 46.85,
+      "trade_reduction": 0.642
+    },
+    {
+      "variant": "V2_bull_only",
+      "strategy": "score",
+      "widx": 2,
+      "window_tag": "2023-24",
+      "allowed": [
+        "BULL"
+      ],
+      "gated": {
+        "total_return": 0.1131,
+        "max_drawdown": -0.1197,
+        "sharpe": 0.456,
+        "trade_count": 314,
+        "buy_count": 126
+      },
+      "ungated_baseline": {
+        "total_return": -0.459,
+        "max_drawdown": -0.5728,
+        "sharpe": -1.183,
+        "trade_count": 1280,
+        "win_rate": 0.5732,
+        "annual_return": -0.2664
+      },
+      "delta_return_pp": 57.21,
+      "trade_reduction": 0.755
+    },
+    {
+      "variant": "V2_bull_only",
+      "strategy": "score",
+      "widx": 3,
+      "window_tag": "近1年",
+      "allowed": [
+        "BULL"
+      ],
+      "gated": {
+        "total_return": -0.122,
+        "max_drawdown": -0.2612,
+        "sharpe": -0.361,
+        "trade_count": 502,
+        "buy_count": 203
+      },
+      "ungated_baseline": {
+        "total_return": 0.189,
+        "max_drawdown": -0.1764,
+        "sharpe": 0.7,
+        "trade_count": 783,
+        "win_rate": 0.6821,
+        "annual_return": 0.1873
+      },
+      "delta_return_pp": -31.1,
+      "trade_reduction": 0.359
+    }
+  ],
+  "gating_verdicts": {
+    "V1_no_bear/board": {
+      "delta_pp_per_window": [
+        2.11,
+        4.72,
+        -2.57,
+        -17.72
+      ],
+      "mean_delta_pp": -3.36,
+      "g2_pass": false,
+      "avg_trade_reduction": 0.119
+    },
+    "V1_no_bear/score": {
+      "delta_pp_per_window": [
+        -12.84,
+        15.38,
+        8.99,
+        -1.68
+      ],
+      "mean_delta_pp": 2.46,
+      "g2_pass": false,
+      "avg_trade_reduction": 0.148
+    },
+    "V2_bull_only/board": {
+      "delta_pp_per_window": [
+        8.46,
+        -3.02,
+        13.1,
+        -35.82
+      ],
+      "mean_delta_pp": -4.32,
+      "g2_pass": false,
+      "avg_trade_reduction": 0.552
+    },
+    "V2_bull_only/score": {
+      "delta_pp_per_window": [
+        2.8,
+        46.85,
+        57.21,
+        -31.1
+      ],
+      "mean_delta_pp": 18.94,
+      "g2_pass": true,
+      "avg_trade_reduction": 0.578
+    }
+  },
+  "state_shares_by_window": {
+    "note": "补充计算 v2（tmp/regime_window_shares.py）：钉死主跑同一快照 (2026-08-26) 复算同套标签，年度计数已逐格复验一致；unlabeled 日不计入分母。v1 未钉快照的结果已作废。",
+    "windows": {
+      "2019-20": {
+        "days": 487,
+        "counts": {
+          "BULL": 206,
+          "CHOP": 224,
+          "BEAR": 57
+        },
+        "share": {
+          "BULL": 0.423,
+          "CHOP": 0.46,
+          "BEAR": 0.117
+        },
+        "allowed_share_V1_no_bear": 0.883,
+        "allowed_share_V2_bull_only": 0.423
+      },
+      "2021-22": {
+        "days": 485,
+        "counts": {
+          "BULL": 155,
+          "CHOP": 240,
+          "BEAR": 90
+        },
+        "share": {
+          "BULL": 0.3196,
+          "CHOP": 0.4948,
+          "BEAR": 0.1856
+        },
+        "allowed_share_V1_no_bear": 0.8144,
+        "allowed_share_V2_bull_only": 0.3196
+      },
+      "2023-24": {
+        "days": 484,
+        "counts": {
+          "BULL": 87,
+          "CHOP": 318,
+          "BEAR": 79
+        },
+        "share": {
+          "BULL": 0.1798,
+          "CHOP": 0.657,
+          "BEAR": 0.1632
+        },
+        "allowed_share_V1_no_bear": 0.8368,
+        "allowed_share_V2_bull_only": 0.1798
+      },
+      "近1年": {
+        "days": 246,
+        "counts": {
+          "BULL": 146,
+          "CHOP": 74,
+          "BEAR": 26
+        },
+        "share": {
+          "BULL": 0.5935,
+          "CHOP": 0.3008,
+          "BEAR": 0.1057
+        },
+        "allowed_share_V1_no_bear": 0.8943,
+        "allowed_share_V2_bull_only": 0.5935
+      }
+    }
+  },
+  "universe_confound": {
+    "added_at": "2026-08-30",
+    "finding": "基线 parts(bt_exclude_landing_regression_parts, 生成 8/26 21:25-8/27 02:00, DATA_EXCLUDE_CODES=197 含 002594) 与本实验门控臂(8/27 10:47-12:30, =196, 002594 已于当日 07:30 批外移出、当时无留痕)宇宙相差一只(002594 ∈ pool[:500] index 210)；快照内 002594 仍为旧污染序列(byd_repair_002594.md 建议②)。",
+    "method": "以 C 批(tools/c_lane_redispatch.py, 同日同快照同参、196 口径)重跑的 base_score/base_board 作为 196 真实基线；byd_effect = C_base - parts197；去混淆 Δ = 报告Δ - byd_effect。",
+    "byd_effect_pp": {
+      "score": [
+        -3.23,
+        0.7,
+        13.97,
+        8.12
+      ],
+      "board": [
+        0.0,
+        5.08,
+        1.11,
+        0.0
+      ]
+    },
+    "deconfounded_delta_pp": {
+      "V1_no_bear/board": [
+        2.11,
+        -0.36,
+        -3.68,
+        -17.72
+      ],
+      "V1_no_bear/score": [
+        -9.61,
+        14.68,
+        -4.98,
+        -9.8
+      ],
+      "V2_bull_only/board": [
+        8.46,
+        -8.1,
+        11.99,
+        -35.82
+      ],
+      "V2_bull_only/score": [
+        6.03,
+        46.15,
+        43.24,
+        -39.22
+      ]
+    },
+    "g2_reeval": {
+      "V1_no_bear/board": "fail (1/4)",
+      "V1_no_bear/score": "fail (1/4)",
+      "V2_bull_only/board": "fail (2/4)",
+      "V2_bull_only/score": "pass (3/4, mean +14.05) — 仍被 G3 拦截(BULL 26.7%<35%)"
+    },
+    "conclusion": "四判定全部不变，『全部不落地』结论稳健；报告单窗 Δ 最多带 ~14pp(score W3)宇宙偏差，引用以本块去混淆值为准。",
+    "source": "docs/reports/acceptance_20260830.md §4（验收复算）；docs/reports/regime_gating.md 附录 A"
+  }
+}

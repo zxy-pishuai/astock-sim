@@ -1,0 +1,23 @@
+{
+ "started_at": "2026-08-27 11:34:07",
+ "pre": {
+  "codes": 1765,
+  "industries": 28,
+  "mtime": "2026-08-27 03:26"
+ },
+ "wait_seconds": 27.3,
+ "post": {
+  "codes": 2911,
+  "industries": 49,
+  "mtime": "2026-08-27 11:34"
+ },
+ "sectors_fetched": 49,
+ "sector_shortfalls": {
+  "new_stock": {
+   "total": 151,
+   "got": 84,
+   "pages": 2
+  }
+ },
+ "verdict": "OK grown"
+}

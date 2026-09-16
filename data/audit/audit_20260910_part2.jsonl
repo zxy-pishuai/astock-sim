@@ -1,0 +1,76 @@
+{"t": "2026-09-10 12:07:13", "kind": "daily", "event": "audit_rotate_test", "level": "INFO", "note": "R3 E2 试跑：轮转后追加验证", "hash": "25902d82cd648748", "prev": ""}
+{"t": "2026-09-10 13:00:02", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "4709f1672070269d", "prev": "25902d82cd648748"}
+{"t": "2026-09-10 13:00:02", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.03) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "1804a7920c24076d", "prev": "4709f1672070269d"}
+{"t": "2026-09-10 13:00:09", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 高位缩量冲高回落，显示抛压显现，短线获利了结风险加大，需警惕回调。", "hash": "9bcb5e0b8bda708f", "prev": "1804a7920c24076d"}
+{"t": "2026-09-10 13:00:21", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 涨停封死或因板块利好驱动，量比放大但追高风险大，勿盲目追涨。", "hash": "e29ac98974ce8ed3", "prev": "9bcb5e0b8bda708f"}
+{"t": "2026-09-10 13:04:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "13:04:00", "hash": "be7be149352be85a", "prev": "e29ac98974ce8ed3"}
+{"t": "2026-09-10 13:07:33", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落3.1%（高点33.10）", "hash": "290c7f785633d0cc", "prev": "be7be149352be85a"}
+{"t": "2026-09-10 13:07:39", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600353 AI点评: 冲高回落显抛压，但量能未放大，短线需观察能否企稳。", "hash": "5aa5421e1672269e", "prev": "290c7f785633d0cc"}
+{"t": "2026-09-10 13:15:07", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "58380e38fdaee09f", "prev": "5aa5421e1672269e"}
+{"t": "2026-09-10 13:15:07", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.03) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "504d2c5cbc0a5100", "prev": "58380e38fdaee09f"}
+{"t": "2026-09-10 13:20:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "13:20:00", "hash": "589620ca42496fdb", "prev": "504d2c5cbc0a5100"}
+{"t": "2026-09-10 13:22:34", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落3.4%（高点33.10）", "hash": "26a4d52e0bf92ebb", "prev": "589620ca42496fdb"}
+{"t": "2026-09-10 13:26:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "13:26:00", "hash": "8f86cd0c06fb94bc", "prev": "26a4d52e0bf92ebb"}
+{"t": "2026-09-10 13:28:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "13:28:00", "hash": "d1b71e519ae38d60", "prev": "8f86cd0c06fb94bc"}
+{"t": "2026-09-10 13:30:09", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "870ff245a8e6967e", "prev": "d1b71e519ae38d60"}
+{"t": "2026-09-10 13:30:09", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.03) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "66fb726a35c33581", "prev": "870ff245a8e6967e"}
+{"t": "2026-09-10 13:30:13", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 量价背离，冲高回落风险大。", "hash": "6af879a7f70781c0", "prev": "66fb726a35c33581"}
+{"t": "2026-09-10 13:30:26", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 封死涨停或受板块利好驱动，追高风险大，建议观望。", "hash": "125b7734a61bcbad", "prev": "6af879a7f70781c0"}
+{"t": "2026-09-10 13:37:36", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落3.4%（高点33.10）", "hash": "669a4997bf6a3c61", "prev": "125b7734a61bcbad"}
+{"t": "2026-09-10 13:37:46", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600353 AI点评: 冲高回落或因获利回吐，缩量调整，关注33.10阻力位。", "hash": "0818ae7ae7a474ed", "prev": "669a4997bf6a3c61"}
+{"t": "2026-09-10 13:39:13", "kind": "position", "event": "strategy_sell", "level": "SELL", "code": "002286", "name": "保龄宝", "price": 8.912, "qty": 1500, "fee": 11.68, "pnl": -1057.24, "strategy": "止损", "hash": "87423630caa52e93", "prev": "0818ae7ae7a474ed"}
+{"t": "2026-09-10 13:39:13", "kind": "position", "event": "trading_event", "level": "SELL", "msg": "卖出 保龄宝(002286) 8.91x1500股 止损", "hash": "f8a6873b809da50d", "prev": "87423630caa52e93"}
+{"t": "2026-09-10 13:39:13", "kind": "alert", "event": "trading_event", "level": "KPI", "msg": "止损滑点 002286 触发≈8.930 成交8.912 滑点-0.20%", "hash": "a66e9806f22e4be0", "prev": "f8a6873b809da50d"}
+{"t": "2026-09-10 13:44:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "13:44:00", "hash": "62d69affe42fe1c2", "prev": "a66e9806f22e4be0"}
+{"t": "2026-09-10 13:45:14", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "6f9fd6b583206d54", "prev": "62d69affe42fe1c2"}
+{"t": "2026-09-10 13:45:14", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.03) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "3c688344e8e5981f", "prev": "6f9fd6b583206d54"}
+{"t": "2026-09-10 13:46:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "13:46:00", "hash": "fee767eba7073a42", "prev": "3c688344e8e5981f"}
+{"t": "2026-09-10 13:51:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "13:51:00", "hash": "7faeaf735ae39476", "prev": "fee767eba7073a42"}
+{"t": "2026-09-10 13:52:37", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落4.0%（高点33.10）", "hash": "73c9071bdb5ca571", "prev": "7faeaf735ae39476"}
+{"t": "2026-09-10 13:59:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "13:59:00", "hash": "7ff10c32add03275", "prev": "73c9071bdb5ca571"}
+{"t": "2026-09-10 14:00:16", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "84cf557c2763b0dc", "prev": "7ff10c32add03275"}
+{"t": "2026-09-10 14:00:16", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.03) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "90012446cd11cd56", "prev": "84cf557c2763b0dc"}
+{"t": "2026-09-10 14:00:26", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 受半导体板块情绪带动，强势封板但追高风险大，观望为主。", "hash": "5102f25e024f9ab1", "prev": "90012446cd11cd56"}
+{"t": "2026-09-10 14:00:32", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 高位缩量冲高，量能不足易回调，需谨慎关注。", "hash": "97a3137216c19b47", "prev": "5102f25e024f9ab1"}
+{"t": "2026-09-10 14:05:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:05:00", "hash": "19bfe49cf07a0cb0", "prev": "97a3137216c19b47"}
+{"t": "2026-09-10 14:07:39", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落3.9%（高点33.10）", "hash": "281a2b6fc94211ad", "prev": "19bfe49cf07a0cb0"}
+{"t": "2026-09-10 14:07:50", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600353 AI点评: 冲高回落或因获利了结，量能不足显示动力弱，短线需谨慎。", "hash": "80f0e30c62d0f31d", "prev": "281a2b6fc94211ad"}
+{"t": "2026-09-10 14:14:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:14:00", "hash": "bc40edd0561fd12e", "prev": "80f0e30c62d0f31d"}
+{"t": "2026-09-10 14:15:19", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "ac5c612f221123b8", "prev": "bc40edd0561fd12e"}
+{"t": "2026-09-10 14:15:19", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.03) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "4588ab6066ab541e", "prev": "ac5c612f221123b8"}
+{"t": "2026-09-10 14:20:19", "kind": "alert", "event": "trading_event", "level": "OK", "msg": "两点半战法：20只候选（MACD金叉+量比）", "hash": "e6ae219043967eeb", "prev": "4588ab6066ab541e"}
+{"t": "2026-09-10 14:22:43", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落3.9%（高点33.10）", "hash": "65275795701f1eca", "prev": "e6ae219043967eeb"}
+{"t": "2026-09-10 14:24:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:24:00", "hash": "dd93fb223c8bfd3e", "prev": "65275795701f1eca"}
+{"t": "2026-09-10 14:29:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:29:00", "hash": "92f8a45726b740ff", "prev": "dd93fb223c8bfd3e"}
+{"t": "2026-09-10 14:30:21", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "5ee1e90b9dde037d", "prev": "92f8a45726b740ff"}
+{"t": "2026-09-10 14:30:21", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.03) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "bf030b77e198fa29", "prev": "5ee1e90b9dde037d"}
+{"t": "2026-09-10 14:30:29", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 封板强但追高风险大，可关注后续资金动向。", "hash": "0201e215bd5fab4d", "prev": "bf030b77e198fa29"}
+{"t": "2026-09-10 14:30:37", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 股价冲高但量能不足，高位缩量显回调风险，需谨慎关注。", "hash": "3df538df67679179", "prev": "0201e215bd5fab4d"}
+{"t": "2026-09-10 14:33:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:33:00", "hash": "d90af84eecc20914", "prev": "3df538df67679179"}
+{"t": "2026-09-10 14:37:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:37:00", "hash": "79c20565c90159c9", "prev": "d90af84eecc20914"}
+{"t": "2026-09-10 14:37:46", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落3.9%（高点33.10）", "hash": "0f9c35e0fcdaf295", "prev": "79c20565c90159c9"}
+{"t": "2026-09-10 14:37:52", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600353 AI点评: 量能不足致冲高回落，量比偏低暂不重点关注。", "hash": "a43e6e42cae84edd", "prev": "0f9c35e0fcdaf295"}
+{"t": "2026-09-10 14:41:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:41:00", "hash": "bccbb9abb4cf6809", "prev": "a43e6e42cae84edd"}
+{"t": "2026-09-10 14:45:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:45:00", "hash": "dffc7d9e3cb0b80d", "prev": "bccbb9abb4cf6809"}
+{"t": "2026-09-10 14:45:26", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "6610933f453d9239", "prev": "dffc7d9e3cb0b80d"}
+{"t": "2026-09-10 14:45:26", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.02) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "f1df781ea90e95a4", "prev": "6610933f453d9239"}
+{"t": "2026-09-10 14:49:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:49:00", "hash": "260b5f281a3cf69c", "prev": "f1df781ea90e95a4"}
+{"t": "2026-09-10 14:52:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "14:52:00", "hash": "cdfc956ffb8031b1", "prev": "260b5f281a3cf69c"}
+{"t": "2026-09-10 14:52:46", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "⚠️ 旭光电子(600353) 冲高回落4.0%（高点33.10）", "hash": "ce60f864f44404ac", "prev": "cdfc956ffb8031b1"}
+{"t": "2026-09-10 15:00:00", "kind": "alert", "event": "heartbeat", "level": "INFO", "scope": "trading", "ts": "15:00:00", "hash": "8c765ed3a7088e8e", "prev": "ce60f864f44404ac"}
+{"t": "2026-09-10 15:00:26", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🔒 太极实业(600667) 封死涨停+10.0%，排队难成交（勿追）", "hash": "4128bc38cc9e05d8", "prev": "8c765ed3a7088e8e"}
+{"t": "2026-09-10 15:00:26", "kind": "alert", "event": "trading_event", "level": "WARN", "msg": "📊 太极实业(600667) ⚠高位缩量(0.02) 冲高回落风险（涨幅10.0%量能跟不上）", "hash": "ae52b0baf873d4d2", "prev": "4128bc38cc9e05d8"}
+{"t": "2026-09-10 15:00:38", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 板块情绪推动封板，但量价背离追高风险大。", "hash": "63bf49812f129790", "prev": "ae52b0baf873d4d2"}
+{"t": "2026-09-10 15:00:40", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "🤖 600667 AI点评: 高位缩量冲高回落，风险大，建议谨慎。", "hash": "4e21fd2b5f4e34f0", "prev": "63bf49812f129790"}
+{"t": "2026-09-10 15:01:02", "kind": "alert", "event": "trading_event", "level": "OK", "msg": "已推送收盘日结", "hash": "32a5da5f05115d4b", "prev": "4e21fd2b5f4e34f0"}
+{"t": "2026-09-10 15:10:02", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "收盘数据增量更新已触发", "hash": "1491ff0accea0ab9", "prev": "32a5da5f05115d4b"}
+{"t": "2026-09-10 15:54:08", "kind": "daily", "event": "stale_first_budget_exceeded", "level": "WARN", "pending_remain": 2361, "elapsed_s": 1906.8, "budget_sec": 1800, "note": "stale-first 预算耗尽仍有待追平票，收盘更新未完成，KPI/快照延后，兜底任务将按覆盖率判据接力", "hash": "2aadf779a1f4fab3", "prev": "1491ff0accea0ab9"}
+{"t": "2026-09-10 15:54:10", "kind": "daily", "event": "daily_coverage_pending", "level": "INFO", "fresh": 2579, "total": 5328, "ratio": 0.484, "missing": 2749, "pending_remain": 2361, "target": "2026-09-10", "daily_updated": 2500, "note": "收盘更新未完成（stale-first 仍有待追平票），KPI 延后重评、不落快照，由兜底任务按覆盖率接力", "hash": "b5d796e06110da56", "prev": "2aadf779a1f4fab3"}
+{"t": "2026-09-10 15:56:57", "kind": "daily", "event": "data_update", "level": "INFO", "min5_updated": 1007, "min5_total": 1012, "min5_rows": 48336, "min5_errors": 0, "min5_empty": 3, "daily_updated": 2500, "daily_errors": 0, "hash": "8ee4df6316afc415", "prev": "b5d796e06110da56"}
+{"t": "2026-09-10 15:56:57", "kind": "daily", "event": "data_snapshot_deferred", "level": "INFO", "pending_remain": 2361, "note": "日K未追平，快照延后，追平后由兜底任务落盘", "hash": "acb80f91c0742211", "prev": "8ee4df6316afc415"}
+{"t": "2026-09-10 22:55:43", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "开盘自动开启：22:55 非 09:10-15:05 窗口，待明晨自动启动", "hash": "2019dcca74d13ad1", "prev": "acb80f91c0742211"}
+{"t": "2026-09-10 22:55:43", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "开盘自动开启已启用（交易日 9:15 自动启动引擎）", "hash": "3abedfc98c54071c", "prev": "2019dcca74d13ad1"}
+{"t": "2026-09-10 23:50:37", "kind": "daily", "event": "watchdog_stale", "level": "CRITICAL", "streak_s": 0, "watchdog_stale_reason": "stale", "detail": "watchdog 断更 15 分钟（>10min），首次告警", "hash": "ba1b241482a167dc", "prev": "3abedfc98c54071c"}
+{"t": "2026-09-11 00:00:14", "kind": "alert", "event": "trading_event", "level": "INFO", "msg": "开盘自动开启：00:00 非 09:10-15:05 窗口，待明晨自动启动", "hash": "3285ce4d3d8036bc", "prev": ""}
+{"t": "2026-09-11 00:00:29", "kind": "daily", "event": "watchdog_recovered", "level": "INFO", "streak_s": 610, "detail": "watchdog 心跳恢复（断更持续 610s）", "hash": "68da76eafd8d9d65", "prev": "3285ce4d3d8036bc"}
+{"t": "2026-09-11 08:09:50", "kind": "daily", "event": "watchdog_stale", "level": "CRITICAL", "streak_s": 0, "watchdog_stale_reason": "stale", "detail": "watchdog 断更 460 分钟（>10min），首次告警", "hash": "af03c261acd2626d", "prev": "68da76eafd8d9d65"}

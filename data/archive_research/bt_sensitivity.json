@@ -1,0 +1,31 @@
+{
+ "sens_fixed": [
+  {
+   "param": "buy_threshold",
+   "value": 20.0,
+   "total_return": 0.5005,
+   "sharpe": 1.214,
+   "max_drawdown": -0.2695,
+   "win_rate": 0.6642,
+   "trade_count": 902
+  },
+  {
+   "param": "buy_threshold",
+   "value": 25.0,
+   "total_return": 0.5788,
+   "sharpe": 1.37,
+   "max_drawdown": -0.2726,
+   "win_rate": 0.6673,
+   "trade_count": 885
+  },
+  {
+   "param": "buy_threshold",
+   "value": 30.0,
+   "total_return": 0.6457,
+   "sharpe": 1.488,
+   "max_drawdown": -0.2733,
+   "win_rate": 0.681,
+   "trade_count": 858
+  }
+ ]
+}

@@ -1,0 +1,305 @@
+{
+ "generated_at": "2026-08-26 03:41:57",
+ "phase": "71",
+ "windows": [
+  [
+   "2019-01-01",
+   "2020-12-31"
+  ],
+  [
+   "2021-01-01",
+   "2022-12-31"
+  ],
+  [
+   "2023-01-01",
+   "2024-12-31"
+  ],
+  [
+   "2025-08-18",
+   "2026-08-18"
+  ]
+ ],
+ "ns": [
+  0,
+  3,
+  5
+ ],
+ "params": {
+  "buy_threshold": 25,
+  "max_positions": 3,
+  "position_pct": 0.3,
+  "slippage": 0.001
+ },
+ "baseline_rows": [
+  {
+   "n": null,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.0621,
+   "max_drawdown": -0.3952,
+   "sharpe": 0.024,
+   "trade_count": 1271,
+   "signals_blocked": 0,
+   "elapsed_s": 853
+  },
+  {
+   "n": null,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.3734,
+   "max_drawdown": -0.5614,
+   "sharpe": -0.795,
+   "trade_count": 1334,
+   "signals_blocked": 0,
+   "elapsed_s": 2085
+  },
+  {
+   "n": null,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.3455,
+   "max_drawdown": -0.432,
+   "sharpe": -0.804,
+   "trade_count": 1219,
+   "signals_blocked": 0,
+   "elapsed_s": 1982
+  },
+  {
+   "n": null,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.2199,
+   "max_drawdown": -0.1684,
+   "sharpe": 0.824,
+   "trade_count": 693,
+   "signals_blocked": 0,
+   "elapsed_s": 795
+  }
+ ],
+ "variants": [
+  {
+   "n": 0,
+   "rows": [
+    {
+     "n": 0,
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.0621,
+     "max_drawdown": -0.3952,
+     "sharpe": 0.024,
+     "trade_count": 1271,
+     "signals_blocked": 0,
+     "elapsed_s": 858
+    },
+    {
+     "n": 0,
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.3734,
+     "max_drawdown": -0.5614,
+     "sharpe": -0.795,
+     "trade_count": 1334,
+     "signals_blocked": 0,
+     "elapsed_s": 2079
+    },
+    {
+     "n": 0,
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.3455,
+     "max_drawdown": -0.432,
+     "sharpe": -0.804,
+     "trade_count": 1219,
+     "signals_blocked": 0,
+     "elapsed_s": 1975
+    },
+    {
+     "n": 0,
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.2199,
+     "max_drawdown": -0.1684,
+     "sharpe": 0.824,
+     "trade_count": 693,
+     "signals_blocked": 1,
+     "elapsed_s": 794
+    }
+   ],
+   "deltas_pp": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "improved_or_flat_windows": 4,
+   "bull_delta_pp": 0.0,
+   "avg_delta_pp": 0.0,
+   "signals_blocked_total": 1,
+   "pass": true
+  },
+  {
+   "n": 3,
+   "rows": [
+    {
+     "n": 3,
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.0621,
+     "max_drawdown": -0.3952,
+     "sharpe": 0.024,
+     "trade_count": 1271,
+     "signals_blocked": 0,
+     "elapsed_s": 851
+    },
+    {
+     "n": 3,
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.3734,
+     "max_drawdown": -0.5614,
+     "sharpe": -0.795,
+     "trade_count": 1334,
+     "signals_blocked": 0,
+     "elapsed_s": 2076
+    },
+    {
+     "n": 3,
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.3455,
+     "max_drawdown": -0.432,
+     "sharpe": -0.804,
+     "trade_count": 1219,
+     "signals_blocked": 0,
+     "elapsed_s": 2013
+    },
+    {
+     "n": 3,
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.2199,
+     "max_drawdown": -0.1684,
+     "sharpe": 0.824,
+     "trade_count": 693,
+     "signals_blocked": 1,
+     "elapsed_s": 849
+    }
+   ],
+   "deltas_pp": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "improved_or_flat_windows": 4,
+   "bull_delta_pp": 0.0,
+   "avg_delta_pp": 0.0,
+   "signals_blocked_total": 1,
+   "pass": true
+  },
+  {
+   "n": 5,
+   "rows": [
+    {
+     "n": 5,
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.0621,
+     "max_drawdown": -0.3952,
+     "sharpe": 0.024,
+     "trade_count": 1271,
+     "signals_blocked": 0,
+     "elapsed_s": 956
+    },
+    {
+     "n": 5,
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.3734,
+     "max_drawdown": -0.5614,
+     "sharpe": -0.795,
+     "trade_count": 1334,
+     "signals_blocked": 0,
+     "elapsed_s": 2095
+    },
+    {
+     "n": 5,
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.3455,
+     "max_drawdown": -0.432,
+     "sharpe": -0.804,
+     "trade_count": 1219,
+     "signals_blocked": 0,
+     "elapsed_s": 2008
+    },
+    {
+     "n": 5,
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.2296,
+     "max_drawdown": -0.161,
+     "sharpe": 0.855,
+     "trade_count": 680,
+     "signals_blocked": 1,
+     "elapsed_s": 898
+    }
+   ],
+   "deltas_pp": [
+    0.0,
+    0.0,
+    0.0,
+    0.97
+   ],
+   "improved_or_flat_windows": 4,
+   "bull_delta_pp": 0.97,
+   "avg_delta_pp": 0.24,
+   "signals_blocked_total": 1,
+   "pass": true
+  }
+ ],
+ "verdict": {
+  "rule": ">=3/4 窗口 Δ>=-1pp 且 牛市恶化<=2pp 才建议落地；否则维持现状",
+  "recommended_n": 5,
+  "enabled": true,
+  "reason": "N=0,3,5 达标（有证据，建议落地由验收方决定）",
+  "caveats": [
+   "earnings 表为业绩预告（233 条），覆盖稀疏，过滤触发率低；",
+   "report_date 按交易所预约披露口径视为提前可知（PIT 近似）；",
+   "同日 A/B 口径（前复权重锚定下跨天不可比）。"
+  ]
+ },
+ "note_config": "本阶段不改 config；有证据才建议，落地由验收方决定"
+}

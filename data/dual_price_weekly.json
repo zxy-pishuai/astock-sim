@@ -1,0 +1,22 @@
+{
+ "generated_at": "2026-09-13 09:00:01",
+ "source": "C:\\Users\\26838\\A股模拟盘\\data\\audit\\audit.jsonl",
+ "meta": {
+  "exists": true,
+  "lines": 1,
+  "bad_lines": 0,
+  "first_t": "2026-09-13 00:20:28",
+  "last_t": "2026-09-13 00:20:28",
+  "order_events_other": {},
+  "chain_health": {
+   "checked": 1,
+   "lines": 1,
+   "breaks_total": 0,
+   "breaks_by_day": {}
+  }
+ },
+ "total": {
+  "n": 0
+ },
+ "weeks": {}
+}

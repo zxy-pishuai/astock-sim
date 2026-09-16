@@ -1,0 +1,30 @@
+{
+  "meta": {
+    "created": "2026-09-03",
+    "creator": "T2 (pack16)",
+    "purpose": "竞价双战法（公示参考）阈值卡；tactics 构造时缺键=报错",
+    "honest_note": "竞价双战法为系统现役评分器的公示参考，未做过 W1R/V1 级回测验收"
+  },
+  "jingjia_daban": {
+    "name": "竞价打板",
+    "scorer_source": "app/scoring.py score_auction L519-587（v2.0 移植，公示参考用）",
+    "feed_source": "app/trader.py _auction_round L1035-1089（喂参方式：open/昨收/量/额/板块共振/大盘宽度）",
+    "score_threshold": 40,
+    "min_pct": 4.0,
+    "max_pct": 9.8,
+    "min_amount": 5000000,
+    "top_n": 15,
+    "snapshot_window": "09:25-09:40",
+    "snapshot_path": "tmp/tactics_cache/auction_{date}.json"
+  },
+  "jingjia_w2s": {
+    "name": "竞价弱转强",
+    "source": "docs/reports/auction_w2s.md（P34）+ tools/board_w2s_filter_ab.py（P69 口径）",
+    "research_verdict": "P34 独立策略 9 变体全不达标不成立；P69 board 前置过滤 pass=false（无增益，如实关闭）",
+    "universe": "昨日涨停池（tactics 自有 is_zt 重建，不依赖 limit_pool）",
+    "signal": "今日竞价高开 gap = (open/昨收-1)*100",
+    "gap_min_pp": 1.0,
+    "gap_max_pp": 4.0,
+    "candidate_enabled": false
+  }
+}

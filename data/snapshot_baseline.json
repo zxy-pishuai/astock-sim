@@ -1,0 +1,268 @@
+{
+  "generated_at": "2026-08-26 07:03:50",
+  "phase": "P53",
+  "tool": "tools/snapshot_baseline_report.py",
+  "criterion": "所有窗口 |Δ收益|≤0.5pp 且 |Δ回撤|≤0.5pp (当前 max |Δ收益|=0.000pp, max |Δ回撤|=0.000pp; 缺失 0 窗口)",
+  "verdict": "冻结基线生效",
+  "pass": true,
+  "tolerance_pp": 0.5,
+  "note_BOARD_MOMENTUM_MIN": "基线工具内 BOARD_MOMENTUM_MIN 冻结为 7.0（发布口径），与实盘 8.0 不同属预期设计（Phase33 已切实盘 8.0，基线保持 7.0 以与历史可比）",
+  "windows": [
+    [
+      "2019-01-01",
+      "2020-12-31"
+    ],
+    [
+      "2021-01-01",
+      "2022-12-31"
+    ],
+    [
+      "2023-01-01",
+      "2024-12-31"
+    ],
+    [
+      "2025-08-18",
+      "2026-08-21"
+    ]
+  ],
+  "window_tags": [
+    "2019-20",
+    "2021-22",
+    "2023-24",
+    "近1年"
+  ],
+  "parts_found": [
+    "live_board",
+    "live_score",
+    "snapshot_board",
+    "snapshot_score"
+  ],
+  "missing_windows": [],
+  "comparison": [
+    {
+      "strategy": "score",
+      "widx": 0,
+      "window": [
+        "2019-01-01",
+        "2020-12-31"
+      ],
+      "window_tag": "2019-20",
+      "snapshot": {
+        "total_return": -0.0621,
+        "max_drawdown": -0.3952,
+        "sharpe": 0.024,
+        "trade_count": 1271
+      },
+      "live": {
+        "total_return": -0.0621,
+        "max_drawdown": -0.3952,
+        "sharpe": 0.024,
+        "trade_count": 1271
+      },
+      "delta": {
+        "total_return_pp": 0.0,
+        "max_drawdown_pp": 0.0,
+        "total_return_abs": 0.0,
+        "max_drawdown_abs": 0.0
+      },
+      "pass": true
+    },
+    {
+      "strategy": "score",
+      "widx": 1,
+      "window": [
+        "2021-01-01",
+        "2022-12-31"
+      ],
+      "window_tag": "2021-22",
+      "snapshot": {
+        "total_return": -0.3734,
+        "max_drawdown": -0.5614,
+        "sharpe": -0.795,
+        "trade_count": 1334
+      },
+      "live": {
+        "total_return": -0.3734,
+        "max_drawdown": -0.5614,
+        "sharpe": -0.795,
+        "trade_count": 1334
+      },
+      "delta": {
+        "total_return_pp": 0.0,
+        "max_drawdown_pp": 0.0,
+        "total_return_abs": 0.0,
+        "max_drawdown_abs": 0.0
+      },
+      "pass": true
+    },
+    {
+      "strategy": "score",
+      "widx": 2,
+      "window": [
+        "2023-01-01",
+        "2024-12-31"
+      ],
+      "window_tag": "2023-24",
+      "snapshot": {
+        "total_return": -0.3455,
+        "max_drawdown": -0.432,
+        "sharpe": -0.804,
+        "trade_count": 1219
+      },
+      "live": {
+        "total_return": -0.3455,
+        "max_drawdown": -0.432,
+        "sharpe": -0.804,
+        "trade_count": 1219
+      },
+      "delta": {
+        "total_return_pp": 0.0,
+        "max_drawdown_pp": 0.0,
+        "total_return_abs": 0.0,
+        "max_drawdown_abs": 0.0
+      },
+      "pass": true
+    },
+    {
+      "strategy": "score",
+      "widx": 3,
+      "window": [
+        "2025-08-18",
+        "2026-08-21"
+      ],
+      "window_tag": "近1年",
+      "snapshot": {
+        "total_return": 0.2163,
+        "max_drawdown": -0.1681,
+        "sharpe": 0.809,
+        "trade_count": 701
+      },
+      "live": {
+        "total_return": 0.2163,
+        "max_drawdown": -0.1681,
+        "sharpe": 0.809,
+        "trade_count": 701
+      },
+      "delta": {
+        "total_return_pp": 0.0,
+        "max_drawdown_pp": 0.0,
+        "total_return_abs": 0.0,
+        "max_drawdown_abs": 0.0
+      },
+      "pass": true
+    },
+    {
+      "strategy": "board",
+      "widx": 0,
+      "window": [
+        "2019-01-01",
+        "2020-12-31"
+      ],
+      "window_tag": "2019-20",
+      "snapshot": {
+        "total_return": 0.0275,
+        "max_drawdown": -0.1726,
+        "sharpe": 0.166,
+        "trade_count": 661
+      },
+      "live": {
+        "total_return": 0.0275,
+        "max_drawdown": -0.1726,
+        "sharpe": 0.166,
+        "trade_count": 661
+      },
+      "delta": {
+        "total_return_pp": 0.0,
+        "max_drawdown_pp": 0.0,
+        "total_return_abs": 0.0,
+        "max_drawdown_abs": 0.0
+      },
+      "pass": true
+    },
+    {
+      "strategy": "board",
+      "widx": 1,
+      "window": [
+        "2021-01-01",
+        "2022-12-31"
+      ],
+      "window_tag": "2021-22",
+      "snapshot": {
+        "total_return": 0.2334,
+        "max_drawdown": -0.1588,
+        "sharpe": 0.775,
+        "trade_count": 790
+      },
+      "live": {
+        "total_return": 0.2334,
+        "max_drawdown": -0.1588,
+        "sharpe": 0.775,
+        "trade_count": 790
+      },
+      "delta": {
+        "total_return_pp": 0.0,
+        "max_drawdown_pp": 0.0,
+        "total_return_abs": 0.0,
+        "max_drawdown_abs": 0.0
+      },
+      "pass": true
+    },
+    {
+      "strategy": "board",
+      "widx": 2,
+      "window": [
+        "2023-01-01",
+        "2024-12-31"
+      ],
+      "window_tag": "2023-24",
+      "snapshot": {
+        "total_return": 0.0749,
+        "max_drawdown": -0.1952,
+        "sharpe": 0.316,
+        "trade_count": 633
+      },
+      "live": {
+        "total_return": 0.0749,
+        "max_drawdown": -0.1952,
+        "sharpe": 0.316,
+        "trade_count": 633
+      },
+      "delta": {
+        "total_return_pp": 0.0,
+        "max_drawdown_pp": 0.0,
+        "total_return_abs": 0.0,
+        "max_drawdown_abs": 0.0
+      },
+      "pass": true
+    },
+    {
+      "strategy": "board",
+      "widx": 3,
+      "window": [
+        "2025-08-18",
+        "2026-08-21"
+      ],
+      "window_tag": "近1年",
+      "snapshot": {
+        "total_return": 0.3946,
+        "max_drawdown": -0.1128,
+        "sharpe": 1.797,
+        "trade_count": 474
+      },
+      "live": {
+        "total_return": 0.3946,
+        "max_drawdown": -0.1128,
+        "sharpe": 1.797,
+        "trade_count": 474
+      },
+      "delta": {
+        "total_return_pp": 0.0,
+        "max_drawdown_pp": 0.0,
+        "total_return_abs": 0.0,
+        "max_drawdown_abs": 0.0
+      },
+      "pass": true
+    }
+  ],
+  "elapsed_sec": 0.03
+}

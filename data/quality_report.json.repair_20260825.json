@@ -1,0 +1,45 @@
+{
+ "generated_at": "2026-08-25 02:52:38",
+ "phase": "35",
+ "diniw_backfill": {
+  "probes": [
+   {
+    "source": "sina fx_sdiniw 美元指数日线",
+    "status": "ERR:HTTP Error 456: ",
+    "rows": 0,
+    "range": null,
+    "sample": []
+   },
+   {
+    "source": "eastmoney push2his secid=100.UDI",
+    "status": 200,
+    "rows": 7135,
+    "range": [
+     "1999-01-04",
+     "2026-08-24"
+    ],
+    "sample": [
+     [
+      "1999-01-04",
+      93.44
+     ],
+     [
+      "1999-01-05",
+      93.65
+     ],
+     [
+      "2026-08-21",
+      98.85
+     ],
+     [
+      "2026-08-24",
+      99.02
+     ]
+    ]
+   }
+  ],
+  "chosen": "eastmoney push2his secid=100.UDI",
+  "written": 0,
+  "aborted_mtime": true
+ }
+}

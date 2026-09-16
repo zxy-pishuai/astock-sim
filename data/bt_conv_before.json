@@ -1,0 +1,134 @@
+{
+ "stage": "before",
+ "generated_at": "2026-08-25 22:21:42",
+ "runs": [
+  {
+   "stage": "before",
+   "strategy": "score",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.157,
+   "annual_return": -0.082,
+   "max_drawdown": -0.3227,
+   "win_rate": 0.6342,
+   "sharpe": -0.174,
+   "trade_count": 1239,
+   "elapsed": 799.1
+  },
+  {
+   "stage": "before",
+   "strategy": "score",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.2573,
+   "annual_return": -0.139,
+   "max_drawdown": -0.5479,
+   "win_rate": 0.6083,
+   "sharpe": -0.438,
+   "trade_count": 1439,
+   "elapsed": 1864.4
+  },
+  {
+   "stage": "before",
+   "strategy": "score",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.2471,
+   "annual_return": -0.1333,
+   "max_drawdown": -0.4476,
+   "win_rate": 0.5801,
+   "sharpe": -0.466,
+   "trade_count": 1291,
+   "elapsed": 1872.2
+  },
+  {
+   "stage": "before",
+   "strategy": "score",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.0856,
+   "annual_return": 0.0859,
+   "max_drawdown": -0.1811,
+   "win_rate": 0.6629,
+   "sharpe": 0.429,
+   "trade_count": 748,
+   "elapsed": 802.5
+  },
+  {
+   "stage": "before",
+   "strategy": "board",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.1177,
+   "annual_return": -0.0608,
+   "max_drawdown": -0.2777,
+   "win_rate": 0.6202,
+   "sharpe": -0.288,
+   "trade_count": 628,
+   "elapsed": 2.0
+  },
+  {
+   "stage": "before",
+   "strategy": "board",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.0665,
+   "annual_return": -0.034,
+   "max_drawdown": -0.2141,
+   "win_rate": 0.6152,
+   "sharpe": -0.12,
+   "trade_count": 747,
+   "elapsed": 3.0
+  },
+  {
+   "stage": "before",
+   "strategy": "board",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.0183,
+   "annual_return": -0.0093,
+   "max_drawdown": -0.2585,
+   "win_rate": 0.6083,
+   "sharpe": 0.031,
+   "trade_count": 616,
+   "elapsed": 2.9
+  },
+  {
+   "stage": "before",
+   "strategy": "board",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.2877,
+   "annual_return": 0.2891,
+   "max_drawdown": -0.1307,
+   "win_rate": 0.6838,
+   "sharpe": 1.269,
+   "trade_count": 452,
+   "elapsed": 2.1
+  }
+ ]
+}

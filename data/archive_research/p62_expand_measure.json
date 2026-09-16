@@ -1,0 +1,37 @@
+{
+ "dynamic_codes": 1002,
+ "src": {
+  "bt_pool_top500": 500,
+  "positions": 0,
+  "watchlist": 8,
+  "recent_trades_90d": 5,
+  "existing_min5": 496
+ },
+ "elapsed_sec": 25.9,
+ "result": {
+  "updated": 503,
+  "rows": 160720,
+  "errors": 0,
+  "empty": 3,
+  "total": 1002
+ },
+ "codes_after": 999,
+ "rows_after": 5082432,
+ "size_mb_after": 674.5,
+ "steady_state_elapsed_sec": 23.7,
+ "steady_state_result": {
+  "updated": 0,
+  "rows": 0,
+  "errors": 0,
+  "empty": 3,
+  "total": 1002
+ },
+ "steady_state_elapsed_sec_16w": 31.7,
+ "steady_state_result_16w": {
+  "updated": 0,
+  "rows": 0,
+  "errors": 0,
+  "empty": 3,
+  "total": 1002
+ }
+}

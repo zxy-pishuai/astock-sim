@@ -1,0 +1,830 @@
+{
+ "generated_at": "2026-09-13 15:39:42",
+ "start": "2026-08-16",
+ "config_snapshot": {
+  "BOARD_MOMENTUM_MIN": 8.0,
+  "SLIPPAGE": 0.001,
+  "INITIAL_CAPITAL": 100000.0
+ },
+ "pool": "bt_pool.json top500（静态，P64 偏乐观声明适用）",
+ "recipes": {
+  "score": {
+   "buy_threshold": 25,
+   "max_positions": 3,
+   "position_pct": 0.3,
+   "slippage": 0.001
+  },
+  "board": {
+   "buy_threshold": 40,
+   "max_positions": 2,
+   "position_pct": 0.25,
+   "slippage": 0.001
+  }
+ },
+ "weeks": [
+  {
+   "week": "2026-34W",
+   "days": [
+    "2026-08-18",
+    "2026-08-19",
+    "2026-08-20",
+    "2026-08-21"
+   ],
+   "n_buy": 4,
+   "n_sell": 4,
+   "realized": -3397.13,
+   "fees": 130.51,
+   "win_rate": 0.25,
+   "equity_end": 96575.19,
+   "base_equity": 100000.0,
+   "week_ret": -0.03425,
+   "attr_realized_pct": -0.03397,
+   "attr_other_pct": -0.00028,
+   "fees_info_pct": -0.00131,
+   "trades": [
+    {
+     "t": "2026-08-18 10:29:14",
+     "side": "buy",
+     "code": "000998",
+     "name": "隆平高科",
+     "price": 8.959,
+     "qty": 4700,
+     "pnl": null,
+     "fee": 10.53,
+     "reason": "[弱势(抱团)]评分107分: 量价齐升(+20)、放量突破20日新高(+20)、均线多头(+15)"
+    },
+    {
+     "t": "2026-08-18 19:34:09",
+     "side": "buy",
+     "code": "002081",
+     "name": "金 螳 螂",
+     "price": 6.276,
+     "qty": 3900,
+     "pnl": null,
+     "fee": 6.12,
+     "reason": "[中性]评分113分: 量价齐升(+20)、放量突破20日新高(+20)、均线多头(+15)"
+    },
+    {
+     "t": "2026-08-19 10:19:05",
+     "side": "sell",
+     "code": "000998",
+     "name": "隆平高科",
+     "price": 9.401,
+     "qty": 4700,
+     "pnl": 2042.57,
+     "fee": 33.14,
+     "reason": "冲高回落止盈(峰9.90→9.41)"
+    },
+    {
+     "t": "2026-08-19 10:21:24",
+     "side": "sell",
+     "code": "002081",
+     "name": "金 螳 螂",
+     "price": 5.644,
+     "qty": 3900,
+     "pnl": -2481.0,
+     "fee": 16.51,
+     "reason": "止损"
+    },
+    {
+     "t": "2026-08-20 09:51:12",
+     "side": "buy",
+     "code": "600354",
+     "name": "敦煌种业",
+     "price": 6.653,
+     "qty": 6300,
+     "pnl": null,
+     "fee": 10.48,
+     "reason": "[强势]评分81分: 放量突破20日新高(+20)、均线多头(+15)、量价相关0.92(+10)"
+    },
+    {
+     "t": "2026-08-20 09:51:13",
+     "side": "buy",
+     "code": "000153",
+     "name": "丰原药业",
+     "price": 6.443,
+     "qty": 3800,
+     "pnl": null,
+     "fee": 6.12,
+     "reason": "[强势]评分67分: 放量突破20日新高(+20)、均线多头(+15)、⚠RSI超买(97,-10)"
+    },
+    {
+     "t": "2026-08-21 10:40:18",
+     "side": "sell",
+     "code": "600354",
+     "name": "敦煌种业",
+     "price": 6.384,
+     "qty": 6300,
+     "pnl": -1729.08,
+     "fee": 30.16,
+     "reason": "移动止损(峰6.98)"
+    },
+    {
+     "t": "2026-08-21 10:40:18",
+     "side": "sell",
+     "code": "000153",
+     "name": "丰原药业",
+     "price": 6.124,
+     "qty": 3800,
+     "pnl": -1229.62,
+     "fee": 17.45,
+     "reason": "移动止损(峰6.73)"
+    }
+   ],
+   "backtest": {
+    "score": {
+     "total_return": 0.0,
+     "win_rate": 0.0,
+     "trade_count": 0,
+     "max_drawdown": 0.0
+    },
+    "board": {
+     "total_return": 0.0197,
+     "win_rate": 1.0,
+     "trade_count": 5,
+     "max_drawdown": 0.0
+    }
+   }
+  },
+  {
+   "week": "2026-35W",
+   "days": [
+    "2026-08-24",
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28"
+   ],
+   "n_buy": 3,
+   "n_sell": 1,
+   "realized": -538.41,
+   "fees": 34.2,
+   "win_rate": 0.0,
+   "equity_end": 94916.89,
+   "base_equity": 96575.19,
+   "week_ret": -0.01717,
+   "attr_realized_pct": -0.00558,
+   "attr_other_pct": -0.0116,
+   "fees_info_pct": -0.00035,
+   "trades": [
+    {
+     "t": "2026-08-24 10:06:49",
+     "side": "buy",
+     "code": "002716",
+     "name": "湖南白银",
+     "price": 11.23,
+     "qty": 2000,
+     "pnl": null,
+     "fee": 5.62,
+     "reason": "手动买入"
+    },
+    {
+     "t": "2026-08-25 10:27:29",
+     "side": "sell",
+     "code": "002716",
+     "name": "湖南白银",
+     "price": 10.969,
+     "qty": 2000,
+     "pnl": -538.41,
+     "fee": 16.45,
+     "reason": "移动止损(峰11.70)"
+    },
+    {
+     "t": "2026-08-28 10:22:47",
+     "side": "buy",
+     "code": "600095",
+     "name": "湘财股份",
+     "price": 9.755,
+     "qty": 2900,
+     "pnl": null,
+     "fee": 7.07,
+     "reason": "[强势]评分85分: 量价齐升(+20)、放量突破20日新高(+20)、海龟20日突破(+10)"
+    },
+    {
+     "t": "2026-08-28 10:22:47",
+     "side": "buy",
+     "code": "002628",
+     "name": "成都路桥",
+     "price": 5.621,
+     "qty": 3600,
+     "pnl": null,
+     "fee": 5.06,
+     "reason": "[强势]评分78分: 放量突破20日新高(+20)、均线多头(+15)、MA5/10金叉(+5)"
+    }
+   ],
+   "backtest": {
+    "score": {
+     "total_return": 0.0,
+     "win_rate": 0.0,
+     "trade_count": 0,
+     "max_drawdown": 0.0
+    },
+    "board": {
+     "total_return": 0.0031,
+     "win_rate": 0.5,
+     "trade_count": 4,
+     "max_drawdown": -0.0024
+    }
+   }
+  },
+  {
+   "week": "2026-36W",
+   "days": [
+    "2026-08-31",
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04"
+   ],
+   "n_buy": 6,
+   "n_sell": 8,
+   "realized": -1731.09,
+   "fees": 143.87,
+   "win_rate": 0.5,
+   "equity_end": 92855.92,
+   "base_equity": 94916.89,
+   "week_ret": -0.02171,
+   "attr_realized_pct": -0.01824,
+   "attr_other_pct": -0.00348,
+   "fees_info_pct": -0.00152,
+   "trades": [
+    {
+     "t": "2026-08-31 09:34:47",
+     "side": "sell",
+     "code": "600095",
+     "name": "湘财股份",
+     "price": 9.75,
+     "qty": 2900,
+     "pnl": -34.65,
+     "fee": 21.21,
+     "reason": "冲高回落止盈(峰10.14→9.76)"
+    },
+    {
+     "t": "2026-09-01 09:38:21",
+     "side": "buy",
+     "code": "605577",
+     "name": "龙版传媒",
+     "price": 11.451,
+     "qty": 1900,
+     "pnl": null,
+     "fee": 5.44,
+     "reason": "[强势]评分110分: 量价齐升(+20)、放量突破20日新高(+20)、均线多头(+15)"
+    },
+    {
+     "t": "2026-09-02 09:30:07",
+     "side": "sell",
+     "code": "002628",
+     "name": "成都路桥",
+     "price": 5.495,
+     "qty": 3600,
+     "pnl": -471.08,
+     "fee": 14.89,
+     "reason": "时间止损(3天亏-2.2%)"
+    },
+    {
+     "t": "2026-09-02 09:30:07",
+     "side": "sell",
+     "code": "605577",
+     "name": "龙版传媒",
+     "price": 12.0,
+     "qty": 600,
+     "pnl": 320.54,
+     "fee": 8.6,
+     "reason": "阶梯止盈+4%(+4.8%)"
+    },
+    {
+     "t": "2026-09-02 09:30:33",
+     "side": "sell",
+     "code": "605577",
+     "name": "龙版传媒",
+     "price": 12.19,
+     "qty": 400,
+     "pnl": 287.99,
+     "fee": 7.44,
+     "reason": "阶梯止盈+6%(+6.4%)"
+    },
+    {
+     "t": "2026-09-02 09:30:43",
+     "side": "sell",
+     "code": "605577",
+     "name": "龙版传媒",
+     "price": 11.968,
+     "qty": 900,
+     "pnl": 454.54,
+     "fee": 10.39,
+     "reason": "冲高回落止盈(峰12.26→11.98)"
+    },
+    {
+     "t": "2026-09-02 11:18:21",
+     "side": "buy",
+     "code": "600121",
+     "name": "郑州煤电",
+     "price": 5.425,
+     "qty": 2600,
+     "pnl": null,
+     "fee": 5.0,
+     "reason": "[弱势(抱团)]评分93分: 量价齐升(+20)、放量突破20日新高(+20)、均线多头(+15)"
+    },
+    {
+     "t": "2026-09-03 09:30:07",
+     "side": "sell",
+     "code": "600121",
+     "name": "郑州煤电",
+     "price": 5.425,
+     "qty": 2600,
+     "pnl": -14.26,
+     "fee": 12.05,
+     "reason": "冲高回落止盈(峰5.94→5.43)"
+    },
+    {
+     "t": "2026-09-03 09:30:15",
+     "side": "buy",
+     "code": "000635",
+     "name": "英 力 特",
+     "price": 8.407,
+     "qty": 3400,
+     "pnl": null,
+     "fee": 7.15,
+     "reason": "[强势]评分70分: 放量突破20日新高(+20)、均线多头(+15)、海龟20日突破(+10)"
+    },
+    {
+     "t": "2026-09-03 09:30:15",
+     "side": "buy",
+     "code": "002300",
+     "name": "太阳电缆",
+     "price": 7.998,
+     "qty": 2500,
+     "pnl": null,
+     "fee": 5.0,
+     "reason": "[强势]评分68分: 量价齐升(+20)、MACD金叉(+10)、RSI超卖反弹(+10)"
+    },
+    {
+     "t": "2026-09-04 13:16:37",
+     "side": "sell",
+     "code": "000635",
+     "name": "英 力 特",
+     "price": 7.642,
+     "qty": 3400,
+     "pnl": -2618.55,
+     "fee": 19.49,
+     "reason": "止损"
+    },
+    {
+     "t": "2026-09-04 13:16:37",
+     "side": "sell",
+     "code": "002300",
+     "name": "太阳电缆",
+     "price": 8.142,
+     "qty": 2500,
+     "pnl": 344.38,
+     "fee": 15.27,
+     "reason": "冲高回落止盈(峰8.70→8.15)"
+    },
+    {
+     "t": "2026-09-04 13:17:51",
+     "side": "buy",
+     "code": "002059",
+     "name": "云南旅游",
+     "price": 5.906,
+     "qty": 4700,
+     "pnl": null,
+     "fee": 6.94,
+     "reason": "[强势]评分89分: 量价齐升(+20)、放量突破20日新高(+20)、均线多头(+15)"
+    },
+    {
+     "t": "2026-09-04 13:17:51",
+     "side": "buy",
+     "code": "002787",
+     "name": "华源控股",
+     "price": 23.794,
+     "qty": 800,
+     "pnl": null,
+     "fee": 5.0,
+     "reason": "[强势]评分77分: 放量突破20日新高(+20)、均线多头(+15)、海龟20日突破(+10)"
+    }
+   ],
+   "backtest": {
+    "score": {
+     "total_return": 0.0,
+     "win_rate": 0.0,
+     "trade_count": 0,
+     "max_drawdown": 0.0
+    },
+    "board": {
+     "total_return": -0.0021,
+     "win_rate": 0.0,
+     "trade_count": 2,
+     "max_drawdown": -0.0021
+    }
+   }
+  },
+  {
+   "week": "2026-37W",
+   "days": [
+    "2026-09-07",
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11"
+   ],
+   "n_buy": 3,
+   "n_sell": 6,
+   "realized": -1871.01,
+   "fees": 101.92,
+   "win_rate": 0.333,
+   "equity_end": 92368.1,
+   "base_equity": 92855.92,
+   "week_ret": -0.00525,
+   "attr_realized_pct": -0.02015,
+   "attr_other_pct": 0.0149,
+   "fees_info_pct": -0.0011,
+   "trades": [
+    {
+     "t": "2026-09-07 09:30:08",
+     "side": "sell",
+     "code": "002059",
+     "name": "云南旅游",
+     "price": 5.774,
+     "qty": 4700,
+     "pnl": -639.25,
+     "fee": 20.35,
+     "reason": "移动止损(峰6.35)"
+    },
+    {
+     "t": "2026-09-07 09:30:08",
+     "side": "sell",
+     "code": "002787",
+     "name": "华源控股",
+     "price": 23.277,
+     "qty": 800,
+     "pnl": -427.97,
+     "fee": 14.31,
+     "reason": "移动止损(峰25.38)"
+    },
+    {
+     "t": "2026-09-08 11:22:45",
+     "side": "buy",
+     "code": "002815",
+     "name": "崇达技术",
+     "price": 17.417,
+     "qty": 1600,
+     "pnl": null,
+     "fee": 6.97,
+     "reason": "[强势]评分103分: 量价齐升(+20)、放量突破20日新高(+20)、均线多头(+15)"
+    },
+    {
+     "t": "2026-09-08 11:22:45",
+     "side": "buy",
+     "code": "002011",
+     "name": "盾安环境",
+     "price": 11.912,
+     "qty": 1600,
+     "pnl": null,
+     "fee": 5.0,
+     "reason": "[强势]评分88分: 量价齐升(+20)、放量突破20日新高(+20)、均线多头(+15)"
+    },
+    {
+     "t": "2026-09-09 13:00:18",
+     "side": "sell",
+     "code": "002815",
+     "name": "崇达技术",
+     "price": 18.4,
+     "qty": 500,
+     "pnl": 481.7,
+     "fee": 9.6,
+     "reason": "阶梯止盈+4%(+5.6%)"
+    },
+    {
+     "t": "2026-09-09 13:00:18",
+     "side": "sell",
+     "code": "002011",
+     "name": "盾安环境",
+     "price": 11.379,
+     "qty": 1600,
+     "pnl": -867.37,
+     "fee": 14.1,
+     "reason": "移动止损(峰12.54)"
+    },
+    {
+     "t": "2026-09-09 13:10:34",
+     "side": "buy",
+     "code": "002286",
+     "name": "保龄宝",
+     "price": 9.609,
+     "qty": 1500,
+     "pnl": null,
+     "fee": 5.0,
+     "reason": "[中性]评分97分: 量价齐升(+20)、放量突破20日新高(+20)、均线多头(+15)"
+    },
+    {
+     "t": "2026-09-09 13:21:30",
+     "side": "sell",
+     "code": "002815",
+     "name": "崇达技术",
+     "price": 18.012,
+     "qty": 1100,
+     "pnl": 639.12,
+     "fee": 14.91,
+     "reason": "冲高回落止盈(峰18.40→18.03)"
+    },
+    {
+     "t": "2026-09-10 13:39:13",
+     "side": "sell",
+     "code": "002286",
+     "name": "保龄宝",
+     "price": 8.912,
+     "qty": 1500,
+     "pnl": -1057.24,
+     "fee": 11.68,
+     "reason": "止损"
+    }
+   ],
+   "backtest": {
+    "score": {
+     "total_return": 0.0,
+     "win_rate": 0.0,
+     "trade_count": 0,
+     "max_drawdown": 0.0
+    },
+    "board": {
+     "total_return": -0.0195,
+     "win_rate": 0.0,
+     "trade_count": 4,
+     "max_drawdown": -0.0195
+    }
+   }
+  }
+ ],
+ "totals": {
+  "realized": -7537.64,
+  "equity_ret": -0.07632
+ },
+ "crosscheck": [
+  {
+   "day": "2026-08-18",
+   "side": "buy",
+   "code": "000998",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-18",
+   "side": "buy",
+   "code": "002081",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-19",
+   "side": "sell",
+   "code": "000998",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-19",
+   "side": "sell",
+   "code": "002081",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-20",
+   "side": "buy",
+   "code": "600354",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-20",
+   "side": "buy",
+   "code": "000153",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-21",
+   "side": "sell",
+   "code": "600354",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-21",
+   "side": "sell",
+   "code": "000153",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-24",
+   "side": "buy",
+   "code": "002716",
+   "audit_event": "manual_buy",
+   "audit_n": 1
+  },
+  {
+   "day": "2026-08-25",
+   "side": "sell",
+   "code": "002716",
+   "audit_event": null,
+   "audit_n": 0
+  },
+  {
+   "day": "2026-08-28",
+   "side": "buy",
+   "code": "600095",
+   "audit_event": "strategy_buy",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-08-28",
+   "side": "buy",
+   "code": "002628",
+   "audit_event": "strategy_buy",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-08-31",
+   "side": "sell",
+   "code": "600095",
+   "audit_event": "strategy_sell",
+   "audit_n": 1
+  },
+  {
+   "day": "2026-09-01",
+   "side": "buy",
+   "code": "605577",
+   "audit_event": "strategy_buy",
+   "audit_n": 1
+  },
+  {
+   "day": "2026-09-02",
+   "side": "sell",
+   "code": "002628",
+   "audit_event": "strategy_sell",
+   "audit_n": 4
+  },
+  {
+   "day": "2026-09-02",
+   "side": "sell",
+   "code": "605577",
+   "audit_event": "strategy_sell",
+   "audit_n": 4
+  },
+  {
+   "day": "2026-09-02",
+   "side": "sell",
+   "code": "605577",
+   "audit_event": "strategy_sell",
+   "audit_n": 4
+  },
+  {
+   "day": "2026-09-02",
+   "side": "sell",
+   "code": "605577",
+   "audit_event": "strategy_sell",
+   "audit_n": 4
+  },
+  {
+   "day": "2026-09-02",
+   "side": "buy",
+   "code": "600121",
+   "audit_event": "strategy_buy",
+   "audit_n": 1
+  },
+  {
+   "day": "2026-09-03",
+   "side": "sell",
+   "code": "600121",
+   "audit_event": "strategy_sell",
+   "audit_n": 1
+  },
+  {
+   "day": "2026-09-03",
+   "side": "buy",
+   "code": "000635",
+   "audit_event": "strategy_buy",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-03",
+   "side": "buy",
+   "code": "002300",
+   "audit_event": "strategy_buy",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-04",
+   "side": "sell",
+   "code": "000635",
+   "audit_event": "strategy_sell",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-04",
+   "side": "sell",
+   "code": "002300",
+   "audit_event": "strategy_sell",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-04",
+   "side": "buy",
+   "code": "002059",
+   "audit_event": "strategy_buy",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-04",
+   "side": "buy",
+   "code": "002787",
+   "audit_event": "strategy_buy",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-07",
+   "side": "sell",
+   "code": "002059",
+   "audit_event": "strategy_sell",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-07",
+   "side": "sell",
+   "code": "002787",
+   "audit_event": "strategy_sell",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-08",
+   "side": "buy",
+   "code": "002815",
+   "audit_event": "strategy_buy",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-08",
+   "side": "buy",
+   "code": "002011",
+   "audit_event": "strategy_buy",
+   "audit_n": 2
+  },
+  {
+   "day": "2026-09-09",
+   "side": "sell",
+   "code": "002815",
+   "audit_event": "strategy_sell",
+   "audit_n": 3
+  },
+  {
+   "day": "2026-09-09",
+   "side": "sell",
+   "code": "002011",
+   "audit_event": "strategy_sell",
+   "audit_n": 3
+  },
+  {
+   "day": "2026-09-09",
+   "side": "buy",
+   "code": "002286",
+   "audit_event": "strategy_buy",
+   "audit_n": 1
+  },
+  {
+   "day": "2026-09-09",
+   "side": "sell",
+   "code": "002815",
+   "audit_event": "strategy_sell",
+   "audit_n": 3
+  },
+  {
+   "day": "2026-09-10",
+   "side": "sell",
+   "code": "002286",
+   "audit_event": "strategy_sell",
+   "audit_n": 1
+  }
+ ],
+ "audit_meta": {
+  "buy_events": [
+   "manual_buy",
+   "strategy_buy"
+  ],
+  "sell_events": [
+   "manual_sell",
+   "strategy_sell"
+  ],
+  "buy_ev_on": "2026-09-08",
+  "sell_ev_on": "2026-09-13",
+  "n_buys": 16,
+  "n_sells": 19,
+  "buys_covered": 12,
+  "sells_covered": 14,
+  "buys_pre_on": 4,
+  "sells_pre_on": 5,
+  "buys_post_miss": 0,
+  "sells_post_miss": 0,
+  "alert": false
+ }
+}

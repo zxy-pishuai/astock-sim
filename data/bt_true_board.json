@@ -1,0 +1,97 @@
+{
+ "meta": {
+  "window": [
+   "2025-08-18",
+   "2026-08-21"
+  ],
+  "pool_n": 300,
+  "capital": 100000.0,
+  "max_positions": 2,
+  "position_pct": 0.25,
+  "slippage": 0.001,
+  "fees": "engine.buy_fee/sell_fee（只读引用）",
+  "fill_models": {
+   "M1": "仅炸板单成交（封死默认排不进），成交价=涨停价",
+   "M2": "炸板单100%成交；封死单按首触时间 p(10:30前)=0.3 / p(10:30后)=0.6（seed=42）",
+   "M3": "全部触板单成交（上限对照）"
+  },
+  "exits": "阶梯止盈[(0.04, 0.33), (0.06, 0.33)]→止损-0.05→止盈0.08→时间止损3d→超时10d（收盘触发，卖出计滑点）；未复刻冲高回落/移动止损/主力出货",
+  "board_note": "对照用现有 board 日线近似按当前 config 默认（含 Phase33 动量下限 8.0）"
+ },
+ "true_board": {
+  "M1": {
+   "total_return": -0.1064,
+   "max_drawdown": -0.2857,
+   "trade_count": 451,
+   "closed_rounds": 284,
+   "win_rate": 0.662,
+   "n_days": 236,
+   "touches": 1301,
+   "model": "M1"
+  },
+  "M2": {
+   "total_return": 0.6638,
+   "max_drawdown": -0.1366,
+   "trade_count": 565,
+   "closed_rounds": 369,
+   "win_rate": 0.7507,
+   "n_days": 236,
+   "touches": 1301,
+   "model": "M2"
+  },
+  "M3": {
+   "total_return": 2.5077,
+   "max_drawdown": -0.0988,
+   "trade_count": 708,
+   "closed_rounds": 482,
+   "win_rate": 0.8133,
+   "n_days": 236,
+   "touches": 1301,
+   "model": "M3"
+  }
+ },
+ "compare": {
+  "board_daily": {
+   "total_return": 0.7924,
+   "max_drawdown": -0.1521,
+   "trade_count": 430,
+   "win_rate": 0.7721
+  },
+  "board_intraday": {
+   "total_return": -0.1787,
+   "max_drawdown": -0.3998,
+   "trade_count": 874,
+   "win_rate": 0.4912
+  }
+ },
+ "ecosystem": {
+  "total_touches": 1301,
+  "sealed": 779,
+  "broken": 522,
+  "seal_rate": 0.5988,
+  "break_rate": 0.4012,
+  "by_first_touch_time": {
+   "10:30前": {
+    "touches": 525,
+    "seal_rate": 0.5867
+   },
+   "10:30后": {
+    "touches": 776,
+    "seal_rate": 0.607
+   }
+  },
+  "sealed_next_day": {
+   "n": 768,
+   "next_day_avg_pct": 3.1038,
+   "next_day_gap_avg_pct": 2.5915,
+   "next_day_up_ratio": 0.6797
+  },
+  "broken_next_day": {
+   "n": 520,
+   "next_day_avg_pct": 0.8827,
+   "next_day_gap_avg_pct": 0.1479,
+   "next_day_up_ratio": 0.5385
+  }
+ },
+ "elapsed_s": 82.5
+}

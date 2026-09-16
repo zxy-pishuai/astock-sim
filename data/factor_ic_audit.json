@@ -1,0 +1,1009 @@
+{
+ "generated_at": "2026-08-27 04:40:37",
+ "phase": "28A",
+ "method": {
+  "label": "未来5日收益 close[t+5]/close[t]-1（个股自身bar序列）",
+  "feature_pit": "全部引用指标为因果函数（indicators.py 纯函数），t 日成分只用 ≤t 数据",
+  "universe": "data/bt_pool.json[:500] 排除 DATA_EXCLUDE_CODES",
+  "start": "2019-08-01",
+  "ic": "日频横截面 Spearman（二值成分按秩和法精确还原含并列平均秩）",
+  "aggregate": "月度IC=月内日IC均值；ICIR=月度均值/月度标准差(ddof=1)",
+  "classes": "有效 ICIR>=0.3；弱 0<=ICIR<0.3；负 ICIR<0",
+  "sample_stock_days": 696216,
+  "min_day_samples": 30
+ },
+ "components": [
+  {
+   "key": "vp_divergence",
+   "name": "量价背离/负相关(罚)",
+   "trigger": "背离强度≥0.03 或 近10日量价相关<0",
+   "weight": -12,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1710,
+   "monthly_ic_mean": 0.0148,
+   "monthly_ic_std": 0.0366,
+   "icir": 0.406,
+   "ic_positive_month_ratio": 0.694,
+   "daily_ic_positive_ratio": 0.568,
+   "trigger_rate": 0.3677,
+   "trig_fwd5_mean_bp": 84.2,
+   "nontrig_fwd5_mean_bp": 51.8,
+   "spread_bp": 32.4,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.3269,
+     "spread_bp": 14.3
+    },
+    "2020": {
+     "trigger_rate": 0.3448,
+     "spread_bp": 49.8
+    },
+    "2021": {
+     "trigger_rate": 0.3701,
+     "spread_bp": 0.9
+    },
+    "2022": {
+     "trigger_rate": 0.4253,
+     "spread_bp": 52.5
+    },
+    "2023": {
+     "trigger_rate": 0.3658,
+     "spread_bp": 15.4
+    },
+    "2024": {
+     "trigger_rate": 0.383,
+     "spread_bp": 86.6
+    },
+    "2025": {
+     "trigger_rate": 0.3352,
+     "spread_bp": 35.1
+    },
+    "2026": {
+     "trigger_rate": 0.3639,
+     "spread_bp": 21.6
+    }
+   },
+   "class": "有效"
+  },
+  {
+   "key": "pullback_ma",
+   "name": "回踩20日线企稳",
+   "trigger": "0<收盘-MA20≤MA20×2% 且 昨收<今收",
+   "weight": 5,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1663,
+   "monthly_ic_mean": 0.0026,
+   "monthly_ic_std": 0.0217,
+   "icir": 0.118,
+   "ic_positive_month_ratio": 0.553,
+   "daily_ic_positive_ratio": 0.523,
+   "trigger_rate": 0.0614,
+   "trig_fwd5_mean_bp": 54.8,
+   "nontrig_fwd5_mean_bp": 64.3,
+   "spread_bp": -9.4,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0721,
+     "spread_bp": -4.9
+    },
+    "2020": {
+     "trigger_rate": 0.059,
+     "spread_bp": -21.4
+    },
+    "2021": {
+     "trigger_rate": 0.0587,
+     "spread_bp": -15.6
+    },
+    "2022": {
+     "trigger_rate": 0.0584,
+     "spread_bp": -9.4
+    },
+    "2023": {
+     "trigger_rate": 0.074,
+     "spread_bp": -21.9
+    },
+    "2024": {
+     "trigger_rate": 0.0539,
+     "spread_bp": 37.8
+    },
+    "2025": {
+     "trigger_rate": 0.0731,
+     "spread_bp": -8.6
+    },
+    "2026": {
+     "trigger_rate": 0.0402,
+     "spread_bp": -30.5
+    }
+   },
+   "class": "弱"
+  },
+  {
+   "key": "rsi_oversold",
+   "name": "RSI超卖反弹",
+   "trigger": "前日RSI<30 且 今日RSI回升",
+   "weight": 10,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1578,
+   "monthly_ic_mean": 0.0044,
+   "monthly_ic_std": 0.0391,
+   "icir": 0.112,
+   "ic_positive_month_ratio": 0.518,
+   "daily_ic_positive_ratio": 0.515,
+   "trigger_rate": 0.0848,
+   "trig_fwd5_mean_bp": 76.8,
+   "nontrig_fwd5_mean_bp": 62.5,
+   "spread_bp": 14.3,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0778,
+     "spread_bp": -20.2
+    },
+    "2020": {
+     "trigger_rate": 0.0758,
+     "spread_bp": 82.2
+    },
+    "2021": {
+     "trigger_rate": 0.0791,
+     "spread_bp": 20.4
+    },
+    "2022": {
+     "trigger_rate": 0.1058,
+     "spread_bp": 25.0
+    },
+    "2023": {
+     "trigger_rate": 0.0985,
+     "spread_bp": 49.7
+    },
+    "2024": {
+     "trigger_rate": 0.0839,
+     "spread_bp": 52.8
+    },
+    "2025": {
+     "trigger_rate": 0.0679,
+     "spread_bp": -20.4
+    },
+    "2026": {
+     "trigger_rate": 0.0856,
+     "spread_bp": -76.6
+    }
+   },
+   "class": "弱"
+  },
+  {
+   "key": "volume_shrink",
+   "name": "缩量回踩",
+   "trigger": "MA5>MA10 且 量比≤0.7 且 收盘≥MA10",
+   "weight": 5,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1575,
+   "monthly_ic_mean": 0.0011,
+   "monthly_ic_std": 0.0248,
+   "icir": 0.044,
+   "ic_positive_month_ratio": 0.529,
+   "daily_ic_positive_ratio": 0.501,
+   "trigger_rate": 0.0499,
+   "trig_fwd5_mean_bp": 78.9,
+   "nontrig_fwd5_mean_bp": 62.9,
+   "spread_bp": 16.0,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0547,
+     "spread_bp": -27.0
+    },
+    "2020": {
+     "trigger_rate": 0.0485,
+     "spread_bp": -41.5
+    },
+    "2021": {
+     "trigger_rate": 0.0495,
+     "spread_bp": -25.2
+    },
+    "2022": {
+     "trigger_rate": 0.054,
+     "spread_bp": 20.9
+    },
+    "2023": {
+     "trigger_rate": 0.056,
+     "spread_bp": 19.1
+    },
+    "2024": {
+     "trigger_rate": 0.0502,
+     "spread_bp": 58.7
+    },
+    "2025": {
+     "trigger_rate": 0.0517,
+     "spread_bp": 32.6
+    },
+    "2026": {
+     "trigger_rate": 0.0308,
+     "spread_bp": 163.8
+    }
+   },
+   "class": "弱"
+  },
+  {
+   "key": "turtle_break",
+   "name": "海龟20日突破",
+   "trigger": "收盘≥20日最高×99.5%",
+   "weight": 10,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1403,
+   "monthly_ic_mean": 0.0011,
+   "monthly_ic_std": 0.0333,
+   "icir": 0.033,
+   "ic_positive_month_ratio": 0.529,
+   "daily_ic_positive_ratio": 0.509,
+   "trigger_rate": 0.025,
+   "trig_fwd5_mean_bp": 166.8,
+   "nontrig_fwd5_mean_bp": 61.0,
+   "spread_bp": 105.8,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0276,
+     "spread_bp": 2.3
+    },
+    "2020": {
+     "trigger_rate": 0.0257,
+     "spread_bp": 34.8
+    },
+    "2021": {
+     "trigger_rate": 0.0222,
+     "spread_bp": 58.6
+    },
+    "2022": {
+     "trigger_rate": 0.018,
+     "spread_bp": 45.8
+    },
+    "2023": {
+     "trigger_rate": 0.0212,
+     "spread_bp": 59.9
+    },
+    "2024": {
+     "trigger_rate": 0.0268,
+     "spread_bp": 216.8
+    },
+    "2025": {
+     "trigger_rate": 0.0286,
+     "spread_bp": 31.3
+    },
+    "2026": {
+     "trigger_rate": 0.0341,
+     "spread_bp": 242.0
+    }
+   },
+   "class": "弱"
+  },
+  {
+   "key": "macd_golden",
+   "name": "MACD金叉",
+   "trigger": "DIF 上穿 DEA",
+   "weight": 10,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1591,
+   "monthly_ic_mean": 0.0001,
+   "monthly_ic_std": 0.0201,
+   "icir": 0.005,
+   "ic_positive_month_ratio": 0.494,
+   "daily_ic_positive_ratio": 0.505,
+   "trigger_rate": 0.0391,
+   "trig_fwd5_mean_bp": 92.9,
+   "nontrig_fwd5_mean_bp": 62.5,
+   "spread_bp": 30.4,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0386,
+     "spread_bp": -20.8
+    },
+    "2020": {
+     "trigger_rate": 0.0403,
+     "spread_bp": 45.1
+    },
+    "2021": {
+     "trigger_rate": 0.0403,
+     "spread_bp": -17.4
+    },
+    "2022": {
+     "trigger_rate": 0.0373,
+     "spread_bp": -16.1
+    },
+    "2023": {
+     "trigger_rate": 0.0397,
+     "spread_bp": 30.7
+    },
+    "2024": {
+     "trigger_rate": 0.0385,
+     "spread_bp": 104.9
+    },
+    "2025": {
+     "trigger_rate": 0.0407,
+     "spread_bp": -4.5
+    },
+    "2026": {
+     "trigger_rate": 0.0362,
+     "spread_bp": 112.0
+    }
+   },
+   "class": "弱"
+  },
+  {
+   "key": "ma_cross",
+   "name": "MA5/10金叉",
+   "trigger": "前日MA5≤MA10 且 今日MA5>MA10",
+   "weight": 5,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1599,
+   "monthly_ic_mean": -0.001,
+   "monthly_ic_std": 0.0235,
+   "icir": -0.043,
+   "ic_positive_month_ratio": 0.529,
+   "daily_ic_positive_ratio": 0.496,
+   "trigger_rate": 0.0549,
+   "trig_fwd5_mean_bp": 70.8,
+   "nontrig_fwd5_mean_bp": 63.3,
+   "spread_bp": 7.5,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.057,
+     "spread_bp": -14.5
+    },
+    "2020": {
+     "trigger_rate": 0.0563,
+     "spread_bp": -20.6
+    },
+    "2021": {
+     "trigger_rate": 0.0577,
+     "spread_bp": -65.1
+    },
+    "2022": {
+     "trigger_rate": 0.0547,
+     "spread_bp": -15.9
+    },
+    "2023": {
+     "trigger_rate": 0.0533,
+     "spread_bp": 14.2
+    },
+    "2024": {
+     "trigger_rate": 0.0548,
+     "spread_bp": 83.7
+    },
+    "2025": {
+     "trigger_rate": 0.0562,
+     "spread_bp": 2.5
+    },
+    "2026": {
+     "trigger_rate": 0.0492,
+     "spread_bp": 81.7
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "rsrs_accel",
+   "name": "RSRS加速",
+   "trigger": "RSRS今日>昨日>0",
+   "weight": 5,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1710,
+   "monthly_ic_mean": -0.0072,
+   "monthly_ic_std": 0.0295,
+   "icir": -0.243,
+   "ic_positive_month_ratio": 0.365,
+   "daily_ic_positive_ratio": 0.46,
+   "trigger_rate": 0.2094,
+   "trig_fwd5_mean_bp": 60.8,
+   "nontrig_fwd5_mean_bp": 64.5,
+   "spread_bp": -3.7,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.2304,
+     "spread_bp": -11.4
+    },
+    "2020": {
+     "trigger_rate": 0.2427,
+     "spread_bp": 8.4
+    },
+    "2021": {
+     "trigger_rate": 0.2111,
+     "spread_bp": 3.4
+    },
+    "2022": {
+     "trigger_rate": 0.1513,
+     "spread_bp": -41.9
+    },
+    "2023": {
+     "trigger_rate": 0.1749,
+     "spread_bp": -12.0
+    },
+    "2024": {
+     "trigger_rate": 0.2005,
+     "spread_bp": -49.4
+    },
+    "2025": {
+     "trigger_rate": 0.2321,
+     "spread_bp": -31.3
+    },
+    "2026": {
+     "trigger_rate": 0.2669,
+     "spread_bp": 28.5
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "penalty_overbought",
+   "name": "RSI超买(罚)",
+   "trigger": "RSI>70",
+   "weight": -10,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1662,
+   "monthly_ic_mean": -0.0141,
+   "monthly_ic_std": 0.0488,
+   "icir": -0.288,
+   "ic_positive_month_ratio": 0.306,
+   "daily_ic_positive_ratio": 0.454,
+   "trigger_rate": 0.1228,
+   "trig_fwd5_mean_bp": 85.8,
+   "nontrig_fwd5_mean_bp": 60.6,
+   "spread_bp": 25.2,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.1464,
+     "spread_bp": 0.6
+    },
+    "2020": {
+     "trigger_rate": 0.1299,
+     "spread_bp": -75.0
+    },
+    "2021": {
+     "trigger_rate": 0.1185,
+     "spread_bp": 5.0
+    },
+    "2022": {
+     "trigger_rate": 0.0888,
+     "spread_bp": -14.7
+    },
+    "2023": {
+     "trigger_rate": 0.1086,
+     "spread_bp": 36.8
+    },
+    "2024": {
+     "trigger_rate": 0.1075,
+     "spread_bp": -23.8
+    },
+    "2025": {
+     "trigger_rate": 0.1419,
+     "spread_bp": 7.0
+    },
+    "2026": {
+     "trigger_rate": 0.1717,
+     "spread_bp": 169.8
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "vp_vwap",
+   "name": "站稳VWAP",
+   "trigger": "收盘>VWAP(累计)",
+   "weight": 5,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1710,
+   "monthly_ic_mean": -0.022,
+   "monthly_ic_std": 0.075,
+   "icir": -0.294,
+   "ic_positive_month_ratio": 0.318,
+   "daily_ic_positive_ratio": 0.437,
+   "trigger_rate": 0.2839,
+   "trig_fwd5_mean_bp": 65.6,
+   "nontrig_fwd5_mean_bp": 62.9,
+   "spread_bp": 2.6,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0999,
+     "spread_bp": -8.1
+    },
+    "2020": {
+     "trigger_rate": 0.2001,
+     "spread_bp": -10.5
+    },
+    "2021": {
+     "trigger_rate": 0.2718,
+     "spread_bp": -55.8
+    },
+    "2022": {
+     "trigger_rate": 0.2103,
+     "spread_bp": -77.8
+    },
+    "2023": {
+     "trigger_rate": 0.209,
+     "spread_bp": -67.3
+    },
+    "2024": {
+     "trigger_rate": 0.1669,
+     "spread_bp": -69.3
+    },
+    "2025": {
+     "trigger_rate": 0.4274,
+     "spread_bp": 14.1
+    },
+    "2026": {
+     "trigger_rate": 0.6819,
+     "spread_bp": 19.7
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "vp_vol_slope",
+   "name": "量能递增",
+   "trigger": "近5日量能斜率>0",
+   "weight": 5,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1710,
+   "monthly_ic_mean": -0.01,
+   "monthly_ic_std": 0.0295,
+   "icir": -0.339,
+   "ic_positive_month_ratio": 0.341,
+   "daily_ic_positive_ratio": 0.458,
+   "trigger_rate": 0.47,
+   "trig_fwd5_mean_bp": 73.3,
+   "nontrig_fwd5_mean_bp": 55.2,
+   "spread_bp": 18.1,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.4806,
+     "spread_bp": -17.7
+    },
+    "2020": {
+     "trigger_rate": 0.4679,
+     "spread_bp": 8.7
+    },
+    "2021": {
+     "trigger_rate": 0.4626,
+     "spread_bp": -11.3
+    },
+    "2022": {
+     "trigger_rate": 0.4635,
+     "spread_bp": 22.0
+    },
+    "2023": {
+     "trigger_rate": 0.4723,
+     "spread_bp": 15.2
+    },
+    "2024": {
+     "trigger_rate": 0.473,
+     "spread_bp": 68.1
+    },
+    "2025": {
+     "trigger_rate": 0.4685,
+     "spread_bp": -5.0
+    },
+    "2026": {
+     "trigger_rate": 0.4811,
+     "spread_bp": 39.5
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "ma_bullish",
+   "name": "均线多头",
+   "trigger": "MA5>MA10>MA20",
+   "weight": 15,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1710,
+   "monthly_ic_mean": -0.0232,
+   "monthly_ic_std": 0.0585,
+   "icir": -0.396,
+   "ic_positive_month_ratio": 0.318,
+   "daily_ic_positive_ratio": 0.435,
+   "trigger_rate": 0.3376,
+   "trig_fwd5_mean_bp": 73.8,
+   "nontrig_fwd5_mean_bp": 58.5,
+   "spread_bp": 15.3,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.3637,
+     "spread_bp": 14.6
+    },
+    "2020": {
+     "trigger_rate": 0.3468,
+     "spread_bp": -13.5
+    },
+    "2021": {
+     "trigger_rate": 0.3386,
+     "spread_bp": -22.1
+    },
+    "2022": {
+     "trigger_rate": 0.2911,
+     "spread_bp": 0.5
+    },
+    "2023": {
+     "trigger_rate": 0.2967,
+     "spread_bp": -18.9
+    },
+    "2024": {
+     "trigger_rate": 0.3135,
+     "spread_bp": -16.7
+    },
+    "2025": {
+     "trigger_rate": 0.3914,
+     "spread_bp": 14.0
+    },
+    "2026": {
+     "trigger_rate": 0.3916,
+     "spread_bp": 122.8
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "breakout",
+   "name": "放量突破20日新高",
+   "trigger": "high≥20日最高 且 量比≥1.5",
+   "weight": 20,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1602,
+   "monthly_ic_mean": -0.0138,
+   "monthly_ic_std": 0.0263,
+   "icir": -0.524,
+   "ic_positive_month_ratio": 0.294,
+   "daily_ic_positive_ratio": 0.425,
+   "trigger_rate": 0.0333,
+   "trig_fwd5_mean_bp": 86.8,
+   "nontrig_fwd5_mean_bp": 62.9,
+   "spread_bp": 23.9,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0373,
+     "spread_bp": 17.0
+    },
+    "2020": {
+     "trigger_rate": 0.0337,
+     "spread_bp": 21.6
+    },
+    "2021": {
+     "trigger_rate": 0.0349,
+     "spread_bp": 23.5
+    },
+    "2022": {
+     "trigger_rate": 0.0282,
+     "spread_bp": -2.0
+    },
+    "2023": {
+     "trigger_rate": 0.0331,
+     "spread_bp": -3.8
+    },
+    "2024": {
+     "trigger_rate": 0.0338,
+     "spread_bp": -34.1
+    },
+    "2025": {
+     "trigger_rate": 0.0377,
+     "spread_bp": 16.0
+    },
+    "2026": {
+     "trigger_rate": 0.0287,
+     "spread_bp": 213.5
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "rsrs_bullish",
+   "name": "RSRS看涨",
+   "trigger": "RSRS>0.7",
+   "weight": 15,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1709,
+   "monthly_ic_mean": -0.0212,
+   "monthly_ic_std": 0.0398,
+   "icir": -0.533,
+   "ic_positive_month_ratio": 0.282,
+   "daily_ic_positive_ratio": 0.394,
+   "trigger_rate": 0.2187,
+   "trig_fwd5_mean_bp": 55.5,
+   "nontrig_fwd5_mean_bp": 66.0,
+   "spread_bp": -10.5,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.2352,
+     "spread_bp": -15.4
+    },
+    "2020": {
+     "trigger_rate": 0.2865,
+     "spread_bp": -61.0
+    },
+    "2021": {
+     "trigger_rate": 0.2135,
+     "spread_bp": -9.5
+    },
+    "2022": {
+     "trigger_rate": 0.1294,
+     "spread_bp": -49.0
+    },
+    "2023": {
+     "trigger_rate": 0.1736,
+     "spread_bp": -9.5
+    },
+    "2024": {
+     "trigger_rate": 0.227,
+     "spread_bp": -15.5
+    },
+    "2025": {
+     "trigger_rate": 0.2542,
+     "spread_bp": -34.6
+    },
+    "2026": {
+     "trigger_rate": 0.257,
+     "spread_bp": 17.7
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "volume_price",
+   "name": "量价齐升",
+   "trigger": "阳线且涨幅≥2% 且量比≥1.8",
+   "weight": 20,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1502,
+   "monthly_ic_mean": -0.0124,
+   "monthly_ic_std": 0.0221,
+   "icir": -0.564,
+   "ic_positive_month_ratio": 0.259,
+   "daily_ic_positive_ratio": 0.431,
+   "trigger_rate": 0.021,
+   "trig_fwd5_mean_bp": 89.4,
+   "nontrig_fwd5_mean_bp": 63.1,
+   "spread_bp": 26.3,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0239,
+     "spread_bp": 13.8
+    },
+    "2020": {
+     "trigger_rate": 0.0214,
+     "spread_bp": -18.3
+    },
+    "2021": {
+     "trigger_rate": 0.0231,
+     "spread_bp": 46.6
+    },
+    "2022": {
+     "trigger_rate": 0.02,
+     "spread_bp": -19.0
+    },
+    "2023": {
+     "trigger_rate": 0.0238,
+     "spread_bp": -5.5
+    },
+    "2024": {
+     "trigger_rate": 0.0196,
+     "spread_bp": 106.7
+    },
+    "2025": {
+     "trigger_rate": 0.022,
+     "spread_bp": -7.8
+    },
+    "2026": {
+     "trigger_rate": 0.0143,
+     "spread_bp": 193.5
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "penalty_stall",
+   "name": "高位放量滞涨(罚)",
+   "trigger": "涨幅>5% 且 量比>3 且 收盘<high×98%",
+   "weight": -15,
+   "source": "kline",
+   "months": 2,
+   "daily_ic_days": 2,
+   "monthly_ic_mean": -0.0235,
+   "monthly_ic_std": 0.0405,
+   "icir": -0.58,
+   "ic_positive_month_ratio": 0.5,
+   "daily_ic_positive_ratio": 0.5,
+   "trigger_rate": 0.0003,
+   "trig_fwd5_mean_bp": -128.2,
+   "nontrig_fwd5_mean_bp": 63.7,
+   "spread_bp": -191.9,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0002,
+     "spread_bp": -484.8
+    },
+    "2020": {
+     "trigger_rate": 0.0002,
+     "spread_bp": -118.5
+    },
+    "2021": {
+     "trigger_rate": 0.0003,
+     "spread_bp": 22.3
+    },
+    "2022": {
+     "trigger_rate": 0.0003,
+     "spread_bp": -187.4
+    },
+    "2023": {
+     "trigger_rate": 0.0004,
+     "spread_bp": -76.6
+    },
+    "2024": {
+     "trigger_rate": 0.0003,
+     "spread_bp": -413.9
+    },
+    "2025": {
+     "trigger_rate": 0.0003,
+     "spread_bp": -342.9
+    },
+    "2026": {
+     "trigger_rate": 0.0002,
+     "spread_bp": 123.5
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "vp_corr",
+   "name": "量价相关良好",
+   "trigger": "近10日量价相关≥0.6",
+   "weight": 10,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1710,
+   "monthly_ic_mean": -0.0329,
+   "monthly_ic_std": 0.0455,
+   "icir": -0.722,
+   "ic_positive_month_ratio": 0.235,
+   "daily_ic_positive_ratio": 0.371,
+   "trigger_rate": 0.3613,
+   "trig_fwd5_mean_bp": 52.4,
+   "nontrig_fwd5_mean_bp": 70.1,
+   "spread_bp": -17.7,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.3777,
+     "spread_bp": -25.0
+    },
+    "2020": {
+     "trigger_rate": 0.3874,
+     "spread_bp": -55.7
+    },
+    "2021": {
+     "trigger_rate": 0.3529,
+     "spread_bp": 8.2
+    },
+    "2022": {
+     "trigger_rate": 0.2858,
+     "spread_bp": -34.8
+    },
+    "2023": {
+     "trigger_rate": 0.3417,
+     "spread_bp": -5.5
+    },
+    "2024": {
+     "trigger_rate": 0.3642,
+     "spread_bp": -37.7
+    },
+    "2025": {
+     "trigger_rate": 0.4145,
+     "spread_bp": -35.6
+    },
+    "2026": {
+     "trigger_rate": 0.379,
+     "spread_bp": -17.0
+    }
+   },
+   "class": "负"
+  },
+  {
+   "key": "vp_surge",
+   "name": "放量启动",
+   "trigger": "量能突变≥2.0",
+   "weight": 8,
+   "source": "kline",
+   "months": 85,
+   "daily_ic_days": 1700,
+   "monthly_ic_mean": -0.0175,
+   "monthly_ic_std": 0.0219,
+   "icir": -0.799,
+   "ic_positive_month_ratio": 0.224,
+   "daily_ic_positive_ratio": 0.407,
+   "trigger_rate": 0.048,
+   "trig_fwd5_mean_bp": 79.2,
+   "nontrig_fwd5_mean_bp": 62.9,
+   "spread_bp": 16.3,
+   "spread_by_year": {
+    "2019": {
+     "trigger_rate": 0.0549,
+     "spread_bp": -14.1
+    },
+    "2020": {
+     "trigger_rate": 0.0489,
+     "spread_bp": 3.4
+    },
+    "2021": {
+     "trigger_rate": 0.0492,
+     "spread_bp": -4.1
+    },
+    "2022": {
+     "trigger_rate": 0.0456,
+     "spread_bp": -4.0
+    },
+    "2023": {
+     "trigger_rate": 0.0531,
+     "spread_bp": -3.3
+    },
+    "2024": {
+     "trigger_rate": 0.0492,
+     "spread_bp": 39.6
+    },
+    "2025": {
+     "trigger_rate": 0.049,
+     "spread_bp": 34.6
+    },
+    "2026": {
+     "trigger_rate": 0.0341,
+     "spread_bp": 127.9
+    }
+   },
+   "class": "负"
+  }
+ ],
+ "non_kline_components": [
+  {
+   "key": "earnings_signal",
+   "name": "业绩事件加分",
+   "weight": "见 earnings.py",
+   "source": "库表 earnings（业绩公告，按公告日 PIT）",
+   "note": "非 K 线数据源；本阶段审计范围限定 K 线成分，不硬算"
+  },
+  {
+   "key": "ml_score_bonus",
+   "name": "ML 选股分",
+   "source": "data/ml_scores.json 文件",
+   "note": "默认关闭(ML_SCORE_ENABLED=False)；依赖夜间 sidecar 文件，不可历史回算"
+  },
+  {
+   "key": "ml_pred_bonus",
+   "name": "ml_pred 加权分",
+   "source": "库表 ml_pred",
+   "note": "默认 weight=0 跳过；Phase25 已独立做过 IC 验证(ml_ic_verify)"
+  },
+  {
+   "key": "volprice_signals",
+   "name": "量价信号包",
+   "source": "app/volprice.py",
+   "note": "默认关闭(VOLPRICE_SIGNALS_ENABLED=False)"
+  },
+  {
+   "key": "gtja_factors",
+   "name": "GTJA191 因子",
+   "source": "app/factor.py",
+   "note": "默认关闭(GTJA_FACTORS_ENABLED=False)"
+  }
+ ],
+ "summary_counts": {
+  "valid": 1,
+  "weak": 5,
+  "negative": 12
+ }
+}

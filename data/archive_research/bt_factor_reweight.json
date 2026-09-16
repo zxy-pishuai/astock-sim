@@ -1,0 +1,406 @@
+{
+ "generated_at": "2026-08-24 07:39:46",
+ "phase": "28B",
+ "override": {
+  "vp_divergence": -12,
+  "ma_cross": 0,
+  "vp_vwap": 0,
+  "penalty_overbought": 0,
+  "vp_vol_slope": 0,
+  "rsrs_accel": 0,
+  "ma_bullish": 0,
+  "breakout": 0,
+  "rsrs_bullish": 0,
+  "volume_price": 0,
+  "penalty_stall": 0,
+  "vp_corr": 0,
+  "vp_surge": 0,
+  "rsi_oversold": 30,
+  "pullback_ma": 30,
+  "turtle_break": 30,
+  "volume_shrink": 30,
+  "macd_golden": 25
+ },
+ "override_meta": {
+  "budget": 148,
+  "kept_penalties": [
+   "vp_divergence"
+  ],
+  "pos_survivors": {
+   "rsi_oversold": 30,
+   "pullback_ma": 30,
+   "turtle_break": 30,
+   "volume_shrink": 30,
+   "macd_golden": 24.7
+  }
+ },
+ "windows": [
+  [
+   "2019-01-01",
+   "2020-12-31"
+  ],
+  [
+   "2021-01-01",
+   "2022-12-31"
+  ],
+  [
+   "2023-01-01",
+   "2024-12-31"
+  ],
+  [
+   "2025-08-18",
+   "2026-08-18"
+  ]
+ ],
+ "params": {
+  "score": {
+   "buy_threshold": 25,
+   "max_positions": 3,
+   "position_pct": 0.3,
+   "slippage": 0.001
+  },
+  "board": {
+   "buy_threshold": 40,
+   "max_positions": 2,
+   "position_pct": 0.25,
+   "slippage": 0.001
+  }
+ },
+ "baseline_source": "data/bt_dd_gate.json（已对齐复用）",
+ "baseline": {
+  "score": [
+   {
+    "tag": "score-baseline|2019-01-01",
+    "strategy": "score",
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "total_return": -0.0765,
+    "annual_return": -0.0391,
+    "max_drawdown": -0.2888,
+    "calmar": -0.135,
+    "sharpe": -0.001,
+    "win_rate": 0.6345,
+    "trade_count": 1331,
+    "buy_count": 543,
+    "flat_day_ratio": 0.1253,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 487,
+    "elapsed": 825.4,
+    "target_total_return": -0.0765,
+    "aligned": true
+   },
+   {
+    "tag": "score-baseline|2021-01-01",
+    "strategy": "score",
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "total_return": -0.2159,
+    "annual_return": -0.1152,
+    "max_drawdown": -0.5189,
+    "calmar": -0.222,
+    "sharpe": -0.335,
+    "win_rate": 0.6119,
+    "trade_count": 1540,
+    "buy_count": 633,
+    "flat_day_ratio": 0.0021,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 485,
+    "elapsed": 2042.5,
+    "target_total_return": -0.2159,
+    "aligned": true
+   },
+   {
+    "tag": "score-baseline|2023-01-01",
+    "strategy": "score",
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "total_return": -0.3695,
+    "annual_return": -0.2075,
+    "max_drawdown": -0.4506,
+    "calmar": -0.46,
+    "sharpe": -0.832,
+    "win_rate": 0.5624,
+    "trade_count": 1332,
+    "buy_count": 571,
+    "flat_day_ratio": 0.0021,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 484,
+    "elapsed": 1958.4,
+    "target_total_return": -0.3695,
+    "aligned": true
+   },
+   {
+    "tag": "score-baseline|2025-08-18",
+    "strategy": "score",
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "total_return": 0.3068,
+    "annual_return": 0.3083,
+    "max_drawdown": -0.1415,
+    "calmar": 2.179,
+    "sharpe": 1.043,
+    "win_rate": 0.6708,
+    "trade_count": 809,
+    "buy_count": 320,
+    "flat_day_ratio": 0.0041,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 243,
+    "elapsed": 834.2,
+    "target_total_return": 0.3068,
+    "aligned": true
+   }
+  ],
+  "board": [
+   {
+    "tag": "board-baseline|2019-01-01",
+    "strategy": "board",
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "total_return": -0.1177,
+    "annual_return": -0.0608,
+    "max_drawdown": -0.2777,
+    "calmar": -0.219,
+    "sharpe": -0.288,
+    "win_rate": 0.6202,
+    "trade_count": 628,
+    "buy_count": 262,
+    "flat_day_ratio": 0.308,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 487,
+    "elapsed": 1.2,
+    "target_total_return": -0.1177,
+    "aligned": true
+   },
+   {
+    "tag": "board-baseline|2021-01-01",
+    "strategy": "board",
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "total_return": -0.0665,
+    "annual_return": -0.034,
+    "max_drawdown": -0.2141,
+    "calmar": -0.159,
+    "sharpe": -0.12,
+    "win_rate": 0.6152,
+    "trade_count": 747,
+    "buy_count": 313,
+    "flat_day_ratio": 0.1773,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 485,
+    "elapsed": 2.0,
+    "target_total_return": -0.0665,
+    "aligned": true
+   },
+   {
+    "tag": "board-baseline|2023-01-01",
+    "strategy": "board",
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "total_return": -0.0166,
+    "annual_return": -0.0084,
+    "max_drawdown": -0.257,
+    "calmar": -0.033,
+    "sharpe": 0.037,
+    "win_rate": 0.6083,
+    "trade_count": 616,
+    "buy_count": 256,
+    "flat_day_ratio": 0.2624,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 484,
+    "elapsed": 2.0,
+    "target_total_return": -0.0166,
+    "aligned": true
+   },
+   {
+    "tag": "board-baseline|2025-08-18",
+    "strategy": "board",
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "total_return": 0.273,
+    "annual_return": 0.2743,
+    "max_drawdown": -0.1266,
+    "calmar": 2.167,
+    "sharpe": 1.229,
+    "win_rate": 0.684,
+    "trade_count": 448,
+    "buy_count": 179,
+    "flat_day_ratio": 0.1317,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 243,
+    "elapsed": 1.3,
+    "target_total_return": 0.273,
+    "aligned": true
+   }
+  ]
+ },
+ "reweight": {
+  "score": [
+   {
+    "strategy": "score",
+    "use_override": true,
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "total_return": -0.4877,
+    "annual_return": -0.2848,
+    "max_drawdown": -0.5414,
+    "sharpe": -1.487,
+    "trade_count": 993,
+    "buy_count": 436,
+    "elapsed": 774.9
+   },
+   {
+    "strategy": "score",
+    "use_override": true,
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "total_return": -0.4298,
+    "annual_return": -0.2462,
+    "max_drawdown": -0.4587,
+    "sharpe": -1.531,
+    "trade_count": 1076,
+    "buy_count": 471,
+    "elapsed": 1579.7
+   },
+   {
+    "strategy": "score",
+    "use_override": true,
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "total_return": -0.2433,
+    "annual_return": -0.1311,
+    "max_drawdown": -0.391,
+    "sharpe": -0.709,
+    "trade_count": 991,
+    "buy_count": 436,
+    "elapsed": 1690.0
+   },
+   {
+    "strategy": "score",
+    "use_override": true,
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "total_return": -0.0697,
+    "annual_return": -0.07,
+    "max_drawdown": -0.2294,
+    "sharpe": -0.283,
+    "trade_count": 532,
+    "buy_count": 232,
+    "elapsed": 612.6
+   }
+  ],
+  "board": [
+   {
+    "strategy": "board",
+    "use_override": true,
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "total_return": -0.1177,
+    "annual_return": -0.0608,
+    "max_drawdown": -0.2777,
+    "sharpe": -0.288,
+    "trade_count": 628,
+    "buy_count": 262,
+    "elapsed": 1.5
+   },
+   {
+    "strategy": "board",
+    "use_override": true,
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "total_return": -0.0665,
+    "annual_return": -0.034,
+    "max_drawdown": -0.2141,
+    "sharpe": -0.12,
+    "trade_count": 747,
+    "buy_count": 313,
+    "elapsed": 2.4
+   },
+   {
+    "strategy": "board",
+    "use_override": true,
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "total_return": -0.0166,
+    "annual_return": -0.0084,
+    "max_drawdown": -0.257,
+    "sharpe": 0.037,
+    "trade_count": 616,
+    "buy_count": 256,
+    "elapsed": 2.4
+   },
+   {
+    "strategy": "board",
+    "use_override": true,
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "total_return": 0.273,
+    "annual_return": 0.2743,
+    "max_drawdown": -0.1266,
+    "sharpe": 1.229,
+    "trade_count": 448,
+    "buy_count": 179,
+    "elapsed": 1.6
+   }
+  ]
+ },
+ "score_deltas_pp": [
+  -41.12,
+  -21.39,
+  12.62,
+  -37.65
+ ],
+ "verdict": {
+  "rule": ">=3/4 窗口 Δ>=-1pp 且 近一年(牛市)窗口 Δ>=-2pp",
+  "deltas_pp": [
+   -41.12,
+   -21.39,
+   12.62,
+   -37.65
+  ],
+  "improved_or_flat_windows": 1,
+  "bull_delta_pp": -37.65,
+  "enabled": false,
+  "reason": "1/4 窗口改善或持平，牛市窗口 Δ=-37.65pp → 维持 None"
+ },
+ "board_zero_impact_verified": true
+}

@@ -1,0 +1,33 @@
+# ============ A股模拟盘 仓库化 .gitignore（2026-09-01 基线，W1 建立） ============
+# 原则：文本小件全跟，二进制/GB 级全弃。数据大文件不入库，以文件层备份为准。
+# 实测基线：market.db 1.2GB / min5.db 700MB / snapshots 4.2GB / backups 2GB /
+#          .venv 307MB / data/*.json 合计 34MB（小件，跟踪）/ audit.jsonl 663KB（跟踪）
+
+# ---- 1. 大二进制 / GB 级数据（文件层备份为准，不入库） ----
+data/market.db*
+data/min5.db*
+data/snapshots/
+data/backups/
+data/webcache/
+
+# ---- 2. 虚拟环境 / 编译产物 / 缓存 ----
+.venv/
+tools/ml_sidecar/.venv/
+**/__pycache__/
+*.pyc
+
+# ---- 3. 日志与运行输出（白名单见下） ----
+*.log
+*.err
+# ---- 日志白名单：有审计/追踪价值的档案（! 反向恢复） ----
+!tmp/c_lane.log
+!tmp/coord_*.log
+!tmp/watchdog.log
+!tmp/pack*/
+
+# ---- 4. 运行时状态锁（不入库） ----
+data/app.lock
+data/audit/.write.lock
+
+# ---- 5. 桌面无关物 / 临时残留 ----
+Desktop

@@ -1,0 +1,31 @@
+{
+  "backup_note": "8/30 版 updater_diag.json 基线备份（2026-08-31 由 T2 轮复制保留，原文件将被 8/31 版覆盖）。内容与 2026-08-30 22:40:41 生成的 data/updater_diag.json 完全一致。",
+  "generated_at": "2026-08-30 22:40:41",
+  "audit_file": "data/audit/audit.jsonl",
+  "timeline_all_count": 47,
+  "three_failures": [
+    {"date": "2026-08-21", "min5": "0/496 empty 496", "daily": "0/300", "complete_at": "16:01:13"},
+    {"date": "2026-08-24", "min5": "0/496 empty 496", "daily": "0/300", "complete_at": "16:01:10"},
+    {"date": "2026-08-28", "min5": "0/1004 empty 1004", "daily": "0/300", "complete_at": "17:08:07"}
+  ],
+  "daily_300_denominator": {
+    "meaning": "update_daily(codes=None, limit=300) -> get_stock_list()[:300]，daily_updated/daily_errors 仅在该 300 切片内计数，非宇宙 5009",
+    "stock_list_len": 5009,
+    "audit_consistency": "每行 daily_updated+daily_errors == 300（或 0/0 空转）"
+  },
+  "min5_empty_qualitative": "empty==total 且 errors==0 → '拉到但空'非报错；TDX(freq0)+腾讯mkline 两条路同日同空指向并发/IP 限流而非单接口字段变更",
+  "hypotheses_ranked": [
+    {"rank": 1, "hypothesis": "收盘后集中请求触发上游限流/服务端过载"},
+    {"rank": 2, "hypothesis": "TDX 6 连接池 vs 8 并发收盘瞬时挤占（放大器）"},
+    {"rank": 3, "hypothesis": "我方代码退化（可排除，相邻成功日同端点同解析返回正常）"}
+  ],
+  "freshness_after_0830": {
+    "kline_day_max": "2026-08-28 (702 rows)",
+    "min5_max": "2026-08-28 15:00:00 distinct 1001",
+    "ml_pred_max": "2026-08-19 (独立陈旧，非 updater 管理)",
+    "snapshots": ["2026-08-26", "2026-08-27", "2026-08-30"],
+    "update_state_last_day": "2026-08-28",
+    "audit_last": "2026-08-30 22:08:22 success + 22:08:46 snapshot"
+  },
+  "note": "8/30 版完整 47 条 timeline 与全部细节见 docs/reports/updater_repair_20260830.md（该文档含完整表格）；本备份仅保留核心结构以防原文件被覆盖后丢失关键基线。"
+}

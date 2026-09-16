@@ -1,0 +1,76 @@
+{
+ "generated_at": "2026-09-01 11:27:31",
+ "task": "Y3 撮合现实性审计：参与率强制缩量重放（2023-24窗 S0，零落地）",
+ "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-27\\market.db",
+ "window": "2023-24",
+ "pit_key": "2023-24",
+ "params_score": {
+  "buy_threshold": 25,
+  "max_positions": 3,
+  "position_pct": 0.3,
+  "slippage": 0.001,
+  "zt_eco_gate": false,
+  "dd_gate": false
+ },
+ "caps": {
+  "base": 0.3,
+  "cap003": 0.03
+ },
+ "results": {
+  "cap003": {
+   "cell": "cap003",
+   "cap": 0.03,
+   "window": "2023-24",
+   "pit_key": "2023-24",
+   "n_codes": 426,
+   "total_return": -0.4829,
+   "max_drawdown": -0.5211,
+   "annual_return": -0.2829,
+   "sharpe": -1.358,
+   "win_rate": 0.5579,
+   "trade_count": 1228,
+   "n_buys": 529,
+   "n_sells": 699,
+   "failed_fills": 1,
+   "cash_mean": 30878.01,
+   "elapsed": 574.0
+  },
+  "base": {
+   "cell": "base",
+   "cap": 0.3,
+   "window": "2023-24",
+   "pit_key": "2023-24",
+   "n_codes": 426,
+   "total_return": -0.4829,
+   "max_drawdown": -0.5211,
+   "annual_return": -0.2829,
+   "sharpe": -1.358,
+   "win_rate": 0.5579,
+   "trade_count": 1228,
+   "n_buys": 529,
+   "n_sells": 699,
+   "failed_fills": 1,
+   "cash_mean": 30878.01,
+   "elapsed": 611.5,
+   "participation": {
+    "n_ratios": 529,
+    "p50": 0.0,
+    "p90": 0.0001,
+    "p95": 0.0001,
+    "max": 0.0002,
+    "gt_1pct": 0.0,
+    "gt_3pct": 0.0,
+    "gt_5pct": 0.0,
+    "at_cap30": 0,
+    "no_day_amount": 0
+   }
+  },
+  "delta": {
+   "ret_pp": 0.0,
+   "mdd_pp": 0.0,
+   "trades_delta": 0,
+   "failed_fill_delta": 0,
+   "cash_mean_delta": 0.0
+  }
+ }
+}

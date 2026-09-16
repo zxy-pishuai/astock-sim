@@ -1,0 +1,13 @@
+{
+ "date": "2026-09-13",
+ "total_bytes": 23641848949,
+ "total_gb": 22.02,
+ "snapshot_count": 9,
+ "snapshot_gb": 10.7,
+ "biggest_file": {
+  "path": "market.db",
+  "size": 1882464256
+ },
+ "growth_7d_bytes": 400,
+ "growth_7d_gb": 0.0
+}

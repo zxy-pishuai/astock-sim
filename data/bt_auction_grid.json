@@ -1,0 +1,359 @@
+{
+ "generated_at": "2026-08-25 03:01:07",
+ "phase": "40",
+ "window": [
+  "2025-08-18",
+  "2026-08-21"
+ ],
+ "pool_n": 200,
+ "grid": {
+  "auction_min_pct": [
+   2.0,
+   3.0,
+   4.0
+  ],
+  "auction_vr_min": [
+   0.01,
+   0.015,
+   0.03
+  ],
+  "auction_max_pct": 9.8
+ },
+ "board_baseline": {
+  "tag": "board_default",
+  "strategy": "board_intraday",
+  "params": {},
+  "window": [
+   "2025-08-18",
+   "2026-08-21"
+  ],
+  "pool_n": 200,
+  "total_return": -0.0438,
+  "annual_return": -0.0434,
+  "max_drawdown": -0.3879,
+  "calmar": -0.112,
+  "sharpe": 0.124,
+  "win_rate": 0.4956,
+  "trade_count": 863,
+  "buy_count": 413,
+  "premium": {
+   "total": 413,
+   "win_rate": 0.4939,
+   "avg_open": -0.649,
+   "avg_close": 0.28,
+   "avg_high": 3.815
+  },
+  "elapsed_s": 174
+ },
+ "variants": [
+  {
+   "tag": "auc_min2.0_vr0.010",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 2.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.01
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 2.4676,
+   "annual_return": 2.4327,
+   "max_drawdown": -0.248,
+   "calmar": 9.809,
+   "sharpe": 2.538,
+   "win_rate": 0.5908,
+   "trade_count": 924,
+   "buy_count": 423,
+   "premium": {
+    "total": 423,
+    "win_rate": 0.5461,
+    "avg_open": 0.546,
+    "avg_close": 1.506,
+    "avg_high": 4.806
+   },
+   "elapsed_s": 170,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  },
+  {
+   "tag": "auc_min2.0_vr0.015",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 2.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.015
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 2.4676,
+   "annual_return": 2.4327,
+   "max_drawdown": -0.248,
+   "calmar": 9.809,
+   "sharpe": 2.538,
+   "win_rate": 0.5908,
+   "trade_count": 924,
+   "buy_count": 423,
+   "premium": {
+    "total": 423,
+    "win_rate": 0.5461,
+    "avg_open": 0.546,
+    "avg_close": 1.506,
+    "avg_high": 4.806
+   },
+   "elapsed_s": 170,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  },
+  {
+   "tag": "auc_min2.0_vr0.030",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 2.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.03
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 2.4676,
+   "annual_return": 2.4327,
+   "max_drawdown": -0.248,
+   "calmar": 9.809,
+   "sharpe": 2.538,
+   "win_rate": 0.5908,
+   "trade_count": 924,
+   "buy_count": 423,
+   "premium": {
+    "total": 423,
+    "win_rate": 0.5461,
+    "avg_open": 0.546,
+    "avg_close": 1.506,
+    "avg_high": 4.806
+   },
+   "elapsed_s": 72,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  },
+  {
+   "tag": "auc_min3.0_vr0.010",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 3.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.01
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 3.5318,
+   "annual_return": 3.4765,
+   "max_drawdown": -0.244,
+   "calmar": 14.248,
+   "sharpe": 2.997,
+   "win_rate": 0.6202,
+   "trade_count": 942,
+   "buy_count": 426,
+   "premium": {
+    "total": 426,
+    "win_rate": 0.5516,
+    "avg_open": 0.711,
+    "avg_close": 1.698,
+    "avg_high": 5.147
+   },
+   "elapsed_s": 71,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  },
+  {
+   "tag": "auc_min3.0_vr0.015",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 3.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.015
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 3.5318,
+   "annual_return": 3.4765,
+   "max_drawdown": -0.244,
+   "calmar": 14.248,
+   "sharpe": 2.997,
+   "win_rate": 0.6202,
+   "trade_count": 942,
+   "buy_count": 426,
+   "premium": {
+    "total": 426,
+    "win_rate": 0.5516,
+    "avg_open": 0.711,
+    "avg_close": 1.698,
+    "avg_high": 5.147
+   },
+   "elapsed_s": 69,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  },
+  {
+   "tag": "auc_min3.0_vr0.030",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 3.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.03
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 3.5311,
+   "annual_return": 3.4758,
+   "max_drawdown": -0.2452,
+   "calmar": 14.175,
+   "sharpe": 2.995,
+   "win_rate": 0.6202,
+   "trade_count": 942,
+   "buy_count": 426,
+   "premium": {
+    "total": 426,
+    "win_rate": 0.5516,
+    "avg_open": 0.712,
+    "avg_close": 1.7,
+    "avg_high": 5.151
+   },
+   "elapsed_s": 175,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  },
+  {
+   "tag": "auc_min4.0_vr0.010",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 4.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.01
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 3.897,
+   "annual_return": 3.8341,
+   "max_drawdown": -0.1951,
+   "calmar": 19.652,
+   "sharpe": 3.349,
+   "win_rate": 0.6291,
+   "trade_count": 881,
+   "buy_count": 393,
+   "premium": {
+    "total": 393,
+    "win_rate": 0.5445,
+    "avg_open": 0.908,
+    "avg_close": 1.68,
+    "avg_high": 5.282
+   },
+   "elapsed_s": 176,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  },
+  {
+   "tag": "auc_min4.0_vr0.015",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 4.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.015
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 3.897,
+   "annual_return": 3.8341,
+   "max_drawdown": -0.1951,
+   "calmar": 19.652,
+   "sharpe": 3.349,
+   "win_rate": 0.6291,
+   "trade_count": 881,
+   "buy_count": 393,
+   "premium": {
+    "total": 393,
+    "win_rate": 0.5445,
+    "avg_open": 0.908,
+    "avg_close": 1.68,
+    "avg_high": 5.282
+   },
+   "elapsed_s": 174,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  },
+  {
+   "tag": "auc_min4.0_vr0.030",
+   "strategy": "auction_intraday",
+   "params": {
+    "auction_min_pct": 4.0,
+    "auction_max_pct": 9.8,
+    "auction_vr_min": 0.03
+   },
+   "window": [
+    "2025-08-18",
+    "2026-08-21"
+   ],
+   "pool_n": 200,
+   "total_return": 3.897,
+   "annual_return": 3.8341,
+   "max_drawdown": -0.1951,
+   "calmar": 19.652,
+   "sharpe": 3.349,
+   "win_rate": 0.6291,
+   "trade_count": 881,
+   "buy_count": 393,
+   "premium": {
+    "total": 393,
+    "win_rate": 0.5445,
+    "avg_open": 0.908,
+    "avg_close": 1.68,
+    "avg_high": 5.282
+   },
+   "elapsed_s": 71,
+   "beats_return": true,
+   "beats_calmar": true,
+   "trades_ge_100": true
+  }
+ ],
+ "verdict": {
+  "rule": "最优变体收益与 Calmar 同时优于 board_intraday 对照且交易数≥100；推荐只写报告不改 config",
+  "baseline_tag": "board_default",
+  "recommended_params": {
+   "auction_min_pct": 4.0,
+   "auction_max_pct": 9.8,
+   "auction_vr_min": 0.01
+  },
+  "enabled": true,
+  "reason": "推荐 auc_min4.0_vr0.010（ret=+3.8970, calmar=19.652, trades=881）",
+  "sample_limitation": "★单一牛市窗口（2025-08~2026-08，246 交易日、无熊市段）：结论只对该市况有效，不能外推为全天候参数。"
+ }
+}

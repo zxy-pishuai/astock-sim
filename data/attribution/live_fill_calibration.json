@@ -1,0 +1,186 @@
+{
+ "generated_at": "2026-08-26 02:46:29",
+ "phase": "58",
+ "m2_prior": {
+  "sealed_le_1030": 0.3,
+  "sealed_gt_1030": 0.6,
+  "broken": 1.0,
+  "source": "docs/reports/true_board.md（先验设定，非实测）"
+ },
+ "audit_stats": {
+  "kinds": "见 parsed",
+  "order_lines": 12
+ },
+ "board_fills_calibrated": [
+  {
+   "t": "2026-08-17 14:56:23",
+   "day": "2026-08-17",
+   "fill_hhmmss": "14:56:23",
+   "name": "新洁能",
+   "code": "605111",
+   "price": 62.71,
+   "qty": 100,
+   "strategy": "board",
+   "limit_up": 64.06,
+   "touch_hhmm": null,
+   "touched": false,
+   "class": "未触板（炸板/未封 → M2 假设 100% 成交）",
+   "touch_bucket": null,
+   "fill_bucket": "gt_1030"
+  },
+  {
+   "t": "2026-08-17 14:56:44",
+   "day": "2026-08-17",
+   "fill_hhmmss": "14:56:44",
+   "name": "飞龙股份",
+   "code": "002536",
+   "price": 45.89,
+   "qty": 200,
+   "strategy": "board",
+   "limit_up": 46.86,
+   "touch_hhmm": null,
+   "touched": false,
+   "class": "未触板（炸板/未封 → M2 假设 100% 成交）",
+   "touch_bucket": null,
+   "fill_bucket": "gt_1030"
+  }
+ ],
+ "observed_sealed_by_touch_bucket": {
+  "le_1030": 0,
+  "gt_1030": 0
+ },
+ "m2_vs_observed_note": "n 过小无法比较；本表仅为后续积累数据的模板",
+ "unrebuildable_excluded": [],
+ "other_strategy_fills_context": [
+  {
+   "t": "2026-08-18 10:29:14",
+   "day": "2026-08-18",
+   "fill_hhmmss": "10:29:14",
+   "name": "隆平高科",
+   "code": "000998",
+   "price": 8.96,
+   "qty": 4700,
+   "strategy": "score"
+  },
+  {
+   "t": "2026-08-18 19:34:09",
+   "day": "2026-08-18",
+   "fill_hhmmss": "19:34:09",
+   "name": "金 螳 螂",
+   "code": "002081",
+   "price": 6.28,
+   "qty": 3900,
+   "strategy": "score"
+  },
+  {
+   "t": "2026-08-20 09:51:12",
+   "day": "2026-08-20",
+   "fill_hhmmss": "09:51:12",
+   "name": "敦煌种业",
+   "code": "600354",
+   "price": 6.65,
+   "qty": 6300,
+   "strategy": "score"
+  },
+  {
+   "t": "2026-08-20 09:51:13",
+   "day": "2026-08-20",
+   "fill_hhmmss": "09:51:13",
+   "name": "丰原药业",
+   "code": "000153",
+   "price": 6.44,
+   "qty": 3800,
+   "strategy": "score"
+  }
+ ],
+ "excluded_records": [
+  {
+   "t": "2026-08-16 07:26:46",
+   "kind": "order",
+   "event": "test_buy",
+   "level": "BUY",
+   "code": "600519",
+   "price": 10.5,
+   "qty": 100,
+   "hash": "28f0c19051079c83",
+   "prev": "ceff83a326359dc8",
+   "exclude_reason": "测试记录"
+  },
+  {
+   "t": "2026-08-16 19:07:19",
+   "kind": "order",
+   "event": "manual_buy",
+   "level": "BUY",
+   "code": "600001",
+   "name": "测试股",
+   "price": 10.0,
+   "qty": 1000,
+   "fee": 5.0,
+   "hash": "f3401606bbed6860",
+   "prev": "",
+   "exclude_reason": "手动买入（非策略成交）"
+  },
+  {
+   "t": "2026-08-16 19:07:19",
+   "kind": "order",
+   "event": "manual_buy",
+   "level": "BUY",
+   "code": "600001",
+   "name": "测试股",
+   "price": 20.0,
+   "qty": 1000,
+   "fee": 5.0,
+   "hash": "94365d5f3cc3c111",
+   "prev": "f3401606bbed6860",
+   "exclude_reason": "手动买入（非策略成交）"
+  },
+  {
+   "t": "2026-08-16 19:07:35",
+   "kind": "order",
+   "event": "manual_buy",
+   "level": "BUY",
+   "code": "600001",
+   "name": "测试股",
+   "price": 10.0,
+   "qty": 1000,
+   "fee": 5.0,
+   "hash": "97168ff5e6f21452",
+   "prev": "",
+   "exclude_reason": "手动买入（非策略成交）"
+  },
+  {
+   "t": "2026-08-16 19:07:35",
+   "kind": "order",
+   "event": "manual_buy",
+   "level": "BUY",
+   "code": "600001",
+   "name": "测试股",
+   "price": 20.0,
+   "qty": 1000,
+   "fee": 5.0,
+   "hash": "3e63423b57de56a8",
+   "prev": "97168ff5e6f21452",
+   "exclude_reason": "手动买入（非策略成交）"
+  },
+  {
+   "t": "2026-08-24 10:06:49",
+   "kind": "order",
+   "event": "manual_buy",
+   "level": "BUY",
+   "code": "002716",
+   "name": "湖南白银",
+   "price": 11.23,
+   "qty": 2000,
+   "fee": 5.62,
+   "hash": "dd6035fc019184b7",
+   "prev": "3b16d2df672fcde6",
+   "exclude_reason": "手动买入（非策略成交）"
+  }
+ ],
+ "confidence_statement": {
+  "statement": "本批次打板成交样本 n=2（其中封死单 0），远低于统计效力门槛；观测占比不构成对 M2 先验（0.3/0.6）的检验，仅建立标定流程。建议积累 ≥30 个封死单样本后重跑本工具再谈参数修订。",
+  "min_sample_for_calibration": 30,
+  "current_sealed_sample": 0
+ },
+ "no_param_change": true
+}

@@ -1,0 +1,710 @@
+{
+ "meta": {
+  "pool": "bt_pool.json 前500只（engine 内滤 DATA_EXCLUDE_CODES），names=代码兜底",
+  "params": {
+   "buy_threshold": 40,
+   "max_positions": 2,
+   "position_pct": 0.25,
+   "slippage": 0.001
+  },
+  "capital": 100000,
+  "recipe_patches": [
+   "fetch_quotes 置空",
+   "BOARD_MOMENTUM_MIN 冻结 7.0（对照发布基线口径）"
+  ],
+  "method": "FIFO 配对回合 × 成分矩阵（每笔买入按引擎同款输入重算 score_board 全信号）；引擎 reason 只记前3信号，故重算是完整覆盖的唯一途径",
+  "judge_thresholds": {
+   "keep": {
+    "n": 80,
+    "win_rate": 0.52
+   },
+   "drop": {
+    "n": 80,
+    "win_rate": 0.5
+   }
+  }
+ },
+ "runs": [
+  {
+   "window": "2019-20",
+   "start": "2019-01-01",
+   "end": "2020-12-31",
+   "total_return": -0.1177,
+   "max_drawdown": -0.2777,
+   "trade_count": 628,
+   "buy_count": 262,
+   "matches_legacy_baseline": true
+  },
+  {
+   "window": "2021-22",
+   "start": "2021-01-01",
+   "end": "2022-12-31",
+   "total_return": -0.0665,
+   "max_drawdown": -0.2141,
+   "trade_count": 747,
+   "buy_count": 313,
+   "matches_legacy_baseline": true
+  },
+  {
+   "window": "2023-24",
+   "start": "2023-01-01",
+   "end": "2024-12-31",
+   "total_return": -0.0166,
+   "max_drawdown": -0.257,
+   "trade_count": 616,
+   "buy_count": 256,
+   "matches_legacy_baseline": true
+  },
+  {
+   "window": "牛市",
+   "start": "2025-08-18",
+   "end": "2026-08-18",
+   "total_return": 0.2831,
+   "max_drawdown": -0.1335,
+   "trade_count": 451,
+   "buy_count": 180,
+   "matches_legacy_baseline": false
+  }
+ ],
+ "baseline_note": "窗口0-2 必须且已与发布基线精确一致；窗口3(牛市) 因上游 kline 于 8/23 后整体前复权重写(91/498 票被修订) 无法逐位复现，差异如实入档",
+ "recompute_score_mismatch": 0,
+ "rounds_count": 1011,
+ "components": [
+  {
+   "count": 980,
+   "win_rate": 0.4816,
+   "avg_ret": 0.000734,
+   "total_pnl": 12722.63,
+   "profit_factor": 1.027,
+   "component": "首板优先",
+   "avg_score_when_present": 20.0,
+   "windows": [
+    {
+     "count": 255,
+     "win_rate": 0.4745,
+     "avg_ret": -0.000319,
+     "total_pnl": -6600.47,
+     "profit_factor": 0.941,
+     "window": "2019-20"
+    },
+    {
+     "count": 305,
+     "win_rate": 0.4689,
+     "avg_ret": -0.001687,
+     "total_pnl": -10855.02,
+     "profit_factor": 0.926,
+     "window": "2021-22"
+    },
+    {
+     "count": 250,
+     "win_rate": 0.464,
+     "avg_ret": 0.001036,
+     "total_pnl": 5202.14,
+     "profit_factor": 1.045,
+     "window": "2023-24"
+    },
+    {
+     "count": 170,
+     "win_rate": 0.5412,
+     "avg_ret": 0.006216,
+     "total_pnl": 24975.98,
+     "profit_factor": 1.273,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 527,
+   "win_rate": 0.4858,
+   "avg_ret": 4.2e-05,
+   "total_pnl": 4576.2,
+   "profit_factor": 1.018,
+   "component": "振幅过大",
+   "avg_score_when_present": -10.0,
+   "windows": [
+    {
+     "count": 127,
+     "win_rate": 0.4646,
+     "avg_ret": -0.002356,
+     "total_pnl": -7195.05,
+     "profit_factor": 0.874,
+     "window": "2019-20"
+    },
+    {
+     "count": 173,
+     "win_rate": 0.4855,
+     "avg_ret": -0.000294,
+     "total_pnl": -3141.2,
+     "profit_factor": 0.961,
+     "window": "2021-22"
+    },
+    {
+     "count": 146,
+     "win_rate": 0.4726,
+     "avg_ret": -0.000304,
+     "total_pnl": 1544.95,
+     "profit_factor": 1.022,
+     "window": "2023-24"
+    },
+    {
+     "count": 81,
+     "win_rate": 0.5432,
+     "avg_ret": 0.005142,
+     "total_pnl": 13367.5,
+     "profit_factor": 1.272,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(减分成分为正贡献，疑似反向指标)"
+  },
+  {
+   "count": 360,
+   "win_rate": 0.4722,
+   "avg_ret": 0.000639,
+   "total_pnl": 1541.73,
+   "profit_factor": 1.01,
+   "component": "巨量封板",
+   "avg_score_when_present": 20.0,
+   "windows": [
+    {
+     "count": 84,
+     "win_rate": 0.5,
+     "avg_ret": 0.003377,
+     "total_pnl": 1323.38,
+     "profit_factor": 1.043,
+     "window": "2019-20"
+    },
+    {
+     "count": 122,
+     "win_rate": 0.4262,
+     "avg_ret": -0.000552,
+     "total_pnl": -2318.99,
+     "profit_factor": 0.955,
+     "window": "2021-22"
+    },
+    {
+     "count": 115,
+     "win_rate": 0.4783,
+     "avg_ret": -0.001047,
+     "total_pnl": -251.33,
+     "profit_factor": 0.995,
+     "window": "2023-24"
+    },
+    {
+     "count": 39,
+     "win_rate": 0.5385,
+     "avg_ret": 0.003443,
+     "total_pnl": 2788.67,
+     "profit_factor": 1.14,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 360,
+   "win_rate": 0.4722,
+   "avg_ret": -0.00312,
+   "total_pnl": -22836.19,
+   "profit_factor": 0.872,
+   "component": "放量扫板",
+   "avg_score_when_present": 15.0,
+   "windows": [
+    {
+     "count": 95,
+     "win_rate": 0.4316,
+     "avg_ret": -0.007137,
+     "total_pnl": -12995.78,
+     "profit_factor": 0.724,
+     "window": "2019-20"
+    },
+    {
+     "count": 111,
+     "win_rate": 0.4685,
+     "avg_ret": -0.008246,
+     "total_pnl": -18078.58,
+     "profit_factor": 0.708,
+     "window": "2021-22"
+    },
+    {
+     "count": 92,
+     "win_rate": 0.4457,
+     "avg_ret": -0.001027,
+     "total_pnl": -2973.71,
+     "profit_factor": 0.928,
+     "window": "2023-24"
+    },
+    {
+     "count": 62,
+     "win_rate": 0.5806,
+     "avg_ret": 0.009107,
+     "total_pnl": 11211.88,
+     "profit_factor": 1.391,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议降权"
+  },
+  {
+   "count": 336,
+   "win_rate": 0.4554,
+   "avg_ret": -0.003243,
+   "total_pnl": -26642.99,
+   "profit_factor": 0.826,
+   "component": "涨停动量启动",
+   "avg_score_when_present": 10.0,
+   "windows": [
+    {
+     "count": 93,
+     "win_rate": 0.5591,
+     "avg_ret": 0.006336,
+     "total_pnl": 5721.33,
+     "profit_factor": 1.152,
+     "window": "2019-20"
+    },
+    {
+     "count": 109,
+     "win_rate": 0.4128,
+     "avg_ret": -0.007405,
+     "total_pnl": -16487.53,
+     "profit_factor": 0.693,
+     "window": "2021-22"
+    },
+    {
+     "count": 85,
+     "win_rate": 0.4235,
+     "avg_ret": -0.00793,
+     "total_pnl": -11472.12,
+     "profit_factor": 0.682,
+     "window": "2023-24"
+    },
+    {
+     "count": 49,
+     "win_rate": 0.4082,
+     "avg_ret": -0.004032,
+     "total_pnl": -4404.67,
+     "profit_factor": 0.828,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议降权"
+  },
+  {
+   "count": 264,
+   "win_rate": 0.4773,
+   "avg_ret": 0.001418,
+   "total_pnl": 5269.63,
+   "profit_factor": 1.041,
+   "component": "买方强势",
+   "avg_score_when_present": 5.0,
+   "windows": [
+    {
+     "count": 79,
+     "win_rate": 0.443,
+     "avg_ret": -0.005345,
+     "total_pnl": -11119.39,
+     "profit_factor": 0.725,
+     "window": "2019-20"
+    },
+    {
+     "count": 83,
+     "win_rate": 0.4699,
+     "avg_ret": -0.001555,
+     "total_pnl": -2443.38,
+     "profit_factor": 0.938,
+     "window": "2021-22"
+    },
+    {
+     "count": 63,
+     "win_rate": 0.4921,
+     "avg_ret": 0.007762,
+     "total_pnl": 7388.45,
+     "profit_factor": 1.272,
+     "window": "2023-24"
+    },
+    {
+     "count": 39,
+     "win_rate": 0.5385,
+     "avg_ret": 0.011197,
+     "total_pnl": 11443.95,
+     "profit_factor": 1.523,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 238,
+   "win_rate": 0.5378,
+   "avg_ret": 0.00376,
+   "total_pnl": 15757.97,
+   "profit_factor": 1.131,
+   "component": "涨停动量极强",
+   "avg_score_when_present": 25.0,
+   "windows": [
+    {
+     "count": 68,
+     "win_rate": 0.4412,
+     "avg_ret": -0.004246,
+     "total_pnl": -6514.87,
+     "profit_factor": 0.818,
+     "window": "2019-20"
+    },
+    {
+     "count": 63,
+     "win_rate": 0.619,
+     "avg_ret": 0.016433,
+     "total_pnl": 18123.14,
+     "profit_factor": 1.826,
+     "window": "2021-22"
+    },
+    {
+     "count": 52,
+     "win_rate": 0.5385,
+     "avg_ret": 0.001466,
+     "total_pnl": 1561.01,
+     "profit_factor": 1.056,
+     "window": "2023-24"
+    },
+    {
+     "count": 55,
+     "win_rate": 0.5636,
+     "avg_ret": 0.001313,
+     "total_pnl": 2588.69,
+     "profit_factor": 1.075,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 237,
+   "win_rate": 0.5063,
+   "avg_ret": 0.00503,
+   "total_pnl": 22650.36,
+   "profit_factor": 1.212,
+   "component": "涨停动量很强",
+   "avg_score_when_present": 20.0,
+   "windows": [
+    {
+     "count": 59,
+     "win_rate": 0.4576,
+     "avg_ret": -0.005241,
+     "total_pnl": -6891.98,
+     "profit_factor": 0.73,
+     "window": "2019-20"
+    },
+    {
+     "count": 75,
+     "win_rate": 0.48,
+     "avg_ret": -0.002272,
+     "total_pnl": -3822.73,
+     "profit_factor": 0.9,
+     "window": "2021-22"
+    },
+    {
+     "count": 62,
+     "win_rate": 0.5,
+     "avg_ret": 0.016547,
+     "total_pnl": 18784.31,
+     "profit_factor": 1.807,
+     "window": "2023-24"
+    },
+    {
+     "count": 41,
+     "win_rate": 0.6341,
+     "avg_ret": 0.015752,
+     "total_pnl": 14580.76,
+     "profit_factor": 1.74,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 207,
+   "win_rate": 0.5314,
+   "avg_ret": 0.005456,
+   "total_pnl": 19648.32,
+   "profit_factor": 1.197,
+   "component": "温和放量",
+   "avg_score_when_present": 10.0,
+   "windows": [
+    {
+     "count": 54,
+     "win_rate": 0.537,
+     "avg_ret": 0.001446,
+     "total_pnl": -495.04,
+     "profit_factor": 0.982,
+     "window": "2019-20"
+    },
+    {
+     "count": 63,
+     "win_rate": 0.5397,
+     "avg_ret": 0.002284,
+     "total_pnl": 1722.54,
+     "profit_factor": 1.068,
+     "window": "2021-22"
+    },
+    {
+     "count": 37,
+     "win_rate": 0.4324,
+     "avg_ret": 0.00829,
+     "total_pnl": 5520.55,
+     "profit_factor": 1.274,
+     "window": "2023-24"
+    },
+    {
+     "count": 53,
+     "win_rate": 0.5849,
+     "avg_ret": 0.011333,
+     "total_pnl": 12900.27,
+     "profit_factor": 1.486,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": true,
+   "recommendation": "建议保留"
+  },
+  {
+   "count": 200,
+   "win_rate": 0.445,
+   "avg_ret": -0.000721,
+   "total_pnl": 1558.03,
+   "profit_factor": 1.016,
+   "component": "涨停动量较强",
+   "avg_score_when_present": 15.0,
+   "windows": [
+    {
+     "count": 42,
+     "win_rate": 0.381,
+     "avg_ret": -0.00402,
+     "total_pnl": -2797.26,
+     "profit_factor": 0.845,
+     "window": "2019-20"
+    },
+    {
+     "count": 66,
+     "win_rate": 0.4242,
+     "avg_ret": -0.005556,
+     "total_pnl": -4464.01,
+     "profit_factor": 0.862,
+     "window": "2021-22"
+    },
+    {
+     "count": 57,
+     "win_rate": 0.386,
+     "avg_ret": -0.00767,
+     "total_pnl": -9194.57,
+     "profit_factor": 0.731,
+     "window": "2023-24"
+    },
+    {
+     "count": 35,
+     "win_rate": 0.6571,
+     "avg_ret": 0.023673,
+     "total_pnl": 18013.87,
+     "profit_factor": 2.293,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 45,
+   "win_rate": 0.4444,
+   "avg_ret": 0.006165,
+   "total_pnl": 11631.89,
+   "profit_factor": 1.458,
+   "component": "缩量封板惜售",
+   "avg_score_when_present": 10.0,
+   "windows": [
+    {
+     "count": 14,
+     "win_rate": 0.2143,
+     "avg_ret": -0.023108,
+     "total_pnl": -4795.48,
+     "profit_factor": 0.357,
+     "window": "2019-20"
+    },
+    {
+     "count": 12,
+     "win_rate": 0.5833,
+     "avg_ret": 0.022047,
+     "total_pnl": 6631.8,
+     "profit_factor": 2.051,
+     "window": "2021-22"
+    },
+    {
+     "count": 8,
+     "win_rate": 0.375,
+     "avg_ret": -3.9e-05,
+     "total_pnl": -512.26,
+     "profit_factor": 0.918,
+     "window": "2023-24"
+    },
+    {
+     "count": 11,
+     "win_rate": 0.6364,
+     "avg_ret": 0.030608,
+     "total_pnl": 10307.83,
+     "profit_factor": 2.911,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 28,
+   "win_rate": 0.5357,
+   "avg_ret": -0.002544,
+   "total_pnl": -3309.9,
+   "profit_factor": 0.765,
+   "component": "二板接力",
+   "avg_score_when_present": 10.0,
+   "windows": [
+    {
+     "count": 7,
+     "win_rate": 0.5714,
+     "avg_ret": -0.013744,
+     "total_pnl": -3882.31,
+     "profit_factor": 0.298,
+     "window": "2019-20"
+    },
+    {
+     "count": 8,
+     "win_rate": 0.625,
+     "avg_ret": 0.025684,
+     "total_pnl": 4203.89,
+     "profit_factor": 14.694,
+     "window": "2021-22"
+    },
+    {
+     "count": 5,
+     "win_rate": 0.0,
+     "avg_ret": -0.058384,
+     "total_pnl": -5903.43,
+     "profit_factor": 0.0,
+     "window": "2023-24"
+    },
+    {
+     "count": 8,
+     "win_rate": 0.75,
+     "avg_ret": 0.013928,
+     "total_pnl": 2271.95,
+     "profit_factor": 1.975,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 8,
+   "win_rate": 0.625,
+   "avg_ret": -0.003397,
+   "total_pnl": -608.97,
+   "profit_factor": 0.845,
+   "component": "封板分歧加大",
+   "avg_score_when_present": -8.0,
+   "windows": [
+    {
+     "count": 1,
+     "win_rate": 1.0,
+     "avg_ret": 0.041957,
+     "total_pnl": 861.53,
+     "profit_factor": 99.0,
+     "window": "2019-20"
+    },
+    {
+     "count": 3,
+     "win_rate": 0.0,
+     "avg_ret": -0.066727,
+     "total_pnl": -3927.23,
+     "profit_factor": 0.0,
+     "window": "2021-22"
+    },
+    {
+     "count": 2,
+     "win_rate": 1.0,
+     "avg_ret": 0.049504,
+     "total_pnl": 1878.48,
+     "profit_factor": 99.0,
+     "window": "2023-24"
+    },
+    {
+     "count": 2,
+     "win_rate": 1.0,
+     "avg_ret": 0.01602,
+     "total_pnl": 578.25,
+     "profit_factor": 99.0,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  },
+  {
+   "count": 2,
+   "win_rate": 1.0,
+   "avg_ret": 0.089503,
+   "total_pnl": 3393.49,
+   "profit_factor": 99.0,
+   "component": "三板博弈",
+   "avg_score_when_present": 5.0,
+   "windows": [
+    {
+     "count": 0,
+     "window": "2019-20"
+    },
+    {
+     "count": 0,
+     "window": "2021-22"
+    },
+    {
+     "count": 1,
+     "win_rate": 1.0,
+     "avg_ret": 0.023874,
+     "total_pnl": 379.92,
+     "profit_factor": 99.0,
+     "window": "2023-24"
+    },
+    {
+     "count": 1,
+     "win_rate": 1.0,
+     "avg_ret": 0.155133,
+     "total_pnl": 3013.57,
+     "profit_factor": 99.0,
+     "window": "牛市"
+    }
+   ],
+   "direction_consistent": false,
+   "recommendation": "建议审查(样本不足或方向不稳)"
+  }
+ ],
+ "seal_quality_slice": {
+  "note": "引擎 _signals_on 的 board 分支给 score_board 的 quote 不含 code，回测路径中 seal_quality_bonus 恒不生效（limitup 涨停池亦为实时接口）。以下切片预期为空，属机制性事实而非结论。",
+  "with_sealq": {
+   "count": 0
+  },
+  "without_sealq": {
+   "count": 1011,
+   "win_rate": 0.4847,
+   "avg_ret": 0.000844,
+   "total_pnl": 13323.37,
+   "profit_factor": 1.028
+  }
+ },
+ "elapsed_s": 25.1
+}

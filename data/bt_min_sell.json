@@ -1,0 +1,3036 @@
+{
+ "generated_at": "2026-08-24 07:26:03",
+ "phase": "32",
+ "window": [
+  "2025-08-18",
+  "2026-08-21"
+ ],
+ "params_current": {
+  "surge": 2.0,
+  "pullback": 0.005,
+  "shrink": 0.7,
+  "rise_newhigh": 0.05
+ },
+ "baseline_stats": {
+  "records": 495,
+  "triggered": 124,
+  "trigger_rate": 0.2505,
+  "improved": 41,
+  "improve_ratio": 0.3306,
+  "mean_improve_pct": -1.925,
+  "total_improve_yuan": -21718.0,
+  "median_improve_pct": -1.339,
+  "flyaway_to_exit_med_pct": 1.56,
+  "flyaway_to_exit5_med_pct": 7.94
+ },
+ "baseline_rows_sample": [
+  {
+   "code": "000063",
+   "entry_date": "2025-08-19",
+   "entry_px": 37.779,
+   "exit_date": "2025-08-21",
+   "exit_px": 42.517,
+   "reason": "阶梯止盈(+6%)(++12.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-21",
+      "time": "09:55",
+      "px": 41.90649347808,
+      "ratio": 2.263,
+      "pullback_pct": 3.35
+     }
+    ]
+   ],
+   "improve": -56.77,
+   "improve_pct": -1.339
+  },
+  {
+   "code": "000063",
+   "entry_date": "2025-08-19",
+   "entry_px": 37.779,
+   "exit_date": "2025-08-21",
+   "exit_px": 42.517,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-21",
+      "time": "09:55",
+      "px": 41.90649347808,
+      "ratio": 2.263,
+      "pullback_pct": 3.35
+     }
+    ]
+   ],
+   "improve": -227.07,
+   "improve_pct": -1.338
+  },
+  {
+   "code": "600397",
+   "entry_date": "2025-08-21",
+   "entry_px": 6.653,
+   "exit_date": "2025-08-22",
+   "exit_px": 7.193,
+   "reason": "阶梯止盈(+4%)(++8.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-22",
+      "time": "09:35",
+      "px": 7.20279,
+      "ratio": 4.181,
+      "pullback_pct": 1.9
+     }
+    ]
+   ],
+   "improve": 15.28,
+   "improve_pct": 0.237
+  },
+  {
+   "code": "600397",
+   "entry_date": "2025-08-21",
+   "entry_px": 6.653,
+   "exit_date": "2025-08-22",
+   "exit_px": 7.193,
+   "reason": "阶梯止盈(+6%)(++8.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-22",
+      "time": "09:35",
+      "px": 7.20279,
+      "ratio": 4.181,
+      "pullback_pct": 1.9
+     }
+    ]
+   ],
+   "improve": 10.19,
+   "improve_pct": 0.237
+  },
+  {
+   "code": "600397",
+   "entry_date": "2025-08-21",
+   "entry_px": 6.653,
+   "exit_date": "2025-08-22",
+   "exit_px": 7.193,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-22",
+      "time": "09:35",
+      "px": 7.20279,
+      "ratio": 4.181,
+      "pullback_pct": 1.9
+     }
+    ]
+   ],
+   "improve": 25.47,
+   "improve_pct": 0.237
+  },
+  {
+   "code": "600869",
+   "entry_date": "2025-08-20",
+   "entry_px": 6.603,
+   "exit_date": "2025-08-25",
+   "exit_px": 7.123,
+   "reason": "阶梯止盈(+4%)(++8.0%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-25",
+      "time": "13:15",
+      "px": 7.06985742564,
+      "ratio": 2.233,
+      "pullback_pct": 0.7
+     }
+    ]
+   ],
+   "improve": -41.39,
+   "improve_pct": -0.647
+  },
+  {
+   "code": "600869",
+   "entry_date": "2025-08-20",
+   "entry_px": 6.603,
+   "exit_date": "2025-08-25",
+   "exit_px": 7.123,
+   "reason": "阶梯止盈(+6%)(++8.0%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-25",
+      "time": "13:15",
+      "px": 7.06985742564,
+      "ratio": 2.233,
+      "pullback_pct": 0.7
+     }
+    ]
+   ],
+   "improve": -27.6,
+   "improve_pct": -0.647
+  },
+  {
+   "code": "600869",
+   "entry_date": "2025-08-20",
+   "entry_px": 6.603,
+   "exit_date": "2025-08-26",
+   "exit_px": 6.983,
+   "reason": "冲高回落止盈(峰7.15→6.99)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-25",
+      "time": "13:15",
+      "px": 7.06985742564,
+      "ratio": 2.233,
+      "pullback_pct": 0.7
+     }
+    ]
+   ],
+   "improve": 140.7,
+   "improve_pct": 1.346
+  },
+  {
+   "code": "601600",
+   "entry_date": "2025-08-26",
+   "entry_px": 8.162,
+   "exit_date": "2025-08-29",
+   "exit_px": 7.947,
+   "reason": "时间止损(3天亏-2.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-28",
+      "time": "09:35",
+      "px": 7.60085281872,
+      "ratio": 2.245,
+      "pullback_pct": 0.76
+     }
+    ]
+   ],
+   "improve": -1081.41,
+   "improve_pct": -4.26
+  },
+  {
+   "code": "600489",
+   "entry_date": "2025-08-26",
+   "entry_px": 15.158,
+   "exit_date": "2025-08-29",
+   "exit_px": 15.954,
+   "reason": "阶梯止盈(+4%)(++5.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-29",
+      "time": "09:50",
+      "px": 15.578613432360001,
+      "ratio": 2.611,
+      "pullback_pct": 0.56
+     }
+    ]
+   ],
+   "improve": -107.77,
+   "improve_pct": -2.257
+  },
+  {
+   "code": "600489",
+   "entry_date": "2025-08-26",
+   "entry_px": 15.158,
+   "exit_date": "2025-09-01",
+   "exit_px": 17.552,
+   "reason": "阶梯止盈(+6%)(++15.9%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-29",
+      "time": "09:50",
+      "px": 15.578613432360001,
+      "ratio": 2.611,
+      "pullback_pct": 0.56
+     }
+    ]
+   ],
+   "improve": -390.97,
+   "improve_pct": -11.17
+  },
+  {
+   "code": "600489",
+   "entry_date": "2025-08-26",
+   "entry_px": 15.158,
+   "exit_date": "2025-09-01",
+   "exit_px": 17.552,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-08-29",
+      "time": "09:50",
+      "px": 15.578613432360001,
+      "ratio": 2.611,
+      "pullback_pct": 0.56
+     }
+    ]
+   ],
+   "improve": -1368.39,
+   "improve_pct": -11.159
+  },
+  {
+   "code": "002580",
+   "entry_date": "2025-09-04",
+   "entry_px": 15.275,
+   "exit_date": "2025-09-05",
+   "exit_px": 15.874,
+   "reason": "阶梯止盈(+4%)(++4.0%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-09-05",
+      "time": "09:35",
+      "px": 15.38452700307,
+      "ratio": 2.501,
+      "pullback_pct": 0.9
+     }
+    ]
+   ],
+   "improve": -142.01,
+   "improve_pct": -2.99
+  },
+  {
+   "code": "002407",
+   "entry_date": "2025-09-05",
+   "entry_px": 13.507,
+   "exit_date": "2025-09-08",
+   "exit_px": 16.493,
+   "reason": "阶梯止盈(+4%)(++22.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-09-08",
+      "time": "09:35",
+      "px": 15.822810151199999,
+      "ratio": 8.393,
+      "pullback_pct": 3.05
+     }
+    ]
+   ],
+   "improve": -326.68,
+   "improve_pct": -3.97
+  },
+  {
+   "code": "002407",
+   "entry_date": "2025-09-05",
+   "entry_px": 13.507,
+   "exit_date": "2025-09-08",
+   "exit_px": 16.493,
+   "reason": "阶梯止盈(+6%)(++22.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-09-08",
+      "time": "09:35",
+      "px": 15.822810151199999,
+      "ratio": 8.393,
+      "pullback_pct": 3.05
+     }
+    ]
+   ],
+   "improve": -196.01,
+   "improve_pct": -3.971
+  },
+  {
+   "code": "002407",
+   "entry_date": "2025-09-05",
+   "entry_px": 13.507,
+   "exit_date": "2025-09-08",
+   "exit_px": 16.493,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-09-08",
+      "time": "09:35",
+      "px": 15.822810151199999,
+      "ratio": 8.393,
+      "pullback_pct": 3.05
+     }
+    ]
+   ],
+   "improve": -522.69,
+   "improve_pct": -3.969
+  },
+  {
+   "code": "002580",
+   "entry_date": "2025-09-04",
+   "entry_px": 15.275,
+   "exit_date": "2025-09-10",
+   "exit_px": 15.235,
+   "reason": "移动止损(峰16.10)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-09-05",
+      "time": "09:35",
+      "px": 15.38452700307,
+      "ratio": 2.501,
+      "pullback_pct": 0.9
+     }
+    ]
+   ],
+   "improve": 115.28,
+   "improve_pct": 1.083
+  },
+  {
+   "code": "002028",
+   "entry_date": "2025-09-18",
+   "entry_px": 98.029,
+   "exit_date": "2025-09-23",
+   "exit_px": 101.898,
+   "reason": "阶梯止盈(+4%)(++4.1%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-09-19",
+      "time": "09:35",
+      "px": 98.54352275508,
+      "ratio": 2.551,
+      "pullback_pct": 1.24
+     }
+    ]
+   ],
+   "improve": -650.09,
+   "improve_pct": -3.195
+  },
+  {
+   "code": "603061",
+   "entry_date": "2025-09-24",
+   "entry_px": 81.144,
+   "exit_date": "2025-09-26",
+   "exit_px": 88.925,
+   "reason": "阶梯止盈(+4%)(++9.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-09-26",
+      "time": "09:35",
+      "px": 87.09683598000001,
+      "ratio": 2.035,
+      "pullback_pct": 0.59
+     }
+    ]
+   ],
+   "improve": -347.66,
+   "improve_pct": -1.958
+  },
+  {
+   "code": "600489",
+   "entry_date": "2025-09-23",
+   "entry_px": 20.38,
+   "exit_date": "2025-10-09",
+   "exit_px": 24.096,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-10-09",
+      "time": "09:35",
+      "px": 23.466022248239998,
+      "ratio": 2.684,
+      "pullback_pct": 0.62
+     }
+    ]
+   ],
+   "improve": -302.78,
+   "improve_pct": -2.518
+  },
+  {
+   "code": "601126",
+   "entry_date": "2025-10-14",
+   "entry_px": 23.932,
+   "exit_date": "2025-10-16",
+   "exit_px": 27.343,
+   "reason": "阶梯止盈(+4%)(++14.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-10-15",
+      "time": "09:35",
+      "px": 23.65979318334,
+      "ratio": 2.024,
+      "pullback_pct": 0.99
+     }
+    ]
+   ],
+   "improve": -730.8,
+   "improve_pct": -13.396
+  },
+  {
+   "code": "601126",
+   "entry_date": "2025-10-14",
+   "entry_px": 23.932,
+   "exit_date": "2025-10-16",
+   "exit_px": 27.343,
+   "reason": "阶梯止盈(+6%)(++14.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-10-15",
+      "time": "09:35",
+      "px": 23.65979318334,
+      "ratio": 2.024,
+      "pullback_pct": 0.99
+     }
+    ]
+   ],
+   "improve": -365.4,
+   "improve_pct": -13.408
+  },
+  {
+   "code": "601126",
+   "entry_date": "2025-10-14",
+   "entry_px": 23.932,
+   "exit_date": "2025-10-16",
+   "exit_px": 27.343,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-10-15",
+      "time": "09:35",
+      "px": 23.65979318334,
+      "ratio": 2.024,
+      "pullback_pct": 0.99
+     }
+    ]
+   ],
+   "improve": -1827.01,
+   "improve_pct": -13.389
+  },
+  {
+   "code": "002317",
+   "entry_date": "2025-10-20",
+   "entry_px": 17.477,
+   "exit_date": "2025-10-22",
+   "exit_px": 19.331,
+   "reason": "阶梯止盈(+6%)(++10.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-10-22",
+      "time": "09:35",
+      "px": 18.63625604904,
+      "ratio": 2.042,
+      "pullback_pct": 0.74
+     }
+    ]
+   ],
+   "improve": -135.01,
+   "improve_pct": -3.502
+  },
+  {
+   "code": "002317",
+   "entry_date": "2025-10-20",
+   "entry_px": 17.477,
+   "exit_date": "2025-10-22",
+   "exit_px": 19.331,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-10-22",
+      "time": "09:35",
+      "px": 18.63625604904,
+      "ratio": 2.042,
+      "pullback_pct": 0.74
+     }
+    ]
+   ],
+   "improve": -472.55,
+   "improve_pct": -3.499
+  },
+  {
+   "code": "002792",
+   "entry_date": "2025-10-21",
+   "entry_px": 18.804,
+   "exit_date": "2025-10-27",
+   "exit_px": 19.286,
+   "reason": "冲高回落止盈(峰19.96→19.30)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-10-24",
+      "time": "09:35",
+      "px": 18.970864146,
+      "ratio": 2.043,
+      "pullback_pct": 0.58
+     }
+    ]
+   ],
+   "improve": -325.17,
+   "improve_pct": -1.535
+  },
+  {
+   "code": "600089",
+   "entry_date": "2025-10-30",
+   "entry_px": 20.33,
+   "exit_date": "2025-10-31",
+   "exit_px": 19.201,
+   "reason": "止损",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-10-31",
+      "time": "09:35",
+      "px": 19.88904560544,
+      "ratio": 2.77,
+      "pullback_pct": 0.83
+     }
+    ]
+   ],
+   "improve": 989.42,
+   "improve_pct": 3.687
+  },
+  {
+   "code": "600938",
+   "entry_date": "2025-11-04",
+   "entry_px": 28.424,
+   "exit_date": "2025-11-13",
+   "exit_px": 28.941,
+   "reason": "冲高回落止盈(峰30.07→28.97)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-11-13",
+      "time": "09:35",
+      "px": 28.3822834059,
+      "ratio": 2.453,
+      "pullback_pct": 0.86
+     }
+    ]
+   ],
+   "improve": -476.42,
+   "improve_pct": -1.832
+  },
+  {
+   "code": "603738",
+   "entry_date": "2025-11-19",
+   "entry_px": 15.467,
+   "exit_date": "2025-11-25",
+   "exit_px": 15.703,
+   "reason": "冲高回落止盈(峰16.57→15.72)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-11-20",
+      "time": "10:05",
+      "px": 15.693632498160001,
+      "ratio": 2.1,
+      "pullback_pct": 0.88
+     }
+    ]
+   ],
+   "improve": 10.78,
+   "improve_pct": 0.04
+  },
+  {
+   "code": "002222",
+   "entry_date": "2025-11-25",
+   "entry_px": 47.726,
+   "exit_date": "2025-11-27",
+   "exit_px": 49.725,
+   "reason": "阶梯止盈(+4%)(++4.3%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-11-26",
+      "time": "09:35",
+      "px": 47.54961245034,
+      "ratio": 2.79,
+      "pullback_pct": 1.53
+     }
+    ]
+   ],
+   "improve": -212.46,
+   "improve_pct": -4.283
+  },
+  {
+   "code": "002222",
+   "entry_date": "2025-11-25",
+   "entry_px": 47.726,
+   "exit_date": "2025-11-27",
+   "exit_px": 49.725,
+   "reason": "冲高回落止盈(峰51.28→49.77)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-11-26",
+      "time": "09:35",
+      "px": 47.54961245034,
+      "ratio": 2.79,
+      "pullback_pct": 1.53
+     }
+    ]
+   ],
+   "improve": -637.37,
+   "improve_pct": -4.281
+  },
+  {
+   "code": "002149",
+   "entry_date": "2025-12-01",
+   "entry_px": 18.018,
+   "exit_date": "2025-12-02",
+   "exit_px": 18.531,
+   "reason": "移动止损(峰19.90)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-02",
+      "time": "09:35",
+      "px": 18.79693868556,
+      "ratio": 6.182,
+      "pullback_pct": 5.13
+     }
+    ]
+   ],
+   "improve": 312.7,
+   "improve_pct": 1.537
+  },
+  {
+   "code": "600522",
+   "entry_date": "2025-12-02",
+   "entry_px": 16.708,
+   "exit_date": "2025-12-12",
+   "exit_px": 17.672,
+   "reason": "阶梯止盈(+4%)(++5.9%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-10",
+      "time": "14:00",
+      "px": 17.01895848552,
+      "ratio": 2.217,
+      "pullback_pct": 0.52
+     }
+    ]
+   ],
+   "improve": -254.02,
+   "improve_pct": -3.601
+  },
+  {
+   "code": "601318",
+   "entry_date": "2025-12-08",
+   "entry_px": 62.071,
+   "exit_date": "2025-12-15",
+   "exit_px": 67.013,
+   "reason": "阶梯止盈(+4%)(++8.1%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-15",
+      "time": "10:30",
+      "px": 64.15214351013,
+      "ratio": 3.047,
+      "pullback_pct": 0.7
+     }
+    ]
+   ],
+   "improve": -837.7,
+   "improve_pct": -4.174
+  },
+  {
+   "code": "600522",
+   "entry_date": "2025-12-02",
+   "entry_px": 16.708,
+   "exit_date": "2025-12-16",
+   "exit_px": 16.823,
+   "reason": "冲高回落止盈(峰17.81→16.84)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-10",
+      "time": "14:00",
+      "px": 17.01895848552,
+      "ratio": 2.217,
+      "pullback_pct": 0.52
+     }
+    ]
+   ],
+   "improve": 191.42,
+   "improve_pct": 1.267
+  },
+  {
+   "code": "600487",
+   "entry_date": "2025-12-19",
+   "entry_px": 22.591,
+   "exit_date": "2025-12-22",
+   "exit_px": 26.114,
+   "reason": "阶梯止盈(+4%)(++15.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-22",
+      "time": "09:35",
+      "px": 24.914135925,
+      "ratio": 2.102,
+      "pullback_pct": 1.57
+     }
+    ]
+   ],
+   "improve": -469.26,
+   "improve_pct": -4.501
+  },
+  {
+   "code": "600487",
+   "entry_date": "2025-12-19",
+   "entry_px": 22.591,
+   "exit_date": "2025-12-22",
+   "exit_px": 26.114,
+   "reason": "阶梯止盈(+6%)(++15.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-22",
+      "time": "09:35",
+      "px": 24.914135925,
+      "ratio": 2.102,
+      "pullback_pct": 1.57
+     }
+    ]
+   ],
+   "improve": -234.63,
+   "improve_pct": -4.503
+  },
+  {
+   "code": "600487",
+   "entry_date": "2025-12-19",
+   "entry_px": 22.591,
+   "exit_date": "2025-12-22",
+   "exit_px": 26.114,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-22",
+      "time": "09:35",
+      "px": 24.914135925,
+      "ratio": 2.102,
+      "pullback_pct": 1.57
+     }
+    ]
+   ],
+   "improve": -821.21,
+   "improve_pct": -4.5
+  },
+  {
+   "code": "002491",
+   "entry_date": "2025-12-19",
+   "entry_px": 6.353,
+   "exit_date": "2025-12-22",
+   "exit_px": 6.943,
+   "reason": "阶梯止盈(+4%)(++9.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-22",
+      "time": "09:40",
+      "px": 7.4925,
+      "ratio": 2.201,
+      "pullback_pct": 0.79
+     }
+    ]
+   ],
+   "improve": 556.17,
+   "improve_pct": 8.028
+  },
+  {
+   "code": "002491",
+   "entry_date": "2025-12-19",
+   "entry_px": 6.353,
+   "exit_date": "2025-12-22",
+   "exit_px": 6.943,
+   "reason": "阶梯止盈(+6%)(++9.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-22",
+      "time": "09:40",
+      "px": 7.4925,
+      "ratio": 2.201,
+      "pullback_pct": 0.79
+     }
+    ]
+   ],
+   "improve": 389.32,
+   "improve_pct": 8.031
+  },
+  {
+   "code": "002491",
+   "entry_date": "2025-12-19",
+   "entry_px": 6.353,
+   "exit_date": "2025-12-22",
+   "exit_px": 6.943,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-22",
+      "time": "09:40",
+      "px": 7.4925,
+      "ratio": 2.201,
+      "pullback_pct": 0.79
+     }
+    ]
+   ],
+   "improve": 889.87,
+   "improve_pct": 8.026
+  },
+  {
+   "code": "002842",
+   "entry_date": "2025-12-23",
+   "entry_px": 13.809,
+   "exit_date": "2025-12-24",
+   "exit_px": 13.928,
+   "reason": "移动止损(峰15.30)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2025-12-24",
+      "time": "09:35",
+      "px": 14.2894318644,
+      "ratio": 2.856,
+      "pullback_pct": 7.06
+     }
+    ]
+   ],
+   "improve": 750.18,
+   "improve_pct": 2.698
+  },
+  {
+   "code": "603039",
+   "entry_date": "2025-12-31",
+   "entry_px": 42.747,
+   "exit_date": "2026-01-05",
+   "exit_px": 47.557,
+   "reason": "阶梯止盈(+4%)(++11.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-05",
+      "time": "14:50",
+      "px": 47.65751192286,
+      "ratio": 2.329,
+      "pullback_pct": 0.97
+     }
+    ]
+   ],
+   "improve": 14.8,
+   "improve_pct": 0.312
+  },
+  {
+   "code": "603039",
+   "entry_date": "2025-12-31",
+   "entry_px": 42.747,
+   "exit_date": "2026-01-05",
+   "exit_px": 47.557,
+   "reason": "阶梯止盈(+6%)(++11.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-05",
+      "time": "14:50",
+      "px": 47.65751192286,
+      "ratio": 2.329,
+      "pullback_pct": 0.97
+     }
+    ]
+   ],
+   "improve": 14.8,
+   "improve_pct": 0.312
+  },
+  {
+   "code": "603039",
+   "entry_date": "2025-12-31",
+   "entry_px": 42.747,
+   "exit_date": "2026-01-05",
+   "exit_px": 47.557,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-05",
+      "time": "14:50",
+      "px": 47.65751192286,
+      "ratio": 2.329,
+      "pullback_pct": 0.97
+     }
+    ]
+   ],
+   "improve": 44.41,
+   "improve_pct": 0.312
+  },
+  {
+   "code": "600030",
+   "entry_date": "2026-01-07",
+   "entry_px": 30.719,
+   "exit_date": "2026-01-08",
+   "exit_px": 28.977,
+   "reason": "止损",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-08",
+      "time": "09:35",
+      "px": 28.12443432309,
+      "ratio": 3.554,
+      "pullback_pct": 1.3
+     }
+    ]
+   ],
+   "improve": -493.9,
+   "improve_pct": -2.846
+  },
+  {
+   "code": "603078",
+   "entry_date": "2026-01-08",
+   "entry_px": 19.099,
+   "exit_date": "2026-01-12",
+   "exit_px": 21.339,
+   "reason": "阶梯止盈(+4%)(++11.8%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-12",
+      "time": "09:35",
+      "px": 20.73273123528,
+      "ratio": 2.743,
+      "pullback_pct": 0.76
+     }
+    ]
+   ],
+   "improve": -175.39,
+   "improve_pct": -2.746
+  },
+  {
+   "code": "603078",
+   "entry_date": "2026-01-08",
+   "entry_px": 19.099,
+   "exit_date": "2026-01-12",
+   "exit_px": 21.339,
+   "reason": "阶梯止盈(+6%)(++11.8%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-12",
+      "time": "09:35",
+      "px": 20.73273123528,
+      "ratio": 2.743,
+      "pullback_pct": 0.76
+     }
+    ]
+   ],
+   "improve": -116.93,
+   "improve_pct": -2.747
+  },
+  {
+   "code": "603078",
+   "entry_date": "2026-01-08",
+   "entry_px": 19.099,
+   "exit_date": "2026-01-12",
+   "exit_px": 21.339,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-12",
+      "time": "09:35",
+      "px": 20.73273123528,
+      "ratio": 2.743,
+      "pullback_pct": 0.76
+     }
+    ]
+   ],
+   "improve": -292.31,
+   "improve_pct": -2.745
+  },
+  {
+   "code": "002636",
+   "entry_date": "2026-01-19",
+   "entry_px": 18.969,
+   "exit_date": "2026-01-20",
+   "exit_px": 20.499,
+   "reason": "阶梯止盈(+4%)(++8.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-20",
+      "time": "09:35",
+      "px": 21.28612560696,
+      "ratio": 3.143,
+      "pullback_pct": 4.69
+     }
+    ]
+   ],
+   "improve": 322.89,
+   "improve_pct": 3.946
+  },
+  {
+   "code": "002636",
+   "entry_date": "2026-01-19",
+   "entry_px": 18.969,
+   "exit_date": "2026-01-20",
+   "exit_px": 20.499,
+   "reason": "阶梯止盈(+6%)(++8.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-20",
+      "time": "09:35",
+      "px": 21.28612560696,
+      "ratio": 3.143,
+      "pullback_pct": 4.69
+     }
+    ]
+   ],
+   "improve": 161.45,
+   "improve_pct": 3.949
+  },
+  {
+   "code": "002636",
+   "entry_date": "2026-01-19",
+   "entry_px": 18.969,
+   "exit_date": "2026-01-20",
+   "exit_px": 20.499,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-20",
+      "time": "09:35",
+      "px": 21.28612560696,
+      "ratio": 3.143,
+      "pullback_pct": 4.69
+     }
+    ]
+   ],
+   "improve": 565.06,
+   "improve_pct": 3.945
+  },
+  {
+   "code": "603002",
+   "entry_date": "2026-01-16",
+   "entry_px": 8.208,
+   "exit_date": "2026-01-21",
+   "exit_px": 8.531,
+   "reason": "阶梯止盈(+4%)(++4.0%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-21",
+      "time": "09:40",
+      "px": 8.66647273212,
+      "ratio": 3.631,
+      "pullback_pct": 1.03
+     }
+    ]
+   ],
+   "improve": 158.33,
+   "improve_pct": 1.691
+  },
+  {
+   "code": "603002",
+   "entry_date": "2026-01-16",
+   "entry_px": 8.208,
+   "exit_date": "2026-01-21",
+   "exit_px": 8.531,
+   "reason": "冲高回落止盈(峰8.92→8.54)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-21",
+      "time": "09:40",
+      "px": 8.66647273212,
+      "ratio": 3.631,
+      "pullback_pct": 1.03
+     }
+    ]
+   ],
+   "improve": 359.76,
+   "improve_pct": 1.69
+  },
+  {
+   "code": "600267",
+   "entry_date": "2026-01-27",
+   "entry_px": 10.971,
+   "exit_date": "2026-01-30",
+   "exit_px": 10.489,
+   "reason": "时间止损(3天亏-4.3%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-01-28",
+      "time": "09:35",
+      "px": 10.69412748768,
+      "ratio": 3.672,
+      "pullback_pct": 1.44
+     }
+    ]
+   ],
+   "improve": 409.4,
+   "improve_pct": 2.058
+  },
+  {
+   "code": "600330",
+   "entry_date": "2026-02-03",
+   "entry_px": 14.287,
+   "exit_date": "2026-02-04",
+   "exit_px": 16.923,
+   "reason": "阶梯止盈(+4%)(++18.6%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-02-04",
+      "time": "14:15",
+      "px": 16.80318,
+      "ratio": 2.034,
+      "pullback_pct": 0.71
+     }
+    ]
+   ],
+   "improve": -51.42,
+   "improve_pct": -0.609
+  },
+  {
+   "code": "600330",
+   "entry_date": "2026-02-03",
+   "entry_px": 14.287,
+   "exit_date": "2026-02-04",
+   "exit_px": 16.923,
+   "reason": "阶梯止盈(+6%)(++18.6%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-02-04",
+      "time": "14:15",
+      "px": 16.80318,
+      "ratio": 2.034,
+      "pullback_pct": 0.71
+     }
+    ]
+   ],
+   "improve": -30.85,
+   "improve_pct": -0.609
+  },
+  {
+   "code": "600330",
+   "entry_date": "2026-02-03",
+   "entry_px": 14.287,
+   "exit_date": "2026-02-04",
+   "exit_px": 16.923,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-02-04",
+      "time": "14:15",
+      "px": 16.80318,
+      "ratio": 2.034,
+      "pullback_pct": 0.71
+     }
+    ]
+   ],
+   "improve": -82.27,
+   "improve_pct": -0.609
+  },
+  {
+   "code": "002980",
+   "entry_date": "2026-02-13",
+   "entry_px": 23.802,
+   "exit_date": "2026-02-25",
+   "exit_px": 25.095,
+   "reason": "阶梯止盈(+4%)(++5.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-02-24",
+      "time": "09:40",
+      "px": 23.876099999999997,
+      "ratio": 2.734,
+      "pullback_pct": 0.91
+     }
+    ]
+   ],
+   "improve": -357.96,
+   "improve_pct": -4.765
+  },
+  {
+   "code": "002008",
+   "entry_date": "2026-02-24",
+   "entry_px": 54.757,
+   "exit_date": "2026-02-25",
+   "exit_px": 63.317,
+   "reason": "阶梯止盈(+4%)(++15.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-02-25",
+      "time": "10:00",
+      "px": 61.752516069600006,
+      "ratio": 2.083,
+      "pullback_pct": 0.94
+     }
+    ]
+   ],
+   "improve": -150.04,
+   "improve_pct": -2.375
+  },
+  {
+   "code": "002008",
+   "entry_date": "2026-02-24",
+   "entry_px": 54.757,
+   "exit_date": "2026-02-25",
+   "exit_px": 63.317,
+   "reason": "阶梯止盈(+6%)(++15.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-02-25",
+      "time": "10:00",
+      "px": 61.752516069600006,
+      "ratio": 2.083,
+      "pullback_pct": 0.94
+     }
+    ]
+   ],
+   "improve": -450.12,
+   "improve_pct": -2.374
+  },
+  {
+   "code": "002980",
+   "entry_date": "2026-02-13",
+   "entry_px": 23.802,
+   "exit_date": "2026-02-26",
+   "exit_px": 26.314,
+   "reason": "阶梯止盈(+6%)(++10.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-02-24",
+      "time": "09:40",
+      "px": 23.876099999999997,
+      "ratio": 2.734,
+      "pullback_pct": 0.91
+     }
+    ]
+   ],
+   "improve": -482.07,
+   "improve_pct": -9.183
+  },
+  {
+   "code": "002980",
+   "entry_date": "2026-02-13",
+   "entry_px": 23.802,
+   "exit_date": "2026-02-26",
+   "exit_px": 26.314,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-02-24",
+      "time": "09:40",
+      "px": 23.876099999999997,
+      "ratio": 2.734,
+      "pullback_pct": 0.91
+     }
+    ]
+   ],
+   "improve": -1446.22,
+   "improve_pct": -9.177
+  },
+  {
+   "code": "600938",
+   "entry_date": "2026-02-25",
+   "entry_px": 37.319,
+   "exit_date": "2026-03-02",
+   "exit_px": 39.421,
+   "reason": "阶梯止盈(+4%)(++5.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-02",
+      "time": "09:35",
+      "px": 38.497768495200006,
+      "ratio": 8.048,
+      "pullback_pct": 0.66
+     }
+    ]
+   ],
+   "improve": -88.33,
+   "improve_pct": -2.247
+  },
+  {
+   "code": "600938",
+   "entry_date": "2026-02-25",
+   "entry_px": 37.319,
+   "exit_date": "2026-03-03",
+   "exit_px": 43.367,
+   "reason": "阶梯止盈(+6%)(++16.3%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-02",
+      "time": "09:35",
+      "px": 38.497768495200006,
+      "ratio": 8.048,
+      "pullback_pct": 0.66
+     }
+    ]
+   ],
+   "improve": -482.34,
+   "improve_pct": -11.152
+  },
+  {
+   "code": "600938",
+   "entry_date": "2026-02-25",
+   "entry_px": 37.319,
+   "exit_date": "2026-03-03",
+   "exit_px": 43.367,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-02",
+      "time": "09:35",
+      "px": 38.497768495200006,
+      "ratio": 8.048,
+      "pullback_pct": 0.66
+     }
+    ]
+   ],
+   "improve": -1447.03,
+   "improve_pct": -11.143
+  },
+  {
+   "code": "600722",
+   "entry_date": "2026-03-06",
+   "entry_px": 11.546,
+   "exit_date": "2026-03-09",
+   "exit_px": 13.217,
+   "reason": "阶梯止盈(+4%)(++14.6%)",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-03-09",
+      "time": "09:35",
+      "px": 14.865120000000001,
+      "ratio": 0.466,
+      "pct": 9.98
+     }
+    ]
+   ],
+   "improve": 327.1,
+   "improve_pct": 4.961
+  },
+  {
+   "code": "600722",
+   "entry_date": "2026-03-06",
+   "entry_px": 11.546,
+   "exit_date": "2026-03-09",
+   "exit_px": 13.217,
+   "reason": "阶梯止盈(+6%)(++14.6%)",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-03-09",
+      "time": "09:35",
+      "px": 14.865120000000001,
+      "ratio": 0.466,
+      "pct": 9.98
+     }
+    ]
+   ],
+   "improve": 161.05,
+   "improve_pct": 4.073
+  },
+  {
+   "code": "600722",
+   "entry_date": "2026-03-06",
+   "entry_px": 11.546,
+   "exit_date": "2026-03-09",
+   "exit_px": 13.217,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-03-09",
+      "time": "09:35",
+      "px": 14.865120000000001,
+      "ratio": 0.466,
+      "pct": 9.98
+     }
+    ]
+   ],
+   "improve": 659.21,
+   "improve_pct": 6.247
+  },
+  {
+   "code": "001258",
+   "entry_date": "2026-03-09",
+   "entry_px": 8.334,
+   "exit_date": "2026-03-10",
+   "exit_px": 9.371,
+   "reason": "阶梯止盈(+4%)(++12.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-10",
+      "time": "09:35",
+      "px": 9.34040470554,
+      "ratio": 7.887,
+      "pullback_pct": 5.82
+     }
+    ]
+   ],
+   "improve": -16.97,
+   "improve_pct": -0.227
+  },
+  {
+   "code": "001258",
+   "entry_date": "2026-03-09",
+   "entry_px": 8.334,
+   "exit_date": "2026-03-10",
+   "exit_px": 9.371,
+   "reason": "阶梯止盈(+6%)(++12.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-10",
+      "time": "09:35",
+      "px": 9.34040470554,
+      "ratio": 7.887,
+      "pullback_pct": 5.82
+     }
+    ]
+   ],
+   "improve": -10.6,
+   "improve_pct": -0.227
+  },
+  {
+   "code": "001258",
+   "entry_date": "2026-03-09",
+   "entry_px": 8.334,
+   "exit_date": "2026-03-10",
+   "exit_px": 9.371,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-10",
+      "time": "09:35",
+      "px": 9.34040470554,
+      "ratio": 7.887,
+      "pullback_pct": 5.82
+     }
+    ]
+   ],
+   "improve": -25.45,
+   "improve_pct": -0.227
+  },
+  {
+   "code": "603538",
+   "entry_date": "2026-03-17",
+   "entry_px": 17.827,
+   "exit_date": "2026-03-18",
+   "exit_px": 18.699,
+   "reason": "阶梯止盈(+4%)(++5.0%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-18",
+      "time": "09:50",
+      "px": 18.74127988008,
+      "ratio": 2.209,
+      "pullback_pct": 1.97
+     }
+    ]
+   ],
+   "improve": 24.38,
+   "improve_pct": 0.327
+  },
+  {
+   "code": "603538",
+   "entry_date": "2026-03-17",
+   "entry_px": 17.827,
+   "exit_date": "2026-03-19",
+   "exit_px": 17.95,
+   "reason": "冲高回落止盈(峰19.10→17.97)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-18",
+      "time": "09:50",
+      "px": 18.74127988008,
+      "ratio": 2.209,
+      "pullback_pct": 1.97
+     }
+    ]
+   ],
+   "improve": 889.56,
+   "improve_pct": 4.513
+  },
+  {
+   "code": "002580",
+   "entry_date": "2026-03-20",
+   "entry_px": 13.814,
+   "exit_date": "2026-03-25",
+   "exit_px": 15.524,
+   "reason": "阶梯止盈(+4%)(++12.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-23",
+      "time": "09:35",
+      "px": 13.81915387314,
+      "ratio": 4.899,
+      "pullback_pct": 2.12
+     }
+    ]
+   ],
+   "improve": -1013.08,
+   "improve_pct": -10.899
+  },
+  {
+   "code": "002580",
+   "entry_date": "2026-03-20",
+   "entry_px": 13.814,
+   "exit_date": "2026-03-25",
+   "exit_px": 15.524,
+   "reason": "阶梯止盈(+6%)(++12.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-23",
+      "time": "09:35",
+      "px": 13.81915387314,
+      "ratio": 4.899,
+      "pullback_pct": 2.12
+     }
+    ]
+   ],
+   "improve": -675.39,
+   "improve_pct": -10.902
+  },
+  {
+   "code": "002580",
+   "entry_date": "2026-03-20",
+   "entry_px": 13.814,
+   "exit_date": "2026-03-25",
+   "exit_px": 15.524,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-23",
+      "time": "09:35",
+      "px": 13.81915387314,
+      "ratio": 4.899,
+      "pullback_pct": 2.12
+     }
+    ]
+   ],
+   "improve": -1857.32,
+   "improve_pct": -10.896
+  },
+  {
+   "code": "600721",
+   "entry_date": "2026-03-26",
+   "entry_px": 9.705,
+   "exit_date": "2026-03-30",
+   "exit_px": 10.17,
+   "reason": "阶梯止盈(+4%)(++4.9%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-30",
+      "time": "09:45",
+      "px": 10.0419628851,
+      "ratio": 2.524,
+      "pullback_pct": 1.27
+     }
+    ]
+   ],
+   "improve": -82.46,
+   "improve_pct": -1.161
+  },
+  {
+   "code": "002792",
+   "entry_date": "2026-03-27",
+   "entry_px": 40.135,
+   "exit_date": "2026-03-31",
+   "exit_px": 44.48,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-31",
+      "time": "09:45",
+      "px": 43.433294229,
+      "ratio": 2.04,
+      "pullback_pct": 2.05
+     }
+    ]
+   ],
+   "improve": -400.68,
+   "improve_pct": -2.256
+  },
+  {
+   "code": "600110",
+   "entry_date": "2026-03-31",
+   "entry_px": 9.085,
+   "exit_date": "2026-04-01",
+   "exit_px": 9.071,
+   "reason": "移动止损(峰9.83)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-04-01",
+      "time": "09:40",
+      "px": 9.54045,
+      "ratio": 2.823,
+      "pullback_pct": 2.85
+     }
+    ]
+   ],
+   "improve": 1338.87,
+   "improve_pct": 5.281
+  },
+  {
+   "code": "002422",
+   "entry_date": "2026-03-30",
+   "entry_px": 34.717,
+   "exit_date": "2026-04-03",
+   "exit_px": 35.584,
+   "reason": "冲高回落止盈(峰36.90→35.62)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-04-03",
+      "time": "09:35",
+      "px": 34.97887590021,
+      "ratio": 2.168,
+      "pullback_pct": 1.14
+     }
+    ]
+   ],
+   "improve": -341.45,
+   "improve_pct": -1.602
+  },
+  {
+   "code": "600721",
+   "entry_date": "2026-03-26",
+   "entry_px": 9.705,
+   "exit_date": "2026-04-08",
+   "exit_px": 11.189,
+   "reason": "阶梯止盈(+6%)(++15.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-30",
+      "time": "09:45",
+      "px": 10.0419628851,
+      "ratio": 2.524,
+      "pullback_pct": 1.27
+     }
+    ]
+   ],
+   "improve": -454.11,
+   "improve_pct": -10.173
+  },
+  {
+   "code": "600721",
+   "entry_date": "2026-03-26",
+   "entry_px": 9.705,
+   "exit_date": "2026-04-08",
+   "exit_px": 11.189,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-03-30",
+      "time": "09:45",
+      "px": 10.0419628851,
+      "ratio": 2.524,
+      "pullback_pct": 1.27
+     }
+    ]
+   ],
+   "improve": -1248.8,
+   "improve_pct": -10.166
+  },
+  {
+   "code": "000977",
+   "entry_date": "2026-04-10",
+   "entry_px": 65.803,
+   "exit_date": "2026-04-14",
+   "exit_px": 67.922,
+   "reason": "冲高回落止盈(峰70.19→67.99)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-04-13",
+      "time": "10:00",
+      "px": 69.69156946919999,
+      "ratio": 2.116,
+      "pullback_pct": 0.53
+     }
+    ]
+   ],
+   "improve": 550.85,
+   "improve_pct": 2.708
+  },
+  {
+   "code": "603799",
+   "entry_date": "2026-04-15",
+   "entry_px": 64.512,
+   "exit_date": "2026-04-17",
+   "exit_px": 65.644,
+   "reason": "冲高回落止盈(峰68.30→65.71)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-04-17",
+      "time": "09:40",
+      "px": 67.20091806375,
+      "ratio": 2.299,
+      "pullback_pct": 1.28
+     }
+    ]
+   ],
+   "improve": 486.5,
+   "improve_pct": 2.475
+  },
+  {
+   "code": "603268",
+   "entry_date": "2026-04-22",
+   "entry_px": 141.04,
+   "exit_date": "2026-04-27",
+   "exit_px": 138.781,
+   "reason": "移动止损(峰149.00)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-04-27",
+      "time": "09:40",
+      "px": 136.80306,
+      "ratio": 2.014,
+      "pullback_pct": 1.47
+     }
+    ]
+   ],
+   "improve": -367.54,
+   "improve_pct": -1.326
+  },
+  {
+   "code": "000066",
+   "entry_date": "2026-04-27",
+   "entry_px": 16.637,
+   "exit_date": "2026-04-28",
+   "exit_px": 17.812,
+   "reason": "阶梯止盈(+4%)(++7.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-04-28",
+      "time": "09:35",
+      "px": 17.64234,
+      "ratio": 2.426,
+      "pullback_pct": 0.79
+     }
+    ]
+   ],
+   "improve": -60.71,
+   "improve_pct": -0.854
+  },
+  {
+   "code": "000066",
+   "entry_date": "2026-04-27",
+   "entry_px": 16.637,
+   "exit_date": "2026-04-28",
+   "exit_px": 17.812,
+   "reason": "阶梯止盈(+6%)(++7.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-04-28",
+      "time": "09:35",
+      "px": 17.64234,
+      "ratio": 2.426,
+      "pullback_pct": 0.79
+     }
+    ]
+   ],
+   "improve": -45.53,
+   "improve_pct": -0.854
+  },
+  {
+   "code": "000066",
+   "entry_date": "2026-04-27",
+   "entry_px": 16.637,
+   "exit_date": "2026-04-29",
+   "exit_px": 18.002,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-04-28",
+      "time": "09:35",
+      "px": 17.64234,
+      "ratio": 2.426,
+      "pullback_pct": 0.79
+     }
+    ]
+   ],
+   "improve": -239.03,
+   "improve_pct": -1.9
+  },
+  {
+   "code": "002747",
+   "entry_date": "2026-05-07",
+   "entry_px": 23.122,
+   "exit_date": "2026-05-08",
+   "exit_px": 24.056,
+   "reason": "阶梯止盈(+4%)(++4.1%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-08",
+      "time": "10:50",
+      "px": 24.2757,
+      "ratio": 2.029,
+      "pullback_pct": 0.82
+     }
+    ]
+   ],
+   "improve": 73.09,
+   "improve_pct": 1.015
+  },
+  {
+   "code": "002747",
+   "entry_date": "2026-05-07",
+   "entry_px": 23.122,
+   "exit_date": "2026-05-12",
+   "exit_px": 24.545,
+   "reason": "阶梯止盈(+6%)(++6.3%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-08",
+      "time": "10:50",
+      "px": 24.2757,
+      "ratio": 2.029,
+      "pullback_pct": 0.82
+     }
+    ]
+   ],
+   "improve": -48.92,
+   "improve_pct": -0.999
+  },
+  {
+   "code": "002747",
+   "entry_date": "2026-05-07",
+   "entry_px": 23.122,
+   "exit_date": "2026-05-13",
+   "exit_px": 24.176,
+   "reason": "冲高回落止盈(峰24.74→24.20)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-08",
+      "time": "10:50",
+      "px": 24.2757,
+      "ratio": 2.029,
+      "pullback_pct": 0.82
+     }
+    ]
+   ],
+   "improve": 74.3,
+   "improve_pct": 0.513
+  },
+  {
+   "code": "002409",
+   "entry_date": "2026-05-15",
+   "entry_px": 109.024,
+   "exit_date": "2026-05-18",
+   "exit_px": 114.076,
+   "reason": "阶梯止盈(+4%)(++4.7%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-18",
+      "time": "09:35",
+      "px": 115.1519204124,
+      "ratio": 2.333,
+      "pullback_pct": 1.31
+     }
+    ]
+   ],
+   "improve": 118.95,
+   "improve_pct": 1.045
+  },
+  {
+   "code": "002747",
+   "entry_date": "2026-05-18",
+   "entry_px": 25.443,
+   "exit_date": "2026-05-19",
+   "exit_px": 26.833,
+   "reason": "阶梯止盈(+4%)(++5.6%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-19",
+      "time": "09:45",
+      "px": 26.493479999999998,
+      "ratio": 2.114,
+      "pullback_pct": 1.56
+     }
+    ]
+   ],
+   "improve": -62.5,
+   "improve_pct": -1.168
+  },
+  {
+   "code": "002747",
+   "entry_date": "2026-05-18",
+   "entry_px": 25.443,
+   "exit_date": "2026-05-20",
+   "exit_px": 26.074,
+   "reason": "冲高回落止盈(峰26.96→26.10)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-19",
+      "time": "09:45",
+      "px": 26.493479999999998,
+      "ratio": 2.114,
+      "pullback_pct": 1.56
+     }
+    ]
+   ],
+   "improve": 222.67,
+   "improve_pct": 1.711
+  },
+  {
+   "code": "002138",
+   "entry_date": "2026-05-20",
+   "entry_px": 41.271,
+   "exit_date": "2026-05-22",
+   "exit_px": 43.257,
+   "reason": "阶梯止盈(+4%)(++4.9%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-22",
+      "time": "09:45",
+      "px": 42.42753,
+      "ratio": 2.105,
+      "pullback_pct": 0.59
+     }
+    ]
+   ],
+   "improve": -235.74,
+   "improve_pct": -1.82
+  },
+  {
+   "code": "000636",
+   "entry_date": "2026-05-21",
+   "entry_px": 34.887,
+   "exit_date": "2026-05-22",
+   "exit_px": 37.582,
+   "reason": "阶梯止盈(+4%)(++7.8%)",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-05-22",
+      "time": "09:50",
+      "px": 37.524164893380004,
+      "ratio": 0.609,
+      "pct": 9.83
+     }
+    ]
+   ],
+   "improve": 0.0,
+   "improve_pct": 0.0
+  },
+  {
+   "code": "000636",
+   "entry_date": "2026-05-21",
+   "entry_px": 34.887,
+   "exit_date": "2026-05-22",
+   "exit_px": 37.582,
+   "reason": "阶梯止盈(+6%)(++7.8%)",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-05-22",
+      "time": "09:50",
+      "px": 37.524164893380004,
+      "ratio": 0.609,
+      "pct": 9.83
+     }
+    ]
+   ],
+   "improve": 0.0,
+   "improve_pct": 0.0
+  },
+  {
+   "code": "002138",
+   "entry_date": "2026-05-20",
+   "entry_px": 41.271,
+   "exit_date": "2026-05-25",
+   "exit_px": 46.084,
+   "reason": "阶梯止盈(+6%)(++11.8%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-22",
+      "time": "09:45",
+      "px": 42.42753,
+      "ratio": 2.105,
+      "pullback_pct": 0.59
+     }
+    ]
+   ],
+   "improve": -721.71,
+   "improve_pct": -7.846
+  },
+  {
+   "code": "002138",
+   "entry_date": "2026-05-20",
+   "entry_px": 41.271,
+   "exit_date": "2026-05-25",
+   "exit_px": 46.084,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-05-22",
+      "time": "09:45",
+      "px": 42.42753,
+      "ratio": 2.105,
+      "pullback_pct": 0.59
+     }
+    ]
+   ],
+   "improve": -1803.82,
+   "improve_pct": -7.842
+  },
+  {
+   "code": "000636",
+   "entry_date": "2026-05-21",
+   "entry_px": 34.887,
+   "exit_date": "2026-05-25",
+   "exit_px": 41.339,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-05-22",
+      "time": "09:50",
+      "px": 37.524164893380004,
+      "ratio": 0.609,
+      "pct": 9.83
+     }
+    ]
+   ],
+   "improve": -759.32,
+   "improve_pct": -4.6
+  },
+  {
+   "code": "002747",
+   "entry_date": "2026-06-11",
+   "entry_px": 35.017,
+   "exit_date": "2026-06-12",
+   "exit_px": 32.188,
+   "reason": "止损",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-06-12",
+      "time": "10:05",
+      "px": 35.37459,
+      "ratio": 0.663,
+      "pct": 6.18
+     }
+    ]
+   ],
+   "improve": 960.79,
+   "improve_pct": 4.272
+  },
+  {
+   "code": "600206",
+   "entry_date": "2026-06-12",
+   "entry_px": 35.718,
+   "exit_date": "2026-06-16",
+   "exit_px": 39.071,
+   "reason": "阶梯止盈(+4%)(++9.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-06-16",
+      "time": "14:30",
+      "px": 39.07089,
+      "ratio": 0.695,
+      "pct": 10.01
+     }
+    ]
+   ],
+   "improve": 0.0,
+   "improve_pct": 0.0
+  },
+  {
+   "code": "600206",
+   "entry_date": "2026-06-12",
+   "entry_px": 35.718,
+   "exit_date": "2026-06-16",
+   "exit_px": 39.071,
+   "reason": "阶梯止盈(+6%)(++9.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-06-16",
+      "time": "14:30",
+      "px": 39.07089,
+      "ratio": 0.695,
+      "pct": 10.01
+     }
+    ]
+   ],
+   "improve": 0.0,
+   "improve_pct": 0.0
+  },
+  {
+   "code": "600206",
+   "entry_date": "2026-06-12",
+   "entry_px": 35.718,
+   "exit_date": "2026-06-16",
+   "exit_px": 39.071,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-06-16",
+      "time": "14:30",
+      "px": 39.07089,
+      "ratio": 0.695,
+      "pct": 10.01
+     }
+    ]
+   ],
+   "improve": 2.79,
+   "improve_pct": 0.018
+  },
+  {
+   "code": "600397",
+   "entry_date": "2026-06-15",
+   "entry_px": 15.458,
+   "exit_date": "2026-06-17",
+   "exit_px": 18.342,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-06-17",
+      "time": "09:35",
+      "px": 17.33265,
+      "ratio": 3.627,
+      "pullback_pct": 3.02
+     }
+    ]
+   ],
+   "improve": -891.45,
+   "improve_pct": -5.41
+  },
+  {
+   "code": "002202",
+   "entry_date": "2026-06-29",
+   "entry_px": 22.771,
+   "exit_date": "2026-06-30",
+   "exit_px": 23.876,
+   "reason": "阶梯止盈(+4%)(++5.0%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-06-30",
+      "time": "09:40",
+      "px": 23.378946231420002,
+      "ratio": 3.084,
+      "pullback_pct": 0.76
+     }
+    ]
+   ],
+   "improve": -94.59,
+   "improve_pct": -1.986
+  },
+  {
+   "code": "002202",
+   "entry_date": "2026-06-29",
+   "entry_px": 22.771,
+   "exit_date": "2026-07-01",
+   "exit_px": 24.635,
+   "reason": "阶梯止盈(+6%)(++8.3%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-06-30",
+      "time": "09:40",
+      "px": 23.378946231420002,
+      "ratio": 3.084,
+      "pullback_pct": 0.76
+     }
+    ]
+   ],
+   "improve": -246.16,
+   "improve_pct": -5.009
+  },
+  {
+   "code": "002202",
+   "entry_date": "2026-06-29",
+   "entry_px": 22.771,
+   "exit_date": "2026-07-01",
+   "exit_px": 24.635,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-06-30",
+      "time": "09:40",
+      "px": 23.378946231420002,
+      "ratio": 3.084,
+      "pullback_pct": 0.76
+     }
+    ]
+   ],
+   "improve": -615.4,
+   "improve_pct": -5.006
+  },
+  {
+   "code": "002422",
+   "entry_date": "2026-07-01",
+   "entry_px": 38.539,
+   "exit_date": "2026-07-02",
+   "exit_px": 44.705,
+   "reason": "阶梯止盈(+4%)(++16.1%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-02",
+      "time": "09:35",
+      "px": 43.186769999999996,
+      "ratio": 2.868,
+      "pullback_pct": 1.66
+     }
+    ]
+   ],
+   "improve": -147.28,
+   "improve_pct": -3.303
+  },
+  {
+   "code": "002422",
+   "entry_date": "2026-07-01",
+   "entry_px": 38.539,
+   "exit_date": "2026-07-02",
+   "exit_px": 44.705,
+   "reason": "阶梯止盈(+6%)(++16.1%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-02",
+      "time": "09:35",
+      "px": 43.186769999999996,
+      "ratio": 2.868,
+      "pullback_pct": 1.66
+     }
+    ]
+   ],
+   "improve": -147.28,
+   "improve_pct": -3.303
+  },
+  {
+   "code": "002422",
+   "entry_date": "2026-07-01",
+   "entry_px": 38.539,
+   "exit_date": "2026-07-02",
+   "exit_px": 44.705,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-02",
+      "time": "09:35",
+      "px": 43.186769999999996,
+      "ratio": 2.868,
+      "pullback_pct": 1.66
+     }
+    ]
+   ],
+   "improve": -441.83,
+   "improve_pct": -3.301
+  },
+  {
+   "code": "600267",
+   "entry_date": "2026-07-14",
+   "entry_px": 11.351,
+   "exit_date": "2026-07-15",
+   "exit_px": 11.968,
+   "reason": "阶梯止盈(+4%)(++5.5%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-15",
+      "time": "10:05",
+      "px": 12.10788,
+      "ratio": 2.05,
+      "pullback_pct": 1.14
+     }
+    ]
+   ],
+   "improve": 75.89,
+   "improve_pct": 1.271
+  },
+  {
+   "code": "600267",
+   "entry_date": "2026-07-14",
+   "entry_px": 11.351,
+   "exit_date": "2026-07-16",
+   "exit_px": 11.978,
+   "reason": "冲高回落止盈(峰12.27→11.99)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-15",
+      "time": "10:05",
+      "px": 12.10788,
+      "ratio": 2.05,
+      "pullback_pct": 1.14
+     }
+    ]
+   ],
+   "improve": 184.33,
+   "improve_pct": 1.186
+  },
+  {
+   "code": "600396",
+   "entry_date": "2026-07-22",
+   "entry_px": 12.986,
+   "exit_date": "2026-07-23",
+   "exit_px": 16.394,
+   "reason": "阶梯止盈(+4%)(++26.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-23",
+      "time": "09:35",
+      "px": 15.42456,
+      "ratio": 2.918,
+      "pullback_pct": 2.71
+     }
+    ]
+   ],
+   "improve": -476.28,
+   "improve_pct": -5.823
+  },
+  {
+   "code": "600396",
+   "entry_date": "2026-07-22",
+   "entry_px": 12.986,
+   "exit_date": "2026-07-23",
+   "exit_px": 16.394,
+   "reason": "阶梯止盈(+6%)(++26.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-23",
+      "time": "09:35",
+      "px": 15.42456,
+      "ratio": 2.918,
+      "pullback_pct": 2.71
+     }
+    ]
+   ],
+   "improve": -285.77,
+   "improve_pct": -5.825
+  },
+  {
+   "code": "600396",
+   "entry_date": "2026-07-22",
+   "entry_px": 12.986,
+   "exit_date": "2026-07-23",
+   "exit_px": 16.394,
+   "reason": "止盈",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-23",
+      "time": "09:35",
+      "px": 15.42456,
+      "ratio": 2.918,
+      "pullback_pct": 2.71
+     }
+    ]
+   ],
+   "improve": -857.31,
+   "improve_pct": -5.821
+  },
+  {
+   "code": "601888",
+   "entry_date": "2026-07-30",
+   "entry_px": 57.047,
+   "exit_date": "2026-08-04",
+   "exit_px": 56.763,
+   "reason": "时间止损(3天亏-0.4%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-07-31",
+      "time": "09:35",
+      "px": 57.02292,
+      "ratio": 2.288,
+      "pullback_pct": 0.87
+     }
+    ]
+   ],
+   "improve": 94.97,
+   "improve_pct": 0.559
+  },
+  {
+   "code": "600267",
+   "entry_date": "2026-08-11",
+   "entry_px": 14.084,
+   "exit_date": "2026-08-14",
+   "exit_px": 14.166,
+   "reason": "冲高回落止盈(峰15.00→14.18)",
+   "fired": true,
+   "events": [
+    [
+     "min_shrink_rise",
+     {
+      "day": "2026-08-14",
+      "time": "09:45",
+      "px": 14.82516,
+      "ratio": 0.535,
+      "pct": 6.3
+     }
+    ]
+   ],
+   "improve": 602.07,
+   "improve_pct": 2.365
+  },
+  {
+   "code": "600721",
+   "entry_date": "2026-08-14",
+   "entry_px": 13.617,
+   "exit_date": "2026-08-18",
+   "exit_px": 13.486,
+   "reason": "移动止损(峰14.42)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-08-17",
+      "time": "09:35",
+      "px": 13.32666,
+      "ratio": 53.5,
+      "pullback_pct": 4.51
+     }
+    ]
+   ],
+   "improve": -349.76,
+   "improve_pct": -1.083
+  },
+  {
+   "code": "603920",
+   "entry_date": "2026-08-14",
+   "entry_px": 39.049,
+   "exit_date": "2026-08-18",
+   "exit_px": 40.649,
+   "reason": "阶梯止盈(+4%)(++4.2%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-08-17",
+      "time": "09:35",
+      "px": 38.871089999999995,
+      "ratio": 80.935,
+      "pullback_pct": 0.74
+     }
+    ]
+   ],
+   "improve": -173.64,
+   "improve_pct": -4.283
+  },
+  {
+   "code": "603920",
+   "entry_date": "2026-08-14",
+   "entry_px": 39.049,
+   "exit_date": "2026-08-18",
+   "exit_px": 40.649,
+   "reason": "冲高回落止盈(峰41.80→40.69)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-08-17",
+      "time": "09:35",
+      "px": 38.871089999999995,
+      "ratio": 80.935,
+      "pullback_pct": 0.74
+     }
+    ]
+   ],
+   "improve": -694.55,
+   "improve_pct": -4.279
+  },
+  {
+   "code": "603236",
+   "entry_date": "2026-08-17",
+   "entry_px": 59.31,
+   "exit_date": "2026-08-18",
+   "exit_px": 61.788,
+   "reason": "阶梯止盈(+4%)(++4.3%)",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-08-18",
+      "time": "10:15",
+      "px": 61.04889,
+      "ratio": 2.568,
+      "pullback_pct": 0.8
+     }
+    ]
+   ],
+   "improve": -203.09,
+   "improve_pct": -1.098
+  },
+  {
+   "code": "603663",
+   "entry_date": "2026-08-18",
+   "entry_px": 44.692,
+   "exit_date": "2026-08-19",
+   "exit_px": 41.239,
+   "reason": "止损",
+   "fired": true,
+   "events": [
+    [
+     "min_surge_stall",
+     {
+      "day": "2026-08-19",
+      "time": "09:35",
+      "px": 43.92603,
+      "ratio": 2.188,
+      "pullback_pct": 3.04
+     }
+    ]
+   ],
+   "improve": 818.08,
+   "improve_pct": 6.625
+  }
+ ],
+ "grid": [
+  {
+   "records": 495,
+   "triggered": 193,
+   "trigger_rate": 0.3899,
+   "improved": 65,
+   "improve_ratio": 0.3368,
+   "mean_improve_pct": -1.493,
+   "total_improve_yuan": -25898.0,
+   "median_improve_pct": -1.322,
+   "flyaway_to_exit_med_pct": 1.46,
+   "flyaway_to_exit5_med_pct": 4.63,
+   "surge": 1.5,
+   "pullback": 0.003,
+   "passes_direction": false
+  },
+  {
+   "records": 495,
+   "triggered": 191,
+   "trigger_rate": 0.3859,
+   "improved": 63,
+   "improve_ratio": 0.3298,
+   "mean_improve_pct": -1.558,
+   "total_improve_yuan": -27540.0,
+   "median_improve_pct": -1.326,
+   "flyaway_to_exit_med_pct": 1.55,
+   "flyaway_to_exit5_med_pct": 5.13,
+   "surge": 1.5,
+   "pullback": 0.005,
+   "passes_direction": false
+  },
+  {
+   "records": 495,
+   "triggered": 188,
+   "trigger_rate": 0.3798,
+   "improved": 64,
+   "improve_ratio": 0.3404,
+   "mean_improve_pct": -1.577,
+   "total_improve_yuan": -26865.0,
+   "median_improve_pct": -1.325,
+   "flyaway_to_exit_med_pct": 1.55,
+   "flyaway_to_exit5_med_pct": 5.145,
+   "surge": 1.5,
+   "pullback": 0.008,
+   "passes_direction": false
+  },
+  {
+   "records": 495,
+   "triggered": 124,
+   "trigger_rate": 0.2505,
+   "improved": 38,
+   "improve_ratio": 0.3065,
+   "mean_improve_pct": -1.926,
+   "total_improve_yuan": -21418.0,
+   "median_improve_pct": -1.38,
+   "flyaway_to_exit_med_pct": 1.6,
+   "flyaway_to_exit5_med_pct": 7.94,
+   "surge": 2.0,
+   "pullback": 0.003,
+   "passes_direction": false
+  },
+  {
+   "records": 495,
+   "triggered": 124,
+   "trigger_rate": 0.2505,
+   "improved": 41,
+   "improve_ratio": 0.3306,
+   "mean_improve_pct": -1.925,
+   "total_improve_yuan": -21718.0,
+   "median_improve_pct": -1.339,
+   "flyaway_to_exit_med_pct": 1.56,
+   "flyaway_to_exit5_med_pct": 7.94,
+   "surge": 2.0,
+   "pullback": 0.005,
+   "passes_direction": false
+  },
+  {
+   "records": 495,
+   "triggered": 114,
+   "trigger_rate": 0.2303,
+   "improved": 41,
+   "improve_ratio": 0.3596,
+   "mean_improve_pct": -1.9,
+   "total_improve_yuan": -17199.0,
+   "median_improve_pct": -1.164,
+   "flyaway_to_exit_med_pct": 1.375,
+   "flyaway_to_exit5_med_pct": 8.28,
+   "surge": 2.0,
+   "pullback": 0.008,
+   "passes_direction": false
+  },
+  {
+   "records": 495,
+   "triggered": 85,
+   "trigger_rate": 0.1717,
+   "improved": 24,
+   "improve_ratio": 0.2824,
+   "mean_improve_pct": -2.339,
+   "total_improve_yuan": -16164.0,
+   "median_improve_pct": -2.247,
+   "flyaway_to_exit_med_pct": 2.5,
+   "flyaway_to_exit5_med_pct": 6.49,
+   "surge": 2.5,
+   "pullback": 0.003,
+   "passes_direction": false
+  },
+  {
+   "records": 495,
+   "triggered": 85,
+   "trigger_rate": 0.1717,
+   "improved": 24,
+   "improve_ratio": 0.2824,
+   "mean_improve_pct": -2.352,
+   "total_improve_yuan": -16238.0,
+   "median_improve_pct": -2.247,
+   "flyaway_to_exit_med_pct": 2.5,
+   "flyaway_to_exit5_med_pct": 6.49,
+   "surge": 2.5,
+   "pullback": 0.005,
+   "passes_direction": false
+  },
+  {
+   "records": 495,
+   "triggered": 77,
+   "trigger_rate": 0.1556,
+   "improved": 24,
+   "improve_ratio": 0.3117,
+   "mean_improve_pct": -2.447,
+   "total_improve_yuan": -14681.0,
+   "median_improve_pct": -2.134,
+   "flyaway_to_exit_med_pct": 2.38,
+   "flyaway_to_exit5_med_pct": 8.27,
+   "surge": 2.5,
+   "pullback": 0.008,
+   "passes_direction": false
+  }
+ ],
+ "verdict": [
+  {
+   "rule": {
+    "C1_improve_ratio_ge": 0.55,
+    "C2_mean_improve_gt": 0,
+    "C3_grid_majority": 0.5
+   },
+   "C1_pass": false,
+   "C2_pass": false,
+   "C3_pass": false,
+   "recommend_enable": false,
+   "reason": "C1=False C2=False C3=False；维持关闭"
+  }
+ ],
+ "notes": {
+  "ratio_def": "分钟量比=当日截至bar累计量/已交易分钟 ÷ 前5交易日同时段每分钟量（minute_vol 复刻）",
+  "t_plus_1": "规则仅入场次日及以后生效（与 trader 一致）",
+  "slippage": 0.001
+ }
+}

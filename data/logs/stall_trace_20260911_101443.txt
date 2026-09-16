@@ -1,0 +1,489 @@
+=== stall snapshot 20260911_101443 ===
+phase=monitor since=1789091188.2270234 seq=91
+
+--- thread 7364 MainThread (daemon=False) ---
+  File "C:\Users\26838\A股模拟盘\main.py", line 326, in <module>
+    main()
+
+  File "C:\Users\26838\A股模拟盘\main.py", line 309, in main
+    time.sleep(3600)
+
+
+--- thread 17908 tdx_0 (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 90, in _worker
+    work_item = work_queue.get(block=True)
+
+
+--- thread 22820 tdx_1 (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 93, in _worker
+    work_item.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+
+  File "C:\Users\26838\A股模拟盘\app\tdx.py", line 141, in _one
+    df = c.quotes(symbol=batch)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\site-packages\mootdx\quotes.py", line 181, in quotes
+    result = self.client.get_security_quotes(symbol)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\site-packages\tdxpy\base_socket_client.py", line 39, in wrapper
+    ret = func(self, *args, **kw)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\site-packages\tdxpy\hq.py", line 108, in get_security_quotes
+    return cmd.call_api()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\site-packages\tdxpy\parser\base.py", line 117, in call_api
+    result = self._call_api()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\site-packages\tdxpy\parser\base.py", line 152, in _call_api
+    head_buf = self.client.recv(self.rsp_header_len)
+
+
+--- thread 13824 tdx_2 (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 93, in _worker
+    work_item.run()
+
+
+--- thread 30860 tdx_3 (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 93, in _worker
+    work_item.run()
+
+
+--- thread 7456 tdx_4 (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 93, in _worker
+    work_item.run()
+
+
+--- thread 29564 tdx_5 (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 93, in _worker
+    work_item.run()
+
+
+--- thread 9072 Thread-4 (serve_forever) (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\selectors.py", line 314, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\selectors.py", line 305, in _select
+    r, w, x = select.select(r, w, w, timeout)
+
+
+--- thread 31376 Thread-21 (_monitor) (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\A股模拟盘\app\trader.py", line 513, in _monitor
+    self._lp_check_stall()
+
+  File "C:\Users\26838\A股模拟盘\app\trader.py", line 409, in _lp_check_stall
+    self._lp_stall_snapshot()
+
+  File "C:\Users\26838\A股模拟盘\app\trader.py", line 364, in _lp_stall_snapshot
+    lines.extend(_tb.format_stack(fr))
+
+
+--- thread 30172 shadow-scheduler (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\A股模拟盘\app\shadow_scheduler.py", line 63, in _loop
+    time.sleep(60)
+
+
+--- thread 24252 Thread-585 (_loop) (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\A股模拟盘\app\trader.py", line 638, in _loop
+    self._watch_round()   # ★ 自选股着重扫描（每5秒）
+
+  File "C:\Users\26838\A股模拟盘\app\trader.py", line 1807, in _watch_round
+    vsig, vlev = mv.vp_minute_signal(code, q)
+
+  File "C:\Users\26838\A股模拟盘\app\datafeed.py", line 406, in fetch_quotes
+    return result
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 257, in as_completed
+    for f in fs:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 656, in wait
+    with self._cond:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 369, in wait
+    if not gotit:
+
+
+--- thread 292 Thread-586 (_fast_watch_loop) (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\A股模拟盘\app\trader.py", line 1881, in _fast_watch_loop
+    quotes = df.fetch_quotes(codes)
+
+  File "C:\Users\26838\A股模拟盘\app\datafeed.py", line 382, in fetch_quotes
+    for f in _AC2(futs):
+
+  File "C:\Users\26838\A股模拟盘\app\tdx.py", line 176, in fetch_quotes_fast
+    return out if out else None
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 166, in submit
+    with self._shutdown_lock, _global_shutdown_lock:
+
+
+--- thread 44364 Thread-889 (process_request_thread) (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+
+  File "C:\Users\26838\A股模拟盘\app\server.py", line 376, in do_GET
+    self._api_get(path[5:], qs)
+
+  File "C:\Users\26838\A股模拟盘\app\server.py", line 558, in _api_get
+    self._json(_stocklist_paged(page, size, sort, order, kw))
+
+  File "C:\Users\26838\A股模拟盘\app\server.py", line 290, in _stocklist_paged
+    quotes = df.fetch_quotes([c for c, _, _ in lst])
+
+  File "C:\Users\26838\A股模拟盘\app\datafeed.py", line 382, in fetch_quotes
+    for f in _AC2(futs):
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 166, in submit
+    with self._shutdown_lock, _global_shutdown_lock:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 205, in _adjust_thread_count
+    _threads_queues[t] = self._work_queue
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 979, in start
+    self._started.wait()  # Will set ident and native_id
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 656, in wait
+    with self._cond:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 369, in wait
+    if not gotit:
+
+
+--- thread 44640 ThreadPoolExecutor-417_0 (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1045, in _bootstrap_inner
+    self._delete()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 996, in run
+    del self._target, self._args, self._kwargs
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 110, in _worker
+    return
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 65, in run
+    self.future.set_result(result)
+
+  File "C:\Users\26838\A股模拟盘\app\datafeed.py", line 374, in _fetch_batch
+    return _parse_tencent(text)
+
+  File "C:\Users\26838\A股模拟盘\app\datafeed.py", line 38, in _http
+    return raw.decode(decode)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 497, in open
+    return response
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 509, in _open
+    return result
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 468, in _call_chain
+    return result
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1342, in do_open
+    return r
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    if message_body is not None:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1055, in send
+    self.sock.sendall(data)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1010, in connect
+    if self._tunnel_host:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 852, in create_connection
+    return sock
+
+
+--- thread 2920 Thread-892 (process_request_thread) (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\server.py", line 424, in handle_one_request
+    method()
+
+  File "C:\Users\26838\A股模拟盘\app\server.py", line 376, in do_GET
+    self._api_get(path[5:], qs)
+
+  File "C:\Users\26838\A股模拟盘\app\server.py", line 558, in _api_get
+    self._json(_stocklist_paged(page, size, sort, order, kw))
+
+  File "C:\Users\26838\A股模拟盘\app\server.py", line 290, in _stocklist_paged
+    quotes = df.fetch_quotes([c for c, _, _ in lst])
+
+  File "C:\Users\26838\A股模拟盘\app\datafeed.py", line 382, in fetch_quotes
+    for f in _AC2(futs):
+
+  File "C:\Users\26838\A股模拟盘\app\tdx.py", line 176, in fetch_quotes_fast
+    return out if out else None
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\_base.py", line 625, in map
+    return result_iterator()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 166, in submit
+    with self._shutdown_lock, _global_shutdown_lock:
+
+
+--- thread 37892 Thread-893 (process_request_thread) (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1045, in _bootstrap_inner
+    self._delete()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 996, in run
+    del self._target, self._args, self._kwargs
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 696, in process_request_thread
+    self.shutdown_request(request)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socketserver.py", line 763, in __init__
+    self.finish()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\server.py", line 437, in handle
+    while not self.close_connection:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\server.py", line 425, in handle_one_request
+    self.wfile.flush() #actually send the response if not already done.
+
+  File "C:\Users\26838\A股模拟盘\app\server.py", line 376, in do_GET
+    self._api_get(path[5:], qs)
+
+  File "C:\Users\26838\A股模拟盘\app\server.py", line 885, in _api_get
+    self._json({"alerts": st.load_price_alerts()})
+
+  File "C:\Users\26838\A股模拟盘\app\state.py", line 408, in load_price_alerts
+    with _lock:
+
+
+--- thread 45832 ThreadPoolExecutor-418_0 (daemon=True) ---
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1012, in _bootstrap
+    self._bootstrap_inner()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 1041, in _bootstrap_inner
+    self.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\threading.py", line 992, in run
+    self._target(*self._args, **self._kwargs)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 93, in _worker
+    work_item.run()
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\concurrent\futures\thread.py", line 65, in run
+    self.future.set_result(result)
+
+  File "C:\Users\26838\A股模拟盘\app\datafeed.py", line 374, in _fetch_batch
+    return _parse_tencent(text)
+
+  File "C:\Users\26838\A股模拟盘\app\datafeed.py", line 38, in _http
+    return raw.decode(decode)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 497, in open
+    return response
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 509, in _open
+    return result
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 468, in _call_chain
+    return result
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1367, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 1342, in do_open
+    return r
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1093, in _send_output
+    if message_body is not None:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1055, in send
+    self.sock.sendall(data)
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1477, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\http\client.py", line 1010, in connect
+    if self._tunnel_host:
+
+  File "C:\Users\26838\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 852, in create_connection
+    return sock
+
+
+--- thread 7016 ThreadPoolExecutor-418_1 (daemon=True) ---
+  (frame unavailable)

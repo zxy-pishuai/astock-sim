@@ -1,0 +1,189 @@
+{
+ "mode": "rigorous",
+ "verdict": {
+  "level": "ok",
+  "ok_count": 3,
+  "total": 3,
+  "text": "✅ 可用：多窗口、样本外、参数平台三维度全部通过",
+  "reasons": [
+   "多窗口正收益占比 1/1（达标）",
+   "WF 样本外稳健（达标）（OOS均0.0668）",
+   "双参敏感性平台区（相邻平均Δ1.1pp）达标"
+  ]
+ },
+ "multi_window_summary": {
+  "count": 1,
+  "avg_annual": 0.3234,
+  "std_annual": 0.0,
+  "positive_folds": 1,
+  "positive_ratio": 1.0,
+  "verdict": "✅ 多窗口稳健：1/1 窗口正收益，平均年化 32.3%、波动 0.0%",
+  "params": {
+   "buy_threshold": 25,
+   "max_positions": 3,
+   "position_pct": 0.3
+  }
+ },
+ "multi_window_windows": [
+  {
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "start": "2019-01-01",
+   "end": "2020-12-31",
+   "skipped": true,
+   "error": "回测区间内无数据（检查股票池/日期/网络）"
+  },
+  {
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "start": "2021-01-01",
+   "end": "2022-12-31",
+   "skipped": true,
+   "error": "回测区间内无数据（检查股票池/日期/网络）"
+  },
+  {
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "start": "2023-01-01",
+   "end": "2024-12-31",
+   "skipped": true,
+   "error": "回测区间内无数据（检查股票池/日期/网络）"
+  },
+  {
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "start": "2025-08-18",
+   "end": "2026-08-18",
+   "annual_return": 0.3234,
+   "sharpe": 0.949,
+   "max_drawdown": -0.1902,
+   "win_rate": 0.6603,
+   "trade_count": 783,
+   "total_return": 0.3219
+  }
+ ],
+ "walk_forward_summary": {
+  "folds": 3,
+  "window": {
+   "train_days": 91,
+   "test_days": 91,
+   "step_days": 91,
+   "anchored": false
+  },
+  "avg_oos_return": 0.0668,
+  "avg_degradation": 0.2926,
+  "positive_folds": 2,
+  "stable": true,
+  "verdict": "✅ 样本外稳健：多数折叠为正收益"
+ },
+ "walk_forward_folds": [
+  {
+   "fold": 1,
+   "train": [
+    "2025-08-18",
+    "2025-11-16"
+   ],
+   "test": [
+    "2025-11-17",
+    "2026-02-15"
+   ],
+   "anchored": false,
+   "best_threshold": 30,
+   "best_params": {
+    "buy_threshold": 30,
+    "max_positions": 4
+   },
+   "is_return": -0.0033,
+   "oos_return": 0.0944,
+   "oos_sharpe": 1.258,
+   "oos_max_drawdown": -0.1092,
+   "oos_win_rate": 0.6284,
+   "oos_trades": 252,
+   "degradation": null
+  },
+  {
+   "fold": 2,
+   "train": [
+    "2025-11-17",
+    "2026-02-15"
+   ],
+   "test": [
+    "2026-02-16",
+    "2026-05-17"
+   ],
+   "anchored": false,
+   "best_threshold": 20,
+   "best_params": {
+    "buy_threshold": 20,
+    "max_positions": 4
+   },
+   "is_return": 0.0944,
+   "oos_return": 0.1612,
+   "oos_sharpe": 2.02,
+   "oos_max_drawdown": -0.1115,
+   "oos_win_rate": 0.6715,
+   "oos_trades": 236,
+   "degradation": -0.7076
+  },
+  {
+   "fold": 3,
+   "train": [
+    "2026-02-16",
+    "2026-05-17"
+   ],
+   "test": [
+    "2026-05-18",
+    "2026-08-16"
+   ],
+   "anchored": false,
+   "best_threshold": 20,
+   "best_params": {
+    "buy_threshold": 20,
+    "max_positions": 3
+   },
+   "is_return": 0.1881,
+   "oos_return": -0.0551,
+   "oos_sharpe": -0.271,
+   "oos_max_drawdown": -0.1859,
+   "oos_win_rate": 0.6424,
+   "oos_trades": 255,
+   "degradation": 1.2929
+  }
+ ],
+ "sensitivity": {
+  "param": "buy_threshold",
+  "param2": "position_pct",
+  "values2": [
+   0.2,
+   0.3,
+   0.4
+  ],
+  "matrix": [
+   [
+    0.2926,
+    0.3219,
+    0.3219
+   ],
+   [
+    0.2926,
+    0.3219,
+    0.3219
+   ],
+   [
+    0.2926,
+    0.3219,
+    0.3219
+   ]
+  ],
+  "dual": true
+ },
+ "pool_size": 500
+}

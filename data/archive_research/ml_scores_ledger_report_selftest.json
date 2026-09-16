@@ -1,0 +1,267 @@
+{
+ "generated_at": "2026-08-31 00:30:21",
+ "phase": "B4",
+ "method": {
+  "ledger": "C:\\Users\\26838\\A股模拟盘\\data\\ml_scores_ledger.jsonl",
+  "headline_filter": "gap_td==1",
+  "min_day_samples": 8,
+  "min_bucket": 3
+ },
+ "scope": {
+  "pick_lines": 1000,
+  "ret_lines": 1000,
+  "pick_dates_total": 25,
+  "realized_dates_total": 25
+ },
+ "aggregate": {
+  "realized_days_used": 25,
+  "ic_mean": 0.1815,
+  "icir": 0.555,
+  "ic_positive_day_ratio": 0.72,
+  "spread_mean_bp": 165.8,
+  "spread_win_ratio": 0.64,
+  "top_ret_mean_bp": 114.9,
+  "bottom_ret_mean_bp": -50.9
+ },
+ "monthly": [
+  {
+   "month": "2026-07",
+   "days": 12,
+   "ic_mean": 0.0375,
+   "spread_bp_mean": 0.1
+  },
+  {
+   "month": "2026-08",
+   "days": 13,
+   "ic_mean": 0.3144,
+   "spread_bp_mean": 318.8
+  }
+ ],
+ "daily": [
+  {
+   "date": "2026-07-16",
+   "n": 40,
+   "ic": -0.3134,
+   "ic_o2c": -0.5722,
+   "top_ret_bp": -1024.9,
+   "bottom_ret_bp": -646.2,
+   "spread_bp": -378.7
+  },
+  {
+   "date": "2026-07-17",
+   "n": 40,
+   "ic": -0.2131,
+   "ic_o2c": -0.6862,
+   "top_ret_bp": -834.4,
+   "bottom_ret_bp": -491.4,
+   "spread_bp": -343.0
+  },
+  {
+   "date": "2026-07-20",
+   "n": 40,
+   "ic": 0.5381,
+   "ic_o2c": 0.3079,
+   "top_ret_bp": 1166.9,
+   "bottom_ret_bp": -5.9,
+   "spread_bp": 1172.7
+  },
+  {
+   "date": "2026-07-21",
+   "n": 40,
+   "ic": -0.5342,
+   "ic_o2c": -0.6977,
+   "top_ret_bp": -287.3,
+   "bottom_ret_bp": 422.0,
+   "spread_bp": -709.3
+  },
+  {
+   "date": "2026-07-22",
+   "n": 40,
+   "ic": 0.2045,
+   "ic_o2c": -0.1512,
+   "top_ret_bp": -63.4,
+   "bottom_ret_bp": -166.0,
+   "spread_bp": 102.6
+  },
+  {
+   "date": "2026-07-23",
+   "n": 40,
+   "ic": 0.309,
+   "ic_o2c": 0.0595,
+   "top_ret_bp": -198.0,
+   "bottom_ret_bp": -440.1,
+   "spread_bp": 242.1
+  },
+  {
+   "date": "2026-07-24",
+   "n": 40,
+   "ic": -0.0985,
+   "ic_o2c": -0.346,
+   "top_ret_bp": 404.8,
+   "bottom_ret_bp": 518.3,
+   "spread_bp": -113.5
+  },
+  {
+   "date": "2026-07-27",
+   "n": 40,
+   "ic": -0.2852,
+   "ic_o2c": -0.4105,
+   "top_ret_bp": -865.1,
+   "bottom_ret_bp": -361.3,
+   "spread_bp": -503.9
+  },
+  {
+   "date": "2026-07-28",
+   "n": 40,
+   "ic": 0.4258,
+   "ic_o2c": 0.0821,
+   "top_ret_bp": -20.1,
+   "bottom_ret_bp": -353.1,
+   "spread_bp": 333.0
+  },
+  {
+   "date": "2026-07-29",
+   "n": 40,
+   "ic": -0.2758,
+   "ic_o2c": -0.4275,
+   "top_ret_bp": -772.8,
+   "bottom_ret_bp": -226.1,
+   "spread_bp": -546.8
+  },
+  {
+   "date": "2026-07-30",
+   "n": 40,
+   "ic": 0.6298,
+   "ic_o2c": -0.5927,
+   "top_ret_bp": 737.8,
+   "bottom_ret_bp": -60.6,
+   "spread_bp": 798.4
+  },
+  {
+   "date": "2026-07-31",
+   "n": 40,
+   "ic": 0.063,
+   "ic_o2c": -0.0604,
+   "top_ret_bp": -246.0,
+   "bottom_ret_bp": -193.2,
+   "spread_bp": -52.9
+  },
+  {
+   "date": "2026-08-03",
+   "n": 40,
+   "ic": 0.6467,
+   "ic_o2c": 0.2214,
+   "top_ret_bp": 1147.4,
+   "bottom_ret_bp": 539.6,
+   "spread_bp": 607.8
+  },
+  {
+   "date": "2026-08-04",
+   "n": 40,
+   "ic": 0.3876,
+   "ic_o2c": 0.2916,
+   "top_ret_bp": 735.6,
+   "bottom_ret_bp": 465.4,
+   "spread_bp": 270.2
+  },
+  {
+   "date": "2026-08-05",
+   "n": 40,
+   "ic": 0.3343,
+   "ic_o2c": 0.4379,
+   "top_ret_bp": 543.6,
+   "bottom_ret_bp": -80.7,
+   "spread_bp": 624.3
+  },
+  {
+   "date": "2026-08-06",
+   "n": 40,
+   "ic": 0.3707,
+   "ic_o2c": 0.167,
+   "top_ret_bp": 726.3,
+   "bottom_ret_bp": 275.8,
+   "spread_bp": 450.5
+  },
+  {
+   "date": "2026-08-07",
+   "n": 40,
+   "ic": -0.074,
+   "ic_o2c": -0.2896,
+   "top_ret_bp": -43.8,
+   "bottom_ret_bp": 76.6,
+   "spread_bp": -120.4
+  },
+  {
+   "date": "2026-08-10",
+   "n": 40,
+   "ic": 0.0043,
+   "ic_o2c": -0.3988,
+   "top_ret_bp": 166.9,
+   "bottom_ret_bp": 317.9,
+   "spread_bp": -151.0
+  },
+  {
+   "date": "2026-08-11",
+   "n": 40,
+   "ic": 0.5348,
+   "ic_o2c": 0.1561,
+   "top_ret_bp": 468.5,
+   "bottom_ret_bp": 3.3,
+   "spread_bp": 465.2
+  },
+  {
+   "date": "2026-08-12",
+   "n": 40,
+   "ic": 0.218,
+   "ic_o2c": -0.1749,
+   "top_ret_bp": 35.7,
+   "bottom_ret_bp": -196.7,
+   "spread_bp": 232.4
+  },
+  {
+   "date": "2026-08-13",
+   "n": 40,
+   "ic": 0.3353,
+   "ic_o2c": 0.0184,
+   "top_ret_bp": 214.7,
+   "bottom_ret_bp": -219.5,
+   "spread_bp": 434.2
+  },
+  {
+   "date": "2026-08-14",
+   "n": 40,
+   "ic": 0.1311,
+   "ic_o2c": -0.1561,
+   "top_ret_bp": 533.6,
+   "bottom_ret_bp": 339.3,
+   "spread_bp": 194.2
+  },
+  {
+   "date": "2026-08-17",
+   "n": 40,
+   "ic": 0.5,
+   "ic_o2c": 0.4721,
+   "top_ret_bp": 207.2,
+   "bottom_ret_bp": -199.7,
+   "spread_bp": 406.9
+  },
+  {
+   "date": "2026-08-18",
+   "n": 40,
+   "ic": 0.4084,
+   "ic_o2c": 0.0089,
+   "top_ret_bp": -99.3,
+   "bottom_ret_bp": -530.6,
+   "spread_bp": 431.3
+  },
+  {
+   "date": "2026-08-19",
+   "n": 40,
+   "ic": 0.2901,
+   "ic_o2c": 0.1588,
+   "top_ret_bp": 238.6,
+   "bottom_ret_bp": -60.1,
+   "spread_bp": 298.7
+  }
+ ]
+}

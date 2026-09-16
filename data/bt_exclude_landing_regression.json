@@ -1,0 +1,313 @@
+{
+  "generated_at": "2026-08-27 02:38:46",
+  "phase": "P71-A1/A2 三臂终版",
+  "tool": "frozen snapshot baseline regression (board+score 4窗, board 8.0, snapshot)",
+  "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-26\\market.db",
+  "recipe": "bt_pool top500 fetch_quotes置空 score25/3/0.30 board40/2/0.25 BOARD_MOMENTUM_MIN=8.0 C.DB_FILE=latest_snapshot",
+  "excluded_codes_count": 197,
+  "comparison": [
+    {
+      "strategy": "score",
+      "widx": 0,
+      "window": [
+        "2019-01-01",
+        "2020-12-31"
+      ],
+      "window_tag": "2019-20",
+      "arm_base_p53": {
+        "total_return": -0.0621,
+        "max_drawdown": -0.3952,
+        "sharpe": 0.024,
+        "trade_count": 1271
+      },
+      "arm_noexcl_mom8": {
+        "total_return": 0.058,
+        "max_drawdown": -0.3939,
+        "sharpe": 0.242,
+        "trade_count": 1361,
+        "win_rate": 0.6576,
+        "annual_return": 0.0286
+      },
+      "arm_excl197_mom8": {
+        "total_return": -0.0249,
+        "max_drawdown": -0.3779,
+        "sharpe": 0.103,
+        "trade_count": 1362,
+        "win_rate": 0.6458,
+        "annual_return": -0.0126
+      },
+      "delta_pp": {
+        "momentum_and_legacy_mix": 12.01,
+        "exclude_expansion_clean": -8.29,
+        "total_vs_p53": 3.72,
+        "max_drawdown_total": 1.73
+      }
+    },
+    {
+      "strategy": "score",
+      "widx": 1,
+      "window": [
+        "2021-01-01",
+        "2022-12-31"
+      ],
+      "window_tag": "2021-22",
+      "arm_base_p53": {
+        "total_return": -0.3734,
+        "max_drawdown": -0.5614,
+        "sharpe": -0.795,
+        "trade_count": 1334
+      },
+      "arm_noexcl_mom8": {
+        "total_return": -0.3509,
+        "max_drawdown": -0.5543,
+        "sharpe": -0.704,
+        "trade_count": 1446,
+        "win_rate": 0.6005,
+        "annual_return": -0.1954
+      },
+      "arm_excl197_mom8": {
+        "total_return": -0.536,
+        "max_drawdown": -0.5697,
+        "sharpe": -1.411,
+        "trade_count": 1398,
+        "win_rate": 0.5735,
+        "annual_return": -0.3204
+      },
+      "delta_pp": {
+        "momentum_and_legacy_mix": 2.25,
+        "exclude_expansion_clean": -18.51,
+        "total_vs_p53": -16.26,
+        "max_drawdown_total": -0.83
+      }
+    },
+    {
+      "strategy": "score",
+      "widx": 2,
+      "window": [
+        "2023-01-01",
+        "2024-12-31"
+      ],
+      "window_tag": "2023-24",
+      "arm_base_p53": {
+        "total_return": -0.3455,
+        "max_drawdown": -0.432,
+        "sharpe": -0.804,
+        "trade_count": 1219
+      },
+      "arm_noexcl_mom8": {
+        "total_return": -0.3854,
+        "max_drawdown": -0.475,
+        "sharpe": -0.936,
+        "trade_count": 1263,
+        "win_rate": 0.5826,
+        "annual_return": -0.2176
+      },
+      "arm_excl197_mom8": {
+        "total_return": -0.459,
+        "max_drawdown": -0.5728,
+        "sharpe": -1.183,
+        "trade_count": 1280,
+        "win_rate": 0.5732,
+        "annual_return": -0.2664
+      },
+      "delta_pp": {
+        "momentum_and_legacy_mix": -3.99,
+        "exclude_expansion_clean": -7.36,
+        "total_vs_p53": -11.35,
+        "max_drawdown_total": -14.08
+      }
+    },
+    {
+      "strategy": "score",
+      "widx": 3,
+      "window": [
+        "2025-08-18",
+        "2026-08-21"
+      ],
+      "window_tag": "近1年",
+      "arm_base_p53": {
+        "total_return": 0.2163,
+        "max_drawdown": -0.1681,
+        "sharpe": 0.809,
+        "trade_count": 701
+      },
+      "arm_noexcl_mom8": {
+        "total_return": 0.352,
+        "max_drawdown": -0.1573,
+        "sharpe": 1.147,
+        "trade_count": 762,
+        "win_rate": 0.6867,
+        "annual_return": 0.3487
+      },
+      "arm_excl197_mom8": {
+        "total_return": 0.189,
+        "max_drawdown": -0.1764,
+        "sharpe": 0.7,
+        "trade_count": 783,
+        "win_rate": 0.6821,
+        "annual_return": 0.1873
+      },
+      "delta_pp": {
+        "momentum_and_legacy_mix": 13.57,
+        "exclude_expansion_clean": -16.3,
+        "total_vs_p53": -2.73,
+        "max_drawdown_total": -0.83
+      }
+    },
+    {
+      "strategy": "board",
+      "widx": 0,
+      "window": [
+        "2019-01-01",
+        "2020-12-31"
+      ],
+      "window_tag": "2019-20",
+      "arm_base_p53": {
+        "total_return": 0.0275,
+        "max_drawdown": -0.1726,
+        "sharpe": 0.166,
+        "trade_count": 661
+      },
+      "arm_noexcl_mom8": {
+        "total_return": 0.0349,
+        "max_drawdown": -0.1375,
+        "sharpe": 0.195,
+        "trade_count": 554,
+        "win_rate": 0.6576,
+        "annual_return": 0.0173
+      },
+      "arm_excl197_mom8": {
+        "total_return": -0.1127,
+        "max_drawdown": -0.1597,
+        "sharpe": -0.446,
+        "trade_count": 503,
+        "win_rate": 0.6433,
+        "annual_return": -0.0582
+      },
+      "delta_pp": {
+        "momentum_and_legacy_mix": 0.74,
+        "exclude_expansion_clean": -14.76,
+        "total_vs_p53": -14.02,
+        "max_drawdown_total": 1.29
+      }
+    },
+    {
+      "strategy": "board",
+      "widx": 1,
+      "window": [
+        "2021-01-01",
+        "2022-12-31"
+      ],
+      "window_tag": "2021-22",
+      "arm_base_p53": {
+        "total_return": 0.2334,
+        "max_drawdown": -0.1588,
+        "sharpe": 0.775,
+        "trade_count": 790
+      },
+      "arm_noexcl_mom8": {
+        "total_return": 0.1618,
+        "max_drawdown": -0.1862,
+        "sharpe": 0.603,
+        "trade_count": 683,
+        "win_rate": 0.6504,
+        "annual_return": 0.0784
+      },
+      "arm_excl197_mom8": {
+        "total_return": 0.1185,
+        "max_drawdown": -0.1494,
+        "sharpe": 0.491,
+        "trade_count": 616,
+        "win_rate": 0.6423,
+        "annual_return": 0.058
+      },
+      "delta_pp": {
+        "momentum_and_legacy_mix": -7.16,
+        "exclude_expansion_clean": -4.33,
+        "total_vs_p53": -11.49,
+        "max_drawdown_total": 0.94
+      }
+    },
+    {
+      "strategy": "board",
+      "widx": 2,
+      "window": [
+        "2023-01-01",
+        "2024-12-31"
+      ],
+      "window_tag": "2023-24",
+      "arm_base_p53": {
+        "total_return": 0.0749,
+        "max_drawdown": -0.1952,
+        "sharpe": 0.316,
+        "trade_count": 633
+      },
+      "arm_noexcl_mom8": {
+        "total_return": 0.0928,
+        "max_drawdown": -0.1842,
+        "sharpe": 0.395,
+        "trade_count": 529,
+        "win_rate": 0.6381,
+        "annual_return": 0.0458
+      },
+      "arm_excl197_mom8": {
+        "total_return": 0.0546,
+        "max_drawdown": -0.2017,
+        "sharpe": 0.269,
+        "trade_count": 487,
+        "win_rate": 0.6289,
+        "annual_return": 0.0271
+      },
+      "delta_pp": {
+        "momentum_and_legacy_mix": 1.79,
+        "exclude_expansion_clean": -3.82,
+        "total_vs_p53": -2.03,
+        "max_drawdown_total": -0.65
+      }
+    },
+    {
+      "strategy": "board",
+      "widx": 3,
+      "window": [
+        "2025-08-18",
+        "2026-08-21"
+      ],
+      "window_tag": "近1年",
+      "arm_base_p53": {
+        "total_return": 0.3946,
+        "max_drawdown": -0.1128,
+        "sharpe": 1.797,
+        "trade_count": 474
+      },
+      "arm_noexcl_mom8": {
+        "total_return": 0.471,
+        "max_drawdown": -0.1258,
+        "sharpe": 2.092,
+        "trade_count": 433,
+        "win_rate": 0.7303,
+        "annual_return": 0.4664
+      },
+      "arm_excl197_mom8": {
+        "total_return": 0.631,
+        "max_drawdown": -0.1172,
+        "sharpe": 2.633,
+        "trade_count": 416,
+        "win_rate": 0.75,
+        "annual_return": 0.6245
+      },
+      "delta_pp": {
+        "momentum_and_legacy_mix": 7.64,
+        "exclude_expansion_clean": 16.0,
+        "total_vs_p53": 23.64,
+        "max_drawdown_total": -0.44
+      }
+    }
+  ],
+  "arms": {
+    "BASE_P53": "P53 冻结基线（excludes@当时134口径前后混合 + MOM7.0 冻结）来源 data/snapshot_baseline.json",
+    "NOEXCL_MOM8": "无排除(DATA_EXCLUDE_CODES=[])+MOM8.0，同快照2026-08-26，工具 tools/bt_noexcl_arm.py",
+    "EXCL197_MOM8": "排除197只+MOM8.0，同快照，工具 tools/bt_exclude_regression_bg.py"
+  },
+  "decomposition_rule": "干净排除效应=AFTER-NOEXCL；动量口径效应(含旧清单残余)=NOEXCL-BASE",
+  "excluded_codes_count_now": 197
+}

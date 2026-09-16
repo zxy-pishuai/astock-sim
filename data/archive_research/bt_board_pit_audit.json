@@ -1,0 +1,202 @@
+{
+ "generated_at": "2026-08-31 23:23:26",
+ "task": "R3 board PIT 审计（研究型·零落地）",
+ "meta": {
+  "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-27\\market.db",
+  "excluded_codes": 196,
+  "params_board": {
+   "buy_threshold": 40,
+   "max_positions": 2,
+   "position_pct": 0.25,
+   "slippage": 0.001
+  },
+  "windows": [
+   [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   [
+    "2025-08-18",
+    "2026-08-21"
+   ]
+  ],
+  "win_names": [
+   "2019-20",
+   "2021-22",
+   "2023-24",
+   "牛市"
+  ],
+  "pit_map": [
+   "2019-20",
+   "2021-22",
+   "2023-24",
+   "近1年"
+  ],
+  "method": "冻结快照08-27 + C.DB_FILE + 196宇宙 + static/PIT双池 + board base 现行默认（无任何参数补丁）",
+  "exec_mode": "process",
+  "workers": 2,
+  "prereg": "overstatement=static_ret−pit_ret；任一窗>10pp→建议board历史收益声明一律加PIT保留条款"
+ },
+ "pit_pools_generated_at": "2026-08-27 03:44:31",
+ "results": {
+  "static/w0": {
+   "pool": "static",
+   "widx": 0,
+   "window": "2019-20",
+   "pit_key": "static",
+   "n_codes": 458,
+   "total_return": -0.1206,
+   "max_drawdown": -0.1908,
+   "annual_return": -0.0624,
+   "sharpe": -0.455,
+   "trade_count": 552,
+   "win_rate": 0.6433,
+   "elapsed": 1.6
+  },
+  "static/w1": {
+   "pool": "static",
+   "widx": 1,
+   "window": "2021-22",
+   "pit_key": "static",
+   "n_codes": 458,
+   "total_return": 0.1693,
+   "max_drawdown": -0.1377,
+   "annual_return": 0.0819,
+   "sharpe": 0.657,
+   "trade_count": 622,
+   "win_rate": 0.6497,
+   "elapsed": 1.7
+  },
+  "static/w2": {
+   "pool": "static",
+   "widx": 2,
+   "window": "2023-24",
+   "pit_key": "static",
+   "n_codes": 458,
+   "total_return": 0.0657,
+   "max_drawdown": -0.1846,
+   "annual_return": 0.0326,
+   "sharpe": 0.309,
+   "trade_count": 487,
+   "win_rate": 0.6323,
+   "elapsed": 1.9
+  },
+  "static/w3": {
+   "pool": "static",
+   "widx": 3,
+   "window": "牛市",
+   "pit_key": "static",
+   "n_codes": 458,
+   "total_return": 0.5993,
+   "max_drawdown": -0.1145,
+   "annual_return": 0.5932,
+   "sharpe": 2.506,
+   "trade_count": 402,
+   "win_rate": 0.745,
+   "elapsed": 1.1
+  },
+  "pit/w0": {
+   "pool": "pit",
+   "widx": 0,
+   "window": "2019-20",
+   "pit_key": "2019-20",
+   "n_codes": 455,
+   "total_return": -0.1353,
+   "max_drawdown": -0.2226,
+   "annual_return": -0.0702,
+   "sharpe": -0.431,
+   "trade_count": 599,
+   "win_rate": 0.5879,
+   "elapsed": 4.1
+  },
+  "pit/w1": {
+   "pool": "pit",
+   "widx": 1,
+   "window": "2021-22",
+   "pit_key": "2021-22",
+   "n_codes": 434,
+   "total_return": 0.1456,
+   "max_drawdown": -0.1223,
+   "annual_return": 0.0708,
+   "sharpe": 0.594,
+   "trade_count": 678,
+   "win_rate": 0.6135,
+   "elapsed": 3.0
+  },
+  "pit/w2": {
+   "pool": "pit",
+   "widx": 2,
+   "window": "2023-24",
+   "pit_key": "2023-24",
+   "n_codes": 426,
+   "total_return": -0.1693,
+   "max_drawdown": -0.2432,
+   "annual_return": -0.0892,
+   "sharpe": -0.757,
+   "trade_count": 480,
+   "win_rate": 0.5673,
+   "elapsed": 2.4
+  },
+  "pit/w3": {
+   "pool": "pit",
+   "widx": 3,
+   "window": "牛市",
+   "pit_key": "近1年",
+   "n_codes": 445,
+   "total_return": 0.2726,
+   "max_drawdown": -0.1273,
+   "annual_return": 0.2701,
+   "sharpe": 1.428,
+   "trade_count": 348,
+   "win_rate": 0.6822,
+   "elapsed": 1.7
+  }
+ },
+ "overstatement": [
+  {
+   "window": "2019-20",
+   "static_ret": -0.1206,
+   "pit_ret": -0.1353,
+   "overstatement_pp": 1.47,
+   "gt10pp": false
+  },
+  {
+   "window": "2021-22",
+   "static_ret": 0.1693,
+   "pit_ret": 0.1456,
+   "overstatement_pp": 2.37,
+   "gt10pp": false
+  },
+  {
+   "window": "2023-24",
+   "static_ret": 0.0657,
+   "pit_ret": -0.1693,
+   "overstatement_pp": 23.5,
+   "gt10pp": true
+  },
+  {
+   "window": "牛市",
+   "static_ret": 0.5993,
+   "pit_ret": 0.2726,
+   "overstatement_pp": 32.67,
+   "gt10pp": true
+  }
+ ],
+ "judgement": {
+  "rule": "任一窗 overstatement>10pp → 建议 board 历史收益声明一律加 PIT 保留条款",
+  "n_windows_gt10pp": 2,
+  "any_window_gt10pp": true,
+  "recommendation": "建议 board 历史收益声明一律加 PIT 保留条款"
+ },
+ "cells_done": 8,
+ "cells_total": 8,
+ "elapsed_s": 0.0
+}

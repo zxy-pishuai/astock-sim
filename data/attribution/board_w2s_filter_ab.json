@@ -1,0 +1,124 @@
+{
+ "meta": {
+  "pool": "bt_pool top500",
+  "params": {
+   "buy_threshold": 40,
+   "max_positions": 2,
+   "position_pct": 0.25,
+   "slippage": 0.001,
+   "zt_eco_gate": false,
+   "dd_gate": false
+  },
+  "filter": "今日开盘缺口 ∈ [+1%%,+4%%]（竞价可得信息，PIT 安全）；'带量'维度因首根5分钟bar在买点未形成而未纳入（声明）"
+ },
+ "ab": [
+  {
+   "window": "2019-20",
+   "base": {
+    "arm": "base",
+    "filtered": false,
+    "window": "2019-20",
+    "total_return": -0.0618,
+    "max_drawdown": -0.1462,
+    "trade_count": 520,
+    "win_rate": 0.6527,
+    "elapsed": 2.4
+   },
+   "filtered": {
+    "arm": "filt",
+    "filtered": true,
+    "window": "2019-20",
+    "total_return": 0.1868,
+    "max_drawdown": -0.0556,
+    "trade_count": 122,
+    "win_rate": 0.7564,
+    "elapsed": 4.4
+   },
+   "delta_pp": 24.86,
+   "delta_ok": true
+  },
+  {
+   "window": "2021-22",
+   "base": {
+    "arm": "base",
+    "filtered": false,
+    "window": "2021-22",
+    "total_return": 0.1719,
+    "max_drawdown": -0.1679,
+    "trade_count": 628,
+    "win_rate": 0.6499,
+    "elapsed": 11.4
+   },
+   "filtered": {
+    "arm": "filt",
+    "filtered": true,
+    "window": "2021-22",
+    "total_return": 0.1444,
+    "max_drawdown": -0.0526,
+    "trade_count": 123,
+    "win_rate": 0.7436,
+    "elapsed": 10.8
+   },
+   "delta_pp": -2.75,
+   "delta_ok": true
+  },
+  {
+   "window": "2023-24",
+   "base": {
+    "arm": "base",
+    "filtered": false,
+    "window": "2023-24",
+    "total_return": 0.0684,
+    "max_drawdown": -0.1806,
+    "trade_count": 501,
+    "win_rate": 0.6342,
+    "elapsed": 11.5
+   },
+   "filtered": {
+    "arm": "filt",
+    "filtered": true,
+    "window": "2023-24",
+    "total_return": -0.0097,
+    "max_drawdown": -0.1249,
+    "trade_count": 107,
+    "win_rate": 0.6615,
+    "elapsed": 12.0
+   },
+   "delta_pp": -7.81,
+   "delta_ok": true
+  },
+  {
+   "window": "牛市",
+   "base": {
+    "arm": "base",
+    "filtered": false,
+    "window": "牛市",
+    "total_return": 0.6247,
+    "max_drawdown": -0.119,
+    "trade_count": 416,
+    "win_rate": 0.751,
+    "elapsed": 7.2
+   },
+   "filtered": {
+    "arm": "filt",
+    "filtered": true,
+    "window": "牛市",
+    "total_return": -0.0001,
+    "max_drawdown": -0.1485,
+    "trade_count": 126,
+    "win_rate": 0.6667,
+    "elapsed": 5.4
+   },
+   "delta_pp": -62.48,
+   "delta_ok": true
+  }
+ ],
+ "judge": {
+  "improved_or_flat_windows": 4,
+  "bull_delta_pp": -62.48,
+  "trade_shrink_le50pct": false,
+  "pass": false
+ },
+ "verdict": "无增益：如实关闭该方向（弱转强作为打板前置过滤不成立）",
+ "elapsed_s": 65.6
+}

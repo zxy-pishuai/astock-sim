@@ -1,0 +1,102 @@
+{
+ "score": {
+  "2019-20": {
+   "base": {
+    "total_return": -0.0765,
+    "max_drawdown": -0.2888,
+    "trade_count": 1331
+   },
+   "ml": {
+    "total_return": -0.0037,
+    "max_drawdown": -0.2324,
+    "trade_count": 817
+   }
+  },
+  "2021-22": {
+   "base": {
+    "total_return": -0.2159,
+    "max_drawdown": -0.5189,
+    "trade_count": 1540
+   },
+   "ml": {
+    "total_return": -0.3831,
+    "max_drawdown": -0.437,
+    "trade_count": 1052
+   }
+  },
+  "2023-24": {
+   "base": {
+    "total_return": -0.3695,
+    "max_drawdown": -0.4506,
+    "trade_count": 1332
+   },
+   "ml": {
+    "total_return": 0.0518,
+    "max_drawdown": -0.3571,
+    "trade_count": 884
+   }
+  },
+  "近一年": {
+   "base": {
+    "total_return": 0.3068,
+    "max_drawdown": -0.1415,
+    "trade_count": 809
+   },
+   "ml": {
+    "total_return": 0.0673,
+    "max_drawdown": -0.0868,
+    "trade_count": 415
+   }
+  }
+ },
+ "board": {
+  "2019-20": {
+   "base": {
+    "total_return": -0.1177,
+    "max_drawdown": -0.2777,
+    "trade_count": 628
+   },
+   "ml": {
+    "total_return": 0.1476,
+    "max_drawdown": -0.0702,
+    "trade_count": 117
+   }
+  },
+  "2021-22": {
+   "base": {
+    "total_return": -0.0665,
+    "max_drawdown": -0.2141,
+    "trade_count": 747
+   },
+   "ml": {
+    "total_return": -0.0302,
+    "max_drawdown": -0.1304,
+    "trade_count": 140
+   }
+  },
+  "2023-24": {
+   "base": {
+    "total_return": -0.0166,
+    "max_drawdown": -0.257,
+    "trade_count": 616
+   },
+   "ml": {
+    "total_return": -0.0861,
+    "max_drawdown": -0.1074,
+    "trade_count": 49
+   }
+  },
+  "近一年": {
+   "base": {
+    "total_return": 0.273,
+    "max_drawdown": -0.1266,
+    "trade_count": 448
+   },
+   "ml": {
+    "total_return": 0.0387,
+    "max_drawdown": -0.0089,
+    "trade_count": 12
+   }
+  }
+ }
+}

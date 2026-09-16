@@ -1,0 +1,309 @@
+{
+ "generated_at": "2026-08-25 02:43:53",
+ "phase": "33",
+ "windows": [
+  [
+   "2019-01-01",
+   "2020-12-31"
+  ],
+  [
+   "2021-01-01",
+   "2022-12-31"
+  ],
+  [
+   "2023-01-01",
+   "2024-12-31"
+  ],
+  [
+   "2025-08-18",
+   "2026-08-18"
+  ]
+ ],
+ "mins": [
+  7.0,
+  7.5,
+  8.0,
+  8.5
+ ],
+ "params": {
+  "buy_threshold": 40,
+  "max_positions": 2,
+  "position_pct": 0.25,
+  "slippage": 0.001
+ },
+ "evidence_source": "data/attribution/by_signal.json（Phase30 归因）",
+ "baseline_aligned": true,
+ "baseline_rows": [
+  {
+   "momentum_min": 7.0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.1177,
+   "max_drawdown": -0.2777,
+   "sharpe": -0.288,
+   "trade_count": 628,
+   "buy_count": 262,
+   "flat_day_ratio": 0.308,
+   "tier_marks_in_buys": {
+    "极强": 68,
+    "很强": 59,
+    "较强": 42,
+    "启动": 93
+   }
+  },
+  {
+   "momentum_min": 7.0,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.0665,
+   "max_drawdown": -0.2141,
+   "sharpe": -0.12,
+   "trade_count": 747,
+   "buy_count": 313,
+   "flat_day_ratio": 0.1773,
+   "tier_marks_in_buys": {
+    "极强": 63,
+    "很强": 75,
+    "较强": 66,
+    "启动": 109
+   }
+  },
+  {
+   "momentum_min": 7.0,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.0166,
+   "max_drawdown": -0.257,
+   "sharpe": 0.037,
+   "trade_count": 616,
+   "buy_count": 256,
+   "flat_day_ratio": 0.2624,
+   "tier_marks_in_buys": {
+    "极强": 52,
+    "很强": 62,
+    "较强": 57,
+    "启动": 85
+   }
+  },
+  {
+   "momentum_min": 7.0,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.273,
+   "max_drawdown": -0.1266,
+   "sharpe": 1.229,
+   "trade_count": 448,
+   "buy_count": 179,
+   "flat_day_ratio": 0.1317,
+   "tier_marks_in_buys": {
+    "极强": 53,
+    "很强": 41,
+    "较强": 38,
+    "启动": 47
+   }
+  }
+ ],
+ "grid": [
+  {
+   "momentum_min": 7.5,
+   "deltas_pp": [
+    0.26,
+    2.89,
+    -0.78,
+    22.17
+   ],
+   "improved_or_flat_windows": 4,
+   "bull_delta_pp": 22.17,
+   "avg_delta_pp": 6.13,
+   "pass": true
+  },
+  {
+   "momentum_min": 8.0,
+   "deltas_pp": [
+    -7.36,
+    10.32,
+    4.94,
+    25.57
+   ],
+   "improved_or_flat_windows": 3,
+   "bull_delta_pp": 25.57,
+   "avg_delta_pp": 8.37,
+   "pass": true
+  },
+  {
+   "momentum_min": 8.5,
+   "deltas_pp": [
+    -7.11,
+    10.76,
+    13.88,
+    2.33
+   ],
+   "improved_or_flat_windows": 3,
+   "bull_delta_pp": 2.33,
+   "avg_delta_pp": 4.96,
+   "pass": true
+  }
+ ],
+ "verdict": {
+  "rule": ">=3/4 窗口 Δ>=-1pp 且 牛市窗口 Δ>=-2pp；达标者中取平均Δ最高为建议值",
+  "candidates": [
+   {
+    "momentum_min": 7.5,
+    "deltas_pp": [
+     0.26,
+     2.89,
+     -0.78,
+     22.17
+    ],
+    "improved_or_flat_windows": 4,
+    "bull_delta_pp": 22.17,
+    "avg_delta_pp": 6.13,
+    "pass": true
+   },
+   {
+    "momentum_min": 8.0,
+    "deltas_pp": [
+     -7.36,
+     10.32,
+     4.94,
+     25.57
+    ],
+    "improved_or_flat_windows": 3,
+    "bull_delta_pp": 25.57,
+    "avg_delta_pp": 8.37,
+    "pass": true
+   },
+   {
+    "momentum_min": 8.5,
+    "deltas_pp": [
+     -7.11,
+     10.76,
+     13.88,
+     2.33
+    ],
+    "improved_or_flat_windows": 3,
+    "bull_delta_pp": 2.33,
+    "avg_delta_pp": 4.96,
+    "pass": true
+   }
+  ],
+  "recommended_momentum_min": 8.0,
+  "enabled": true,
+  "reason": "阈值 8.0 达标：{'momentum_min': 8.0, 'deltas_pp': [-7.36, 10.32, 4.94, 25.57], 'improved_or_flat_windows': 3, 'bull_delta_pp': 25.57, 'avg_delta_pp': 8.37, 'pass': True}"
+ },
+ "tier_marks_by_min": {
+  "7.0": {
+   "2019-01": {
+    "极强": 68,
+    "很强": 59,
+    "较强": 42,
+    "启动": 93
+   },
+   "2021-01": {
+    "极强": 63,
+    "很强": 75,
+    "较强": 66,
+    "启动": 109
+   },
+   "2023-01": {
+    "极强": 52,
+    "很强": 62,
+    "较强": 57,
+    "启动": 85
+   },
+   "2025-08": {
+    "极强": 53,
+    "很强": 41,
+    "较强": 38,
+    "启动": 47
+   }
+  },
+  "7.5": {
+   "2019-01": {
+    "极强": 69,
+    "很强": 61,
+    "较强": 45,
+    "启动": 51
+   },
+   "2021-01": {
+    "极强": 70,
+    "很强": 81,
+    "较强": 75,
+    "启动": 50
+   },
+   "2023-01": {
+    "极强": 56,
+    "很强": 64,
+    "较强": 65,
+    "启动": 35
+   },
+   "2025-08": {
+    "极强": 56,
+    "很强": 50,
+    "较强": 44,
+    "启动": 24
+   }
+  },
+  "8.0": {
+   "2019-01": {
+    "极强": 73,
+    "很强": 66,
+    "较强": 52,
+    "启动": 0
+   },
+   "2021-01": {
+    "极强": 74,
+    "很强": 86,
+    "较强": 82,
+    "启动": 0
+   },
+   "2023-01": {
+    "极强": 57,
+    "很强": 66,
+    "较强": 65,
+    "启动": 0
+   },
+   "2025-08": {
+    "极强": 54,
+    "很强": 54,
+    "较强": 50,
+    "启动": 0
+   }
+  },
+  "8.5": {
+   "2019-01": {
+    "极强": 79,
+    "很强": 76,
+    "较强": 0,
+    "启动": 0
+   },
+   "2021-01": {
+    "极强": 80,
+    "很强": 98,
+    "较强": 0,
+    "启动": 0
+   },
+   "2023-01": {
+    "极强": 56,
+    "很强": 70,
+    "较强": 0,
+    "启动": 0
+   },
+   "2025-08": {
+    "极强": 62,
+    "很强": 63,
+    "较强": 0,
+    "启动": 0
+   }
+  }
+ },
+ "tier_mark_note": "买入 reason 中各动量档标记次数（已成交口径）"
+}

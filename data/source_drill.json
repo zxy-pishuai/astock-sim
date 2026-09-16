@@ -1,0 +1,72 @@
+{
+ "generated_at": "2026-08-26 03:45:26",
+ "phase": "70",
+ "fault_injection": "子进程内 socket.create_connection/socket.connect 抛 OSError（HTTP/TDX 全灭；sqlite/文件不受影响）",
+ "results": [
+  {
+   "case": "datafeed.fetch_quotes",
+   "outcome": "empty",
+   "elapsed_s": 42.2,
+   "detail": "返回长度 0",
+   "expected_fallback": "TDX→腾讯→新浪→内存/名单回填，全断则空字典（优雅降级）",
+   "pass": true
+  },
+  {
+   "case": "datafeed.fetch_kline_day",
+   "outcome": true,
+   "elapsed_s": 0.0,
+   "detail": "返回长度 250",
+   "expected_fallback": "本地 market.db 兜底（网络死仍应有数据）",
+   "pass": true
+  },
+  {
+   "case": "datafeed.fetch_kline_min5",
+   "outcome": true,
+   "elapsed_s": 0.1,
+   "detail": "返回长度 1600",
+   "expected_fallback": "本地 min5.db 兜底",
+   "pass": true
+  },
+  {
+   "case": "datafeed.get_stock_list",
+   "outcome": true,
+   "elapsed_s": 7.6,
+   "detail": "返回长度 5007",
+   "expected_fallback": "stock_list.json 缓存文件兜底",
+   "pass": true
+  },
+  {
+   "case": "news.fetch_news",
+   "outcome": "empty",
+   "elapsed_s": 0.0,
+   "detail": "返回长度 0",
+   "expected_fallback": "东财→新浪备，双断则降级为空/旧缓存",
+   "pass": true
+  },
+  {
+   "case": "moneyflow.dragon_tiger",
+   "outcome": "empty",
+   "elapsed_s": 0.0,
+   "detail": "返回长度 0",
+   "expected_fallback": "熔断器快速失败 + 本地缓存回退",
+   "pass": true
+  },
+  {
+   "case": "global_market.summary",
+   "outcome": true,
+   "elapsed_s": 0.0,
+   "detail": "返回长度 8",
+   "expected_fallback": "在线站点失败 → global_kline 本地表兜底",
+   "pass": true
+  },
+  {
+   "case": "alert_path(net_dead)",
+   "outcome": "ok",
+   "detail": "audit 增长 177B; notify 内部消化异常=True",
+   "errors": [],
+   "expected_fallback": "audit 落盘 + notify 内部吞异常",
+   "pass": true
+  }
+ ],
+ "all_pass": true
+}

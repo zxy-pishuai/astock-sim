@@ -1,0 +1,204 @@
+{
+  "updated_at": "2026-09-16 13:10:47",
+  "count": 32,
+  "note": "P65 影子运行：只记账不下单不碰账户；满20交易日再谈接入",
+  "fill_params": {
+    "p_early": 0.3,
+    "p_late": 0.6,
+    "early_cutoff": "10:30"
+  },
+  "records": [
+    {
+      "type": "shadow_empty",
+      "date": "2026-08-27",
+      "touches": 0,
+      "ts": "2026-08-27 10:01:16"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-08-28",
+      "touches": 0,
+      "ts": "2026-08-28 10:11:12"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-08-28",
+      "touches": 0,
+      "ts": "2026-08-28 10:11:38"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-08-31",
+      "touches": 0,
+      "ts": "2026-08-31 10:01:35"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-01",
+      "touches": 0,
+      "ts": "2026-09-01 10:01:15"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-01",
+      "touches": 0,
+      "ts": "2026-09-01 13:03:31"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-01",
+      "touches": 0,
+      "ts": "2026-09-01 13:09:46"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-02",
+      "touches": 0,
+      "ts": "2026-09-02 10:01:25"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-02",
+      "touches": 0,
+      "ts": "2026-09-02 10:10:27"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-03",
+      "touches": 0,
+      "ts": "2026-09-03 10:00:37"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-03",
+      "touches": 0,
+      "ts": "2026-09-03 11:37:32"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-04",
+      "touches": 0,
+      "ts": "2026-09-04 13:20:55"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-04",
+      "touches": 0,
+      "ts": "2026-09-04 13:43:25"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-07",
+      "touches": 0,
+      "ts": "2026-09-07 12:48:10"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-08",
+      "touches": 0,
+      "ts": "2026-09-08 10:00:54"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-08",
+      "touches": 0,
+      "ts": "2026-09-08 11:23:00"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-08",
+      "touches": 0,
+      "ts": "2026-09-08 12:05:52"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-09",
+      "touches": 0,
+      "ts": "2026-09-09 12:37:26"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-10",
+      "touches": 0,
+      "ts": "2026-09-10 11:29:23"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-11",
+      "touches": 0,
+      "ts": "2026-09-11 10:50:37"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-14",
+      "touches": 0,
+      "ts": "2026-09-14 10:01:56"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-15",
+      "touches": 0,
+      "ts": "2026-09-15 10:24:08"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 12:14:55"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 12:14:56"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 12:24:27"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 12:27:22"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 12:32:18"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 12:42:05"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 12:56:38"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 13:04:31"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 13:07:58"
+    },
+    {
+      "type": "shadow_empty",
+      "date": "2026-09-16",
+      "touches": 0,
+      "ts": "2026-09-16 13:10:47"
+    }
+  ]
+}

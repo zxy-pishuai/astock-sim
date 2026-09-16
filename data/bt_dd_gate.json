@@ -1,0 +1,1531 @@
+{
+ "generated_at": "2026-08-24 03:08:56",
+ "phase": "27",
+ "windows": [
+  [
+   "2019-01-01",
+   "2020-12-31"
+  ],
+  [
+   "2021-01-01",
+   "2022-12-31"
+  ],
+  [
+   "2023-01-01",
+   "2024-12-31"
+  ],
+  [
+   "2025-08-18",
+   "2026-08-18"
+  ]
+ ],
+ "variants": {
+  "A": {
+   "score": [
+    {
+     "tag": "score-A|2019-01-01",
+     "strategy": "score",
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.0949,
+     "annual_return": -0.0487,
+     "max_drawdown": -0.111,
+     "calmar": -0.439,
+     "sharpe": -1.099,
+     "win_rate": 0.3704,
+     "trade_count": 48,
+     "buy_count": 21,
+     "flat_day_ratio": 0.9651,
+     "dd_half_days": 6,
+     "dd_halt_days": 411,
+     "trading_days": 487,
+     "elapsed": 13.0,
+     "opp_cost_during_halt": {
+      "halt_days_used": 411,
+      "baseline_growth_pct": 2.62
+     },
+     "halt_day_ratio": 0.8439
+    },
+    {
+     "tag": "score-A|2021-01-01",
+     "strategy": "score",
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.0817,
+     "annual_return": -0.042,
+     "max_drawdown": -0.1206,
+     "calmar": -0.348,
+     "sharpe": -0.721,
+     "win_rate": 0.5319,
+     "trade_count": 84,
+     "buy_count": 37,
+     "flat_day_ratio": 0.9526,
+     "dd_half_days": 17,
+     "dd_halt_days": 461,
+     "trading_days": 485,
+     "elapsed": 54.7,
+     "opp_cost_during_halt": {
+      "halt_days_used": 461,
+      "baseline_growth_pct": -15.87
+     },
+     "halt_day_ratio": 0.9505
+    },
+    {
+     "tag": "score-A|2023-01-01",
+     "strategy": "score",
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.0961,
+     "annual_return": -0.0497,
+     "max_drawdown": -0.1085,
+     "calmar": -0.458,
+     "sharpe": -0.919,
+     "win_rate": 0.5286,
+     "trade_count": 123,
+     "buy_count": 53,
+     "flat_day_ratio": 0.8988,
+     "dd_half_days": 2,
+     "dd_halt_days": 437,
+     "trading_days": 484,
+     "elapsed": 97.7,
+     "opp_cost_during_halt": {
+      "halt_days_used": 437,
+      "baseline_growth_pct": -28.92
+     },
+     "halt_day_ratio": 0.9029
+    },
+    {
+     "tag": "score-A|2025-08-18",
+     "strategy": "score",
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.0781,
+     "annual_return": 0.0785,
+     "max_drawdown": -0.1008,
+     "calmar": 0.779,
+     "sharpe": 0.602,
+     "win_rate": 0.64,
+     "trade_count": 208,
+     "buy_count": 83,
+     "flat_day_ratio": 0.6749,
+     "dd_half_days": 9,
+     "dd_halt_days": 171,
+     "trading_days": 243,
+     "elapsed": 177.2,
+     "opp_cost_during_halt": {
+      "halt_days_used": 171,
+      "baseline_growth_pct": 22.75
+     },
+     "halt_day_ratio": 0.7037
+    }
+   ],
+   "board": [
+    {
+     "tag": "board-A|2019-01-01",
+     "strategy": "board",
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.1008,
+     "annual_return": -0.0518,
+     "max_drawdown": -0.1008,
+     "calmar": -0.514,
+     "sharpe": -1.616,
+     "win_rate": 0.1667,
+     "trade_count": 24,
+     "buy_count": 12,
+     "flat_day_ratio": 0.9774,
+     "dd_half_days": 12,
+     "dd_halt_days": 409,
+     "trading_days": 487,
+     "elapsed": 2.4,
+     "opp_cost_during_halt": {
+      "halt_days_used": 409,
+      "baseline_growth_pct": 2.01
+     },
+     "halt_day_ratio": 0.8398
+    },
+    {
+     "tag": "board-A|2021-01-01",
+     "strategy": "board",
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.0828,
+     "annual_return": -0.0426,
+     "max_drawdown": -0.1085,
+     "calmar": -0.393,
+     "sharpe": -1.058,
+     "win_rate": 0.4902,
+     "trade_count": 92,
+     "buy_count": 41,
+     "flat_day_ratio": 0.8887,
+     "dd_half_days": 43,
+     "dd_halt_days": 422,
+     "trading_days": 485,
+     "elapsed": 4.0,
+     "opp_cost_during_halt": {
+      "halt_days_used": 422,
+      "baseline_growth_pct": 3.56
+     },
+     "halt_day_ratio": 0.8701
+    },
+    {
+     "tag": "board-A|2023-01-01",
+     "strategy": "board",
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.0085,
+     "annual_return": -0.0043,
+     "max_drawdown": -0.1056,
+     "calmar": -0.041,
+     "sharpe": -0.022,
+     "win_rate": 0.5522,
+     "trade_count": 240,
+     "buy_count": 106,
+     "flat_day_ratio": 0.6901,
+     "dd_half_days": 98,
+     "dd_halt_days": 294,
+     "trading_days": 484,
+     "elapsed": 5.0,
+     "opp_cost_during_halt": {
+      "halt_days_used": 294,
+      "baseline_growth_pct": 0.68
+     },
+     "halt_day_ratio": 0.6074
+    },
+    {
+     "tag": "board-A|2025-08-18",
+     "strategy": "board",
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": -0.0453,
+     "annual_return": -0.0455,
+     "max_drawdown": -0.1016,
+     "calmar": -0.448,
+     "sharpe": -0.63,
+     "win_rate": 0.55,
+     "trade_count": 104,
+     "buy_count": 44,
+     "flat_day_ratio": 0.786,
+     "dd_half_days": 38,
+     "dd_halt_days": 179,
+     "trading_days": 243,
+     "elapsed": 3.0,
+     "opp_cost_during_halt": {
+      "halt_days_used": 179,
+      "baseline_growth_pct": 36.23
+     },
+     "halt_day_ratio": 0.7366
+    }
+   ]
+  },
+  "B": {
+   "score": [
+    {
+     "tag": "score-B|2019-01-01",
+     "strategy": "score",
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.1697,
+     "annual_return": -0.089,
+     "max_drawdown": -0.1845,
+     "calmar": -0.482,
+     "sharpe": -1.218,
+     "win_rate": 0.3125,
+     "trade_count": 58,
+     "buy_count": 26,
+     "flat_day_ratio": 0.963,
+     "dd_half_days": 2,
+     "dd_halt_days": 409,
+     "trading_days": 487,
+     "elapsed": 14.1,
+     "opp_cost_during_halt": {
+      "halt_days_used": 409,
+      "baseline_growth_pct": 14.49
+     },
+     "halt_day_ratio": 0.8398
+    },
+    {
+     "tag": "score-B|2021-01-01",
+     "strategy": "score",
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.109,
+     "annual_return": -0.0564,
+     "max_drawdown": -0.1526,
+     "calmar": -0.37,
+     "sharpe": -0.657,
+     "win_rate": 0.5849,
+     "trade_count": 92,
+     "buy_count": 39,
+     "flat_day_ratio": 0.932,
+     "dd_half_days": 1,
+     "dd_halt_days": 460,
+     "trading_days": 485,
+     "elapsed": 55.9,
+     "opp_cost_during_halt": {
+      "halt_days_used": 460,
+      "baseline_growth_pct": -10.29
+     },
+     "halt_day_ratio": 0.9485
+    },
+    {
+     "tag": "score-B|2023-01-01",
+     "strategy": "score",
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.096,
+     "annual_return": -0.0496,
+     "max_drawdown": -0.12,
+     "calmar": -0.413,
+     "sharpe": -0.879,
+     "win_rate": 0.5479,
+     "trade_count": 127,
+     "buy_count": 54,
+     "flat_day_ratio": 0.8988,
+     "dd_half_days": 2,
+     "dd_halt_days": 435,
+     "trading_days": 484,
+     "elapsed": 100.4,
+     "opp_cost_during_halt": {
+      "halt_days_used": 435,
+      "baseline_growth_pct": -29.83
+     },
+     "halt_day_ratio": 0.8988
+    },
+    {
+     "tag": "score-B|2025-08-18",
+     "strategy": "score",
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.0409,
+     "annual_return": 0.0411,
+     "max_drawdown": -0.1264,
+     "calmar": 0.325,
+     "sharpe": 0.325,
+     "win_rate": 0.6205,
+     "trade_count": 329,
+     "buy_count": 134,
+     "flat_day_ratio": 0.5309,
+     "dd_half_days": 31,
+     "dd_halt_days": 130,
+     "trading_days": 243,
+     "elapsed": 304.2,
+     "opp_cost_during_halt": {
+      "halt_days_used": 130,
+      "baseline_growth_pct": 18.03
+     },
+     "halt_day_ratio": 0.535
+    }
+   ],
+   "board": [
+    {
+     "tag": "board-B|2019-01-01",
+     "strategy": "board",
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.1279,
+     "annual_return": -0.0663,
+     "max_drawdown": -0.1279,
+     "calmar": -0.518,
+     "sharpe": -1.752,
+     "win_rate": 0.2,
+     "trade_count": 30,
+     "buy_count": 15,
+     "flat_day_ratio": 0.9713,
+     "dd_half_days": 11,
+     "dd_halt_days": 404,
+     "trading_days": 487,
+     "elapsed": 2.5,
+     "opp_cost_during_halt": {
+      "halt_days_used": 404,
+      "baseline_growth_pct": 3.99
+     },
+     "halt_day_ratio": 0.8296
+    },
+    {
+     "tag": "board-B|2021-01-01",
+     "strategy": "board",
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.1012,
+     "annual_return": -0.0523,
+     "max_drawdown": -0.1263,
+     "calmar": -0.414,
+     "sharpe": -0.891,
+     "win_rate": 0.5152,
+     "trade_count": 118,
+     "buy_count": 52,
+     "flat_day_ratio": 0.8619,
+     "dd_half_days": 28,
+     "dd_halt_days": 405,
+     "trading_days": 485,
+     "elapsed": 4.1,
+     "opp_cost_during_halt": {
+      "halt_days_used": 405,
+      "baseline_growth_pct": 4.64
+     },
+     "halt_day_ratio": 0.8351
+    },
+    {
+     "tag": "board-B|2023-01-01",
+     "strategy": "board",
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.0215,
+     "annual_return": -0.0109,
+     "max_drawdown": -0.1202,
+     "calmar": -0.091,
+     "sharpe": -0.102,
+     "win_rate": 0.5541,
+     "trade_count": 264,
+     "buy_count": 116,
+     "flat_day_ratio": 0.6529,
+     "dd_half_days": 121,
+     "dd_halt_days": 267,
+     "trading_days": 484,
+     "elapsed": 5.1,
+     "opp_cost_during_halt": {
+      "halt_days_used": 267,
+      "baseline_growth_pct": 3.34
+     },
+     "halt_day_ratio": 0.5517
+    },
+    {
+     "tag": "board-B|2025-08-18",
+     "strategy": "board",
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.0667,
+     "annual_return": 0.067,
+     "max_drawdown": -0.1196,
+     "calmar": 0.56,
+     "sharpe": 0.522,
+     "win_rate": 0.6376,
+     "trade_count": 410,
+     "buy_count": 181,
+     "flat_day_ratio": 0.144,
+     "dd_half_days": 145,
+     "dd_halt_days": 0,
+     "trading_days": 243,
+     "elapsed": 5.3,
+     "halt_day_ratio": 0.0
+    }
+   ]
+  },
+  "C": {
+   "score": [
+    {
+     "tag": "score-C|2019-01-01",
+     "strategy": "score",
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.1697,
+     "annual_return": -0.089,
+     "max_drawdown": -0.1845,
+     "calmar": -0.482,
+     "sharpe": -1.218,
+     "win_rate": 0.3125,
+     "trade_count": 58,
+     "buy_count": 26,
+     "flat_day_ratio": 0.963,
+     "dd_half_days": 2,
+     "dd_halt_days": 409,
+     "trading_days": 487,
+     "elapsed": 11.9,
+     "opp_cost_during_halt": {
+      "halt_days_used": 409,
+      "baseline_growth_pct": 14.49
+     },
+     "halt_day_ratio": 0.8398
+    },
+    {
+     "tag": "score-C|2021-01-01",
+     "strategy": "score",
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.109,
+     "annual_return": -0.0564,
+     "max_drawdown": -0.1526,
+     "calmar": -0.37,
+     "sharpe": -0.657,
+     "win_rate": 0.5849,
+     "trade_count": 92,
+     "buy_count": 39,
+     "flat_day_ratio": 0.932,
+     "dd_half_days": 1,
+     "dd_halt_days": 460,
+     "trading_days": 485,
+     "elapsed": 54.7,
+     "opp_cost_during_halt": {
+      "halt_days_used": 460,
+      "baseline_growth_pct": -10.29
+     },
+     "halt_day_ratio": 0.9485
+    },
+    {
+     "tag": "score-C|2023-01-01",
+     "strategy": "score",
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.1478,
+     "annual_return": -0.0774,
+     "max_drawdown": -0.1534,
+     "calmar": -0.505,
+     "sharpe": -1.013,
+     "win_rate": 0.5395,
+     "trade_count": 378,
+     "buy_count": 163,
+     "flat_day_ratio": 0.6942,
+     "dd_half_days": 78,
+     "dd_halt_days": 336,
+     "trading_days": 484,
+     "elapsed": 373.9,
+     "opp_cost_during_halt": {
+      "halt_days_used": 336,
+      "baseline_growth_pct": -25.09
+     },
+     "halt_day_ratio": 0.6942
+    },
+    {
+     "tag": "score-C|2025-08-18",
+     "strategy": "score",
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.0329,
+     "annual_return": 0.0331,
+     "max_drawdown": -0.1445,
+     "calmar": 0.229,
+     "sharpe": 0.259,
+     "win_rate": 0.6354,
+     "trade_count": 619,
+     "buy_count": 257,
+     "flat_day_ratio": 0.1893,
+     "dd_half_days": 85,
+     "dd_halt_days": 46,
+     "trading_days": 243,
+     "elapsed": 622.5,
+     "opp_cost_during_halt": {
+      "halt_days_used": 46,
+      "baseline_growth_pct": 5.98
+     },
+     "halt_day_ratio": 0.1893
+    }
+   ],
+   "board": [
+    {
+     "tag": "board-C|2019-01-01",
+     "strategy": "board",
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.1508,
+     "annual_return": -0.0786,
+     "max_drawdown": -0.1508,
+     "calmar": -0.521,
+     "sharpe": -1.832,
+     "win_rate": 0.3548,
+     "trade_count": 59,
+     "buy_count": 28,
+     "flat_day_ratio": 0.9425,
+     "dd_half_days": 23,
+     "dd_halt_days": 387,
+     "trading_days": 487,
+     "elapsed": 2.5,
+     "opp_cost_during_halt": {
+      "halt_days_used": 387,
+      "baseline_growth_pct": 5.47
+     },
+     "halt_day_ratio": 0.7947
+    },
+    {
+     "tag": "board-C|2021-01-01",
+     "strategy": "board",
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.1119,
+     "annual_return": -0.0579,
+     "max_drawdown": -0.141,
+     "calmar": -0.411,
+     "sharpe": -0.941,
+     "win_rate": 0.5465,
+     "trade_count": 152,
+     "buy_count": 66,
+     "flat_day_ratio": 0.8247,
+     "dd_half_days": 37,
+     "dd_halt_days": 386,
+     "trading_days": 485,
+     "elapsed": 4.2,
+     "opp_cost_during_halt": {
+      "halt_days_used": 386,
+      "baseline_growth_pct": 10.01
+     },
+     "halt_day_ratio": 0.7959
+    },
+    {
+     "tag": "board-C|2023-01-01",
+     "strategy": "board",
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.0532,
+     "annual_return": -0.0272,
+     "max_drawdown": -0.146,
+     "calmar": -0.186,
+     "sharpe": -0.283,
+     "win_rate": 0.5472,
+     "trade_count": 284,
+     "buy_count": 125,
+     "flat_day_ratio": 0.624,
+     "dd_half_days": 138,
+     "dd_halt_days": 240,
+     "trading_days": 484,
+     "elapsed": 5.3,
+     "opp_cost_during_halt": {
+      "halt_days_used": 240,
+      "baseline_growth_pct": 5.05
+     },
+     "halt_day_ratio": 0.4959
+    },
+    {
+     "tag": "board-C|2025-08-18",
+     "strategy": "board",
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.051,
+     "annual_return": 0.0512,
+     "max_drawdown": -0.1261,
+     "calmar": 0.406,
+     "sharpe": 0.411,
+     "win_rate": 0.6391,
+     "trade_count": 410,
+     "buy_count": 180,
+     "flat_day_ratio": 0.1481,
+     "dd_half_days": 138,
+     "dd_halt_days": 0,
+     "trading_days": 243,
+     "elapsed": 5.3,
+     "halt_day_ratio": 0.0
+    }
+   ]
+  },
+  "D": {
+   "score": [
+    {
+     "tag": "score-D|2019-01-01",
+     "strategy": "score",
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.1434,
+     "annual_return": -0.0746,
+     "max_drawdown": -0.2053,
+     "calmar": -0.363,
+     "sharpe": -0.364,
+     "win_rate": 0.6098,
+     "trade_count": 1311,
+     "buy_count": 555,
+     "flat_day_ratio": 0.1253,
+     "dd_half_days": 309,
+     "dd_halt_days": 0,
+     "trading_days": 487,
+     "elapsed": 823.5,
+     "halt_day_ratio": 0.0
+    },
+    {
+     "tag": "score-D|2021-01-01",
+     "strategy": "score",
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.1501,
+     "annual_return": -0.0785,
+     "max_drawdown": -0.4042,
+     "calmar": -0.194,
+     "sharpe": -0.35,
+     "win_rate": 0.587,
+     "trade_count": 1521,
+     "buy_count": 642,
+     "flat_day_ratio": 0.0021,
+     "dd_half_days": 325,
+     "dd_halt_days": 0,
+     "trading_days": 485,
+     "elapsed": 1973.6,
+     "halt_day_ratio": 0.0
+    },
+    {
+     "tag": "score-D|2023-01-01",
+     "strategy": "score",
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.3114,
+     "annual_return": -0.1714,
+     "max_drawdown": -0.3633,
+     "calmar": -0.472,
+     "sharpe": -1.213,
+     "win_rate": 0.5361,
+     "trade_count": 1320,
+     "buy_count": 585,
+     "flat_day_ratio": 0.0021,
+     "dd_half_days": 337,
+     "dd_halt_days": 0,
+     "trading_days": 484,
+     "elapsed": 1918.2,
+     "halt_day_ratio": 0.0
+    },
+    {
+     "tag": "score-D|2025-08-18",
+     "strategy": "score",
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.1177,
+     "annual_return": 0.1182,
+     "max_drawdown": -0.1257,
+     "calmar": 0.94,
+     "sharpe": 0.613,
+     "win_rate": 0.6326,
+     "trade_count": 791,
+     "buy_count": 331,
+     "flat_day_ratio": 0.0041,
+     "dd_half_days": 144,
+     "dd_halt_days": 0,
+     "trading_days": 243,
+     "elapsed": 823.0,
+     "halt_day_ratio": 0.0
+    }
+   ],
+   "board": [
+    {
+     "tag": "board-D|2019-01-01",
+     "strategy": "board",
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.1529,
+     "annual_return": -0.0798,
+     "max_drawdown": -0.2088,
+     "calmar": -0.382,
+     "sharpe": -0.852,
+     "win_rate": 0.5889,
+     "trade_count": 604,
+     "buy_count": 261,
+     "flat_day_ratio": 0.3142,
+     "dd_half_days": 340,
+     "dd_halt_days": 0,
+     "trading_days": 487,
+     "elapsed": 4.8,
+     "halt_day_ratio": 0.0
+    },
+    {
+     "tag": "board-D|2021-01-01",
+     "strategy": "board",
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.0903,
+     "annual_return": -0.0465,
+     "max_drawdown": -0.1479,
+     "calmar": -0.314,
+     "sharpe": -0.426,
+     "win_rate": 0.5912,
+     "trade_count": 723,
+     "buy_count": 312,
+     "flat_day_ratio": 0.1814,
+     "dd_half_days": 354,
+     "dd_halt_days": 0,
+     "trading_days": 485,
+     "elapsed": 8.1,
+     "halt_day_ratio": 0.0
+    },
+    {
+     "tag": "board-D|2023-01-01",
+     "strategy": "board",
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.027,
+     "annual_return": -0.0137,
+     "max_drawdown": -0.1882,
+     "calmar": -0.073,
+     "sharpe": -0.08,
+     "win_rate": 0.5828,
+     "trade_count": 594,
+     "buy_count": 256,
+     "flat_day_ratio": 0.2624,
+     "dd_half_days": 351,
+     "dd_halt_days": 0,
+     "trading_days": 484,
+     "elapsed": 8.2,
+     "halt_day_ratio": 0.0
+    },
+    {
+     "tag": "board-D|2025-08-18",
+     "strategy": "board",
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.0667,
+     "annual_return": 0.067,
+     "max_drawdown": -0.1196,
+     "calmar": 0.56,
+     "sharpe": 0.522,
+     "win_rate": 0.6376,
+     "trade_count": 410,
+     "buy_count": 181,
+     "flat_day_ratio": 0.144,
+     "dd_half_days": 145,
+     "dd_halt_days": 0,
+     "trading_days": 243,
+     "elapsed": 5.4,
+     "halt_day_ratio": 0.0
+    }
+   ]
+  }
+ },
+ "params": {
+  "score": {
+   "buy_threshold": 25,
+   "max_positions": 3,
+   "position_pct": 0.3,
+   "slippage": 0.001
+  },
+  "board": {
+   "buy_threshold": 40,
+   "max_positions": 2,
+   "position_pct": 0.25,
+   "slippage": 0.001
+  }
+ },
+ "pool": {
+  "source": "data/bt_pool.json[:500]",
+  "quotes_patch": "fetch_quotes置空(与基线口径一致)"
+ },
+ "baseline_targets": {
+  "score": [
+   -0.0765,
+   -0.2159,
+   -0.3695,
+   0.3068
+  ],
+  "board": [
+   -0.1177,
+   -0.0665,
+   -0.0166,
+   0.273
+  ]
+ },
+ "baseline_aligned": true,
+ "judgement": {
+  "rule": {
+   "max_drawdown_rel_reduction": ">=20%% 且 >=3/4 窗口",
+   "calmar_improve": ">=3/4 窗口",
+   "return_loss_cap": "<=3pp 且全部窗口"
+  },
+  "per_variant": {
+   "A": {
+    "score": {
+     "n_dd_ok": 4,
+     "n_calmar_ok": 1,
+     "worst_ret_loss_pp": 22.87,
+     "pass": false,
+     "detail": {
+      "score_w1": {
+       "dd_rel_reduction": 0.616,
+       "calmar_base": -0.135,
+       "calmar_var": -0.439,
+       "ret_loss_pp": 1.84
+      },
+      "score_w2": {
+       "dd_rel_reduction": 0.768,
+       "calmar_base": -0.222,
+       "calmar_var": -0.348,
+       "ret_loss_pp": -13.42
+      },
+      "score_w3": {
+       "dd_rel_reduction": 0.759,
+       "calmar_base": -0.46,
+       "calmar_var": -0.458,
+       "ret_loss_pp": -27.34
+      },
+      "score_w4": {
+       "dd_rel_reduction": 0.288,
+       "calmar_base": 2.179,
+       "calmar_var": 0.779,
+       "ret_loss_pp": 22.87
+      },
+      "board_w1": {
+       "dd_rel_reduction": 0.637,
+       "calmar_base": -0.219,
+       "calmar_var": -0.514,
+       "ret_loss_pp": -1.69
+      },
+      "board_w2": {
+       "dd_rel_reduction": 0.493,
+       "calmar_base": -0.159,
+       "calmar_var": -0.393,
+       "ret_loss_pp": 1.63
+      },
+      "board_w3": {
+       "dd_rel_reduction": 0.589,
+       "calmar_base": -0.033,
+       "calmar_var": -0.041,
+       "ret_loss_pp": -0.81
+      },
+      "board_w4": {
+       "dd_rel_reduction": 0.197,
+       "calmar_base": 2.167,
+       "calmar_var": -0.448,
+       "ret_loss_pp": 31.83
+      }
+     }
+    },
+    "board": {
+     "n_dd_ok": 3,
+     "n_calmar_ok": 0,
+     "worst_ret_loss_pp": 31.83,
+     "pass": false,
+     "detail": {
+      "score_w1": {
+       "dd_rel_reduction": 0.616,
+       "calmar_base": -0.135,
+       "calmar_var": -0.439,
+       "ret_loss_pp": 1.84
+      },
+      "score_w2": {
+       "dd_rel_reduction": 0.768,
+       "calmar_base": -0.222,
+       "calmar_var": -0.348,
+       "ret_loss_pp": -13.42
+      },
+      "score_w3": {
+       "dd_rel_reduction": 0.759,
+       "calmar_base": -0.46,
+       "calmar_var": -0.458,
+       "ret_loss_pp": -27.34
+      },
+      "score_w4": {
+       "dd_rel_reduction": 0.288,
+       "calmar_base": 2.179,
+       "calmar_var": 0.779,
+       "ret_loss_pp": 22.87
+      },
+      "board_w1": {
+       "dd_rel_reduction": 0.637,
+       "calmar_base": -0.219,
+       "calmar_var": -0.514,
+       "ret_loss_pp": -1.69
+      },
+      "board_w2": {
+       "dd_rel_reduction": 0.493,
+       "calmar_base": -0.159,
+       "calmar_var": -0.393,
+       "ret_loss_pp": 1.63
+      },
+      "board_w3": {
+       "dd_rel_reduction": 0.589,
+       "calmar_base": -0.033,
+       "calmar_var": -0.041,
+       "ret_loss_pp": -0.81
+      },
+      "board_w4": {
+       "dd_rel_reduction": 0.197,
+       "calmar_base": 2.167,
+       "calmar_var": -0.448,
+       "ret_loss_pp": 31.83
+      }
+     }
+    }
+   },
+   "B": {
+    "score": {
+     "n_dd_ok": 3,
+     "n_calmar_ok": 1,
+     "worst_ret_loss_pp": 26.59,
+     "pass": false,
+     "detail": {
+      "score_w1": {
+       "dd_rel_reduction": 0.361,
+       "calmar_base": -0.135,
+       "calmar_var": -0.482,
+       "ret_loss_pp": 9.32
+      },
+      "score_w2": {
+       "dd_rel_reduction": 0.706,
+       "calmar_base": -0.222,
+       "calmar_var": -0.37,
+       "ret_loss_pp": -10.69
+      },
+      "score_w3": {
+       "dd_rel_reduction": 0.734,
+       "calmar_base": -0.46,
+       "calmar_var": -0.413,
+       "ret_loss_pp": -27.35
+      },
+      "score_w4": {
+       "dd_rel_reduction": 0.107,
+       "calmar_base": 2.179,
+       "calmar_var": 0.325,
+       "ret_loss_pp": 26.59
+      },
+      "board_w1": {
+       "dd_rel_reduction": 0.539,
+       "calmar_base": -0.219,
+       "calmar_var": -0.518,
+       "ret_loss_pp": 1.02
+      },
+      "board_w2": {
+       "dd_rel_reduction": 0.41,
+       "calmar_base": -0.159,
+       "calmar_var": -0.414,
+       "ret_loss_pp": 3.47
+      },
+      "board_w3": {
+       "dd_rel_reduction": 0.532,
+       "calmar_base": -0.033,
+       "calmar_var": -0.091,
+       "ret_loss_pp": 0.49
+      },
+      "board_w4": {
+       "dd_rel_reduction": 0.055,
+       "calmar_base": 2.167,
+       "calmar_var": 0.56,
+       "ret_loss_pp": 20.63
+      }
+     }
+    },
+    "board": {
+     "n_dd_ok": 3,
+     "n_calmar_ok": 0,
+     "worst_ret_loss_pp": 20.63,
+     "pass": false,
+     "detail": {
+      "score_w1": {
+       "dd_rel_reduction": 0.361,
+       "calmar_base": -0.135,
+       "calmar_var": -0.482,
+       "ret_loss_pp": 9.32
+      },
+      "score_w2": {
+       "dd_rel_reduction": 0.706,
+       "calmar_base": -0.222,
+       "calmar_var": -0.37,
+       "ret_loss_pp": -10.69
+      },
+      "score_w3": {
+       "dd_rel_reduction": 0.734,
+       "calmar_base": -0.46,
+       "calmar_var": -0.413,
+       "ret_loss_pp": -27.35
+      },
+      "score_w4": {
+       "dd_rel_reduction": 0.107,
+       "calmar_base": 2.179,
+       "calmar_var": 0.325,
+       "ret_loss_pp": 26.59
+      },
+      "board_w1": {
+       "dd_rel_reduction": 0.539,
+       "calmar_base": -0.219,
+       "calmar_var": -0.518,
+       "ret_loss_pp": 1.02
+      },
+      "board_w2": {
+       "dd_rel_reduction": 0.41,
+       "calmar_base": -0.159,
+       "calmar_var": -0.414,
+       "ret_loss_pp": 3.47
+      },
+      "board_w3": {
+       "dd_rel_reduction": 0.532,
+       "calmar_base": -0.033,
+       "calmar_var": -0.091,
+       "ret_loss_pp": 0.49
+      },
+      "board_w4": {
+       "dd_rel_reduction": 0.055,
+       "calmar_base": 2.167,
+       "calmar_var": 0.56,
+       "ret_loss_pp": 20.63
+      }
+     }
+    }
+   },
+   "C": {
+    "score": {
+     "n_dd_ok": 3,
+     "n_calmar_ok": 0,
+     "worst_ret_loss_pp": 27.39,
+     "pass": false,
+     "detail": {
+      "score_w1": {
+       "dd_rel_reduction": 0.361,
+       "calmar_base": -0.135,
+       "calmar_var": -0.482,
+       "ret_loss_pp": 9.32
+      },
+      "score_w2": {
+       "dd_rel_reduction": 0.706,
+       "calmar_base": -0.222,
+       "calmar_var": -0.37,
+       "ret_loss_pp": -10.69
+      },
+      "score_w3": {
+       "dd_rel_reduction": 0.66,
+       "calmar_base": -0.46,
+       "calmar_var": -0.505,
+       "ret_loss_pp": -22.17
+      },
+      "score_w4": {
+       "dd_rel_reduction": -0.021,
+       "calmar_base": 2.179,
+       "calmar_var": 0.229,
+       "ret_loss_pp": 27.39
+      },
+      "board_w1": {
+       "dd_rel_reduction": 0.457,
+       "calmar_base": -0.219,
+       "calmar_var": -0.521,
+       "ret_loss_pp": 3.31
+      },
+      "board_w2": {
+       "dd_rel_reduction": 0.341,
+       "calmar_base": -0.159,
+       "calmar_var": -0.411,
+       "ret_loss_pp": 4.54
+      },
+      "board_w3": {
+       "dd_rel_reduction": 0.432,
+       "calmar_base": -0.033,
+       "calmar_var": -0.186,
+       "ret_loss_pp": 3.66
+      },
+      "board_w4": {
+       "dd_rel_reduction": 0.004,
+       "calmar_base": 2.167,
+       "calmar_var": 0.406,
+       "ret_loss_pp": 22.2
+      }
+     }
+    },
+    "board": {
+     "n_dd_ok": 3,
+     "n_calmar_ok": 0,
+     "worst_ret_loss_pp": 22.2,
+     "pass": false,
+     "detail": {
+      "score_w1": {
+       "dd_rel_reduction": 0.361,
+       "calmar_base": -0.135,
+       "calmar_var": -0.482,
+       "ret_loss_pp": 9.32
+      },
+      "score_w2": {
+       "dd_rel_reduction": 0.706,
+       "calmar_base": -0.222,
+       "calmar_var": -0.37,
+       "ret_loss_pp": -10.69
+      },
+      "score_w3": {
+       "dd_rel_reduction": 0.66,
+       "calmar_base": -0.46,
+       "calmar_var": -0.505,
+       "ret_loss_pp": -22.17
+      },
+      "score_w4": {
+       "dd_rel_reduction": -0.021,
+       "calmar_base": 2.179,
+       "calmar_var": 0.229,
+       "ret_loss_pp": 27.39
+      },
+      "board_w1": {
+       "dd_rel_reduction": 0.457,
+       "calmar_base": -0.219,
+       "calmar_var": -0.521,
+       "ret_loss_pp": 3.31
+      },
+      "board_w2": {
+       "dd_rel_reduction": 0.341,
+       "calmar_base": -0.159,
+       "calmar_var": -0.411,
+       "ret_loss_pp": 4.54
+      },
+      "board_w3": {
+       "dd_rel_reduction": 0.432,
+       "calmar_base": -0.033,
+       "calmar_var": -0.186,
+       "ret_loss_pp": 3.66
+      },
+      "board_w4": {
+       "dd_rel_reduction": 0.004,
+       "calmar_base": 2.167,
+       "calmar_var": 0.406,
+       "ret_loss_pp": 22.2
+      }
+     }
+    }
+   },
+   "D": {
+    "score": {
+     "n_dd_ok": 2,
+     "n_calmar_ok": 1,
+     "worst_ret_loss_pp": 18.91,
+     "pass": false,
+     "detail": {
+      "score_w1": {
+       "dd_rel_reduction": 0.289,
+       "calmar_base": -0.135,
+       "calmar_var": -0.363,
+       "ret_loss_pp": 6.69
+      },
+      "score_w2": {
+       "dd_rel_reduction": 0.221,
+       "calmar_base": -0.222,
+       "calmar_var": -0.194,
+       "ret_loss_pp": -6.58
+      },
+      "score_w3": {
+       "dd_rel_reduction": 0.194,
+       "calmar_base": -0.46,
+       "calmar_var": -0.472,
+       "ret_loss_pp": -5.81
+      },
+      "score_w4": {
+       "dd_rel_reduction": 0.112,
+       "calmar_base": 2.179,
+       "calmar_var": 0.94,
+       "ret_loss_pp": 18.91
+      },
+      "board_w1": {
+       "dd_rel_reduction": 0.248,
+       "calmar_base": -0.219,
+       "calmar_var": -0.382,
+       "ret_loss_pp": 3.52
+      },
+      "board_w2": {
+       "dd_rel_reduction": 0.309,
+       "calmar_base": -0.159,
+       "calmar_var": -0.314,
+       "ret_loss_pp": 2.38
+      },
+      "board_w3": {
+       "dd_rel_reduction": 0.268,
+       "calmar_base": -0.033,
+       "calmar_var": -0.073,
+       "ret_loss_pp": 1.04
+      },
+      "board_w4": {
+       "dd_rel_reduction": 0.055,
+       "calmar_base": 2.167,
+       "calmar_var": 0.56,
+       "ret_loss_pp": 20.63
+      }
+     }
+    },
+    "board": {
+     "n_dd_ok": 3,
+     "n_calmar_ok": 0,
+     "worst_ret_loss_pp": 20.63,
+     "pass": false,
+     "detail": {
+      "score_w1": {
+       "dd_rel_reduction": 0.289,
+       "calmar_base": -0.135,
+       "calmar_var": -0.363,
+       "ret_loss_pp": 6.69
+      },
+      "score_w2": {
+       "dd_rel_reduction": 0.221,
+       "calmar_base": -0.222,
+       "calmar_var": -0.194,
+       "ret_loss_pp": -6.58
+      },
+      "score_w3": {
+       "dd_rel_reduction": 0.194,
+       "calmar_base": -0.46,
+       "calmar_var": -0.472,
+       "ret_loss_pp": -5.81
+      },
+      "score_w4": {
+       "dd_rel_reduction": 0.112,
+       "calmar_base": 2.179,
+       "calmar_var": 0.94,
+       "ret_loss_pp": 18.91
+      },
+      "board_w1": {
+       "dd_rel_reduction": 0.248,
+       "calmar_base": -0.219,
+       "calmar_var": -0.382,
+       "ret_loss_pp": 3.52
+      },
+      "board_w2": {
+       "dd_rel_reduction": 0.309,
+       "calmar_base": -0.159,
+       "calmar_var": -0.314,
+       "ret_loss_pp": 2.38
+      },
+      "board_w3": {
+       "dd_rel_reduction": 0.268,
+       "calmar_base": -0.033,
+       "calmar_var": -0.073,
+       "ret_loss_pp": 1.04
+      },
+      "board_w4": {
+       "dd_rel_reduction": 0.055,
+       "calmar_base": 2.167,
+       "calmar_var": 0.56,
+       "ret_loss_pp": 20.63
+      }
+     }
+    }
+   }
+  },
+  "winners": [],
+  "enabled": false,
+  "reason": "无变体同时满足 回撤相对降≥20%(≥3/4窗) + Calmar改善(≥3/4窗) + 全窗口收益损失≤3pp"
+ },
+ "baseline": {
+  "score": [
+   {
+    "tag": "score-baseline|2019-01-01",
+    "strategy": "score",
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "total_return": -0.0765,
+    "annual_return": -0.0391,
+    "max_drawdown": -0.2888,
+    "calmar": -0.135,
+    "sharpe": -0.001,
+    "win_rate": 0.6345,
+    "trade_count": 1331,
+    "buy_count": 543,
+    "flat_day_ratio": 0.1253,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 487,
+    "elapsed": 825.4,
+    "target_total_return": -0.0765,
+    "aligned": true
+   },
+   {
+    "tag": "score-baseline|2021-01-01",
+    "strategy": "score",
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "total_return": -0.2159,
+    "annual_return": -0.1152,
+    "max_drawdown": -0.5189,
+    "calmar": -0.222,
+    "sharpe": -0.335,
+    "win_rate": 0.6119,
+    "trade_count": 1540,
+    "buy_count": 633,
+    "flat_day_ratio": 0.0021,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 485,
+    "elapsed": 2042.5,
+    "target_total_return": -0.2159,
+    "aligned": true
+   },
+   {
+    "tag": "score-baseline|2023-01-01",
+    "strategy": "score",
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "total_return": -0.3695,
+    "annual_return": -0.2075,
+    "max_drawdown": -0.4506,
+    "calmar": -0.46,
+    "sharpe": -0.832,
+    "win_rate": 0.5624,
+    "trade_count": 1332,
+    "buy_count": 571,
+    "flat_day_ratio": 0.0021,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 484,
+    "elapsed": 1958.4,
+    "target_total_return": -0.3695,
+    "aligned": true
+   },
+   {
+    "tag": "score-baseline|2025-08-18",
+    "strategy": "score",
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "total_return": 0.3068,
+    "annual_return": 0.3083,
+    "max_drawdown": -0.1415,
+    "calmar": 2.179,
+    "sharpe": 1.043,
+    "win_rate": 0.6708,
+    "trade_count": 809,
+    "buy_count": 320,
+    "flat_day_ratio": 0.0041,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 243,
+    "elapsed": 834.2,
+    "target_total_return": 0.3068,
+    "aligned": true
+   }
+  ],
+  "board": [
+   {
+    "tag": "board-baseline|2019-01-01",
+    "strategy": "board",
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "total_return": -0.1177,
+    "annual_return": -0.0608,
+    "max_drawdown": -0.2777,
+    "calmar": -0.219,
+    "sharpe": -0.288,
+    "win_rate": 0.6202,
+    "trade_count": 628,
+    "buy_count": 262,
+    "flat_day_ratio": 0.308,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 487,
+    "elapsed": 1.2,
+    "target_total_return": -0.1177,
+    "aligned": true
+   },
+   {
+    "tag": "board-baseline|2021-01-01",
+    "strategy": "board",
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "total_return": -0.0665,
+    "annual_return": -0.034,
+    "max_drawdown": -0.2141,
+    "calmar": -0.159,
+    "sharpe": -0.12,
+    "win_rate": 0.6152,
+    "trade_count": 747,
+    "buy_count": 313,
+    "flat_day_ratio": 0.1773,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 485,
+    "elapsed": 2.0,
+    "target_total_return": -0.0665,
+    "aligned": true
+   },
+   {
+    "tag": "board-baseline|2023-01-01",
+    "strategy": "board",
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "total_return": -0.0166,
+    "annual_return": -0.0084,
+    "max_drawdown": -0.257,
+    "calmar": -0.033,
+    "sharpe": 0.037,
+    "win_rate": 0.6083,
+    "trade_count": 616,
+    "buy_count": 256,
+    "flat_day_ratio": 0.2624,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 484,
+    "elapsed": 2.0,
+    "target_total_return": -0.0166,
+    "aligned": true
+   },
+   {
+    "tag": "board-baseline|2025-08-18",
+    "strategy": "board",
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "total_return": 0.273,
+    "annual_return": 0.2743,
+    "max_drawdown": -0.1266,
+    "calmar": 2.167,
+    "sharpe": 1.229,
+    "win_rate": 0.684,
+    "trade_count": 448,
+    "buy_count": 179,
+    "flat_day_ratio": 0.1317,
+    "dd_half_days": 0,
+    "dd_halt_days": 0,
+    "trading_days": 243,
+    "elapsed": 1.3,
+    "target_total_return": 0.273,
+    "aligned": true
+   }
+  ]
+ }
+}

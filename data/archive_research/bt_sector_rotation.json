@@ -1,0 +1,1241 @@
+{
+ "generated_at": "2026-08-31 22:56:54",
+ "phase": "R2-sector-rotation",
+ "meta": {
+  "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-31\\market.db",
+  "sector_map": "C:\\Users\\26838\\A股模拟盘\\data\\sector_map.json",
+  "windows": [
+   [
+    "2019-20",
+    [
+     "2019-01-01",
+     "2020-12-31"
+    ]
+   ],
+   [
+    "2021-22",
+    [
+     "2021-01-01",
+     "2022-12-31"
+    ]
+   ],
+   [
+    "2023-24",
+    [
+     "2023-01-01",
+     "2024-12-31"
+    ]
+   ],
+   [
+    "牛市",
+    [
+     "2025-08-18",
+     "2026-08-21"
+    ]
+   ]
+  ],
+  "grid": {
+   "momentum": [
+    5,
+    10
+   ],
+   "top_n": [
+    3,
+    5
+   ],
+   "hold": [
+    1,
+    3,
+    5
+   ],
+   "k": 3
+  },
+  "costs": {
+   "commission_rate": 0.00025,
+   "commission_min": 5.0,
+   "stamp_rate": 0.0005,
+   "slippage": 0.001,
+   "initial_capital": 1000000.0
+  },
+  "method": "R2 预注册：≥3/4 窗扣费后超额>0 且被允许交易天数占比≥50%（判据写死于 docs/reports/sector_rotation.md §0）",
+  "pre_registered_at": "2026-08-31 22:53（docs/reports/sector_rotation.md §0 落盘，早于回测 22:56）",
+  "honest_limits": "sector_map 为当前成分（2026-08-31）非历史 PIT——成员前瞻偏差；系统 K 线宇宙 2370 < sector_map 2911，有效宇宙~54%；结论仅'前瞻观察候选'，非落地依据；显著则需历史行业映射复验"
+ },
+ "results": {
+  "1": {
+   "widx": 1,
+   "window": "2021-22",
+   "baseline": {
+    "total_return": 0.08760389263676394,
+    "gross_return": 0.08869238088783046,
+    "n_stocks": 1313
+   },
+   "arms": [
+    {
+     "M": 5,
+     "N": 3,
+     "H": 1,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.946280284238406,
+     "gross_return": -0.8028673799112989,
+     "trades": 478,
+     "coverage": 0.9876288659793815
+    },
+    {
+     "M": 5,
+     "N": 3,
+     "H": 3,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.7824790652197886,
+     "gross_return": -0.6811971134778856,
+     "trades": 476,
+     "coverage": 0.9876288659793815
+    },
+    {
+     "M": 5,
+     "N": 3,
+     "H": 5,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.646623335718442,
+     "gross_return": -0.554480829814423,
+     "trades": 474,
+     "coverage": 0.9876288659793815
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 1,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.8961395097581114,
+     "gross_return": -0.6112804032904757,
+     "trades": 478,
+     "coverage": 0.9876288659793815
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 3,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.6603111069936612,
+     "gross_return": -0.4937082996069374,
+     "trades": 476,
+     "coverage": 0.9876288659793815
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 5,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.538299738796663,
+     "gross_return": -0.3990324353813479,
+     "trades": 474,
+     "coverage": 0.9876288659793815
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 1,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.9292503163846351,
+     "gross_return": -0.7420984006706353,
+     "trades": 473,
+     "coverage": 0.977319587628866
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 3,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.7753989047329803,
+     "gross_return": -0.6719780552149939,
+     "trades": 471,
+     "coverage": 0.977319587628866
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 5,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.6735616149373217,
+     "gross_return": -0.5816827255724306,
+     "trades": 469,
+     "coverage": 0.977319587628866
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 1,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.890404151552395,
+     "gross_return": -0.602303704623662,
+     "trades": 473,
+     "coverage": 0.977319587628866
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 3,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.6891641715349328,
+     "gross_return": -0.5377329091549565,
+     "trades": 471,
+     "coverage": 0.977319587628866
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 5,
+     "k": 3,
+     "window": "2021-22",
+     "total_return": -0.5373415271384068,
+     "gross_return": -0.3972077844714399,
+     "trades": 469,
+     "coverage": 0.977319587628866
+    }
+   ],
+   "n_days": 485,
+   "n_codes": 1377,
+   "elapsed": 4.6
+  },
+  "0": {
+   "widx": 0,
+   "window": "2019-20",
+   "baseline": {
+    "total_return": 0.31012089821939015,
+    "gross_return": 0.3114320844102844,
+    "n_stocks": 1356
+   },
+   "arms": [
+    {
+     "M": 5,
+     "N": 3,
+     "H": 1,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.769804306285619,
+     "gross_return": -0.10302637504812129,
+     "trades": 480,
+     "coverage": 0.9876796714579056
+    },
+    {
+     "M": 5,
+     "N": 3,
+     "H": 3,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.42614797731005594,
+     "gross_return": -0.11077607105569898,
+     "trades": 478,
+     "coverage": 0.9876796714579056
+    },
+    {
+     "M": 5,
+     "N": 3,
+     "H": 5,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.26100463527367423,
+     "gross_return": -0.020716390890087477,
+     "trades": 476,
+     "coverage": 0.9876796714579056
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 1,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.783735461284806,
+     "gross_return": -0.1770751817720948,
+     "trades": 480,
+     "coverage": 0.9876796714579056
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 3,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.44794508632812824,
+     "gross_return": -0.11541034867258815,
+     "trades": 478,
+     "coverage": 0.9876796714579056
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 5,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.3333384091905175,
+     "gross_return": -0.0849744660950773,
+     "trades": 476,
+     "coverage": 0.9876796714579056
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 1,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.7809231243791942,
+     "gross_return": -0.16986803301281894,
+     "trades": 475,
+     "coverage": 0.9774127310061602
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 3,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.33815067910327334,
+     "gross_return": 0.026316385203589254,
+     "trades": 473,
+     "coverage": 0.9774127310061602
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 5,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.25374506625707693,
+     "gross_return": -0.03128104867450987,
+     "trades": 471,
+     "coverage": 0.9774127310061602
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 1,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.760656848702364,
+     "gross_return": -0.05030044564579539,
+     "trades": 475,
+     "coverage": 0.9774127310061602
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 3,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.4290892256070912,
+     "gross_return": -0.09143517956457914,
+     "trades": 473,
+     "coverage": 0.9774127310061602
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 5,
+     "k": 3,
+     "window": "2019-20",
+     "total_return": -0.332923926701587,
+     "gross_return": -0.09740660839842397,
+     "trades": 471,
+     "coverage": 0.9774127310061602
+    }
+   ],
+   "n_days": 487,
+   "n_codes": 1453,
+   "elapsed": 4.6
+  },
+  "3": {
+   "widx": 3,
+   "window": "牛市",
+   "baseline": {
+    "total_return": 0.10118215793962682,
+    "gross_return": 0.1022842354968295,
+    "n_stocks": 1259
+   },
+   "arms": [
+    {
+     "M": 5,
+     "N": 3,
+     "H": 1,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.5190772992440904,
+     "gross_return": 0.002539006220086959,
+     "trades": 239,
+     "coverage": 0.975609756097561
+    },
+    {
+     "M": 5,
+     "N": 3,
+     "H": 3,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.2318005405128577,
+     "gross_return": -0.03213666011058125,
+     "trades": 237,
+     "coverage": 0.975609756097561
+    },
+    {
+     "M": 5,
+     "N": 3,
+     "H": 5,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.2344205460134986,
+     "gross_return": -0.14215928729274818,
+     "trades": 235,
+     "coverage": 0.975609756097561
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 1,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.5341420912788869,
+     "gross_return": -0.031848533921347455,
+     "trades": 239,
+     "coverage": 0.975609756097561
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 3,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.2884205146322909,
+     "gross_return": -0.11767131829266864,
+     "trades": 237,
+     "coverage": 0.975609756097561
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 5,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.1811057613838033,
+     "gross_return": -0.08376653782110122,
+     "trades": 235,
+     "coverage": 0.975609756097561
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 1,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.4255463278909787,
+     "gross_return": 0.1404442263606558,
+     "trades": 234,
+     "coverage": 0.9552845528455285
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 3,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.20106984282601992,
+     "gross_return": -0.01058188971742191,
+     "trades": 232,
+     "coverage": 0.9552845528455285
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 5,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.12119141899355568,
+     "gross_return": -0.004361846141741843,
+     "trades": 230,
+     "coverage": 0.9552845528455285
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 1,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.42474916538819907,
+     "gross_return": 0.08280933003673163,
+     "trades": 234,
+     "coverage": 0.9552845528455285
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 3,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.19528756905277578,
+     "gross_return": 0.006858955919010645,
+     "trades": 232,
+     "coverage": 0.9552845528455285
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 5,
+     "k": 3,
+     "window": "牛市",
+     "total_return": -0.08950713114236408,
+     "gross_return": 0.03492523868522013,
+     "trades": 230,
+     "coverage": 0.9552845528455285
+    }
+   ],
+   "n_days": 246,
+   "n_codes": 1343,
+   "elapsed": 2.7
+  },
+  "2": {
+   "widx": 2,
+   "window": "2023-24",
+   "baseline": {
+    "total_return": 0.08702232789984454,
+    "gross_return": 0.08811023411328885,
+    "n_stocks": 1230
+   },
+   "arms": [
+    {
+     "M": 5,
+     "N": 3,
+     "H": 1,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.7364764136335703,
+     "gross_return": 0.044200966952190335,
+     "trades": 477,
+     "coverage": 0.987603305785124
+    },
+    {
+     "M": 5,
+     "N": 3,
+     "H": 3,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.28383946168003193,
+     "gross_return": 0.12335916947589132,
+     "trades": 475,
+     "coverage": 0.987603305785124
+    },
+    {
+     "M": 5,
+     "N": 3,
+     "H": 5,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.3525821269814209,
+     "gross_return": -0.15297937553140195,
+     "trades": 473,
+     "coverage": 0.987603305785124
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 1,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.7282992556673031,
+     "gross_return": 0.05825465588788159,
+     "trades": 477,
+     "coverage": 0.987603305785124
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 3,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.3941729208270689,
+     "gross_return": -0.06386287391692125,
+     "trades": 475,
+     "coverage": 0.987603305785124
+    },
+    {
+     "M": 5,
+     "N": 5,
+     "H": 5,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.3754601304858397,
+     "gross_return": -0.16899486491889182,
+     "trades": 473,
+     "coverage": 0.987603305785124
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 1,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.8802067343143803,
+     "gross_return": -0.5327961772420222,
+     "trades": 472,
+     "coverage": 0.9772727272727273
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 3,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.6593965051498502,
+     "gross_return": -0.4770985343268004,
+     "trades": 470,
+     "coverage": 0.9793388429752066
+    },
+    {
+     "M": 10,
+     "N": 3,
+     "H": 5,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.6246951936185645,
+     "gross_return": -0.49407743824774975,
+     "trades": 468,
+     "coverage": 0.9793388429752066
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 1,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.7835863663008323,
+     "gross_return": -0.1856261864767449,
+     "trades": 472,
+     "coverage": 0.9772727272727273
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 3,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.5576311861989972,
+     "gross_return": -0.29966590104713486,
+     "trades": 470,
+     "coverage": 0.9793388429752066
+    },
+    {
+     "M": 10,
+     "N": 5,
+     "H": 5,
+     "k": 3,
+     "window": "2023-24",
+     "total_return": -0.47261926218258843,
+     "gross_return": -0.2998633198580598,
+     "trades": 468,
+     "coverage": 0.9793388429752066
+    }
+   ],
+   "n_days": 484,
+   "n_codes": 1320,
+   "elapsed": 4.4
+  }
+ },
+ "judgement": [
+  {
+   "variant": "M5_N3_H1",
+   "M": 5,
+   "N": 3,
+   "H": 1,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.769804,
+     "gross": -0.103026,
+     "base": 0.310121,
+     "excess_pp": -107.99,
+     "trades": 480,
+     "coverage": 0.988
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.94628,
+     "gross": -0.802867,
+     "base": 0.087604,
+     "excess_pp": -103.39,
+     "trades": 478,
+     "coverage": 0.988
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.736476,
+     "gross": 0.044201,
+     "base": 0.087022,
+     "excess_pp": -82.35,
+     "trades": 477,
+     "coverage": 0.988
+    },
+    {
+     "win": "牛市",
+     "ret": -0.519077,
+     "gross": 0.002539,
+     "base": 0.101182,
+     "excess_pp": -62.03,
+     "trades": 239,
+     "coverage": 0.976
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -62.03,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M5_N3_H3",
+   "M": 5,
+   "N": 3,
+   "H": 3,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.426148,
+     "gross": -0.110776,
+     "base": 0.310121,
+     "excess_pp": -73.63,
+     "trades": 478,
+     "coverage": 0.988
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.782479,
+     "gross": -0.681197,
+     "base": 0.087604,
+     "excess_pp": -87.01,
+     "trades": 476,
+     "coverage": 0.988
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.283839,
+     "gross": 0.123359,
+     "base": 0.087022,
+     "excess_pp": -37.09,
+     "trades": 475,
+     "coverage": 0.988
+    },
+    {
+     "win": "牛市",
+     "ret": -0.231801,
+     "gross": -0.032137,
+     "base": 0.101182,
+     "excess_pp": -33.3,
+     "trades": 237,
+     "coverage": 0.976
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -33.3,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M5_N3_H5",
+   "M": 5,
+   "N": 3,
+   "H": 5,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.261005,
+     "gross": -0.020716,
+     "base": 0.310121,
+     "excess_pp": -57.11,
+     "trades": 476,
+     "coverage": 0.988
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.646623,
+     "gross": -0.554481,
+     "base": 0.087604,
+     "excess_pp": -73.42,
+     "trades": 474,
+     "coverage": 0.988
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.352582,
+     "gross": -0.152979,
+     "base": 0.087022,
+     "excess_pp": -43.96,
+     "trades": 473,
+     "coverage": 0.988
+    },
+    {
+     "win": "牛市",
+     "ret": -0.234421,
+     "gross": -0.142159,
+     "base": 0.101182,
+     "excess_pp": -33.56,
+     "trades": 235,
+     "coverage": 0.976
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -33.56,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M5_N5_H1",
+   "M": 5,
+   "N": 5,
+   "H": 1,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.783735,
+     "gross": -0.177075,
+     "base": 0.310121,
+     "excess_pp": -109.39,
+     "trades": 480,
+     "coverage": 0.988
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.89614,
+     "gross": -0.61128,
+     "base": 0.087604,
+     "excess_pp": -98.37,
+     "trades": 478,
+     "coverage": 0.988
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.728299,
+     "gross": 0.058255,
+     "base": 0.087022,
+     "excess_pp": -81.53,
+     "trades": 477,
+     "coverage": 0.988
+    },
+    {
+     "win": "牛市",
+     "ret": -0.534142,
+     "gross": -0.031849,
+     "base": 0.101182,
+     "excess_pp": -63.53,
+     "trades": 239,
+     "coverage": 0.976
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -63.53,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M5_N5_H3",
+   "M": 5,
+   "N": 5,
+   "H": 3,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.447945,
+     "gross": -0.11541,
+     "base": 0.310121,
+     "excess_pp": -75.81,
+     "trades": 478,
+     "coverage": 0.988
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.660311,
+     "gross": -0.493708,
+     "base": 0.087604,
+     "excess_pp": -74.79,
+     "trades": 476,
+     "coverage": 0.988
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.394173,
+     "gross": -0.063863,
+     "base": 0.087022,
+     "excess_pp": -48.12,
+     "trades": 475,
+     "coverage": 0.988
+    },
+    {
+     "win": "牛市",
+     "ret": -0.288421,
+     "gross": -0.117671,
+     "base": 0.101182,
+     "excess_pp": -38.96,
+     "trades": 237,
+     "coverage": 0.976
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -38.96,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M5_N5_H5",
+   "M": 5,
+   "N": 5,
+   "H": 5,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.333338,
+     "gross": -0.084974,
+     "base": 0.310121,
+     "excess_pp": -64.35,
+     "trades": 476,
+     "coverage": 0.988
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.5383,
+     "gross": -0.399032,
+     "base": 0.087604,
+     "excess_pp": -62.59,
+     "trades": 474,
+     "coverage": 0.988
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.37546,
+     "gross": -0.168995,
+     "base": 0.087022,
+     "excess_pp": -46.25,
+     "trades": 473,
+     "coverage": 0.988
+    },
+    {
+     "win": "牛市",
+     "ret": -0.181106,
+     "gross": -0.083767,
+     "base": 0.101182,
+     "excess_pp": -28.23,
+     "trades": 235,
+     "coverage": 0.976
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -28.23,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M10_N3_H1",
+   "M": 10,
+   "N": 3,
+   "H": 1,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.780923,
+     "gross": -0.169868,
+     "base": 0.310121,
+     "excess_pp": -109.1,
+     "trades": 475,
+     "coverage": 0.977
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.92925,
+     "gross": -0.742098,
+     "base": 0.087604,
+     "excess_pp": -101.69,
+     "trades": 473,
+     "coverage": 0.977
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.880207,
+     "gross": -0.532796,
+     "base": 0.087022,
+     "excess_pp": -96.72,
+     "trades": 472,
+     "coverage": 0.977
+    },
+    {
+     "win": "牛市",
+     "ret": -0.425546,
+     "gross": 0.140444,
+     "base": 0.101182,
+     "excess_pp": -52.67,
+     "trades": 234,
+     "coverage": 0.955
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -52.67,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M10_N3_H3",
+   "M": 10,
+   "N": 3,
+   "H": 3,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.338151,
+     "gross": 0.026316,
+     "base": 0.310121,
+     "excess_pp": -64.83,
+     "trades": 473,
+     "coverage": 0.977
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.775399,
+     "gross": -0.671978,
+     "base": 0.087604,
+     "excess_pp": -86.3,
+     "trades": 471,
+     "coverage": 0.977
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.659397,
+     "gross": -0.477099,
+     "base": 0.087022,
+     "excess_pp": -74.64,
+     "trades": 470,
+     "coverage": 0.979
+    },
+    {
+     "win": "牛市",
+     "ret": -0.20107,
+     "gross": -0.010582,
+     "base": 0.101182,
+     "excess_pp": -30.23,
+     "trades": 232,
+     "coverage": 0.955
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -30.23,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M10_N3_H5",
+   "M": 10,
+   "N": 3,
+   "H": 5,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.253745,
+     "gross": -0.031281,
+     "base": 0.310121,
+     "excess_pp": -56.39,
+     "trades": 471,
+     "coverage": 0.977
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.673562,
+     "gross": -0.581683,
+     "base": 0.087604,
+     "excess_pp": -76.12,
+     "trades": 469,
+     "coverage": 0.977
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.624695,
+     "gross": -0.494077,
+     "base": 0.087022,
+     "excess_pp": -71.17,
+     "trades": 468,
+     "coverage": 0.979
+    },
+    {
+     "win": "牛市",
+     "ret": -0.121191,
+     "gross": -0.004362,
+     "base": 0.101182,
+     "excess_pp": -22.24,
+     "trades": 230,
+     "coverage": 0.955
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -22.24,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M10_N5_H1",
+   "M": 10,
+   "N": 5,
+   "H": 1,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.760657,
+     "gross": -0.0503,
+     "base": 0.310121,
+     "excess_pp": -107.08,
+     "trades": 475,
+     "coverage": 0.977
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.890404,
+     "gross": -0.602304,
+     "base": 0.087604,
+     "excess_pp": -97.8,
+     "trades": 473,
+     "coverage": 0.977
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.783586,
+     "gross": -0.185626,
+     "base": 0.087022,
+     "excess_pp": -87.06,
+     "trades": 472,
+     "coverage": 0.977
+    },
+    {
+     "win": "牛市",
+     "ret": -0.424749,
+     "gross": 0.082809,
+     "base": 0.101182,
+     "excess_pp": -52.59,
+     "trades": 234,
+     "coverage": 0.955
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -52.59,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M10_N5_H3",
+   "M": 10,
+   "N": 5,
+   "H": 3,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.429089,
+     "gross": -0.091435,
+     "base": 0.310121,
+     "excess_pp": -73.92,
+     "trades": 473,
+     "coverage": 0.977
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.689164,
+     "gross": -0.537733,
+     "base": 0.087604,
+     "excess_pp": -77.68,
+     "trades": 471,
+     "coverage": 0.977
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.557631,
+     "gross": -0.299666,
+     "base": 0.087022,
+     "excess_pp": -64.47,
+     "trades": 470,
+     "coverage": 0.979
+    },
+    {
+     "win": "牛市",
+     "ret": -0.195288,
+     "gross": 0.006859,
+     "base": 0.101182,
+     "excess_pp": -29.65,
+     "trades": 232,
+     "coverage": 0.955
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -29.65,
+   "coverage_ok": true,
+   "pass": false
+  },
+  {
+   "variant": "M10_N5_H5",
+   "M": 10,
+   "N": 5,
+   "H": 5,
+   "k": 3,
+   "detail": [
+    {
+     "win": "2019-20",
+     "ret": -0.332924,
+     "gross": -0.097407,
+     "base": 0.310121,
+     "excess_pp": -64.3,
+     "trades": 471,
+     "coverage": 0.977
+    },
+    {
+     "win": "2021-22",
+     "ret": -0.537342,
+     "gross": -0.397208,
+     "base": 0.087604,
+     "excess_pp": -62.49,
+     "trades": 469,
+     "coverage": 0.977
+    },
+    {
+     "win": "2023-24",
+     "ret": -0.472619,
+     "gross": -0.299863,
+     "base": 0.087022,
+     "excess_pp": -55.96,
+     "trades": 468,
+     "coverage": 0.979
+    },
+    {
+     "win": "牛市",
+     "ret": -0.089507,
+     "gross": 0.034925,
+     "base": 0.101182,
+     "excess_pp": -19.07,
+     "trades": 230,
+     "coverage": 0.955
+    }
+   ],
+   "windows_ok": 0,
+   "bull_excess_pp": -19.07,
+   "coverage_ok": true,
+   "pass": false
+  }
+ ],
+ "elapsed_s": 9.2
+}

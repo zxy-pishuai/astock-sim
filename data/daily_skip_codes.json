@@ -1,0 +1,462 @@
+{
+ "002870": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "600825": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "688291": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "301390": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "603159": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "002605": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "300908": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "600301": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "600999": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "601059": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "601198": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "601238": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "601995": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "603393": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "603400": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "603929": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "605303": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "688115": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "688163": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "688173": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "688712": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "688759": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "688790": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "688806": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "688828": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "000682": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "001220": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "001239": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002069": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002072": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002103": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002144": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002156": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002159": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002218": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002242": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002259": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002263": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002286": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002290": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002293": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002298": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002299": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002300": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002301": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "002302": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002307": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002309": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002311": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002315": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002316": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002317": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002318": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002319": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002321": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002334": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002338": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002345": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002361": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002363": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002365": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002370": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002373": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002383": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002385": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002393": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002395": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002420": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002479": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002480": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002483": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002489": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002492": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002500": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002508": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002511": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002520": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002523": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002535": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002537": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002543": {
+  "reason": "fetch_failed",
+  "date": "2026-09-15"
+ },
+ "002606": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "300442": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "300861": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "301498": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "600016": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "600211": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "600826": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-15"
+ },
+ "000708": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "001319": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "001325": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "002014": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "002170": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "002236": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "002332": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "002864": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "300741": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "301548": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "301589": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "600019": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "600113": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "600233": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "600282": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "600738": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "600916": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "601038": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "601857": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "603013": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "603367": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "603406": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "603901": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "688226": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "688314": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "688333": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ },
+ "688778": {
+  "reason": "no_target_row(停牌/未上市/新股)",
+  "date": "2026-09-16"
+ }
+}

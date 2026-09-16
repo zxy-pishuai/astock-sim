@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-08-25 22:49:42",
+ "phase": "47+50",
+ "windows": [
+  [
+   "2019-01-01",
+   "2020-12-31"
+  ],
+  [
+   "2021-01-01",
+   "2022-12-31"
+  ],
+  [
+   "2023-01-01",
+   "2024-12-31"
+  ],
+  [
+   "2025-08-18",
+   "2026-08-18"
+  ]
+ ],
+ "same_day_ab": true,
+ "note": "前复权每晚重锚定：与历史报告数值不可比，仅本 JSON 内 pre/post 同日可比",
+ "landings": {
+  "STOP_LOSS_PCT": "-0.05 -> -0.07（依据 docs/reports/exit_scan.md）",
+  "INDEX_TIMING_BOARD_ONLY": "True（trader 打板路径接线；全局开关仍 False）"
+ },
+ "arms": [
+  {
+   "label": "STOP_LOSS_PCT_-0.05to-0.07(score)",
+   "pre_ret": [
+    -0.2784,
+    -0.4106,
+    -0.3638,
+    -0.0112
+   ],
+   "post_ret": [
+    -0.1909,
+    -0.3734,
+    -0.3455,
+    0.2022
+   ],
+   "pre_trades": [
+    1221,
+    1420,
+    1297,
+    730
+   ],
+   "post_trades": [
+    1164,
+    1334,
+    1219,
+    681
+   ],
+   "deltas_pp": [
+    8.75,
+    3.72,
+    1.83,
+    21.34
+   ],
+   "bull_delta_pp": 21.34,
+   "avg_delta_pp": 8.91,
+   "matches_phase36_expect": true
+  },
+  {
+   "label": "index_timing_board(board)",
+   "pre_ret": [
+    0.0384,
+    0.1618,
+    0.0928,
+    0.5483
+   ],
+   "post_ret": [
+    0.0639,
+    0.1134,
+    0.072,
+    0.3726
+   ],
+   "pre_trades": [
+    544,
+    683,
+    529,
+    426
+   ],
+   "post_trades": [
+    547,
+    676,
+    525,
+    419
+   ],
+   "deltas_pp": [
+    2.55,
+    -4.84,
+    -2.08,
+    -17.57
+   ],
+   "bull_delta_pp": -17.57,
+   "avg_delta_pp": -5.49,
+   "matches_phase36_expect": true
+  }
+ ]
+}

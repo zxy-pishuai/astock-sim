@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>天玑量化终端 TianjiQuant</title>
+<link rel="icon" href="/favicon.ico?v=20260913" type="image/x-icon">
+<link rel="stylesheet" href="css/app.css?v=20260903214754">
+</head>
+<body>
+<div id="app">
+  <!-- ★ 4.5 启动动画（品牌闪屏） -->
+  <div id="splash">
+    <div class="splash-inner">
+      <div class="splash-logo">⬆</div>
+      <div class="splash-name">天玑量化终端</div>
+      <div class="splash-sub">TianjiQuant · A股实战派量化终端</div>
+      <div class="splash-bar"><div class="splash-fill" id="splashFill"></div></div>
+    </div>
+  </div>
+  <!-- ===== 顶部 ===== -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">⬆</span>
+      <span class="brand-name">天玑量化 <em>终端</em></span>
+    </div>
+    <div class="index-strip" id="indexStrip"></div>
+    <div class="regime-badge" id="regimeBadge">—</div>
+    <div class="top-right">
+      <span class="clock" id="clock"></span>
+      <button class="icon-btn" id="btnRefresh" title="刷新行情">🔄</button>
+      <button class="icon-btn" id="btnLog" title="查看日志">📜</button>
+    </div>
+  </header>
+
+  <!-- ===== 主体 ===== -->
+  <div class="layout">
+    <!-- 左侧导航 -->
+    <nav class="sidebar" id="sidebar">
+      <div class="nav-item active" data-page="market">📊 行情中心</div>
+      <div class="nav-item" data-page="trading">🎯 实盘交易</div>
+      <div class="nav-item" data-page="chart">📈 K线分析</div>
+      <div class="nav-item" data-page="portfolio">💼 模拟持仓</div>
+      <div class="nav-item" data-page="backtest">🔬 策略回测</div>
+      <div class="nav-item" data-page="factor">🧬 因子研究</div>
+      <div class="nav-item" data-page="sflow">💸 板块资金流</div>
+      <div class="nav-item" data-page="pnews">📰 盘前新闻</div>
+      <div class="nav-item" data-page="global">🌍 全球市场</div>
+      <div class="nav-item" data-page="audit">📜 审计复盘</div>
+      <div class="nav-item" data-page="experiments">🧪 实验台账</div>
+      <div class="nav-item" data-page="tactics">🎯 战法选股</div>
+<div class="nav-item" data-page="datahealth">🩺 数据健康</div>
+<div class="nav-item" data-page="settings">⚙️ 设置</div>
+      <div class="nav-foot">天玑量化 · v4.5</div>
+    </nav>
+
+    <!-- 内容区 -->
+    <main class="content">
+      <!-- 行情中心 -->
+      <section class="page" id="page-market">
+        <div id="qa-notice" class="tct-honest-note" style="display:none;margin:0 0 8px"></div>
+        <div class="page-head">
+          <h2>行情中心</h2>
+          <div class="search-box">
+            <input id="marketSearch" type="text" placeholder="搜索代码/名称…" />
+          </div>
+          <div class="spacer"></div>
+          <select id="marketSort" class="sel">
+            <option value="amount">按成交额</option>
+            <option value="pct_chg">按涨幅</option>
+            <option value="price">按价格</option>
+            <option value="turnover">按换手</option>
+          </select>
+          <select id="marketSize" class="sel">
+            <option value="50">50条/页</option>
+            <option value="100">100条/页</option>
+            <option value="200">200条/页</option>
+          </select>
+        </div>
+        <div class="watch-strip" id="watchStrip"></div>
+        <div class="page-head" style="padding-top:6px;border-top:1px solid var(--border)">
+          <h3 style="font-size:13px">⏰ 价格提醒（条件单）</h3>
+          <div class="spacer"></div>
+          <button class="btn small" id="btnAddAlert">+ 新增提醒</button>
+          <button class="btn small icon-btn" id="btnAlertRefresh" title="刷新">🔄</button>
+        </div>
+        <div id="alertStrip" class="alert-strip"></div>
+        <div class="table-wrap">
+          <table class="grid" id="marketTable">
+            <thead><tr>
+              <th data-k="code">代码</th><th data-k="name">名称</th>
+              <th data-k="price" class="num">现价</th><th data-k="pct_chg" class="num">涨跌幅</th>
+              <th data-k="amount" class="num">成交额</th><th data-k="turnover" class="num">换手%</th>
+              <th data-k="vol_ratio" class="num">量比</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="pager">
+          <button id="prevPage">‹ 上一页</button>
+          <span id="pageInfo">1/1</span>
+          <button id="nextPage">下一页 ›</button>
+          <span class="pager-tip" id="marketTotal"></span>
+        </div>
+      </section>
+
+      <!-- 实盘交易 -->
+      <section class="page" id="page-trading" style="display:none">
+        <div class="tr-head">
+          <h2>实盘交易（模拟盘）</h2>
+          <div class="tr-controls">
+            <span id="trState" class="state-pill off">引擎未启动</span>
+            <button class="btn primary" id="btnTrStart">▶ 启动引擎</button>
+            <button class="btn" id="btnTrScan">⚡ 单次扫描</button>
+            <button class="btn danger" id="btnTrStop">⏹ 停止</button>
+            <label class="chk"><input type="checkbox" id="trAuto" /> 自动交易</label>
+          </div>
+        </div>
+        <div class="tr-layout">
+          <div class="tr-left">
+            <div class="card">
+              <div class="card-title">市场环境</div>
+              <div class="kv-grid wide" id="trMarket"></div>
+            </div>
+            <div class="card">
+              <div class="card-title">🌡️ 市场情绪周期（4.0 实战体系）<span class="tip">涨停池为原料·昨日涨停溢价为温度计</span></div>
+              <div id="trSentiment" class="kv-grid wide"></div>
+              <div class="card-title" style="margin-top:8px">🎚️ 情绪仓位闸门（Phase16）<span class="tip" id="trGateTip"></span></div>
+              <div id="trGate" class="audit-note"></div>
+              <div class="card-title" style="margin-top:8px">连板梯队 <span class="tip">空间板/晋级率</span></div>
+              <div id="trLadder" class="audit-note"></div>
+              <div class="card-title" style="margin-top:8px">🔥 题材爆发（4.1）<span class="tip">涨停原因主题词统计</span></div>
+              <div id="trThemes" class="audit-note"></div>
+              <div class="card-title" style="margin-top:8px">💹 业绩预增榜（4.5）<span class="tip">业绩预告·PIT按公告日·最强题材催化之一</span></div>
+              <div id="trEarnings" class="audit-note"></div>
+            </div>
+            <div class="card">
+              <div class="card-title">强势板块 Top5 <span class="tip" id="sectorTip"></span></div>
+              <div id="trSectors" class="sector-list"></div>
+            </div>
+            <div class="card">
+              <div class="card-title">🎯 竞价打板公示 <span class="tip">9:25-9:30 高开候选（实盘参考）</span></div>
+              <div id="trAuction" class="auction-box"></div>
+            </div>
+            <div class="card">
+              <div class="card-title">⏰ 两点半战法候选 <span class="tip" id="ttTip">14:20-14:35 扫描：涨幅2~7% + MACD金叉 + 量比&gt;1（次日收盘卖）</span></div>
+              <div class="auction-box" id="trTwothirty"></div>
+              <button class="btn small" id="btnTtScan" style="margin-top:8px">⚡ 手动扫描</button>
+            </div>
+            <div class="card">
+              <div class="card-title">🤖 AI 作战室（4.5）<span class="tip">Mimo V2.5 · 盘前计划 + 组合体检</span></div>
+              <div style="display:flex;gap:6px;margin-bottom:8px">
+                <button class="btn small primary" id="btnAiMorning">🌅 盘前晨报</button>
+                <button class="btn small" id="btnAiHealth">🩺 持仓体检</button>
+              </div>
+              <div id="trAi" class="ai-report"><div class="placeholder small">点击生成 AI 晨报 / 组合体检（大模型分析）</div></div>
+            </div>
+            <div class="card">
+              <div class="card-title">🛡️ 组合风控 <span class="tip">硬风控：单票仓位/日度限额/ST停牌过滤/冰点禁开仓 + v3.7 行业敞口/相关性（回测实盘共用）</span></div>
+              <div class="kv-grid wide" id="trRisk"></div>
+              <div class="card-title" style="margin-top:10px">🏭 行业敞口（v3.7）<span class="tip">单一行业持仓占比上限 50%</span></div>
+              <div id="trSectorExp" class="sector-list"></div>
+              <div class="card-title" style="margin-top:10px">🔗 相关性告警（v3.7）<span class="tip">持仓间 |r|≥0.8 同涨同跌风险</span></div>
+              <div id="trCorrAlerts" class="audit-note"></div>
+            </div>
+          </div>
+          <div class="tr-right">
+            <div class="card">
+              <div class="card-title">最近扫描候选 <span class="tip" id="trScanTime"></span></div>
+              <div class="table-wrap">
+                <table class="grid" id="trScanTable">
+                  <thead><tr>
+                    <th>排名</th><th>代码</th><th>名称</th><th class="num">现价</th>
+                    <th class="num">涨跌%</th><th class="num">评分</th><th>信号</th>
+                  </tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-title">⭐ 自选股监控 <span class="tip">盘中每5秒着重扫描：拉升/大跌/冲高回落即时提醒</span></div>
+              <div class="watch-event-box" id="trWatch"></div>
+            </div>
+            <div class="card" id="d10Card">
+              <div class="card-title">📊 十档盘口（实盘）<span class="tip">通达信 bid/ask 十级量价 · 3 秒轮询 · 盘口比=买量/(买+卖)</span></div>
+              <input id="d10Code" placeholder="代码(6位)" style="width:110px;margin-right:6px" />
+              <button class="btn mini" id="d10Go">查盘口</button>
+              <div id="d10Body" class="small" style="margin-top:6px"></div>
+            </div>
+            <div class="card">
+              <div class="card-title">引擎事件</div>
+              <div class="event-box" id="trEvents"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- K线分析 -->
+      <section class="page" id="page-chart" style="display:none">
+        <div class="chart-layout">
+          <!-- 左侧信息 -->
+          <aside class="info-panel">
+            <div class="stock-title">
+              <span id="cName">—</span>
+              <span class="stock-code" id="cCode"></span>
+            </div>
+            <div class="price-line">
+              <span class="big-price" id="cPrice">—</span>
+              <span class="pct" id="cPct">—</span>
+            </div>
+            <div class="kv-grid" id="cStats"></div>
+            <div class="signal-box">
+              <div class="sig-title">📊 十档盘口<span class="tip">挂在 K 线旁 · 3 秒轮询 · 自动跟随当前票</span></div>
+              <div id="d10ChartBody" class="small"><div class="placeholder small">加载中…</div></div>
+            </div>
+            <div class="signal-box">
+              <div class="sig-title">信号评分 <span id="cScore" class="score"></span></div>
+              <div class="vp-line" id="cVp" style="display:none"></div>
+              <div class="con-box" id="cConsensus" style="display:none"></div>
+              <ul id="cSignals"></ul>
+            </div>
+            <div class="signal-box" id="mfBox" style="display:none">
+              <div class="sig-title">💴 资金面（v3.8）<span class="tip">龙虎榜/两融/北向持股</span></div>
+              <ul id="mfSignals"></ul>
+            </div>
+            <div class="signal-box">
+              <div class="sig-title">🤖 AI 投研（4.5）<span class="tip">Mimo V2.5 · 会议/问诊</span></div>
+              <div style="display:flex;gap:6px;margin-bottom:6px">
+                <button class="btn small primary" id="btnAiMeeting">🎓 投研会议</button>
+                <button class="btn small" id="btnAiAsk">💬 问 AI</button>
+              </div>
+              <div id="cAi" class="ai-report"><div class="placeholder small">点击生成 AI 分析（多智能体投研会议）</div></div>
+            </div>
+            <div class="panel-actions">
+              <button class="btn small" id="btnWatch">☆ 加自选</button>
+              <button class="btn small buy" id="btnBuy">买入</button>
+              <button class="btn small sell" id="btnSell">卖出</button>
+            </div>
+          </aside>
+          <!-- 图表区 -->
+          <div class="chart-area">
+            <div class="chart-toolbar">
+              <div class="period-tabs" id="periodTabs">
+                <span data-p="min5">分时</span>
+                <span data-p="min5k">5分</span>
+                <span data-p="min15">15分</span>
+                <span data-p="min30">30分</span>
+                <span data-p="min60">60分</span>
+                <span data-p="day" class="active">日K</span>
+              </div>
+              <div class="chart-opts">
+                <label><input type="checkbox" id="optMA" checked> MA</label>
+                <label><input type="checkbox" id="optBOLL"> BOLL</label>
+                <select id="optSub" class="sel small">
+                  <option value="macd">MACD</option>
+                  <option value="rsi">RSI</option>
+                  <option value="none">关闭</option>
+                </select>
+                <label class="live"><input type="checkbox" id="optLive" checked> 实时刷新</label>
+              </div>
+            </div>
+            <div id="klineChart" class="kline-box"></div>
+            <div id="cMinuteVol" class="mv-line" style="display:none"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 模拟持仓 -->
+      <section class="page" id="page-portfolio" style="display:none">
+        <div class="page-head"><h2>模拟持仓</h2>
+          <div class="spacer"></div>
+          <button class="btn" id="btnManualBuy">+ 手动买入</button>
+        </div>
+        <div class="asset-cards" id="assetCards"></div>
+        <div class="card">
+          <div class="card-title">资金曲线（已实现盈亏）</div>
+          <div id="equityChart" class="equity-box"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">当前持仓</div>
+          <div class="table-wrap">
+            <table class="grid" id="posTable">
+              <thead><tr>
+                <th>代码</th><th>名称</th><th class="num">数量</th><th class="num">成本</th>
+                <th class="num">现价</th><th class="num">市值</th><th class="num">浮动盈亏</th>
+                <th class="num">盈亏%</th><th class="num">持有</th><th>操作</th>
+              </tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card" id="attrCard" style="display:none">
+          <div class="card-title">📊 持仓归因（v4.5）<span class="tip">已实现盈亏拆解：选股 vs 择时 vs 规模</span></div>
+          <div id="attrSummary"></div>
+          <div class="table-wrap">
+            <table class="grid" id="attrTable">
+              <thead><tr>
+                <th>代码</th><th>名称</th><th class="num">盈亏</th><th class="num">成本</th>
+                <th class="num">收益率</th><th class="num">选股贡献</th><th class="num">择时贡献</th>
+              </tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">交易流水</div>
+          <div class="table-wrap">
+            <table class="grid" id="tradeTable">
+              <thead><tr>
+                <th>时间</th><th>方向</th><th>代码</th><th>名称</th><th class="num">价格</th>
+                <th class="num">数量</th><th class="num">费用</th><th class="num">盈亏</th><th>原因</th>
+              </tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 回测 -->
+      <section class="page" id="page-backtest" style="display:none">
+        <div class="bt-layout">
+          <div class="bt-form card">
+            <div class="card-title">回测配置</div>
+            <div class="form-row">
+              <label>回测模式</label>
+              <select id="btMode" class="sel">
+                <option value="normal">常规回测</option>
+                <option value="walk_forward">Walk-Forward 样本外验证（v3.5）</option>
+                <option value="portfolio">多策略组合（v3.7）</option>
+                <option value="optimize">参数自动寻优（v3.9）</option>
+                <option value="multi_window">多窗口验证（Phase12）</option>
+                <option value="rigorous">一键严谨回测（Phase14）</option>
+              </select>
+            </div>
+            <div class="form-row" id="btFoldsRow">
+              <label>折叠数</label>
+              <input id="btFolds" type="number" value="3" min="2" max="6" />
+            </div>
+            <div class="form-row" id="btOptRow" style="display:none">
+              <label>寻优参数</label>
+              <input id="btOptGrid" type="text" value='buy_threshold:[20,25,30];max_positions:[2,3]' placeholder="buy_threshold:[20,25,30];max_positions:[2,3]" />
+              <select id="btOptMetric" class="sel" style="margin-top:4px">
+                <option value="sharpe">按夏普优化</option>
+                <option value="total_return">按收益优化</option>
+                <option value="calmar">按Calmar优化</option>
+              </select>
+            </div>
+            <div class="form-row" id="btSaveRow">
+              <label class="chk"><input type="checkbox" id="btSaveReport" checked /> 保存回测报告（v3.9）</label>
+            </div>
+            <div class="form-row" id="btStrategiesRow" style="display:none">
+              <label>组合策略</label>
+              <select id="btStrategies" class="sel" multiple size="3">
+                <option value="score" selected>评分策略</option>
+                <option value="board">打板接力</option>
+                <option value="twothirty">两点半战法</option>
+              </select>
+              <select id="btAlloc" class="sel" style="margin-top:4px">
+                <option value="score">按绩效评分分配</option>
+                <option value="equal">等权分配</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label>策略</label>
+              <select id="btStrategy" class="sel">
+                <option value="score">评分策略（T-1信号→T开盘）</option>
+                <option value="board">打板接力（次日开盘买入）</option>
+                <option value="board_intraday">盘中扫板（5分钟级·近33日）</option>
+                <option value="auction_intraday">竞价打板（5分钟级·近33日）</option>
+                <option value="twothirty">两点半战法（涨幅2~7%+MACD金叉+量比·次日收盘卖）</option>
+                <option value="premium">次日溢价统计（打板实证·长历史）</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label>股票池</label>
+              <select id="btPool" class="sel">
+                <option value="top100">成交额 Top100</option>
+                <option value="top300">成交额 Top300</option>
+                <option value="top500">成交额 Top500</option>
+                <option value="local_full">本地全量库 (K线≥300根)</option>
+                <option value="watchlist">我的自选股</option>
+                <option value="custom">手动输入</option>
+              </select>
+              <input id="btCustom" type="text" placeholder="600519,000001,…" style="display:none" />
+              <span class="tip" id="btPoolHint" style="margin-left:8px;"></span>
+            </div>
+            <div class="form-row">
+              <label>开始日期</label><input id="btStart" type="date" />
+            </div>
+            <div class="form-row">
+              <label>结束日期</label><input id="btEnd" type="date" />
+            </div>
+            <div class="form-row">
+              <label>初始资金</label><input id="btCapital" type="number" value="100000" step="10000" />
+            </div>
+            <details class="adv">
+              <summary>高级参数</summary>
+              <div class="form-row"><label>买入阈值</label><input id="btThreshold" type="number" value="25" /></div>
+              <div class="form-row"><label>最大持仓</label><input id="btMaxPos" type="number" value="3" /></div>
+              <div class="form-row"><label>单仓比例</label><input id="btPosPct" type="number" value="0.30" step="0.05" /></div>
+              <div class="form-row"><label>滑点</label><input id="btSlip" type="number" value="0.001" step="0.0005" /></div>
+              <div class="form-row"><label class="chk"><input type="checkbox" id="btSens" /> 参数敏感度扫描（±20% 过拟合检验）</label></div>
+              <div class="form-row"><label>组合优化</label>
+                <select id="btPortMethod" class="sel">
+                  <option value="risk_parity">风险平价（v3.6）</option>
+                  <option value="hrp">层次风险平价 HRP（v3.6）</option>
+                  <option value="vol_target">波动率目标（v3.6）</option>
+                  <option value="equal">固定比例（旧行为）</option>
+                </select>
+              </div>
+              <div class="form-row"><label>分钟窗口</label>
+                <select id="btMin5" class="sel">
+                  <option value="0">本地一年数据（v3.6）</option>
+                  <option value="1600">新浪 33 天（旧）</option>
+                </select>
+              </div>
+            </details>
+            <button class="btn primary" id="btnBacktest">▶ 运行回测</button>
+            <div class="bt-progress" id="btProgress"></div>
+          </div>
+          <div class="bt-result card">
+            <div class="card-title">回测结果</div>
+            <div id="btPlaceholder" class="placeholder">配置参数后点击「运行回测」<br><br>
+              <span class="tip">说明：回测已按真实A股规则建模 —— T+1 交易、涨跌停限制、<br>佣金(万2.5/最低5元)+印花税(卖出0.05%)+滑点、停牌不可交易。</span>
+            </div>
+            <div id="btResult" style="display:none">
+              <!-- v3.7 多策略组合结果 -->
+              <div id="btPortfolio" style="display:none">
+                <div class="card-sub">🎯 多策略组合（并行回测 → 资金分配 → 归因）</div>
+                <div class="wf-verdict" id="btPFVerdict"></div>
+                <div class="card-sub">资金分配与策略归因</div>
+                <div class="table-wrap">
+                  <table class="grid" id="btPFTable">
+                    <thead><tr><th>策略</th><th class="num">资金权重</th><th class="num">分配金额</th><th class="num">策略收益</th><th class="num">夏普</th><th class="num">回撤</th><th class="num">笔数</th><th class="num">组合贡献</th></tr></thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+                <div class="card-sub">组合概况</div>
+                <div class="metric-grid" id="btPFMetrics"></div>
+              </div>
+              <!-- v3.5 walk-forward 结果 -->
+              <div id="btWF" style="display:none">
+                <div class="card-sub">🔄 Walk-Forward 样本外验证（滚动训练→测试）</div>
+                <div class="wf-verdict" id="btWFVerdict"></div>
+                <div class="table-wrap">
+                  <table class="grid" id="btWFTables">
+                    <thead><tr><th>折叠</th><th>训练段</th><th>测试段</th><th class="num">最优阈值</th><th class="num">样本内收益</th><th class="num">样本外收益</th><th class="num">OOS夏普</th><th class="num">OOS回撤</th><th class="num">OOS胜率</th><th class="num">笔数</th></tr></thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="btMW" style="display:none">
+                <div class="card-sub">📅 跨年代多窗口验证（同一套参数跑多个年代窗口，参考 qlib 稳健性检验）</div>
+                <div class="wf-verdict" id="btMWVerdict"></div>
+                <div class="metric-grid" id="btMWMetrics"></div>
+                <div class="table-wrap">
+                  <table class="grid" id="btMWTable">
+                    <thead><tr><th>窗口</th><th>开始</th><th>结束</th><th class="num">年化收益</th><th class="num">夏普</th><th class="num">最大回撤</th><th class="num">胜率</th><th class="num">交易笔数</th><th class="num">总收益</th></tr></thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="btRigorous" style="display:none">
+                <div class="card-sub">🔬 一键严谨回测（Phase14：多窗口 → Walk-Forward → 双参数敏感性）</div>
+                <div class="wf-verdict" id="btRgVerdict"></div>
+                <div class="card-sub">📅 各窗口表现</div>
+                <div class="table-wrap">
+                  <table class="grid" id="btRgMW">
+                    <thead><tr><th>窗口</th><th class="num">年化收益</th><th class="num">夏普</th><th class="num">最大回撤</th><th class="num">胜率</th><th class="num">笔数</th></tr></thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+                <div class="card-sub">🔄 IS/OOS 对比（Walk-Forward）</div>
+                <div class="table-wrap">
+                  <table class="grid" id="btRgWF">
+                    <thead><tr><th>折叠</th><th class="num">样本内收益</th><th class="num">样本外收益</th><th class="num">OOS夏普</th><th class="num">OOS回撤</th><th class="num">衰减率</th></tr></thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+                <div class="card-sub">🌡️ 敏感性热力（buy_threshold × position_pct）</div>
+                <div class="table-wrap">
+                  <table class="grid" id="btRgSens">
+                    <thead><tr><th class="num">pos_pct \ threshold</th><th class="num">0.8×</th><th class="num">1.0×</th><th class="num">1.2×</th></tr></thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+              <div id="btNormal" style="display:none">
+              <div class="metric-grid" id="btMetrics"></div>
+              <div class="card-sub">净值曲线 vs 基准（股票池等权）</div>
+              <div id="btEquityChart" class="equity-box"></div>
+              <!-- v3.4 绩效分析 -->
+              <div class="card-sub">📊 绩效分析 <span class="tip">Sortino/Calmar/回撤区间/水下时间/月度收益（借鉴 backtrader·quantstats）</span></div>
+              <div class="metric-grid" id="btPerfMetrics"></div>
+              <div class="card-sub">月度收益热力图</div>
+              <div id="btMonthly" class="monthly-heat"></div>
+              <div class="card-sub">参数敏感度（±20% 过拟合检验）</div>
+              <div class="table-wrap">
+                <table class="grid" id="btSensTable">
+                  <thead><tr><th class="num">参数值</th><th class="num">总收益</th><th class="num">夏普</th><th class="num">最大回撤</th><th class="num">胜率</th><th class="num">交易笔数</th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              <div class="tip" id="btSensNote" style="padding:4px 0 8px;"></div>
+              <div class="card-sub">⚠️ 回测真实性提示</div>
+              <div class="audit-note" id="btAudit"></div>
+              <div class="card-sub">交易明细</div>
+              <div class="table-wrap tall">
+                <table class="grid" id="btTrades">
+                  <thead><tr><th>日期</th><th>方向</th><th>代码</th><th>名称</th><th class="num">价格</th><th class="num">数量</th><th class="num">费用</th><th class="num">盈亏</th><th>原因</th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              </div>  <!-- /btNormal -->
+            <div id="btPremium" style="display:none">
+              <div class="metric-grid" id="btPMetrics"></div>
+              <div class="table-wrap tall">
+                <table class="grid" id="btPRows">
+                  <thead><tr><th>信号日</th><th>次日</th><th>代码</th><th>名称</th><th class="num">触发点</th><th class="num">次日高开%</th><th class="num">次日收盘%</th><th class="num">次日最高%</th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card" style="margin-top:12px">
+              <div class="card-title">📚 历史回测报告（v3.9）<span class="tip">存档对比，可离线 HTML</span></div>
+              <div class="table-wrap">
+                <table class="grid" id="btReportsTable">
+                  <thead><tr><th>保存时间</th><th>策略</th><th>模式</th><th>区间</th><th class="num">收益</th><th class="num">夏普</th><th class="num">回撤</th><th class="num">笔数</th><th>操作</th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- 因子研究 (v3.6) -->
+      <section class="page" id="page-factor" style="display:none">
+        <div class="page-head">
+          <h2>因子研究</h2>
+          <div class="search-box">
+            <input id="fcCodes" type="text" placeholder="股票池: 600519,000001,300750…" value="600519,600036,000001,300750,002594" />
+          </div>
+          <select id="fcHorizon" class="sel">
+            <option value="3">未来3日</option>
+            <option value="5" selected>未来5日</option>
+            <option value="10">未来10日</option>
+          </select>
+          <button class="btn primary" id="btnFactorScan">🔬 全因子 IC 扫描</button>
+        </div>
+        <div class="card">
+          <div class="card-title">因子 IC 排名（IC 均值 / ICIR / 正占比）<span class="tip" id="fcTip"></span></div>
+          <div class="table-wrap">
+            <table class="grid" id="fcTable">
+              <thead><tr><th>排名</th><th>因子</th><th>含义</th><th class="num">IC均值</th><th class="num">ICIR</th><th class="num">正占比</th><th class="num">样本</th><th>操作</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">分层回测 <span class="tip" id="fcLayerTip">选择上方因子的分层表现（单调性=因子有效）</span></div>
+          <div id="fcLayers" class="monthly-heat"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">组合优化权重 <span class="tip">按当前持仓候选计算风险平价/HRP 目标仓位</span></div>
+          <div class="form-row">
+            <select id="fcMethod" class="sel">
+              <option value="risk_parity">风险平价</option>
+              <option value="hrp">层次风险平价 HRP</option>
+              <option value="vol_target">波动率目标</option>
+              <option value="equal">等权</option>
+            </select>
+            <button class="btn" id="btnFcWeights">📐 计算权重</button>
+          </div>
+          <div id="fcWeights" class="audit-note"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🤖 LLM 因子挖掘（4.3 RD-Agent 模式）<span class="tip">LLM提因子→IC检验→入库迭代</span></div>
+          <div class="form-row">
+            <select id="fcMineProvider" class="sel">
+              <option value="local">本地模板（无LLM）</option>
+              <option value="auto">LLM（Ollama/API）</option>
+            </select>
+            <input id="fcMineN" type="number" value="5" min="1" max="10" style="width:60px" />
+            <button class="btn" id="btnFcMine">⛏️ 挖掘一轮</button>
+            <button class="btn" id="btnFcPool">📚 因子池</button>
+          </div>
+          <div id="fcMineResult" class="audit-note"></div>
+        </div>
+      </section>
+
+      <!-- 板块资金流 (★4.6) -->
+      <section class="page" id="page-sflow" style="display:none">
+        <div class="page-head">
+          <h2>板块资金流向</h2>
+          <div class="tabs" id="sflowTabs">
+            <button class="tab active" data-type="industry">🏭 行业板块</button>
+            <button class="tab" data-type="concept">🧠 概念板块</button>
+          </div>
+          <div class="spacer"></div>
+          <span class="tip" id="sflowInfo"></span>
+          <span class="tip" id="sflowTime"></span>
+        </div>
+        <div class="tip" id="sflowNews" style="padding:0 2px 8px;"></div>
+        <div class="sflow-stats" id="sflowStats"></div>
+        <div class="card">
+          <div class="card-title">资金流转图（左=主力净流出 · 右=主力净流入 · 连线=资金流转）</div>
+          <div id="sflowChart" style="width:100%;height:520px;"></div>
+          <div class="tip" id="sflowNote" style="padding:8px;"></div>
+        </div>
+        <div class="sflow-cols">
+          <div class="card">
+            <div class="card-title">🔴 主力净流入 TOP6</div>
+            <div id="sflowInList"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">🟢 主力净流出 TOP6</div>
+            <div id="sflowOutList"></div>
+          </div>
+        </div>
+      </section>
+      <section class="page" id="page-global" style="display:none">
+        <div class="page-head">
+          <h2>🌍 全球市场</h2>
+          <div class="spacer"></div>
+          <span class="tip" id="gmUpdated"></span>
+          <button class="btn" id="gmRefresh">🔄 刷新</button>
+        </div>
+        <!-- 全球情绪条 -->
+        <div class="card">
+          <div class="card-title">🌡️ 全球情绪 <span class="tip" id="gmEmoStatus"></span></div>
+          <div class="gm-bar">
+            <div class="gm-emo-item"><span class="gm-label">上涨市场</span><b id="gmUpN">—</b><span class="tip">/ <span id="gmTotN">—</span></span></div>
+            <div class="gm-emo-item"><span class="gm-label">VIX</span><b id="gmVix" class="vix-badge">—</b></div>
+            <div class="gm-emo-item"><span class="gm-label">最强</span><b id="gmStrong">—</b></div>
+            <div class="gm-emo-item"><span class="gm-label">最弱</span><b id="gmWeak">—</b></div>
+          </div>
+          <div class="gm-hints" id="gmHints"></div>
+          <!-- ★ 外盘个股异动横条（|涨跌幅|≥2%，不足3只降1.5%） -->
+          <div class="gm-movers" id="gmMovers"><span class="tip">🔥 外盘异动：加载中…</span></div>
+        </div>
+        <!-- 市场卡片五类：美股（含个股）/港股/日韩/欧洲/商品外汇 -->
+        <div class="gm-grid">
+          <div class="card gm-card"><div class="card-title">🇺🇸 美股 <span class="status-badge" id="gmBadge_us"></span></div><div id="gmBody_us"></div></div>
+          <div class="card gm-card"><div class="card-title">🇭🇰 港股 <span class="status-badge" id="gmBadge_hk"></span></div><div id="gmBody_hk"></div></div>
+          <div class="card gm-card"><div class="card-title">🌸 日韩 <span class="status-badge" id="gmBadge_jp"></span></div><div id="gmBody_jp"></div></div>
+          <div class="card gm-card"><div class="card-title">🇪🇺 欧洲 <span class="status-badge" id="gmBadge_eu"></span></div><div id="gmBody_eu"></div></div>
+          <div class="card gm-card gm-wide"><div class="card-title">🛢️ 商品 / 💱 外汇 <span class="status-badge" id="gmBadge_fx"></span></div><div id="gmBody_fx"></div></div>
+        </div>
+        <div class="card">
+          <div class="card-title">📰 全球市场相关新闻 <button class="btn mini" id="gmNewsRefresh">🔄</button></div>
+          <div id="gmNewsList" class="gm-news"></div>
+        </div>
+      </section>
+      <section class="page" id="page-pnews" style="display:none">
+        <div class="page-head">
+          <h2>盘前新闻</h2>
+          <div class="tabs" id="pnScopeTabs">
+            <button class="tab active" data-scope="all">全部</button>
+            <button class="tab" data-scope="global">🌍 全球宏观</button>
+            <button class="tab" data-scope="ashare">🇨🇳 A股</button>
+          </div>
+          <div class="tabs" id="pnViewTabs">
+            <button class="tab active" data-view="list">📃 列表</button>
+            <button class="tab" data-view="sector">🏷️ 板块多空</button>
+          </div>
+          <div class="spacer"></div>
+          <span class="tip" id="pnStatus"></span>
+          <button id="pnRefresh">🔄 刷新</button>
+          <button id="pnBriefBtn">📋 盘前简报</button>
+        </div>
+        <div class="pn-bar">
+          <span class="tip">重要度</span>
+          <div class="tabs" id="pnMinTabs">
+            <button class="tab" data-min="0">全部</button>
+            <button class="tab active" data-min="2">≥2</button>
+            <button class="tab" data-min="3">≥3</button>
+            <button class="tab" data-min="4">≥4</button>
+          </div>
+          <span class="tip" id="pnStats"></span>
+        </div>
+        <div id="pnList"></div>
+      </section>
+
+      <!-- 审计复盘 (v3.5) -->
+      <section class="page" id="page-audit" style="display:none">
+        <div class="page-head">
+          <h2>审计复盘</h2>
+          <div class="search-box">
+            <input id="auditDay" type="date" />
+          </div>
+          <div class="spacer"></div>
+          <button class="btn" id="btnAuditRefresh">🔄 刷新</button>
+          <button class="btn" id="btnDailyPush">📊 推送日结</button>
+          <button class="btn primary" id="btnReviewNow">🤖 生成复盘</button>
+        </div>
+        <div class="asset-cards" id="auditSummary"></div>
+        <div class="audit-status" id="auditChain"></div>
+        <div class="card">
+          <div class="card-title">全链路事件流（信号→风控→成交→持仓）<span class="tip" id="auditTip"></span></div>
+          <div class="event-box tall" id="auditList"></div>
+        </div>
+        <div class="card">
+          <div class="card-title">🤖 复盘报告</div>
+          <div class="review-box" id="auditReview"><div class="placeholder small">点击「生成复盘」或到设置页配置 LLM 后生成自然语言复盘</div></div>
+        </div>
+      </section>
+
+      <!-- 设置 -->
+      <section class="page" id="page-settings" style="display:none">
+        <div class="settings-layout">
+          <div class="card">
+            <div class="card-title">交易成本模型（真实A股规则）</div>
+            <div class="kv-grid wide">
+              <div><span>佣金档位</span>
+                <b><select id="setCommTier" class="sel small"></select></b></div>
+              <div><span>印花税</span><b>0.05%（仅卖出）</b></div>
+              <div><span>滑点</span><b>按市值分档（4.2）</b></div>
+              <div><span>T+1</span><b>当日买入不可卖出</b></div>
+              <div><span>涨跌停</span><b>主板±10% / 创业科创±20% / ST±5% / 北交所±30%</b></div>
+              <div><span>停牌</span><b>无行情不可交易</b></div>
+            </div>
+            <button class="btn small" id="btnSaveComm" style="margin-top:8px">保存佣金档位</button>
+          </div>
+          <div class="card">
+            <div class="card-title">微信提醒（Server酱）</div>
+            <div class="form-row"><label>SendKey</label>
+              <input id="setSendkey" type="password" placeholder="SCTxxxx…" /></div>
+            <div class="form-row"><label>企业微信 Webhook</label>
+              <input id="setWecom" type="text" placeholder="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=…" /></div>
+            <div class="form-row"><label>钉钉 Webhook</label>
+              <input id="setDingtalk" type="text" placeholder="https://oapi.dingtalk.com/robot/send?access_token=…" /></div>
+            <div class="form-row"><label>启用</label>
+              <label class="chk"><input type="checkbox" id="setNotify" /> 推送买卖/异动提醒</label></div>
+            <div class="form-row"><label>日结</label>
+              <label class="chk"><input type="checkbox" id="setDaily" checked /> 每日收盘推送日结报告</label></div>
+            <button class="btn" id="btnSaveNotify">保存</button>
+          </div>
+          <div class="card">
+            <div class="card-title">🔄 数据更新（4.5）<span class="tip">启动自动增量补库 + 手动触发</span></div>
+            <div class="form-row"><label>min5 最新</label><b id="upMin5">—</b></div>
+            <div class="form-row"><label>日K 最新</label><b id="upDay">—</b></div>
+            <div class="form-row"><label>状态</label><b id="upState">—</b></div>
+            <button class="btn" id="btnDataUpdate" style="margin-top:8px">⚡ 立即更新数据</button>
+            <div id="upMsg" class="audit-note" style="margin-top:8px"></div>
+          </div>
+          <div class="card">
+            <div class="card-title">🤖 LLM 复盘（v3.5）</div>
+            <div class="tip" style="margin-bottom:8px">生成当日交易自然语言复盘报告。优先用本地 Ollama（免费）；未配置时输出结构化总结。</div>
+            <div class="form-row"><label>Ollama 地址</label>
+              <input id="setOllamaUrl" type="text" value="http://127.0.0.1:11434" /></div>
+            <div class="form-row"><label>Ollama 模型</label>
+              <input id="setOllamaModel" type="text" placeholder="如 qwen2.5:7b（留空则用API）" /></div>
+            <div class="form-row"><label>API Key</label>
+              <input id="setApiKey" type="password" placeholder="DeepSeek/OpenAI…" /></div>
+            <div class="form-row"><label>API 地址</label>
+              <input id="setApiBase" type="text" value="https://api.deepseek.com/v1" /></div>
+            <div class="form-row"><label>API 模型</label>
+              <input id="setApiModel" type="text" placeholder="如 deepseek-chat" /></div>
+            <button class="btn" id="btnSaveLlm">保存 LLM 配置</button>
+            <button class="btn" id="btnGenReview" style="margin-left:8px">📝 生成今日复盘</button>
+            <div id="reviewResult" class="review-box" style="display:none;margin-top:10px"></div>
+          </div>
+          <div class="card danger">
+            <div class="card-title">危险操作</div>
+            <button class="btn danger" id="btnReset">重置模拟盘账户（清空持仓与流水）</button>
+          </div>
+        </div>
+      </section>
+    <section class="page" id="page-experiments" style="display:none">
+      <div class="page-head"><h2>🧪 实验台账</h2><span class="tip" id="exp-count"></span></div>
+      <div id="exp-stats" class="exp-stats"></div>
+      <div id="exp-err" class="exp-err" style="color:#e06c75"></div>
+      <div class="exp-toolbar">
+        <input id="exp-q" class="exp-input" type="search" placeholder="🔍 搜索名称/出处/判定…" />
+        <select id="exp-filter-status" class="exp-select">
+          <option value="all">全部状态</option>
+          <option value="passed">✅ 通过/落地</option>
+          <option value="failed">❌ 否决/不通过</option>
+          <option value="partial">◐ 部分通过</option>
+          <option value="running">⏳ 在跑</option>
+          <option value="pending">⏳ 待办/挂起</option>
+          <option value="unknown">— 未知</option>
+        </select>
+        <select id="exp-filter-pid" class="exp-select">
+          <option value="">全部 P 编号</option>
+        </select>
+        <select id="exp-sort" class="exp-select">
+          <option value="date">按日期</option>
+          <option value="strength">按结论强度</option>
+        </select>
+        <button id="exp-refresh" class="btn small">↻ 刷新</button>
+        <div class="exp-tabs">
+          <button class="exp-tab active" id="tab-ledger">实验台账</button>
+          <button class="exp-tab" id="tab-lib">声明库</button>
+        </div>
+      </div>
+      <div id="exp-ledger-pane">
+        <div class="exp-table-wrap">
+          <table class="exp-table">
+            <thead>
+              <tr>
+                <th>日期</th><th>实验 / 报告</th><th>口径·快照</th><th>状态</th>
+                <th>结论</th><th>关键数字</th><th>证据出处</th><th>判定摘要</th>
+              </tr>
+            </thead>
+            <tbody id="exp-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+      <div id="exp-lib-pane" style="display:none">
+        <div class="card"><div class="card-title">遗留风险看板（跨阶段，docs/backlog.md）</div>
+          <div id="exp-risks"></div></div>
+        <div class="card"><div class="card-title">P64 overstatement（static−PIT，正=静态高估；规则解析自 bt_*.json）</div>
+          <div id="exp-over"></div></div>
+      </div>
+    </section>
+    <section class="page" id="page-tactics" style="display:none">
+      <div class="page-head"><h2>🎯 战法选股</h2>
+        <span class="tip" id="tct-meta"></span>
+        <span class="tip" id="tct-coverage" style="margin-left:12px"></span></div>
+      <div class="exp-tabs" id="tct-tabs">
+        <button class="exp-tab active" data-tactic="shouban">首板回调</button>
+        <button class="exp-tab" data-tactic="lianban">连板梯队</button>
+        <button class="exp-tab" data-tactic="jingjia_daban">竞价打板</button>
+        <button class="exp-tab" data-tactic="jingjia_w2s">竞价弱转强</button>
+      </div>
+      <div class="exp-tabs" id="tct-ladders" style="display:none;margin:4px 0 8px"></div>
+      <div id="tct-notice" class="tct-honest-note" style="display:none;margin:4px 0 8px"></div>
+      <div class="exp-table-wrap">
+        <table class="exp-table" id="tct-table">
+          <thead><tr id="tct-head"></tr></thead>
+          <tbody id="tct-tbody"></tbody>
+        </table>
+      </div>
+      <div id="tct-err" class="exp-err" style="color:#e06c75"></div>
+    </section>
+    <section class="page" id="page-datahealth" style="display:none">
+      <div class="page-head"><h2>🩺 数据健康</h2>
+        <span class="tip" id="dhUpdated"></span></div>
+      <div id="dhStatus" style="margin:10px 0 14px 0"></div>
+      <div id="dhCards" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:12px"></div>
+      <div id="dhError" style="display:none;margin-top:10px;color:#e06c75"></div>
+    </section>
+    </main>
+  </div>
+
+  <!-- 底部状态 -->
+  <footer class="statusbar">
+    <span id="sbData">数据源: 腾讯/新浪</span>
+    <span id="sbCache">缓存: —</span>
+    <span id="sbLast">最后刷新: —</span>
+    <span class="spacer"></span>
+    <span id="sbMsg">就绪</span>
+  </footer>
+</div>
+
+<!-- 盘前简报弹层 (★4.8) -->
+<div class="modal-mask" id="briefModal" style="display:none">
+  <div class="modal">
+    <div class="modal-head">📰 盘前新闻简报 <span class="tip" id="briefMeta"></span><button class="icon-btn" id="btnBriefClose">✕</button></div>
+    <div class="modal-body" id="briefBody"></div>
+    <div class="modal-foot">
+      <button class="btn" id="btnBriefGo">查看盘前新闻</button>
+      <button class="btn primary" id="btnBriefOk">知道了</button>
+    </div>
+  </div>
+</div>
+
+<!-- 日志弹层 -->
+<div class="modal-mask" id="logModal" style="display:none">
+  <div class="modal">
+    <div class="modal-head">服务端日志 <button class="icon-btn" id="btnLogClose">✕</button></div>
+    <pre id="logBox" class="log-box"></pre>
+  </div>
+</div>
+
+<!-- 交易弹层 -->
+<div class="modal-mask" id="tradeModal" style="display:none">
+  <div class="modal small">
+    <div class="modal-head"><span id="tmTitle">买入</span><button class="icon-btn" id="tmClose">✕</button></div>
+    <div class="modal-body">
+      <div class="form-row"><label>代码</label><input id="tmCode" type="text" /></div>
+      <div class="form-row"><label>数量(股)</label><input id="tmQty" type="number" value="100" step="100" /></div>
+      <div class="form-row"><label>价格(留空=现价)</label><input id="tmPrice" type="text" /></div>
+      <div class="form-row"><label>名称</label><span id="tmName"></span></div>
+      <div class="tm-msg" id="tmMsg"></div>
+    </div>
+    <div class="modal-foot"><button class="btn primary" id="tmOk">确认</button></div>
+  </div>
+</div>
+
+<!-- J5（2026-09-13）：模块化入口 main.js（ES Module，含轮询降级/差量更新）；
+     回退单体版：注释 main.js、取消 app.legacy.js 注释即可 -->
+<script src="vendor/echarts.min.js?v=20260913"></script>
+<script src="js/charts.js?v=20260818021126"></script>
+<script src="js/depth.js?v=202609161700"></script>
+<script type="module" src="js/main.js?v=202609132330"></script>
+<!-- <script src="js/app.legacy.js?v=20260913160831"></script> -->
+<script src="js/experiments.js?v=20260901003655"></script>
+</body>
+</html>

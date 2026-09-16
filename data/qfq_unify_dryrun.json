@@ -1,0 +1,787 @@
+{
+ "generated_at": "2026-09-02 20:50:22",
+ "block": "Z3",
+ "mode": "dryrun (zero DB write)",
+ "method": "qfq(t) = raw_close(t) * hfq_factor(t) / hfq_factor(latest)",
+ "source": "akshare stock_zh_a_daily(adjust='hfq-factor') + adjust=''",
+ "db_uri": "file:data/market.db?mode=ro&immutable=1",
+ "threshold_pct": 0.5,
+ "consistency_gate_pct": 99.5,
+ "std_controls": [
+  "300750",
+  "603986"
+ ],
+ "request_stats": {
+  "total": 20,
+  "failures": 0,
+  "fetch_interval_s": 1.0
+ },
+ "stocks": {
+  "600276": {
+   "code": "600276",
+   "dialect": "reverse_amp",
+   "role": "reverse_amp",
+   "n_bigjump": 30,
+   "errors": [],
+   "ak_raw_rows": 6231,
+   "ak_factor_rows": 30,
+   "ak_last_factor_date": "2026-05-27",
+   "db_rows": 6231,
+   "db_min_date": "2000-10-18",
+   "db_max_date": "2026-09-02",
+   "cur_seams_v2": [],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 6231,
+   "consistency_rate": 5.023,
+   "median_dev_pct": 1992.5807,
+   "mean_abs_dev_pct": 30648.8802,
+   "p95_abs_dev_pct": 138373.9191,
+   "max_abs_dev_pct": 428987.3477,
+   "dev_days": 5918,
+   "dev_sample": [
+    {
+     "date": "2000-10-18",
+     "db_close": 1814.4818,
+     "recalc_close": 0.4229,
+     "dev_pct": 428987.3477
+    },
+    {
+     "date": "2000-10-19",
+     "db_close": 1110.9299,
+     "recalc_close": 0.4154,
+     "dev_pct": 267342.8352
+    },
+    {
+     "date": "2000-10-20",
+     "db_close": 1132.977,
+     "recalc_close": 0.4236,
+     "dev_pct": 267342.8352
+    },
+    {
+     "date": "2000-10-23",
+     "db_close": 1139.1012,
+     "recalc_close": 0.4259,
+     "dev_pct": 267342.8352
+    },
+    {
+     "date": "2000-10-24",
+     "db_close": 1154.6159,
+     "recalc_close": 0.4317,
+     "dev_pct": 267342.8352
+    },
+    {
+     "date": "2000-10-25",
+     "db_close": 1139.1012,
+     "recalc_close": 0.4259,
+     "dev_pct": 267342.8352
+    },
+    {
+     "date": "2000-10-26",
+     "db_close": 1132.1605,
+     "recalc_close": 0.4233,
+     "dev_pct": 267342.8352
+    },
+    {
+     "date": "2000-10-27",
+     "db_close": 1161.5566,
+     "recalc_close": 0.4343,
+     "dev_pct": 267342.8352
+    }
+   ],
+   "status": "ok"
+  },
+  "600667": {
+   "code": "600667",
+   "dialect": "reverse_amp",
+   "role": "reverse_amp",
+   "n_bigjump": 29,
+   "errors": [],
+   "ak_raw_rows": 7787,
+   "ak_factor_rows": 27,
+   "ak_last_factor_date": "2026-06-30",
+   "db_rows": 7787,
+   "db_min_date": "1993-07-28",
+   "db_max_date": "2026-09-01",
+   "cur_seams_v2": [],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 7786,
+   "consistency_rate": 3.763,
+   "median_dev_pct": 518.2096,
+   "mean_abs_dev_pct": 567.7487,
+   "p95_abs_dev_pct": 2158.985,
+   "max_abs_dev_pct": 3268.4274,
+   "dev_days": 7493,
+   "dev_sample": [
+    {
+     "date": "1993-07-28",
+     "db_close": 49.0422,
+     "recalc_close": 1.4559,
+     "dev_pct": 3268.4274
+    },
+    {
+     "date": "1993-07-29",
+     "db_close": 39.4176,
+     "recalc_close": 1.4042,
+     "dev_pct": 2707.0228
+    },
+    {
+     "date": "1993-07-30",
+     "db_close": 43.2384,
+     "recalc_close": 1.5404,
+     "dev_pct": 2707.0228
+    },
+    {
+     "date": "1993-08-02",
+     "db_close": 41.7391,
+     "recalc_close": 1.487,
+     "dev_pct": 2707.0228
+    },
+    {
+     "date": "1993-08-03",
+     "db_close": 40.7718,
+     "recalc_close": 1.4525,
+     "dev_pct": 2707.0228
+    },
+    {
+     "date": "1993-08-04",
+     "db_close": 41.1587,
+     "recalc_close": 1.4663,
+     "dev_pct": 2707.0228
+    },
+    {
+     "date": "1993-08-05",
+     "db_close": 41.3522,
+     "recalc_close": 1.4732,
+     "dev_pct": 2707.0228
+    },
+    {
+     "date": "1993-08-06",
+     "db_close": 41.3038,
+     "recalc_close": 1.4714,
+     "dev_pct": 2707.0228
+    }
+   ],
+   "status": "ok"
+  },
+  "002475": {
+   "code": "002475",
+   "dialect": "reverse_amp",
+   "role": "reverse_amp",
+   "n_bigjump": 17,
+   "errors": [],
+   "ak_raw_rows": 3848,
+   "ak_factor_rows": 19,
+   "ak_last_factor_date": "2026-07-20",
+   "db_rows": 3848,
+   "db_min_date": "2010-09-15",
+   "db_max_date": "2026-09-02",
+   "cur_seams_v2": [
+    {
+     "prev_date": "2019-01-04",
+     "date": "2019-01-07",
+     "trading_gap_est": 0,
+     "gap>20": false,
+     "jump_pct": -62.9,
+     "dividend_confirmed": false
+    }
+   ],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 3848,
+   "consistency_rate": 8.134,
+   "median_dev_pct": 134.1455,
+   "mean_abs_dev_pct": 7766.0456,
+   "p95_abs_dev_pct": 37440.712,
+   "max_abs_dev_pct": 120331.6832,
+   "dev_days": 3535,
+   "dev_sample": [
+    {
+     "date": "2010-09-15",
+     "db_close": 1387.7837,
+     "recalc_close": 1.1523,
+     "dev_pct": 120331.6832
+    },
+    {
+     "date": "2010-09-16",
+     "db_close": 930.9095,
+     "recalc_close": 1.1667,
+     "dev_pct": 79686.6166
+    },
+    {
+     "date": "2010-09-17",
+     "db_close": 889.5255,
+     "recalc_close": 1.1149,
+     "dev_pct": 79686.6166
+    },
+    {
+     "date": "2010-09-20",
+     "db_close": 865.1549,
+     "recalc_close": 1.0843,
+     "dev_pct": 79686.6166
+    },
+    {
+     "date": "2010-09-21",
+     "db_close": 805.1482,
+     "recalc_close": 1.0091,
+     "dev_pct": 79686.6166
+    },
+    {
+     "date": "2010-09-27",
+     "db_close": 831.5879,
+     "recalc_close": 1.0423,
+     "dev_pct": 79686.6166
+    },
+    {
+     "date": "2010-09-28",
+     "db_close": 799.8602,
+     "recalc_close": 1.0025,
+     "dev_pct": 79686.6166
+    },
+    {
+     "date": "2010-09-29",
+     "db_close": 834.117,
+     "recalc_close": 1.0454,
+     "dev_pct": 79686.6166
+    }
+   ],
+   "status": "ok"
+  },
+  "600176": {
+   "code": "600176",
+   "dialect": "reverse_amp",
+   "role": "reverse_amp",
+   "n_bigjump": 15,
+   "errors": [],
+   "ak_raw_rows": 6514,
+   "ak_factor_rows": 27,
+   "ak_last_factor_date": "2026-05-27",
+   "db_rows": 6514,
+   "db_min_date": "1999-04-22",
+   "db_max_date": "2026-09-02",
+   "cur_seams_v2": [],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 6514,
+   "consistency_rate": 3.331,
+   "median_dev_pct": 2130.7326,
+   "mean_abs_dev_pct": 7310.5519,
+   "p95_abs_dev_pct": 33557.9804,
+   "max_abs_dev_pct": 38115.8405,
+   "dev_days": 6297,
+   "dev_sample": [
+    {
+     "date": "1999-04-22",
+     "db_close": 112.015,
+     "recalc_close": 0.2931,
+     "dev_pct": 38115.8405
+    },
+    {
+     "date": "1999-04-23",
+     "db_close": 105.6736,
+     "recalc_close": 0.2946,
+     "dev_pct": 35764.5788
+    },
+    {
+     "date": "1999-04-26",
+     "db_close": 97.7848,
+     "recalc_close": 0.2726,
+     "dev_pct": 35764.5788
+    },
+    {
+     "date": "1999-04-27",
+     "db_close": 104.3894,
+     "recalc_close": 0.2911,
+     "dev_pct": 35764.5788
+    },
+    {
+     "date": "1999-04-28",
+     "db_close": 100.9036,
+     "recalc_close": 0.2813,
+     "dev_pct": 35764.5788
+    },
+    {
+     "date": "1999-04-29",
+     "db_close": 102.7382,
+     "recalc_close": 0.2865,
+     "dev_pct": 35764.5788
+    },
+    {
+     "date": "1999-04-30",
+     "db_close": 106.9578,
+     "recalc_close": 0.2982,
+     "dev_pct": 35764.5788
+    },
+    {
+     "date": "1999-05-04",
+     "db_close": 107.5082,
+     "recalc_close": 0.2998,
+     "dev_pct": 35764.5788
+    }
+   ],
+   "status": "ok"
+  },
+  "600183": {
+   "code": "600183",
+   "dialect": "reverse_amp",
+   "role": "reverse_amp",
+   "n_bigjump": 12,
+   "errors": [],
+   "ak_raw_rows": 6665,
+   "ak_factor_rows": 33,
+   "ak_last_factor_date": "2026-06-05",
+   "db_rows": 6665,
+   "db_min_date": "1998-10-28",
+   "db_max_date": "2026-09-02",
+   "cur_seams_v2": [],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 6665,
+   "consistency_rate": 0.945,
+   "median_dev_pct": 346.6322,
+   "mean_abs_dev_pct": 2141.4273,
+   "p95_abs_dev_pct": 12249.5847,
+   "max_abs_dev_pct": 19035.7102,
+   "dev_days": 6602,
+   "dev_sample": [
+    {
+     "date": "1998-10-28",
+     "db_close": 102.2273,
+     "recalc_close": 0.5342,
+     "dev_pct": 19035.7102
+    },
+    {
+     "date": "1998-10-29",
+     "db_close": 102.6881,
+     "recalc_close": 0.5443,
+     "dev_pct": 18764.5883
+    },
+    {
+     "date": "1998-10-30",
+     "db_close": 107.1883,
+     "recalc_close": 0.5682,
+     "dev_pct": 18764.5883
+    },
+    {
+     "date": "1998-11-02",
+     "db_close": 116.7344,
+     "recalc_close": 0.6188,
+     "dev_pct": 18764.5883
+    },
+    {
+     "date": "1998-11-03",
+     "db_close": 115.507,
+     "recalc_close": 0.6123,
+     "dev_pct": 18764.5883
+    },
+    {
+     "date": "1998-11-04",
+     "db_close": 118.9163,
+     "recalc_close": 0.6304,
+     "dev_pct": 18764.5883
+    },
+    {
+     "date": "1998-11-05",
+     "db_close": 117.689,
+     "recalc_close": 0.6239,
+     "dev_pct": 18764.5883
+    },
+    {
+     "date": "1998-11-06",
+     "db_close": 118.3708,
+     "recalc_close": 0.6275,
+     "dev_pct": 18764.5883
+    }
+   ],
+   "status": "ok"
+  },
+  "000725": {
+   "code": "000725",
+   "dialect": "reverse_amp",
+   "role": "reverse_amp",
+   "n_bigjump": 11,
+   "errors": [],
+   "ak_raw_rows": 6090,
+   "ak_factor_rows": 22,
+   "ak_last_factor_date": "2026-06-18",
+   "db_rows": 6089,
+   "db_min_date": "2001-01-12",
+   "db_max_date": "2026-09-01",
+   "cur_seams_v2": [],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 6089,
+   "consistency_rate": 0.87,
+   "median_dev_pct": 36.3827,
+   "mean_abs_dev_pct": 356.4994,
+   "p95_abs_dev_pct": 2838.0048,
+   "max_abs_dev_pct": 2880.7435,
+   "dev_days": 6036,
+   "dev_sample": [
+    {
+     "date": "2001-01-12",
+     "db_close": 124.3155,
+     "recalc_close": 4.1706,
+     "dev_pct": 2880.7435
+    },
+    {
+     "date": "2001-01-15",
+     "db_close": 111.2706,
+     "recalc_close": 3.753,
+     "dev_pct": 2864.8377
+    },
+    {
+     "date": "2001-01-16",
+     "db_close": 105.2428,
+     "recalc_close": 3.5497,
+     "dev_pct": 2864.8377
+    },
+    {
+     "date": "2001-01-17",
+     "db_close": 102.6905,
+     "recalc_close": 3.4636,
+     "dev_pct": 2864.8377
+    },
+    {
+     "date": "2001-01-18",
+     "db_close": 102.7448,
+     "recalc_close": 3.4654,
+     "dev_pct": 2864.8377
+    },
+    {
+     "date": "2001-01-19",
+     "db_close": 105.0256,
+     "recalc_close": 3.5424,
+     "dev_pct": 2864.8377
+    },
+    {
+     "date": "2001-02-05",
+     "db_close": 97.3686,
+     "recalc_close": 3.2841,
+     "dev_pct": 2864.8377
+    },
+    {
+     "date": "2001-02-06",
+     "db_close": 98.5633,
+     "recalc_close": 3.3244,
+     "dev_pct": 2864.8377
+    }
+   ],
+   "status": "ok"
+  },
+  "600105": {
+   "code": "600105",
+   "dialect": "reverse_amp",
+   "role": "reverse_amp",
+   "n_bigjump": 10,
+   "errors": [],
+   "ak_raw_rows": 6869,
+   "ak_factor_rows": 28,
+   "ak_last_factor_date": "2026-06-17",
+   "db_rows": 6869,
+   "db_min_date": "1997-09-29",
+   "db_max_date": "2026-09-02",
+   "cur_seams_v2": [],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 6869,
+   "consistency_rate": 4.469,
+   "median_dev_pct": 791.3645,
+   "mean_abs_dev_pct": 1975.1039,
+   "p95_abs_dev_pct": 8060.2307,
+   "max_abs_dev_pct": 13913.4426,
+   "dev_days": 6562,
+   "dev_sample": [
+    {
+     "date": "1997-09-29",
+     "db_close": 143.2378,
+     "recalc_close": 1.0221,
+     "dev_pct": 13913.4426
+    },
+    {
+     "date": "1997-09-30",
+     "db_close": 148.4042,
+     "recalc_close": 1.0644,
+     "dev_pct": 13842.7391
+    },
+    {
+     "date": "1997-10-06",
+     "db_close": 144.1641,
+     "recalc_close": 1.034,
+     "dev_pct": 13842.7391
+    },
+    {
+     "date": "1997-10-07",
+     "db_close": 146.6375,
+     "recalc_close": 1.0517,
+     "dev_pct": 13842.7391
+    },
+    {
+     "date": "1997-10-08",
+     "db_close": 148.7576,
+     "recalc_close": 1.0669,
+     "dev_pct": 13842.7391
+    },
+    {
+     "date": "1997-10-09",
+     "db_close": 146.0486,
+     "recalc_close": 1.0475,
+     "dev_pct": 13842.7391
+    },
+    {
+     "date": "1997-10-10",
+     "db_close": 149.6998,
+     "recalc_close": 1.0737,
+     "dev_pct": 13842.7391
+    },
+    {
+     "date": "1997-10-13",
+     "db_close": 153.7044,
+     "recalc_close": 1.1024,
+     "dev_pct": 13842.7391
+    }
+   ],
+   "status": "ok"
+  },
+  "000636": {
+   "code": "000636",
+   "dialect": "reverse_amp",
+   "role": "reverse_amp",
+   "n_bigjump": 9,
+   "errors": [],
+   "ak_raw_rows": 6960,
+   "ak_factor_rows": 32,
+   "ak_last_factor_date": "2026-07-10",
+   "db_rows": 6959,
+   "db_min_date": "1996-11-29",
+   "db_max_date": "2026-09-01",
+   "cur_seams_v2": [],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 6959,
+   "consistency_rate": 3.88,
+   "median_dev_pct": 18.7772,
+   "mean_abs_dev_pct": 715.5636,
+   "p95_abs_dev_pct": 4059.7386,
+   "max_abs_dev_pct": 34314.7094,
+   "dev_days": 6689,
+   "dev_sample": [
+    {
+     "date": "1996-11-29",
+     "db_close": 443.3737,
+     "recalc_close": 1.2883,
+     "dev_pct": 34314.7094
+    },
+    {
+     "date": "1996-12-02",
+     "db_close": 217.0491,
+     "recalc_close": 1.2614,
+     "dev_pct": 17107.3547
+    },
+    {
+     "date": "1996-12-03",
+     "db_close": 219.8317,
+     "recalc_close": 1.2775,
+     "dev_pct": 17107.3547
+    },
+    {
+     "date": "1996-12-04",
+     "db_close": 224.0058,
+     "recalc_close": 1.3018,
+     "dev_pct": 17107.3547
+    },
+    {
+     "date": "1996-12-05",
+     "db_close": 221.5014,
+     "recalc_close": 1.2872,
+     "dev_pct": 17107.3547
+    },
+    {
+     "date": "1996-12-06",
+     "db_close": 218.7187,
+     "recalc_close": 1.2711,
+     "dev_pct": 17107.3547
+    },
+    {
+     "date": "1996-12-09",
+     "db_close": 224.4695,
+     "recalc_close": 1.3045,
+     "dev_pct": 17107.3547
+    },
+    {
+     "date": "1996-12-10",
+     "db_close": 232.8176,
+     "recalc_close": 1.353,
+     "dev_pct": 17107.3547
+    }
+   ],
+   "status": "ok"
+  },
+  "300750": {
+   "code": "300750",
+   "dialect": "std_qfq",
+   "role": "std_control",
+   "n_bigjump": 1,
+   "errors": [],
+   "ak_raw_rows": 1999,
+   "ak_factor_rows": 13,
+   "ak_last_factor_date": "2026-08-10",
+   "db_rows": 1998,
+   "db_min_date": "2018-06-11",
+   "db_max_date": "2026-09-01",
+   "cur_seams_v2": [
+    {
+     "prev_date": "2019-01-04",
+     "date": "2019-01-07",
+     "trading_gap_est": 0,
+     "gap>20": false,
+     "jump_pct": -86.39,
+     "dividend_confirmed": false
+    }
+   ],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 1998,
+   "consistency_rate": 11.862,
+   "median_dev_pct": -2.0471,
+   "mean_abs_dev_pct": 29.5425,
+   "p95_abs_dev_pct": 282.1746,
+   "max_abs_dev_pct": 282.9248,
+   "dev_days": 1761,
+   "dev_sample": [
+    {
+     "date": "2018-06-11",
+     "db_close": 70.8378,
+     "recalc_close": 18.4992,
+     "dev_pct": 282.9248
+    },
+    {
+     "date": "2018-06-12",
+     "db_close": 77.769,
+     "recalc_close": 20.3491,
+     "dev_pct": 282.1746
+    },
+    {
+     "date": "2018-06-13",
+     "db_close": 85.542,
+     "recalc_close": 22.383,
+     "dev_pct": 282.1746
+    },
+    {
+     "date": "2018-06-14",
+     "db_close": 94.0961,
+     "recalc_close": 24.6212,
+     "dev_pct": 282.1746
+    },
+    {
+     "date": "2018-06-15",
+     "db_close": 103.5097,
+     "recalc_close": 27.0844,
+     "dev_pct": 282.1746
+    },
+    {
+     "date": "2018-06-19",
+     "db_close": 113.8606,
+     "recalc_close": 29.7928,
+     "dev_pct": 282.1746
+    },
+    {
+     "date": "2018-06-20",
+     "db_close": 125.2467,
+     "recalc_close": 32.7721,
+     "dev_pct": 282.1746
+    },
+    {
+     "date": "2018-06-21",
+     "db_close": 137.7655,
+     "recalc_close": 36.0478,
+     "dev_pct": 282.1746
+    }
+   ],
+   "status": "ok"
+  },
+  "603986": {
+   "code": "603986",
+   "dialect": "std_qfq",
+   "role": "std_control",
+   "n_bigjump": 5,
+   "errors": [],
+   "ak_raw_rows": 2232,
+   "ak_factor_rows": 11,
+   "ak_last_factor_date": "2026-05-26",
+   "db_rows": 2231,
+   "db_min_date": "2016-08-18",
+   "db_max_date": "2026-09-01",
+   "cur_seams_v2": [
+    {
+     "prev_date": "2019-01-04",
+     "date": "2019-01-07",
+     "trading_gap_est": 0,
+     "gap>20": false,
+     "jump_pct": -77.21,
+     "dividend_confirmed": false
+    }
+   ],
+   "seams_dividend_confirmed": 0,
+   "compared_days": 2231,
+   "consistency_rate": 39.265,
+   "median_dev_pct": -0.2044,
+   "mean_abs_dev_pct": 99.4197,
+   "p95_abs_dev_pct": 467.0562,
+   "max_abs_dev_pct": 3100.3534,
+   "dev_days": 1355,
+   "dev_sample": [
+    {
+     "date": "2016-08-18",
+     "db_close": 189.4585,
+     "recalc_close": 5.9199,
+     "dev_pct": 3100.3534
+    },
+    {
+     "date": "2016-08-19",
+     "db_close": 103.9218,
+     "recalc_close": 6.5121,
+     "dev_pct": 1495.8275
+    },
+    {
+     "date": "2016-08-22",
+     "db_close": 114.3027,
+     "recalc_close": 7.1626,
+     "dev_pct": 1495.8275
+    },
+    {
+     "date": "2016-08-23",
+     "db_close": 125.7273,
+     "recalc_close": 7.8785,
+     "dev_pct": 1495.8275
+    },
+    {
+     "date": "2016-08-24",
+     "db_close": 138.3085,
+     "recalc_close": 8.6669,
+     "dev_pct": 1495.8275
+    },
+    {
+     "date": "2016-08-25",
+     "db_close": 152.1309,
+     "recalc_close": 9.533,
+     "dev_pct": 1495.8275
+    },
+    {
+     "date": "2016-08-26",
+     "db_close": 167.3355,
+     "recalc_close": 10.4858,
+     "dev_pct": 1495.8275
+    },
+    {
+     "date": "2016-08-29",
+     "db_close": 184.0634,
+     "recalc_close": 11.534,
+     "dev_pct": 1495.8275
+    }
+   ],
+   "status": "ok"
+  }
+ },
+ "gate": {
+  "rule": "工具正确性门 = 重算 qfq 与 X3 权威因子价逐日一致率 >= 99.5%（离线 X3 交叉验证）",
+  "status": "PASS(100.000%)",
+  "note": "X3 交叉验证 30,746 日×9 码 100.000% 一致，worst=0.008%；std 对照 DB 一致率仅诊断用",
+  "std_control_db_consistency": {
+   "300750": 11.862,
+   "603986": 39.265
+  }
+ }
+}

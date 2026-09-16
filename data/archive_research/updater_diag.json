@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-08-31 00:40:00",
+  "role": "T2 任务2 数据通道修复 · 8/31 轮独立交叉验证（8/30 报告后续轮）",
+  "supersedes": "data/updater_diag_20260830.json（8/30 22:40:41 基线，已备份）",
+  "independent_verification_0831": {
+    "note": "按协调协议'共享状态一律自跑只读证据'，对 8/30 报告全部关键数字独立复核，全部通过",
+    "audit_last_events": [
+      {"t": "2026-08-30 22:08:22", "event": "data_update", "min5_updated": 1001, "min5_total": 1004, "min5_empty": 3, "daily_updated": 300, "daily_errors": 0},
+      {"t": "2026-08-30 22:08:46", "event": "data_snapshot", "created": true, "path": "data/snapshots/2026-08-30/market.db"}
+    ],
+    "kline_day_rows": {
+      "2026-08-19": 2023, "2026-08-20": 2022, "2026-08-21": 2023, "2026-08-24": 1227,
+      "2026-08-25": 1116, "2026-08-26": 1044, "2026-08-27": 824, "2026-08-28": 702
+    },
+    "kline_day_max": "2026-08-28",
+    "min5_max": "2026-08-28 15:00:00",
+    "update_state": {"last_day": "2026-08-28"},
+    "snapshots": [
+      {"dir": "2026-08-26", "bytes": 553852928, "rows": 3197526},
+      {"dir": "2026-08-27", "bytes": 1298202624, "rows": 8689645},
+      {"dir": "2026-08-30", "bytes": 1299902464, "rows": 8693312, "max": "2026-08-28"}
+    ],
+    "quality_alert_last": {"date": "2026-08-30T22:09:45", "high_severity": 260, "candidates_total": 1437, "min5_latest": "2026-08-28 15:00:00", "ml_pred_last": "2026-08-19"},
+    "service": {"port_8899_listen": true, "pid": 67120},
+    "conclusion": "8/30 报告全部关键数字独立复核一致，无事实分歧（除日历表述错误，见 calendar_correction）"
+  },
+  "sample_repro_0831": {
+    "note": "8/31 00:30 低峰只读复现，12 只样本（000001-000020 区间），只拉不写，覆盖 5 通道",
+    "interpreter": "C:\\Users\\26838\\AppData\\Local\\Programs\\Python\\Python313\\python.exe（项目真实环境）",
+    "tdx_available": true,
+    "per_channel_ok": {
+      "tdx_day_qfq80": "12/12 (80 rows each)",
+      "tdx_min5_20": "12/12 (20 rows each)",
+      "tencent_day_80": "12/12 (79-80 rows each)",
+      "tencent_mkline_min5_20": "12/12 (20 rows each)",
+      "sina_day_80": "12/12 (80 rows each)"
+    },
+    "per_stock_secs": "0.5-1.7s/只（含 mootdx 首连）",
+    "conclusion": "当前数据源五通道全部可用，TDX 池健康，失败签名（empty=全/errors=300）当前环境不可复现 → 失败为收盘后高峰窗口的临时性上游限流/过载，非代码退化",
+    "caution": "⚠ 若用 Doubao 沙箱解释器（...\\sandbox_runtime\\...\\python.exe）跑会因缺 mootdx 得到 tdx 假阴性；一切项目 python 必须用 Python313 绝对路径"
+  },
+  "calendar_correction": {
+    "issue": "8/30 报告（updater_repair_20260830.md §5/§8）称'08-30 为周六、08-31 为周日、09-01 周一'",
+    "actual": "系统实测 2026-08-31 为星期一；正确日历：08-28 周五、08-29 周六、08-30 周日、08-31 周一、09-01 周二",
+    "impact": "8/30 报告 §8 称'09-01 周一 15:30 后自动更新'为误——实际今天 8/31（周一）15:10-15:40 收盘窗口即触发下一次更新，成功判据验证窗口=今天",
+    "unchanged_verdict": "8/30 快照产出、update_state=08-28（周末 target_day 归 08-28）等结论方向不受影响"
+  },
+  "trigger_mechanism_finding": {
+    "code": "app/trader.py L258-266",
+    "window": "1510 <= hm <= 1540 每日一次",
+    "guard": "today != _last_data_upd（当天置位后不再重试）",
+    "finding": "收盘触发窗口单次、失败当天无自动重试；恢复只靠服务重启（start_background_update L700 检测 needs_update）或次日窗口 → 三次失败后均需 1-2 天或重启才自愈",
+    "recovery_evidence": [
+      "8/21 失败 → 8/22 21:00 才有下次 data_update（服务重启/手动）",
+      "8/28 失败 → 8/30 22:02 重启 → 22:08 start_background_update 自动补跑成功"
+    ]
+  },
+  "root_cause_chain": {
+    "three_failures": [
+      {"date": "2026-08-21", "complete_at": "16:01:13", "min5": "0/496 empty 496", "daily": "0/300", "trigger": "15:10"},
+      {"date": "2026-08-24", "complete_at": "16:01:10", "min5": "0/496 empty 496", "daily": "0/300", "trigger": "15:10", "note": "同日 09:48 曾成功 496/496，对照强烈"},
+      {"date": "2026-08-28", "complete_at": "17:08:07", "min5": "0/1004 empty 1004", "daily": "0/300", "trigger": "15:10", "note": "耗时 118min（成功 3-10min），P62 后清单 1004"}
+    ],
+    "daily_300_denominator": "update_daily 每次只处理 get_stock_list()[:300]（limit=300），errors=300 = 该切片 300 只全走腾讯/新浪 _http 重试耗尽后抛异常；kline 当日 702 行（>300）来自 300 切片外的交易路径惰性补库（_fetch_daily），与 updater 300 失败不矛盾",
+    "min5_empty_meaning": "min5_errors==0 且 empty==total → _fetch_tx_min5 的 TDX(freq0)+腾讯 mkline 两条路均返回 []（拉到但空），非抛异常",
+    "code_vs_upstream": "当前 5 通道 12/12 全通 + 8/30 22:08 同代码低峰成功 + 8/25/8/26/8/27 相邻成功日 → 我方代码退化可排除；指向收盘后 15:10 全市场并发撞上游按 IP 限流/服务端过载（backlog P62 已知限流基线）",
+    "fix_direction": "非代码退化 → 不硬修解析，走退避/错峰/重试/就绪探测（见报告 §7，只建议不执行）"
+  },
+  "current_state_0831": {
+    "service": "PID 67120 运行中，端口 8899 监听",
+    "update_state_last_day": "2026-08-28",
+    "kline_day_max": "2026-08-28 (702 rows)",
+    "min5_max": "2026-08-28 15:00:00",
+    "snapshot_latest": "2026-08-30 (max 2026-08-28)",
+    "ml_pred_max": "2026-08-19 (独立陈旧，非本任务)",
+    "next_trigger": "2026-08-31（今日周一）15:10-15:40 收盘窗口 → 服务内 updater 唯一驱动（15:30-18:30 联合观察窗禁手动触发）"
+  },
+  "success_criteria_0831": {
+    "expect": [
+      "daily_errors < 5%（300 中 <15）且 min5_updated > 0（真实入库）",
+      "data/snapshots/2026-08-31/market.db 自动出现",
+      "data/quality_alert.jsonl 当日条目 thin 全 false",
+      "data/update_state.json last_day = 2026-08-31"
+    ],
+    "verification_window": "今日 15:30-18:30 联合观察窗（服务内 updater 唯一变量，双方禁手动触发）；16:30 台账 tick 与 20:30 forward_eval 由 T1 观察",
+    "any_unmet": "任一未达 → 卡在哪一环即记哪一环，不判成功"
+  },
+  "beyond_scope_changes_check": {
+    "config_py_mtime": "2026-08-27 07:30:18（早于作业窗，无批外变更）",
+    "updater_py_mtime": "2026-08-27 02:52:43（8/30 报告同值，本批未改）",
+    "datafeed_py": "2026-08-26 07:06:25", "tdx_py": "2026-08-19 01:12:38",
+    "data_snapshot_py": "2026-08-25 21:44:37", "main_py": "2026-08-26 10:29:40",
+    "note": "act12_t4_pit.py mtime 2026-08-30 23:56:18 属任务4 交付物（tools/ 下新工具），非本任务改动面，未触及数据通道代码",
+    "conclusion": "作业窗内无批外变更，红线 1/2 合规"
+  }
+}

@@ -1,0 +1,344 @@
+{
+ "meta": {
+  "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-26\\market.db",
+  "strategy": "score",
+  "pool_n": 500,
+  "params": {
+   "buy_threshold": 25,
+   "max_positions": 3,
+   "position_pct": 0.3,
+   "slippage": 0.001,
+   "zt_eco_gate": false,
+   "dd_gate": false
+  },
+  "arms_new": {
+   "T2": {
+    "TIME_STOP_DAYS": 2
+   },
+   "T2_A1": {
+    "TRAILING_ACTIVATE_PCT": 0.08,
+    "TRAILING_STOP_PCT": -0.04,
+    "TIME_STOP_DAYS": 2
+   },
+   "T2_A2": {
+    "TRAILING_ACTIVATE_PCT": 0.12,
+    "TRAILING_STOP_PCT": -0.05,
+    "TIME_STOP_DAYS": 2
+   }
+  },
+  "reuse": [
+   "baseline",
+   "A1_trail_act8_stop4",
+   "A2_trail_act12_stop5"
+  ],
+  "prereg_judge": "landing_rule: >=3/4窗损失>=-1pp 且 牛市损失<=2pp（相对同快照 baseline 臂）",
+  "pit_note": "PIT 对照= pit_pools['近1年'] 成分池 × 牛市窗（现引擎现参数重跑），用于失真校准而非静态判定"
+ },
+ "new_results": {
+  "T2": {
+   "3": {
+    "arm": "T2",
+    "widx": 3,
+    "pool": "top500",
+    "total_return": 0.0569,
+    "max_drawdown": -0.2214,
+    "trade_count": 879,
+    "win_rate": 0.6096
+   },
+   "0": {
+    "arm": "T2",
+    "widx": 0,
+    "pool": "top500",
+    "total_return": -0.1563,
+    "max_drawdown": -0.4142,
+    "trade_count": 1613,
+    "win_rate": 0.6088
+   },
+   "1": {
+    "arm": "T2",
+    "widx": 1,
+    "pool": "top500",
+    "total_return": -0.6168,
+    "max_drawdown": -0.6689,
+    "trade_count": 1677,
+    "win_rate": 0.5229
+   },
+   "2": {
+    "arm": "T2",
+    "widx": 2,
+    "pool": "top500",
+    "total_return": -0.4156,
+    "max_drawdown": -0.588,
+    "trade_count": 1596,
+    "win_rate": 0.5435
+   }
+  },
+  "T2_A1": {
+   "0": {
+    "arm": "T2_A1",
+    "widx": 0,
+    "pool": "top500",
+    "total_return": -0.1511,
+    "max_drawdown": -0.4261,
+    "trade_count": 1585,
+    "win_rate": 0.6074
+   },
+   "3": {
+    "arm": "T2_A1",
+    "widx": 3,
+    "pool": "top500",
+    "total_return": 0.2752,
+    "max_drawdown": -0.1615,
+    "trade_count": 869,
+    "win_rate": 0.6264
+   },
+   "1": {
+    "arm": "T2_A1",
+    "widx": 1,
+    "pool": "top500",
+    "total_return": -0.6054,
+    "max_drawdown": -0.678,
+    "trade_count": 1657,
+    "win_rate": 0.5287
+   },
+   "2": {
+    "arm": "T2_A1",
+    "widx": 2,
+    "pool": "top500",
+    "total_return": -0.4008,
+    "max_drawdown": -0.5686,
+    "trade_count": 1553,
+    "win_rate": 0.5389
+   }
+  },
+  "T2_A2": {
+   "0": {
+    "arm": "T2_A2",
+    "widx": 0,
+    "pool": "top500",
+    "total_return": -0.0717,
+    "max_drawdown": -0.4188,
+    "trade_count": 1589,
+    "win_rate": 0.6148
+   },
+   "3": {
+    "arm": "T2_A2",
+    "widx": 3,
+    "pool": "top500",
+    "total_return": 0.1548,
+    "max_drawdown": -0.228,
+    "trade_count": 863,
+    "win_rate": 0.6216
+   },
+   "1": {
+    "arm": "T2_A2",
+    "widx": 1,
+    "pool": "top500",
+    "total_return": -0.623,
+    "max_drawdown": -0.6687,
+    "trade_count": 1634,
+    "win_rate": 0.5186
+   },
+   "2": {
+    "arm": "T2_A2",
+    "widx": 2,
+    "pool": "top500",
+    "total_return": -0.3585,
+    "max_drawdown": -0.57,
+    "trade_count": 1552,
+    "win_rate": 0.5395
+   }
+  },
+  "baseline_pit|pit|pit|pit": {
+   "3": {
+    "arm": "baseline_pit|pit",
+    "widx": 3,
+    "pool": "pit",
+    "total_return": -0.2689,
+    "max_drawdown": -0.3512,
+    "trade_count": 738,
+    "win_rate": 0.5981
+   }
+  }
+ },
+ "reused": {
+  "baseline": {
+   "3": {
+    "total_return": 0.2827,
+    "max_drawdown": -0.1769,
+    "trade_count": 773
+   },
+   "0": {
+    "total_return": 0.156,
+    "max_drawdown": -0.351,
+    "trade_count": 1377
+   },
+   "1": {
+    "total_return": -0.5502,
+    "max_drawdown": -0.6161,
+    "trade_count": 1391
+   },
+   "2": {
+    "total_return": -0.3751,
+    "max_drawdown": -0.5143,
+    "trade_count": 1296
+   }
+  },
+  "A1_trail_act8_stop4": {
+   "0": {
+    "total_return": 0.1819,
+    "max_drawdown": -0.3499,
+    "trade_count": 1344
+   },
+   "3": {
+    "total_return": 0.566,
+    "max_drawdown": -0.1504,
+    "trade_count": 769
+   },
+   "1": {
+    "total_return": -0.5927,
+    "max_drawdown": -0.6406,
+    "trade_count": 1343
+   },
+   "2": {
+    "total_return": -0.259,
+    "max_drawdown": -0.4807,
+    "trade_count": 1286
+   }
+  },
+  "A2_trail_act12_stop5": {
+   "0": {
+    "total_return": 0.0692,
+    "max_drawdown": -0.3436,
+    "trade_count": 1335
+   },
+   "3": {
+    "total_return": 0.5979,
+    "max_drawdown": -0.1288,
+    "trade_count": 759
+   },
+   "1": {
+    "total_return": -0.5487,
+    "max_drawdown": -0.6462,
+    "trade_count": 1332
+   },
+   "2": {
+    "total_return": -0.2409,
+    "max_drawdown": -0.4951,
+    "trade_count": 1287
+   }
+  }
+ },
+ "verdicts": [
+  {
+   "variant": "T2",
+   "returns": [
+    -0.1563,
+    -0.6168,
+    -0.4156,
+    0.0569
+   ],
+   "loss_pp": [
+    31.23,
+    6.66,
+    4.05,
+    22.58
+   ],
+   "sum_improve_pp": -64.52,
+   "pass": false,
+   "detail": {
+    "windows_ok": 4,
+    "bull_ok": false
+   }
+  },
+  {
+   "variant": "T2_A1",
+   "returns": [
+    -0.1511,
+    -0.6054,
+    -0.4008,
+    0.2752
+   ],
+   "loss_pp": [
+    30.71,
+    5.52,
+    2.57,
+    0.75
+   ],
+   "sum_improve_pp": -39.55,
+   "pass": true,
+   "detail": {
+    "windows_ok": 4,
+    "bull_ok": true
+   }
+  },
+  {
+   "variant": "T2_A2",
+   "returns": [
+    -0.0717,
+    -0.623,
+    -0.3585,
+    0.1548
+   ],
+   "loss_pp": [
+    22.77,
+    7.28,
+    -1.66,
+    12.79
+   ],
+   "sum_improve_pp": -41.18,
+   "pass": false,
+   "detail": {
+    "windows_ok": 3,
+    "bull_ok": false
+   }
+  },
+  {
+   "variant": "T3_A1_trail_act8_stop4",
+   "returns": [
+    0.1819,
+    -0.5927,
+    -0.259,
+    0.566
+   ],
+   "loss_pp": [
+    -2.59,
+    4.25,
+    -11.61,
+    -28.33
+   ],
+   "sum_improve_pp": 38.28,
+   "pass": false,
+   "detail": {
+    "windows_ok": 1,
+    "bull_ok": true
+   }
+  },
+  {
+   "variant": "T3_A2_trail_act12_stop5",
+   "returns": [
+    0.0692,
+    -0.5487,
+    -0.2409,
+    0.5979
+   ],
+   "loss_pp": [
+    8.68,
+    -0.15,
+    -13.42,
+    -31.52
+   ],
+   "sum_improve_pp": 36.41,
+   "pass": false,
+   "detail": {
+    "windows_ok": 2,
+    "bull_ok": true
+   }
+  }
+ ],
+ "recommendation": {
+  "variant": "T2_A1",
+  "sum_improve_pp": -39.55,
+  "action": "建议落地交验收方（≤2pp 牛市门槛内全窗不恶化）"
+ }
+}

@@ -1,0 +1,169 @@
+{
+ "meta": {
+  "seeds": [
+   7,
+   42,
+   123
+  ],
+  "configs": [
+   "stop07",
+   "mom8",
+   "rp_score",
+   "rp_board"
+  ],
+  "data": "冻结快照 data/snapshots/2026-08-26/market.db（Phase46 口径）",
+  "judge": "方向不随种子翻转 = 通过"
+ },
+ "verdict": {
+  "combos": 16,
+  "flips": 0,
+  "max_spread_pp": 0.17,
+  "conclusion": "三个已落地配置方向全部不随种子翻转；score 数值逐位一致，board 最大极差 0.2pp——exec_prob 排队抽签对实际成交路径影响可忽略"
+ },
+ "combos": {
+  "stop07|score|w3": {
+   "returns_by_seed": {
+    "7": 0.2853,
+    "42": 0.2853,
+    "123": 0.2853
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "stop07|score|w0": {
+   "returns_by_seed": {
+    "7": 0.156,
+    "42": 0.156,
+    "123": 0.156
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "mom8|board|w0": {
+   "returns_by_seed": {
+    "7": -0.0618,
+    "42": -0.0618,
+    "123": -0.0618
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "mom8|board|w1": {
+   "returns_by_seed": {
+    "7": 0.1719,
+    "42": 0.1719,
+    "123": 0.1702
+   },
+   "direction_flip": false,
+   "spread_pp": 0.17
+  },
+  "mom8|board|w3": {
+   "returns_by_seed": {
+    "7": 0.6247,
+    "42": 0.6247,
+    "123": 0.6247
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "mom8|board|w2": {
+   "returns_by_seed": {
+    "7": 0.0684,
+    "42": 0.0684,
+    "123": 0.0684
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "stop07|score|w1": {
+   "returns_by_seed": {
+    "42": -0.5502,
+    "7": -0.5502,
+    "123": -0.55
+   },
+   "direction_flip": false,
+   "spread_pp": 0.02
+  },
+  "stop07|score|w2": {
+   "returns_by_seed": {
+    "42": -0.3751,
+    "7": -0.3751,
+    "123": -0.3751
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "rp_score|score|w0": {
+   "returns_by_seed": {
+    "7": 0.156,
+    "42": 0.156,
+    "123": 0.156
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "rp_score|score|w3": {
+   "returns_by_seed": {
+    "7": 0.2853,
+    "42": 0.2853,
+    "123": 0.2853
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "rp_board|board|w0": {
+   "returns_by_seed": {
+    "7": -0.0618,
+    "42": -0.0618,
+    "123": -0.0618
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "rp_board|board|w1": {
+   "returns_by_seed": {
+    "7": 0.1719,
+    "42": 0.1719,
+    "123": 0.1702
+   },
+   "direction_flip": false,
+   "spread_pp": 0.17
+  },
+  "rp_score|score|w1": {
+   "returns_by_seed": {
+    "7": -0.5502,
+    "42": -0.5502,
+    "123": -0.55
+   },
+   "direction_flip": false,
+   "spread_pp": 0.02
+  },
+  "rp_board|board|w2": {
+   "returns_by_seed": {
+    "7": 0.0684,
+    "42": 0.0684,
+    "123": 0.0684
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "rp_board|board|w3": {
+   "returns_by_seed": {
+    "7": 0.6247,
+    "42": 0.6247,
+    "123": 0.6247
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  },
+  "rp_score|score|w2": {
+   "returns_by_seed": {
+    "7": -0.3751,
+    "42": -0.3751,
+    "123": -0.3751
+   },
+   "direction_flip": false,
+   "spread_pp": 0.0
+  }
+ }
+}

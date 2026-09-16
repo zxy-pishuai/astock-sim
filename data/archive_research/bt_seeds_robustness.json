@@ -1,0 +1,817 @@
+{
+ "mode": "phase67_seeds",
+ "configs": [
+  "stop07",
+  "mom8",
+  "rp_score",
+  "rp_board"
+ ],
+ "seeds": [
+  7,
+  42,
+  123
+ ],
+ "generated_at": "2026-08-26 18:29:23",
+ "runs": [
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.2853,
+   "annual_return": 0.2866,
+   "max_drawdown": -0.1766,
+   "win_rate": 0.6803,
+   "trade_count": 765,
+   "elapsed": 685.6
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 42,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.2853,
+   "annual_return": 0.2866,
+   "max_drawdown": -0.1766,
+   "win_rate": 0.6803,
+   "trade_count": 765,
+   "elapsed": 687.9
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": 0.156,
+   "annual_return": 0.0753,
+   "max_drawdown": -0.351,
+   "win_rate": 0.6639,
+   "trade_count": 1377,
+   "elapsed": 717.2
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 42,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": 0.156,
+   "annual_return": 0.0753,
+   "max_drawdown": -0.351,
+   "win_rate": 0.6639,
+   "trade_count": 1377,
+   "elapsed": 727.2
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 123,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": 0.156,
+   "annual_return": 0.0753,
+   "max_drawdown": -0.351,
+   "win_rate": 0.6639,
+   "trade_count": 1377,
+   "elapsed": 712.7
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 7,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.0618,
+   "annual_return": -0.0315,
+   "max_drawdown": -0.1462,
+   "win_rate": 0.6527,
+   "trade_count": 520,
+   "elapsed": 4.1
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 123,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.2853,
+   "annual_return": 0.2866,
+   "max_drawdown": -0.1766,
+   "win_rate": 0.6803,
+   "trade_count": 765,
+   "elapsed": 680.5
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 7,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": 0.1719,
+   "annual_return": 0.0831,
+   "max_drawdown": -0.1679,
+   "win_rate": 0.6499,
+   "trade_count": 628,
+   "elapsed": 6.8
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 7,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.6247,
+   "annual_return": 0.6279,
+   "max_drawdown": -0.119,
+   "win_rate": 0.751,
+   "trade_count": 416,
+   "elapsed": 4.6
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 7,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": 0.0684,
+   "annual_return": 0.0339,
+   "max_drawdown": -0.1806,
+   "win_rate": 0.6342,
+   "trade_count": 501,
+   "elapsed": 7.0
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 42,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.0618,
+   "annual_return": -0.0315,
+   "max_drawdown": -0.1462,
+   "win_rate": 0.6527,
+   "trade_count": 520,
+   "elapsed": 4.1
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 42,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": 0.1719,
+   "annual_return": 0.0831,
+   "max_drawdown": -0.1679,
+   "win_rate": 0.6499,
+   "trade_count": 628,
+   "elapsed": 6.7
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 42,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": 0.0684,
+   "annual_return": 0.0339,
+   "max_drawdown": -0.1806,
+   "win_rate": 0.6342,
+   "trade_count": 501,
+   "elapsed": 6.7
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 42,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.6247,
+   "annual_return": 0.6279,
+   "max_drawdown": -0.119,
+   "win_rate": 0.751,
+   "trade_count": 416,
+   "elapsed": 4.5
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 123,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.0618,
+   "annual_return": -0.0315,
+   "max_drawdown": -0.1462,
+   "win_rate": 0.6527,
+   "trade_count": 520,
+   "elapsed": 4.1
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 123,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": 0.1702,
+   "annual_return": 0.0823,
+   "max_drawdown": -0.1703,
+   "win_rate": 0.6489,
+   "trade_count": 626,
+   "elapsed": 6.7
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 123,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": 0.0684,
+   "annual_return": 0.0339,
+   "max_drawdown": -0.1806,
+   "win_rate": 0.6342,
+   "trade_count": 501,
+   "elapsed": 7.0
+  },
+  {
+   "config": "mom8",
+   "strategy": "board",
+   "seed": 123,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.6247,
+   "annual_return": 0.6279,
+   "max_drawdown": -0.119,
+   "win_rate": 0.751,
+   "trade_count": 416,
+   "elapsed": 5.2
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 42,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.5502,
+   "annual_return": -0.331,
+   "max_drawdown": -0.6161,
+   "win_rate": 0.5734,
+   "trade_count": 1391,
+   "elapsed": 1562.3
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.5502,
+   "annual_return": -0.331,
+   "max_drawdown": -0.6161,
+   "win_rate": 0.5734,
+   "trade_count": 1391,
+   "elapsed": 1562.6
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 42,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.3751,
+   "annual_return": -0.211,
+   "max_drawdown": -0.5143,
+   "win_rate": 0.5856,
+   "trade_count": 1296,
+   "elapsed": 1609.0
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.3751,
+   "annual_return": -0.211,
+   "max_drawdown": -0.5143,
+   "win_rate": 0.5856,
+   "trade_count": 1296,
+   "elapsed": 1610.3
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": 0.156,
+   "annual_return": 0.0753,
+   "max_drawdown": -0.351,
+   "win_rate": 0.6639,
+   "trade_count": 1377,
+   "elapsed": 721.6
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.2853,
+   "annual_return": 0.2866,
+   "max_drawdown": -0.1766,
+   "win_rate": 0.6803,
+   "trade_count": 765,
+   "elapsed": 688.0
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 123,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.55,
+   "annual_return": -0.3308,
+   "max_drawdown": -0.6073,
+   "win_rate": 0.572,
+   "trade_count": 1395,
+   "elapsed": 1580.9
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 123,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.3751,
+   "annual_return": -0.211,
+   "max_drawdown": -0.5143,
+   "win_rate": 0.5856,
+   "trade_count": 1296,
+   "elapsed": 1603.5
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 42,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": 0.156,
+   "annual_return": 0.0753,
+   "max_drawdown": -0.351,
+   "win_rate": 0.6639,
+   "trade_count": 1377,
+   "elapsed": 723.2
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 42,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.2853,
+   "annual_return": 0.2866,
+   "max_drawdown": -0.1766,
+   "win_rate": 0.6803,
+   "trade_count": 765,
+   "elapsed": 678.0
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 123,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": 0.156,
+   "annual_return": 0.0753,
+   "max_drawdown": -0.351,
+   "win_rate": 0.6639,
+   "trade_count": 1377,
+   "elapsed": 718.0
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 7,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.0618,
+   "annual_return": -0.0315,
+   "max_drawdown": -0.1462,
+   "win_rate": 0.6527,
+   "trade_count": 520,
+   "elapsed": 4.1
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 7,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": 0.1719,
+   "annual_return": 0.0831,
+   "max_drawdown": -0.1679,
+   "win_rate": 0.6499,
+   "trade_count": 628,
+   "elapsed": 6.7
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.5502,
+   "annual_return": -0.331,
+   "max_drawdown": -0.6161,
+   "win_rate": 0.5734,
+   "trade_count": 1391,
+   "elapsed": 1565.7
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 7,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": 0.0684,
+   "annual_return": 0.0339,
+   "max_drawdown": -0.1806,
+   "win_rate": 0.6342,
+   "trade_count": 501,
+   "elapsed": 7.0
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 7,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.6247,
+   "annual_return": 0.6279,
+   "max_drawdown": -0.119,
+   "win_rate": 0.751,
+   "trade_count": 416,
+   "elapsed": 4.5
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 42,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.0618,
+   "annual_return": -0.0315,
+   "max_drawdown": -0.1462,
+   "win_rate": 0.6527,
+   "trade_count": 520,
+   "elapsed": 4.2
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 42,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": 0.1719,
+   "annual_return": 0.0831,
+   "max_drawdown": -0.1679,
+   "win_rate": 0.6499,
+   "trade_count": 628,
+   "elapsed": 6.8
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 42,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": 0.0684,
+   "annual_return": 0.0339,
+   "max_drawdown": -0.1806,
+   "win_rate": 0.6342,
+   "trade_count": 501,
+   "elapsed": 6.9
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 42,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.6247,
+   "annual_return": 0.6279,
+   "max_drawdown": -0.119,
+   "win_rate": 0.751,
+   "trade_count": 416,
+   "elapsed": 4.8
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 123,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.0618,
+   "annual_return": -0.0315,
+   "max_drawdown": -0.1462,
+   "win_rate": 0.6527,
+   "trade_count": 520,
+   "elapsed": 4.4
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 123,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": 0.1702,
+   "annual_return": 0.0823,
+   "max_drawdown": -0.1703,
+   "win_rate": 0.6489,
+   "trade_count": 626,
+   "elapsed": 7.2
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 123,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": 0.0684,
+   "annual_return": 0.0339,
+   "max_drawdown": -0.1806,
+   "win_rate": 0.6342,
+   "trade_count": 501,
+   "elapsed": 7.3
+  },
+  {
+   "config": "rp_board",
+   "strategy": "board",
+   "seed": 123,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.6247,
+   "annual_return": 0.6279,
+   "max_drawdown": -0.119,
+   "win_rate": 0.751,
+   "trade_count": 416,
+   "elapsed": 4.7
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.3751,
+   "annual_return": -0.211,
+   "max_drawdown": -0.5143,
+   "win_rate": 0.5856,
+   "trade_count": 1296,
+   "elapsed": 1615.4
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 42,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.5502,
+   "annual_return": -0.331,
+   "max_drawdown": -0.6161,
+   "win_rate": 0.5734,
+   "trade_count": 1391,
+   "elapsed": 1571.5
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 123,
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "total_return": 0.2853,
+   "annual_return": 0.2866,
+   "max_drawdown": -0.1766,
+   "win_rate": 0.6803,
+   "trade_count": 765,
+   "elapsed": 672.3
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 42,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.3751,
+   "annual_return": -0.211,
+   "max_drawdown": -0.5143,
+   "win_rate": 0.5856,
+   "trade_count": 1296,
+   "elapsed": 1616.9
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 123,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.55,
+   "annual_return": -0.3308,
+   "max_drawdown": -0.6073,
+   "win_rate": 0.572,
+   "trade_count": 1395,
+   "elapsed": 1582.9
+  },
+  {
+   "config": "rp_score",
+   "strategy": "score",
+   "seed": 123,
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.3751,
+   "annual_return": -0.211,
+   "max_drawdown": -0.5143,
+   "win_rate": 0.5856,
+   "trade_count": 1296,
+   "elapsed": 1629.7
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": 0.156,
+   "annual_return": 0.0753,
+   "max_drawdown": -0.351,
+   "win_rate": 0.6639,
+   "trade_count": 1377,
+   "elapsed": 785.7
+  },
+  {
+   "config": "stop07",
+   "strategy": "score",
+   "seed": 7,
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.5502,
+   "annual_return": -0.331,
+   "max_drawdown": -0.6161,
+   "win_rate": 0.5734,
+   "trade_count": 1391,
+   "elapsed": 1716.5
+  }
+ ]
+}

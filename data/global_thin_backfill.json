@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-08-27 02:56:24",
+  "tool": "tools/global_thin_backfill.py",
+  "chains": {
+    "VIX": [
+      "cboe官方"
+    ],
+    "CL": [
+      "eastmoney CL00Y",
+      "sina USO代理(降级)"
+    ],
+    "GC": [
+      "sina全球期货GC全史",
+      "eastmoney GC00Y",
+      "sina GLD代理(降级)"
+    ],
+    "DINIW": [
+      "sina fx_sdiniw",
+      "eastmoney UDI"
+    ],
+    "USDCNH": [
+      "sina fx_susdcnh",
+      "eastmoney USDCNH"
+    ],
+    "DJIA": [
+      "sina .DJI",
+      "eastmoney DJIA"
+    ]
+  },
+  "before": {
+    "CL": {
+      "market": "fx",
+      "rows": 7029,
+      "min": "1999-01-04",
+      "max": "2026-08-26"
+    },
+    "DINIW": {
+      "market": "fx",
+      "rows": 6941,
+      "min": "2000-01-03",
+      "max": "2026-08-26"
+    },
+    "GC": {
+      "market": "fx",
+      "rows": 4,
+      "min": "2026-08-23",
+      "max": "2026-08-26"
+    },
+    "USDCNH": {
+      "market": "fx",
+      "rows": 4,
+      "min": "2026-08-23",
+      "max": "2026-08-26"
+    },
+    "DJIA": {
+      "market": "us",
+      "rows": 1,
+      "min": "2026-08-23",
+      "max": "2026-08-23"
+    },
+    "VIX": {
+      "market": "us",
+      "rows": 9258,
+      "min": "1990-01-02",
+      "max": "2026-08-25"
+    }
+  },
+  "update_results": {
+    "VIX": {
+      "source": "cboe官方",
+      "rows_written": 0,
+      "total": 9258
+    },
+    "CL": {
+      "source": "sina USO代理(降级)",
+      "rows_written": 0,
+      "total": 7029
+    },
+    "GC": {
+      "source": "sina全球期货GC全史",
+      "rows_written": 2588,
+      "total": 2589
+    },
+    "DINIW": {
+      "source": "sina fx_sdiniw",
+      "rows_written": 0,
+      "total": 6941
+    },
+    "USDCNH": {
+      "source": "sina fx_susdcnh",
+      "rows_written": 3077,
+      "total": 3079
+    },
+    "DJIA": {
+      "source": "sina .DJI",
+      "rows_written": 5699,
+      "total": 5700
+    }
+  },
+  "after": {
+    "CL": {
+      "market": "fx",
+      "rows": 7029,
+      "min": "1999-01-04",
+      "max": "2026-08-26"
+    },
+    "DINIW": {
+      "market": "fx",
+      "rows": 6941,
+      "min": "2000-01-03",
+      "max": "2026-08-26"
+    },
+    "GC": {
+      "market": "fx",
+      "rows": 2589,
+      "min": "2016-08-29",
+      "max": "2026-08-26"
+    },
+    "USDCNH": {
+      "market": "fx",
+      "rows": 3079,
+      "min": "2014-11-07",
+      "max": "2026-08-26"
+    },
+    "DJIA": {
+      "market": "us",
+      "rows": 5700,
+      "min": "2004-01-02",
+      "max": "2026-08-25"
+    },
+    "VIX": {
+      "market": "us",
+      "rows": 9258,
+      "min": "1990-01-02",
+      "max": "2026-08-25"
+    }
+  },
+  "targets": {
+    "GC": 1000,
+    "USDCNH": 1000,
+    "DJIA": 1000
+  },
+  "verdict": {
+    "GC": {
+      "rows": 2589,
+      "need": 1000,
+      "ok": true
+    },
+    "USDCNH": {
+      "rows": 3079,
+      "need": 1000,
+      "ok": true
+    },
+    "DJIA": {
+      "rows": 5700,
+      "need": 1000,
+      "ok": true
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-09-16 18:30:29",
+  "title": "实时东财池 vs eco 权威口径 对表（最近20交易日）",
+  "rows": [
+    {
+      "date": "2026-08-20",
+      "em_n": 36,
+      "eco_n": 71,
+      "diff": -35,
+      "eco_max_streak": 4
+    },
+    {
+      "date": "2026-08-21",
+      "em_n": 39,
+      "eco_n": 50,
+      "diff": -11,
+      "eco_max_streak": 3
+    },
+    {
+      "date": "2026-08-24",
+      "em_n": 34,
+      "eco_n": 41,
+      "diff": -7,
+      "eco_max_streak": 4
+    },
+    {
+      "date": "2026-08-25",
+      "em_n": 41,
+      "eco_n": 58,
+      "diff": -17,
+      "eco_max_streak": 5
+    },
+    {
+      "date": "2026-08-26",
+      "em_n": 65,
+      "eco_n": 48,
+      "diff": 17,
+      "eco_max_streak": 5
+    },
+    {
+      "date": "2026-08-27",
+      "em_n": 77,
+      "eco_n": 67,
+      "diff": 10,
+      "eco_max_streak": 6
+    },
+    {
+      "date": "2026-08-28",
+      "em_n": 82,
+      "eco_n": 75,
+      "diff": 7,
+      "eco_max_streak": 7
+    },
+    {
+      "date": "2026-08-31",
+      "em_n": 88,
+      "eco_n": 78,
+      "diff": 10,
+      "eco_max_streak": 6
+    },
+    {
+      "date": "2026-09-01",
+      "em_n": 83,
+      "eco_n": 74,
+      "diff": 9,
+      "eco_max_streak": 7
+    },
+    {
+      "date": "2026-09-02",
+      "em_n": 52,
+      "eco_n": 46,
+      "diff": 6,
+      "eco_max_streak": 5
+    },
+    {
+      "date": "2026-09-03",
+      "em_n": 44,
+      "eco_n": 39,
+      "diff": 5,
+      "eco_max_streak": 5
+    },
+    {
+      "date": "2026-09-04",
+      "em_n": 39,
+      "eco_n": 38,
+      "diff": 1,
+      "eco_max_streak": 5
+    },
+    {
+      "date": "2026-09-07",
+      "em_n": 93,
+      "eco_n": 87,
+      "diff": 6,
+      "eco_max_streak": 6
+    },
+    {
+      "date": "2026-09-08",
+      "em_n": 73,
+      "eco_n": 69,
+      "diff": 4,
+      "eco_max_streak": 4
+    },
+    {
+      "date": "2026-09-09",
+      "em_n": 48,
+      "eco_n": 45,
+      "diff": 3,
+      "eco_max_streak": 5
+    },
+    {
+      "date": "2026-09-10",
+      "em_n": 27,
+      "eco_n": 32,
+      "diff": -5,
+      "eco_max_streak": 4
+    },
+    {
+      "date": "2026-09-11",
+      "em_n": 40,
+      "eco_n": 39,
+      "diff": 1,
+      "eco_max_streak": 4
+    },
+    {
+      "date": "2026-09-14",
+      "em_n": 55,
+      "eco_n": 52,
+      "diff": 3,
+      "eco_max_streak": 4
+    },
+    {
+      "date": "2026-09-15",
+      "em_n": 32,
+      "eco_n": 32,
+      "diff": 0,
+      "eco_max_streak": 5
+    },
+    {
+      "date": "2026-09-16",
+      "em_n": 89,
+      "eco_n": 87,
+      "diff": 2,
+      "eco_max_streak": 6
+    }
+  ],
+  "k11_diag_ref_used": true
+}

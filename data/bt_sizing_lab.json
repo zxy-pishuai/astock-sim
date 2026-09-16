@@ -1,0 +1,494 @@
+{
+ "generated_at": "2026-09-01 09:48:53",
+ "task": "W3 仓位科学实验室（vol-target / ATR 风险预算 vs 现行 3×0.30）",
+ "meta": {
+  "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-27\\market.db",
+  "excluded_codes": 196,
+  "params_score": {
+   "buy_threshold": 25,
+   "max_positions": 3,
+   "position_pct": 0.3,
+   "slippage": 0.001,
+   "zt_eco_gate": false,
+   "dd_gate": false
+  },
+  "windows": [
+   [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   [
+    "2025-08-18",
+    "2026-08-21"
+   ]
+  ],
+  "win_names": [
+   "2019-20",
+   "2021-22",
+   "2023-24",
+   "牛市"
+  ],
+  "pit_map": [
+   "2019-20",
+   "2021-22",
+   "2023-24",
+   "近1年"
+  ],
+  "pool": "PIT only（省格理由：多代理并发算力减半，任务书许可）",
+  "method": "monkey-patch portfolio.compute_weights（w3_s1/s2/s3 返回 ATR 权重，S0 原生 risk_parity）",
+  "exec_mode": "process",
+  "workers": 2,
+  "prereg": "单窗达标=MDD改善>=5pp且收益损失<=3pp；值得接线=任一变体>=3/4窗达标且牛市收益不劣化"
+ },
+ "pit_pools_generated_at": "2026-08-27 03:44:31",
+ "results": {
+  "s0/w0": {
+   "variant": "s0",
+   "widx": 0,
+   "window": "2019-20",
+   "pit_key": "2019-20",
+   "n_codes": 455,
+   "total_return": -0.2958,
+   "max_drawdown": -0.3993,
+   "annual_return": -0.1611,
+   "sharpe": -1.031,
+   "win_rate": 0.5652,
+   "trade_count": 851,
+   "daily_vol": 0.01014,
+   "turnover": 57.0882,
+   "stop_count": 215,
+   "cash_mean": 33304.15,
+   "elapsed": 390.9
+  },
+  "s0/w1": {
+   "variant": "s0",
+   "widx": 1,
+   "window": "2021-22",
+   "pit_key": "2021-22",
+   "n_codes": 434,
+   "total_return": -0.5684,
+   "max_drawdown": -0.6054,
+   "annual_return": -0.3447,
+   "sharpe": -1.714,
+   "win_rate": 0.5623,
+   "trade_count": 1359,
+   "daily_vol": 0.0148,
+   "turnover": 109.7386,
+   "stop_count": 350,
+   "cash_mean": 37371.09,
+   "elapsed": 600.0
+  },
+  "s0/w2": {
+   "variant": "s0",
+   "widx": 2,
+   "window": "2023-24",
+   "pit_key": "2023-24",
+   "n_codes": 426,
+   "total_return": -0.4829,
+   "max_drawdown": -0.5211,
+   "annual_return": -0.2829,
+   "sharpe": -1.358,
+   "win_rate": 0.5579,
+   "trade_count": 1228,
+   "daily_vol": 0.01448,
+   "turnover": 100.7262,
+   "stop_count": 306,
+   "cash_mean": 30878.01,
+   "elapsed": 595.9
+  },
+  "s0/w3": {
+   "variant": "s0",
+   "widx": 3,
+   "window": "牛市",
+   "pit_key": "近1年",
+   "n_codes": 445,
+   "total_return": -0.1093,
+   "max_drawdown": -0.2157,
+   "annual_return": -0.1085,
+   "sharpe": -0.415,
+   "win_rate": 0.6235,
+   "trade_count": 582,
+   "daily_vol": 0.01405,
+   "turnover": 45.9217,
+   "stop_count": 123,
+   "cash_mean": 43884.85,
+   "elapsed": 174.0
+  },
+  "s1/w0": {
+   "variant": "s1",
+   "widx": 0,
+   "window": "2019-20",
+   "pit_key": "2019-20",
+   "n_codes": 455,
+   "total_return": -0.1086,
+   "max_drawdown": -0.1616,
+   "annual_return": -0.056,
+   "sharpe": -0.815,
+   "win_rate": 0.5439,
+   "trade_count": 850,
+   "daily_vol": 0.00435,
+   "turnover": 27.6835,
+   "stop_count": 216,
+   "cash_mean": 71137.04,
+   "elapsed": 401.5
+  },
+  "s1/w1": {
+   "variant": "s1",
+   "widx": 1,
+   "window": "2021-22",
+   "pit_key": "2021-22",
+   "n_codes": 434,
+   "total_return": -0.3099,
+   "max_drawdown": -0.3283,
+   "annual_return": -0.1702,
+   "sharpe": -2.179,
+   "win_rate": 0.5097,
+   "trade_count": 1240,
+   "daily_vol": 0.00539,
+   "turnover": 41.8113,
+   "stop_count": 333,
+   "cash_mean": 69047.83,
+   "elapsed": 503.1
+  },
+  "s1/w2": {
+   "variant": "s1",
+   "widx": 2,
+   "window": "2023-24",
+   "pit_key": "2023-24",
+   "n_codes": 426,
+   "total_return": -0.2599,
+   "max_drawdown": -0.2886,
+   "annual_return": -0.1408,
+   "sharpe": -1.705,
+   "win_rate": 0.5024,
+   "trade_count": 1158,
+   "daily_vol": 0.00557,
+   "turnover": 42.9549,
+   "stop_count": 307,
+   "cash_mean": 62223.1,
+   "elapsed": 502.1
+  },
+  "s1/w3": {
+   "variant": "s1",
+   "widx": 3,
+   "window": "牛市",
+   "pit_key": "近1年",
+   "n_codes": 445,
+   "total_return": -0.0659,
+   "max_drawdown": -0.0969,
+   "annual_return": -0.0654,
+   "sharpe": -0.904,
+   "win_rate": 0.53,
+   "trade_count": 523,
+   "daily_vol": 0.00463,
+   "turnover": 16.8882,
+   "stop_count": 122,
+   "cash_mean": 74872.08,
+   "elapsed": 174.5
+  },
+  "s2/w0": {
+   "variant": "s2",
+   "widx": 0,
+   "window": "2019-20",
+   "pit_key": "2019-20",
+   "n_codes": 455,
+   "total_return": -0.1256,
+   "max_drawdown": -0.2083,
+   "annual_return": -0.065,
+   "sharpe": -0.646,
+   "win_rate": 0.5763,
+   "trade_count": 885,
+   "daily_vol": 0.00622,
+   "turnover": 38.4091,
+   "stop_count": 217,
+   "cash_mean": 59429.19,
+   "elapsed": 376.5
+  },
+  "s2/w1": {
+   "variant": "s2",
+   "widx": 1,
+   "window": "2021-22",
+   "pit_key": "2021-22",
+   "n_codes": 434,
+   "total_return": -0.4288,
+   "max_drawdown": -0.4464,
+   "annual_return": -0.2455,
+   "sharpe": -2.228,
+   "win_rate": 0.5318,
+   "trade_count": 1297,
+   "daily_vol": 0.00789,
+   "turnover": 60.3964,
+   "stop_count": 345,
+   "cash_mean": 58497.66,
+   "elapsed": 467.6
+  },
+  "s2/w2": {
+   "variant": "s2",
+   "widx": 2,
+   "window": "2023-24",
+   "pit_key": "2023-24",
+   "n_codes": 426,
+   "total_return": -0.3768,
+   "max_drawdown": -0.4084,
+   "annual_return": -0.2121,
+   "sharpe": -1.862,
+   "win_rate": 0.5189,
+   "trade_count": 1190,
+   "daily_vol": 0.00795,
+   "turnover": 60.1554,
+   "stop_count": 313,
+   "cash_mean": 50309.86,
+   "elapsed": 466.0
+  },
+  "s2/w3": {
+   "variant": "s2",
+   "widx": 3,
+   "window": "牛市",
+   "pit_key": "近1年",
+   "n_codes": 445,
+   "total_return": -0.0736,
+   "max_drawdown": -0.1162,
+   "annual_return": -0.073,
+   "sharpe": -0.639,
+   "win_rate": 0.585,
+   "trade_count": 547,
+   "daily_vol": 0.00703,
+   "turnover": 24.1638,
+   "stop_count": 120,
+   "cash_mean": 65743.28,
+   "elapsed": 164.4
+  },
+  "s3/w0": {
+   "variant": "s3",
+   "widx": 0,
+   "window": "2019-20",
+   "pit_key": "2019-20",
+   "n_codes": 455,
+   "total_return": -0.2943,
+   "max_drawdown": -0.3983,
+   "annual_return": -0.1602,
+   "sharpe": -1.024,
+   "win_rate": 0.5643,
+   "trade_count": 850,
+   "daily_vol": 0.01015,
+   "turnover": 57.115,
+   "stop_count": 215,
+   "cash_mean": 33380.72,
+   "elapsed": 29898.0
+  },
+  "s3/w1": {
+   "variant": "s3",
+   "widx": 1,
+   "window": "2021-22",
+   "pit_key": "2021-22",
+   "n_codes": 434,
+   "total_return": -0.5701,
+   "max_drawdown": -0.6049,
+   "annual_return": -0.346,
+   "sharpe": -1.722,
+   "win_rate": 0.5628,
+   "trade_count": 1361,
+   "daily_vol": 0.01481,
+   "turnover": 109.2414,
+   "stop_count": 350,
+   "cash_mean": 37430.38,
+   "elapsed": 29990.2
+  },
+  "s3/w2": {
+   "variant": "s3",
+   "widx": 2,
+   "window": "2023-24",
+   "pit_key": "2023-24",
+   "n_codes": 426,
+   "total_return": -0.4747,
+   "max_drawdown": -0.5172,
+   "annual_return": -0.2771,
+   "sharpe": -1.332,
+   "win_rate": 0.5586,
+   "trade_count": 1229,
+   "daily_vol": 0.0144,
+   "turnover": 100.1661,
+   "stop_count": 306,
+   "cash_mean": 31153.64,
+   "elapsed": 454.7
+  },
+  "s3/w3": {
+   "variant": "s3",
+   "widx": 3,
+   "window": "牛市",
+   "pit_key": "近1年",
+   "n_codes": 445,
+   "total_return": -0.1297,
+   "max_drawdown": -0.221,
+   "annual_return": -0.1287,
+   "sharpe": -0.523,
+   "win_rate": 0.6213,
+   "trade_count": 581,
+   "daily_vol": 0.014,
+   "turnover": 46.044,
+   "stop_count": 124,
+   "cash_mean": 43007.74,
+   "elapsed": 164.1
+  }
+ },
+ "matrix": {
+  "s0": {
+   "2019-20": {
+    "ret": -0.2958,
+    "mdd": -0.3993,
+    "ret_loss_pp": 0.0,
+    "mdd_improve_pp": 0.0,
+    "window_ok": false
+   },
+   "2021-22": {
+    "ret": -0.5684,
+    "mdd": -0.6054,
+    "ret_loss_pp": 0.0,
+    "mdd_improve_pp": 0.0,
+    "window_ok": false
+   },
+   "2023-24": {
+    "ret": -0.4829,
+    "mdd": -0.5211,
+    "ret_loss_pp": 0.0,
+    "mdd_improve_pp": 0.0,
+    "window_ok": false
+   },
+   "牛市": {
+    "ret": -0.1093,
+    "mdd": -0.2157,
+    "ret_loss_pp": 0.0,
+    "mdd_improve_pp": 0.0,
+    "window_ok": false
+   }
+  },
+  "s1": {
+   "2019-20": {
+    "ret": -0.1086,
+    "mdd": -0.1616,
+    "ret_loss_pp": -18.72,
+    "mdd_improve_pp": 23.77,
+    "window_ok": true
+   },
+   "2021-22": {
+    "ret": -0.3099,
+    "mdd": -0.3283,
+    "ret_loss_pp": -25.85,
+    "mdd_improve_pp": 27.71,
+    "window_ok": true
+   },
+   "2023-24": {
+    "ret": -0.2599,
+    "mdd": -0.2886,
+    "ret_loss_pp": -22.3,
+    "mdd_improve_pp": 23.25,
+    "window_ok": true
+   },
+   "牛市": {
+    "ret": -0.0659,
+    "mdd": -0.0969,
+    "ret_loss_pp": -4.34,
+    "mdd_improve_pp": 11.88,
+    "window_ok": true
+   }
+  },
+  "s2": {
+   "2019-20": {
+    "ret": -0.1256,
+    "mdd": -0.2083,
+    "ret_loss_pp": -17.02,
+    "mdd_improve_pp": 19.1,
+    "window_ok": true
+   },
+   "2021-22": {
+    "ret": -0.4288,
+    "mdd": -0.4464,
+    "ret_loss_pp": -13.96,
+    "mdd_improve_pp": 15.9,
+    "window_ok": true
+   },
+   "2023-24": {
+    "ret": -0.3768,
+    "mdd": -0.4084,
+    "ret_loss_pp": -10.61,
+    "mdd_improve_pp": 11.27,
+    "window_ok": true
+   },
+   "牛市": {
+    "ret": -0.0736,
+    "mdd": -0.1162,
+    "ret_loss_pp": -3.57,
+    "mdd_improve_pp": 9.95,
+    "window_ok": true
+   }
+  },
+  "s3": {
+   "2019-20": {
+    "ret": -0.2943,
+    "mdd": -0.3983,
+    "ret_loss_pp": -0.15,
+    "mdd_improve_pp": 0.1,
+    "window_ok": false
+   },
+   "2021-22": {
+    "ret": -0.5701,
+    "mdd": -0.6049,
+    "ret_loss_pp": 0.17,
+    "mdd_improve_pp": 0.05,
+    "window_ok": false
+   },
+   "2023-24": {
+    "ret": -0.4747,
+    "mdd": -0.5172,
+    "ret_loss_pp": -0.82,
+    "mdd_improve_pp": 0.39,
+    "window_ok": false
+   },
+   "牛市": {
+    "ret": -0.1297,
+    "mdd": -0.221,
+    "ret_loss_pp": 2.04,
+    "mdd_improve_pp": -0.53,
+    "window_ok": false
+   }
+  }
+ },
+ "judgement": {
+  "s0": {
+   "windows_ok": null,
+   "bull_ok": null,
+   "pass": null,
+   "note": "基线"
+  },
+  "s1": {
+   "windows_ok": 4,
+   "bull_ok": true,
+   "pass": true,
+   "note": ">=3/4窗达标且牛市收益不劣化"
+  },
+  "s2": {
+   "windows_ok": 4,
+   "bull_ok": true,
+   "pass": true,
+   "note": ">=3/4窗达标且牛市收益不劣化"
+  },
+  "s3": {
+   "windows_ok": 0,
+   "bull_ok": false,
+   "pass": false,
+   "note": ">=3/4窗达标且牛市收益不劣化"
+  }
+ },
+ "summary": "值得接线",
+ "cells_done": 16,
+ "cells_total": 16,
+ "elapsed_s": 32489.2
+}

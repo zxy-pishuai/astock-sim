@@ -1,0 +1,34 @@
+{
+ "schema": "v1",
+ "comment": "H4 性能基线：score 段由 bench_score.py 维护，backtest 段由 bench_backtest.py 维护；退化阈值 +20%；离线 fixtures 基准；降噪：GC 关闭 + BLAS 单线程 + 热态多次中位数",
+ "generated_at": "2026-09-13 23:04:45",
+ "score": {
+  "score_stock_ms": 5.917549999139737,
+  "score_stock_calls": 5937,
+  "indicators_ms": {
+   "sma": 0.09669999417383224,
+   "ema": 0.35679999564308673,
+   "rsi": 0.11930000619031489,
+   "macd": 1.7189499994856305,
+   "boll": 0.4193999993731268,
+   "atr": 0.858300001709722,
+   "obv": 0.34004999906755984,
+   "rolling_max": 0.14155000098980963,
+   "rolling_min": 0.15249999705702066,
+   "volume_ma": 0.09080000745598227,
+   "vwap": 0.7543999963672832,
+   "price_volume_corr": 0.5235499993432313,
+   "rsrs": 2.360749989748001,
+   "volume_slope": 0.22259999968810007,
+   "price_vol_divergence": 0.23419999342877418,
+   "obv_slope": 0.6255000043893233,
+   "chip_profile": 23.81104999949457
+  }
+ },
+ "backtest": {
+  "total_elapsed_s": 0.4362704999948619,
+  "load_elapsed_s": 0.23043470000266097,
+  "signals_on_avg_ms": 1.0882999922614545,
+  "peak_memory_mb": 2.7
+ }
+}

@@ -1,0 +1,188 @@
+{
+ "off": {
+  "score": [
+   {
+    "window": "2019-20",
+    "total_return": -0.0765,
+    "max_drawdown": -0.2888,
+    "trade_count": 1331,
+    "triggers": 0
+   },
+   {
+    "window": "2021-22",
+    "total_return": -0.2159,
+    "max_drawdown": -0.5189,
+    "trade_count": 1540,
+    "triggers": 0
+   },
+   {
+    "window": "2023-24",
+    "total_return": -0.3695,
+    "max_drawdown": -0.4506,
+    "trade_count": 1332,
+    "triggers": 0
+   },
+   {
+    "window": "近一年",
+    "total_return": 0.3068,
+    "max_drawdown": -0.1415,
+    "trade_count": 809,
+    "triggers": 0
+   }
+  ],
+  "board": [
+   {
+    "window": "2019-20",
+    "total_return": -0.1177,
+    "max_drawdown": -0.2777,
+    "trade_count": 628,
+    "triggers": 0
+   },
+   {
+    "window": "2021-22",
+    "total_return": -0.0665,
+    "max_drawdown": -0.2141,
+    "trade_count": 747,
+    "triggers": 0
+   },
+   {
+    "window": "2023-24",
+    "total_return": -0.0166,
+    "max_drawdown": -0.257,
+    "trade_count": 616,
+    "triggers": 0
+   },
+   {
+    "window": "近一年",
+    "total_return": 0.273,
+    "max_drawdown": -0.1266,
+    "trade_count": 448,
+    "triggers": 0
+   }
+  ]
+ },
+ "consv": {
+  "score": [
+   {
+    "window": "2019-20",
+    "total_return": -0.1018,
+    "max_drawdown": -0.289,
+    "trade_count": 1327,
+    "triggers": 18
+   },
+   {
+    "window": "2021-22",
+    "total_return": -0.2169,
+    "max_drawdown": -0.5158,
+    "trade_count": 1539,
+    "triggers": 3
+   },
+   {
+    "window": "2023-24",
+    "total_return": -0.3647,
+    "max_drawdown": -0.4506,
+    "trade_count": 1333,
+    "triggers": 26
+   },
+   {
+    "window": "近一年",
+    "total_return": 0.3334,
+    "max_drawdown": -0.136,
+    "trade_count": 809,
+    "triggers": 23
+   }
+  ],
+  "board": [
+   {
+    "window": "2019-20",
+    "total_return": -0.1054,
+    "max_drawdown": -0.275,
+    "trade_count": 627,
+    "triggers": 12
+   },
+   {
+    "window": "2021-22",
+    "total_return": -0.0669,
+    "max_drawdown": -0.2136,
+    "trade_count": 747,
+    "triggers": 3
+   },
+   {
+    "window": "2023-24",
+    "total_return": -0.0188,
+    "max_drawdown": -0.257,
+    "trade_count": 616,
+    "triggers": 12
+   },
+   {
+    "window": "近一年",
+    "total_return": 0.2544,
+    "max_drawdown": -0.1266,
+    "trade_count": 446,
+    "triggers": 14
+   }
+  ]
+ },
+ "orig": {
+  "score": [
+   {
+    "window": "2019-20",
+    "total_return": -0.0607,
+    "max_drawdown": -0.2604,
+    "trade_count": 1324,
+    "triggers": 403
+   },
+   {
+    "window": "2021-22",
+    "total_return": -0.1487,
+    "max_drawdown": -0.472,
+    "trade_count": 1536,
+    "triggers": 340
+   },
+   {
+    "window": "2023-24",
+    "total_return": -0.3129,
+    "max_drawdown": -0.3875,
+    "trade_count": 1332,
+    "triggers": 471
+   },
+   {
+    "window": "近一年",
+    "total_return": 0.247,
+    "max_drawdown": -0.1389,
+    "trade_count": 802,
+    "triggers": 94
+   }
+  ],
+  "board": [
+   {
+    "window": "2019-20",
+    "total_return": -0.1402,
+    "max_drawdown": -0.2585,
+    "trade_count": 628,
+    "triggers": 172
+   },
+   {
+    "window": "2021-22",
+    "total_return": -0.0633,
+    "max_drawdown": -0.2196,
+    "trade_count": 744,
+    "triggers": 125
+   },
+   {
+    "window": "2023-24",
+    "total_return": -0.0101,
+    "max_drawdown": -0.2317,
+    "trade_count": 614,
+    "triggers": 187
+   },
+   {
+    "window": "近一年",
+    "total_return": 0.2544,
+    "max_drawdown": -0.1319,
+    "trade_count": 446,
+    "triggers": 40
+   }
+  ]
+ }
+}

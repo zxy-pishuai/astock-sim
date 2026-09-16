@@ -1,0 +1,25 @@
+# A股模拟盘（TianjiQuant 4.5+）直接依赖清单（J4 2026-09-13）
+# 生成方式：AST 扫描 app/ + tools/ 顶层脚本的实际 import（非 .venv 传递依赖）。
+# 主解释器：Python 3.13.x；数值栈锁定主版本（影响回测数值结果，见 docs/reports/J4_20260913.md §2）。
+#
+# 用法：pip install -r requirements.txt（首次/换机）；精确还原用 requirements.lock。
+
+# ---- 数值栈（必须锁主版本：浮点结果可复现） ----
+numpy>=2.4,<3
+pandas>=2.3,<3
+scipy>=1.14,<2
+
+# ---- 数据源（锁主版本：接口/字段变化） ----
+akshare>=1.18,<2
+mootdx>=0.11,<0.12
+tdxpy>=0.2,<0.3
+baostock>=0.9,<1
+
+# ---- 网络与工具 ----
+requests>=2.32,<3
+zstandard>=0.23,<1
+
+# ---- 说明 ----
+# · lightgbm / alpha158 仅 tools/ml_sidecar/.venv（独立虚拟环境）使用，不进入主依赖；
+#   主 venv 禁 import lightgbm（项目红线）。
+# · akshare 的传递依赖（py-mini-racer 等）由 pip 自动解析；完整还原见 requirements.lock。

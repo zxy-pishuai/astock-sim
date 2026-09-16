@@ -1,0 +1,212 @@
+{
+ "generated_at": "2026-08-26 01:46:49",
+ "phase": "48+49",
+ "fixes": {
+  "F_跌停禁卖顺延": "_check_exits 触及跌停且收盘封死(low<=ld*1.001 且 close<=ld*1.001)→当日退出全部顺延",
+  "E_卖出市值分档": "全部卖出路径经 execution.execute_price(side=sell, impact=True)+涨跌停钳制（新增 _sell_price 辅助）",
+  "B_board专属退出": "board 持仓打 board_trade 标记；T+1 低开≤昨收×(1+BOARD_NEXT_DAY_LOW) 止损(max(open,触发价))、T+1 浮盈≥5% 半仓止盈、次日后转通用链"
+ },
+ "recipe": "dd-off 内部自洽口径：pool top500、fetch_quotes置空、score 25/3/0.30/0.001、board 40/2/0.25/0.001、BOARD_MOMENTUM_MIN 冻结 7.0、seed=42",
+ "comparison": [
+  {
+   "strategy": "board",
+   "window_tag": "2019-20",
+   "before": {
+    "total_return": -0.1177,
+    "max_drawdown": -0.2777,
+    "annual_return": -0.0608,
+    "win_rate": 0.6202,
+    "sharpe": -0.288,
+    "trade_count": 628
+   },
+   "after": {
+    "total_return": 0.0348,
+    "max_drawdown": -0.1556,
+    "annual_return": 0.0173,
+    "win_rate": 0.6521,
+    "sharpe": 0.191,
+    "trade_count": 651
+   },
+   "delta": {
+    "total_return_pp": 15.25,
+    "max_drawdown_pp": 12.21,
+    "trade_count_diff": 23
+   }
+  },
+  {
+   "strategy": "board",
+   "window_tag": "2021-22",
+   "before": {
+    "total_return": -0.0665,
+    "max_drawdown": -0.2141,
+    "annual_return": -0.034,
+    "win_rate": 0.6152,
+    "sharpe": -0.12,
+    "trade_count": 747
+   },
+   "after": {
+    "total_return": 0.2334,
+    "max_drawdown": -0.1588,
+    "annual_return": 0.1113,
+    "win_rate": 0.6338,
+    "sharpe": 0.775,
+    "trade_count": 790
+   },
+   "delta": {
+    "total_return_pp": 29.99,
+    "max_drawdown_pp": 5.53,
+    "trade_count_diff": 43
+   }
+  },
+  {
+   "strategy": "board",
+   "window_tag": "2023-24",
+   "before": {
+    "total_return": -0.0183,
+    "max_drawdown": -0.2585,
+    "annual_return": -0.0093,
+    "win_rate": 0.6083,
+    "sharpe": 0.031,
+    "trade_count": 616
+   },
+   "after": {
+    "total_return": 0.0749,
+    "max_drawdown": -0.1952,
+    "annual_return": 0.0371,
+    "win_rate": 0.6247,
+    "sharpe": 0.316,
+    "trade_count": 633
+   },
+   "delta": {
+    "total_return_pp": 9.32,
+    "max_drawdown_pp": 6.33,
+    "trade_count_diff": 17
+   }
+  },
+  {
+   "strategy": "board",
+   "window_tag": "近1年",
+   "before": {
+    "total_return": 0.2877,
+    "max_drawdown": -0.1307,
+    "annual_return": 0.2891,
+    "win_rate": 0.6838,
+    "sharpe": 1.269,
+    "trade_count": 452
+   },
+   "after": {
+    "total_return": 0.4495,
+    "max_drawdown": -0.1126,
+    "annual_return": 0.4518,
+    "win_rate": 0.6972,
+    "sharpe": 2.086,
+    "trade_count": 467
+   },
+   "delta": {
+    "total_return_pp": 16.18,
+    "max_drawdown_pp": 1.81,
+    "trade_count_diff": 15
+   }
+  },
+  {
+   "strategy": "score",
+   "window_tag": "2019-20",
+   "before": {
+    "total_return": -0.157,
+    "max_drawdown": -0.3227,
+    "annual_return": -0.082,
+    "win_rate": 0.6342,
+    "sharpe": -0.174,
+    "trade_count": 1239
+   },
+   "after": {
+    "total_return": -0.1909,
+    "max_drawdown": -0.3868,
+    "annual_return": -0.1007,
+    "win_rate": 0.6468,
+    "sharpe": -0.276,
+    "trade_count": 1164
+   },
+   "delta": {
+    "total_return_pp": -3.39,
+    "max_drawdown_pp": -6.41,
+    "trade_count_diff": -75
+   }
+  },
+  {
+   "strategy": "score",
+   "window_tag": "2021-22",
+   "before": {
+    "total_return": -0.2573,
+    "max_drawdown": -0.5479,
+    "annual_return": -0.139,
+    "win_rate": 0.6083,
+    "sharpe": -0.438,
+    "trade_count": 1439
+   },
+   "after": {
+    "total_return": -0.3734,
+    "max_drawdown": -0.5614,
+    "annual_return": -0.2096,
+    "win_rate": 0.5936,
+    "sharpe": -0.795,
+    "trade_count": 1334
+   },
+   "delta": {
+    "total_return_pp": -11.61,
+    "max_drawdown_pp": -1.35,
+    "trade_count_diff": -105
+   }
+  },
+  {
+   "strategy": "score",
+   "window_tag": "2023-24",
+   "before": {
+    "total_return": -0.2471,
+    "max_drawdown": -0.4476,
+    "annual_return": -0.1333,
+    "win_rate": 0.5801,
+    "sharpe": -0.466,
+    "trade_count": 1291
+   },
+   "after": {
+    "total_return": -0.3455,
+    "max_drawdown": -0.432,
+    "annual_return": -0.1924,
+    "win_rate": 0.5889,
+    "sharpe": -0.804,
+    "trade_count": 1219
+   },
+   "delta": {
+    "total_return_pp": -9.84,
+    "max_drawdown_pp": 1.56,
+    "trade_count_diff": -72
+   }
+  },
+  {
+   "strategy": "score",
+   "window_tag": "近1年",
+   "before": {
+    "total_return": 0.0856,
+    "max_drawdown": -0.1811,
+    "annual_return": 0.0859,
+    "win_rate": 0.6629,
+    "sharpe": 0.429,
+    "trade_count": 748
+   },
+   "after": {
+    "total_return": 0.2022,
+    "max_drawdown": -0.1646,
+    "annual_return": 0.2031,
+    "win_rate": 0.6813,
+    "sharpe": 0.779,
+    "trade_count": 681
+   },
+   "delta": {
+    "total_return_pp": 11.66,
+    "max_drawdown_pp": 1.65,
+    "trade_count_diff": -67
+   }
+  }
+ ]
+}

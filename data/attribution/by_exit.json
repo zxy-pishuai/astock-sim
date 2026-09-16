@@ -1,0 +1,204 @@
+{
+ "generated_at": "2026-08-24 02:33:06",
+ "phase": "30",
+ "method": "按卖出 reason 分类；fly5=卖出日收盘→后第5交易日收盘涨跌幅(正均值=存在卖飞迹象)；期末清仓等窗口尾部卖出无未来K线则剔除计数",
+ "by_exit_backtest": {
+  "主力出货": {
+   "count": 99,
+   "avg_realized_pnl": -550.89,
+   "total_pnl": -54538.34,
+   "win_rate": 0.0101,
+   "profit_factor": 0.002,
+   "fly5_mean": 0.005686,
+   "fly5_median": -0.004024,
+   "fly5_valid_n": 98,
+   "fly5_excluded": 1
+  },
+  "全清止盈": {
+   "count": 338,
+   "avg_realized_pnl": 1281.82,
+   "total_pnl": 433256.27,
+   "win_rate": 1.0,
+   "profit_factor": 99.0,
+   "fly5_mean": 0.016431,
+   "fly5_median": -0.003741,
+   "fly5_valid_n": 336,
+   "fly5_excluded": 2
+  },
+  "冲高回落止盈": {
+   "count": 714,
+   "avg_realized_pnl": 384.24,
+   "total_pnl": 274346.9,
+   "win_rate": 0.9706,
+   "profit_factor": 1164.522,
+   "fly5_mean": 0.002486,
+   "fly5_median": -0.004587,
+   "fly5_valid_n": 702,
+   "fly5_excluded": 12
+  },
+  "时间止损": {
+   "count": 673,
+   "avg_realized_pnl": -445.94,
+   "total_pnl": -300114.53,
+   "win_rate": 0.0,
+   "profit_factor": 0.0,
+   "fly5_mean": -0.002562,
+   "fly5_median": -0.005706,
+   "fly5_valid_n": 667,
+   "fly5_excluded": 6
+  },
+  "期末清仓": {
+   "count": 18,
+   "avg_realized_pnl": -116.22,
+   "total_pnl": -2091.89,
+   "win_rate": 0.2778,
+   "profit_factor": 0.657,
+   "fly5_mean": null,
+   "fly5_median": null,
+   "fly5_valid_n": 0,
+   "fly5_excluded": 18
+  },
+  "止损": {
+   "count": 720,
+   "avg_realized_pnl": -1490.21,
+   "total_pnl": -1072949.1,
+   "win_rate": 0.0,
+   "profit_factor": 0.0,
+   "fly5_mean": 0.002733,
+   "fly5_median": -0.006042,
+   "fly5_valid_n": 710,
+   "fly5_excluded": 10
+  },
+  "移动止损": {
+   "count": 377,
+   "avg_realized_pnl": 182.02,
+   "total_pnl": 68620.09,
+   "win_rate": 0.626,
+   "profit_factor": 2.812,
+   "fly5_mean": 0.013911,
+   "fly5_median": 0.003853,
+   "fly5_valid_n": 373,
+   "fly5_excluded": 4
+  },
+  "超时退出": {
+   "count": 2,
+   "avg_realized_pnl": 329.1,
+   "total_pnl": 658.2,
+   "win_rate": 1.0,
+   "profit_factor": 99.0,
+   "fly5_mean": 0.005567,
+   "fly5_median": 0.022785,
+   "fly5_valid_n": 2,
+   "fly5_excluded": 0
+  },
+  "阶梯止盈": {
+   "count": 1433,
+   "avg_realized_pnl": 447.14,
+   "total_pnl": 640753.47,
+   "win_rate": 1.0,
+   "profit_factor": 99.0,
+   "fly5_mean": 0.015834,
+   "fly5_median": -0.002301,
+   "fly5_valid_n": 1418,
+   "fly5_excluded": 15
+  }
+ },
+ "by_round_exit_cross": {
+  "主力出货": {
+   "count": 98,
+   "win_rate": 0.0102,
+   "avg_pnl": -548.71,
+   "avg_ret": -0.026809,
+   "profit_factor": 0.002,
+   "total_pnl": -53773.19
+  },
+  "全清止盈": {
+   "count": 337,
+   "win_rate": 1.0,
+   "avg_pnl": 2199.98,
+   "avg_ret": 0.110376,
+   "profit_factor": 99.0,
+   "total_pnl": 741394.72
+  },
+  "冲高回落止盈": {
+   "count": 711,
+   "win_rate": 0.9705,
+   "avg_pnl": 545.01,
+   "avg_ret": 0.027823,
+   "profit_factor": 238.267,
+   "total_pnl": 387501.84
+  },
+  "时间止损": {
+   "count": 677,
+   "win_rate": 0.0059,
+   "avg_pnl": -440.36,
+   "avg_ret": -0.02311,
+   "profit_factor": 0.008,
+   "total_pnl": -298120.72
+  },
+  "期末清仓": {
+   "count": 18,
+   "win_rate": 0.2778,
+   "avg_pnl": -153.87,
+   "avg_ret": -0.008613,
+   "profit_factor": 0.546,
+   "total_pnl": -2769.63
+  },
+  "止损": {
+   "count": 717,
+   "win_rate": 0.0,
+   "avg_pnl": -1487.37,
+   "avg_ret": -0.075951,
+   "profit_factor": 0.0,
+   "total_pnl": -1066447.58
+  },
+  "移动止损": {
+   "count": 375,
+   "win_rate": 0.688,
+   "avg_pnl": 285.23,
+   "avg_ret": 0.014112,
+   "profit_factor": 4.136,
+   "total_pnl": 106963.1
+  },
+  "超时退出": {
+   "count": 2,
+   "win_rate": 1.0,
+   "avg_pnl": 461.0,
+   "avg_ret": 0.022472,
+   "profit_factor": 99.0,
+   "total_pnl": 921.99
+  },
+  "阶梯止盈": {
+   "count": 142,
+   "win_rate": 0.993,
+   "avg_pnl": 1213.17,
+   "avg_ret": 0.080338,
+   "profit_factor": 83.682,
+   "total_pnl": 172270.56
+  }
+ },
+ "paper_by_exit": {
+  "冲高回落止盈": {
+   "count": 1,
+   "avg_realized_pnl": 2042.57,
+   "total_pnl": 2042.57,
+   "fly5_mean": null,
+   "fly5_valid_n": 0
+  },
+  "止损": {
+   "count": 1,
+   "avg_realized_pnl": -2481.0,
+   "total_pnl": -2481.0,
+   "fly5_mean": null,
+   "fly5_valid_n": 0
+  },
+  "移动止损": {
+   "count": 2,
+   "avg_realized_pnl": -1479.35,
+   "total_pnl": -2958.7,
+   "fly5_mean": null,
+   "fly5_valid_n": 0
+  }
+ },
+ "paper_notes": []
+}

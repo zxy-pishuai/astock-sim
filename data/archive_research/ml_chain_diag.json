@@ -1,0 +1,212 @@
+{
+  "report": "ml_chain_diag",
+  "title": "ML 侧车链路诊断与台账提速（任务5，只读）",
+  "generated_at": "2026-08-31",
+  "time_basis": {
+    "as_of_date": "2026-08-31",
+    "kline_max_date": "2026-08-28",
+    "note": "kline MAX(date)=2026-08-28 为最新交易日；但逐日覆盖率自 8/24 起骤降，MAX 仅代表 702 只的末根"
+  },
+  "products": {
+    "p1_ml_pred_table": {
+      "source": "tools/ml_sidecar/rolling_train.py (L145 write_ml_pred, INSERT OR REPLACE 分批短事务)",
+      "max_date": "2026-08-19",
+      "rows": 1411194,
+      "distinct_codes": 1693,
+      "first_date": "2019-01-03",
+      "last3_cross_sections": {"2026-08-17": 899, "2026-08-18": 829, "2026-08-19": 776},
+      "structural_cap": "fwd5 标签要求未来 5 交易日 → ml_pred 天然落后 kline 约 5 交易日（kline 至 8/28 → 理论可覆盖至 8/21，但受上游覆盖率限制）",
+      "consumers": [
+        "app/scoring.py L166 _ml_pred_scores_asof / scoring.ml_rank_bonus —— 开关 ML_RANK_WEIGHT=0.0 (config L273) 默认关",
+        "app/engine.py Phase24 _ml_top_codes —— ml_pool_topn 回测参数，默认 None 禁用"
+      ]
+    },
+    "p2_ml_scores_json": {
+      "source": "tools/ml_sidecar/predict.py 原子写 data/ml_scores.json",
+      "file_mtime": "2026-08-27 04:26:49",
+      "internal_date": "2026-08-26",
+      "generated": "2026-08-27 04:26:49",
+      "n_scores": 1700,
+      "age_hours_as_of_0831": 109.0,
+      "max_age_hours": 26,
+      "consumers": [
+        "app/scoring.py ml_score_bonus —— 开关 ML_SCORE_ENABLED=False (config L258) 默认关，文件 >26h 自动失效降级"
+      ]
+    }
+  },
+  "breakpoints": [
+    {
+      "ring": 1,
+      "name": "rolling_train.py → ml_pred 表",
+      "trigger": "手动（无计划任务，非六计划任务之一）",
+      "last_run_evidence": {
+        "rolling_b2c.log_mtime": "2026-08-27 04:34",
+        "ml_rolling_progress.json_mtime": "2026-08-27 04:34:46",
+        "ml_pred_max_date": "2026-08-19",
+        "last_train_point": "T=2026-08-05 预测 10 日 11453 行"
+      },
+      "status": "断供（无人跑）。工具可跑、通道正常，8/27 04:34 后无人手动执行",
+      "layer": "无人跑 + 结构性滞后"
+    },
+    {
+      "ring": 2,
+      "name": "predict.py → data/ml_scores.json",
+      "trigger": "手动（无计划任务）",
+      "last_run_evidence": {
+        "ml_scores.json_mtime": "2026-08-27 04:26:49",
+        "internal_signal_date": "2026-08-26",
+        "predict_b2d.log": "锚日=2026-08-26 打分=1700（候选 2000）用时 707s"
+      },
+      "status": "停摆（无人跑）。信号日停在 8/26；文件超 26h 已过期（现 109h）",
+      "layer": "无人跑"
+    },
+    {
+      "ring": 3,
+      "name": "主系统消费（scoring.py / engine.py）",
+      "trigger": "随打分/回测触发，但开关默认全关",
+      "evidence": {
+        "config_L258_ML_SCORE_ENABLED": false,
+        "config_L273_ML_RANK_WEIGHT": 0.0,
+        "engine_ml_pool_topn_default": "None=禁用"
+      },
+      "status": "通（开关默认关 → 断供无实盘影响）。受影响：台账推进 + 未来 A/B 研究",
+      "layer": "消费面"
+    },
+    {
+      "ring": 4,
+      "name": "scores_ledger.py（16:30 计划任务 ml_scores_ledger_daily）→ data/ml_scores_ledger.jsonl",
+      "trigger": "计划任务 周一~五 16:30（schtasks 确认，last run 8/28 16:30 result 0）",
+      "last_run_evidence": {
+        "ledger_mtime": "2026-08-28 16:30:11",
+        "ledger_bytes": 10202,
+        "picks": 40,
+        "rets": 14,
+        "signal_dates_registered": ["2026-08-26"]
+      },
+      "status": "通（幂等 tick 正常），但推进 0 —— ml_scores.json 信号日未更新，8/29/8/30 tick 同一旧信号日",
+      "layer": "下游消费（活跃且受影响）"
+    },
+    {
+      "ring": 5,
+      "name": "M3 判定：20 个已实现信号日",
+      "trigger": "台账累计",
+      "evidence": {
+        "current_progress": "1/20",
+        "criterion": "docs/reports/ml_scores_ledger_b4.md：需 20 个已实现信号日（每信号日 ≥8 兑现且双桶 ≥3）"
+      },
+      "status": "结构性慢：predict 单日单截面 → 1 信号日/日 → 最短 ≈21 交易日 ≈30 自然日",
+      "layer": "下游消费（活跃且受影响）"
+    }
+  ],
+  "upstream_data": {
+    "finding": "kline 自 8/24 起逐日覆盖率骤降，为本断供的根本约束（层②上游数据）",
+    "kline_per_day_rows": {
+      "2026-08-10": 2023, "2026-08-11": 2023, "2026-08-12": 2023, "2026-08-13": 2024,
+      "2026-08-14": 2024, "2026-08-17": 2024, "2026-08-18": 2025, "2026-08-19": 2023,
+      "2026-08-20": 2022, "2026-08-21": 2023, "2026-08-24": 1227, "2026-08-25": 1116,
+      "2026-08-26": 1044, "2026-08-27": 824, "2026-08-28": 702
+    },
+    "stock_last_bar_distribution": {
+      "total_codes": 2340,
+      "2026-08-28": 702, "2026-08-27": 122, "2026-08-26": 220, "2026-08-25": 73,
+      "2026-08-24": 113, "2026-08-21": 796, "older_than_0817": 310
+    },
+    "note": "8/21（2023 只）为最后一个全池日；8/24 起每交易日仅增量更新少量票并持续萎缩；属 updater/数据源（T2 owner）处置范围，本报告仅记录观察"
+  },
+  "coverage": {
+    "baseline_history": [
+      {"label": "原始（预 B2，700 候选）", "ok": 177, "ratio": 0.253, "signal_date": "~2026-08-25", "note": "任务书引用；对应 predict 初始失败"},
+      {"label": "8/27 基线（诊断，700 候选）", "ok": 424, "ratio": 0.606, "signal_date": "2026-08-26", "reason": {"OK": 424, "R2": 246, "R3": 30}, "file": "data/ml_coverage_diag.json"},
+      {"label": "B2 修复后（2000 候选）", "ok": 1700, "ratio": 0.850, "signal_date": "2026-08-26", "note": "ml_scores.json 实测 1700 分"}
+    ],
+    "rerun_old_logic_700": {
+      "file": "tmp/ml_chain_diag/ml_coverage_diag_rerun.json",
+      "signal_date": "2026-08-28",
+      "universe": 700,
+      "ok": 341,
+      "ratio": 0.487,
+      "reason_counts": {"OK": 341, "R2_lastdate_mismatch": 359, "R3_nan_features": 0},
+      "r2_lag_lt5_recoverable": 236,
+      "r2_lag_lt5_ratio": 0.657,
+      "r2_true_long_suspend": 123,
+      "r3_note": "特征 NaN 问题已随数据推进自然消失（复牌后 AMTRATIO/CORR_RA 有定义）"
+    },
+    "rerun_b2_production": {
+      "file": "tmp/ml_chain_diag/ml_scores_b2run.json",
+      "signal_date": "2026-08-28",
+      "universe": 2000,
+      "ok": 1696,
+      "ratio": 0.848,
+      "lag_distribution": {"0": 626, "1": 106, "2": 188, "3": 55, "4": 91, "5": 630},
+      "lag_skipped_gt5": 304,
+      "family_neutralized": 57,
+      "verdict": "B2 修复在生产口径下生效：旧逻辑 700 候选 48.7% → B2 2000 候选 84.8%；瓶颈已从'特征 NaN'转移至'上游数据覆盖率'"
+    }
+  },
+  "ledger": {
+    "current": {"signal_dates": 1, "realized_days": 1, "picks": 40, "rets": 14, "criterion": "20 realized days"},
+    "mechanism": "登记=do_tick 仅当 ml_scores.json date 未登记时登记 1 信号日（predict 单日单截面）；兑现=信号日 S 的 picks 需 S 之后 ≥1 交易日 T+1 bar；实测 40 票中 14 只 gap==1 兑现（35%）",
+    "min_days_current_mechanism": {
+      "trading_days": 21,
+      "calendar_days": "≈30（受 9/25 中秋、10/1-10/8 国庆休市拉长）",
+      "scenario": "日频 predict（首个新信号日 8/28 或 8/31）→ 第 20 个已实现信号日约 2026-09-28/09-29"
+    },
+    "options": [
+      {
+        "id": "P1_parallel_seed_from_ml_pred",
+        "desc": "从 ml_pred 历史截面并行预登记（selftest 已证明管线可一次登记 25+ 截面，立即得 20+ 实现日）",
+        "cost": "需改 scores_ledger.py 新增 backfill 模式写真实台账；混合产品①进产品②账本（语义变化）；历史截面为'回溯登记'（PIT 有效但非前瞻）；衡量的是 ml_pred 质量而非新 ml_scores",
+        "recommend": "可作为独立 IC 快读（ml_pred 已有 ml_ic_verify 月度基线），不作为 B4 ml_scores 台账的替代"
+      },
+      {
+        "id": "P2_predict_multi_section",
+        "desc": "predict 输出多历史截面供并行登记",
+        "cost": "predict 不保留历史分数，需大改；不推荐",
+        "recommend": false
+      },
+      {
+        "id": "early_realization",
+        "desc": "提前兑现",
+        "cost": "定义上不可能早于 T+1（realized return 需次日 bar）；仅可放宽 M3 口径（gap≤2/3 或降 MIN_REPORT_DAYS），代价=前瞻有效性变弱",
+        "recommend": false
+      }
+    ]
+  },
+  "recovery_suggestions": [
+    {
+      "id": "A_predict_daily_task",
+      "desc": "predict.py 注册为日频计划任务（.cmd 草案见报告 §5，纯 ASCII / %~dp0 定位 / sidecar .venv 解释器）",
+      "timing": "数据更新之后、台账 16:30 之前（规避 backlog'台账先落账'时序陷阱同类）；若夜间跑则次日 tick 登记前一日信号日，进度仍 1 日/日"
+    },
+    {
+      "id": "B_rolling_train_low_freq",
+      "desc": "rolling_train.py 低频（每周日）或与 predict 同频，扩充 ml_pred（write_ml_pred 既有短事务通道）；注意其 fwd5 结构滞后 + 上游覆盖率限制",
+      "note": "属 .db 写入，但为既有 write_ml_pred 通道（8/27 批已先例），非行情表 updater 路径；注册仍需验收方批准"
+    },
+    {
+      "id": "C_alert_threshold",
+      "desc": "data_sentinel.py check_ml_pred 阈值收紧：ML_PRED_STALE_TDAYS=25（L52）过松，当前 8 交易日断供哨兵未报 → 建议 3-5 交易日；check_ml_scores_coverage 的 MIN5_STALE_TDAYS=5 已覆盖 ml_scores 信号日，但当前 signal=8/26 stale=3 未触发（约 9/4 才触发）→ 建议 ml_scores 单独更敏感",
+      "code_change": "只写报告，不改代码"
+    },
+    {
+      "id": "D_upstream_data",
+      "desc": "上游 kline 覆盖率降级（8/24 起 2023→702）为本断供根本约束，需 T2（updater/数据源 owner）处置；ML 恢复前应先修数据管道",
+      "owner": "T2（任务1/2 协调协议）"
+    }
+  ],
+  "readonly_compliance": {
+    "production_files_untouched": {
+      "data/ml_scores.json": "mtime 2026-08-27 04:26:49 未变",
+      "data/ml_coverage_diag.json": "mtime 2026-08-27 02:43:42 未变",
+      "data/ml_scores_ledger.jsonl": "mtime 2026-08-28 16:30:11 未变"
+    },
+    "writes_by_this_task": {
+      "data/ml_scores_ledger_report_selftest.json": "自检产物按文档覆盖（8/27 10:44 → 8/31 00:30，4758B），非真实台账",
+      "tmp/ml_chain_diag/*": "诊断副本与输出（diag_coverage_run.py / predict_b2run.py / model.txt / model_feats.json / ml_coverage_diag_rerun.json / ml_scores_b2run.json）"
+    },
+    "no_plan_task_registered": true,
+    "no_code_change_in_production": true,
+    "sidecar_venv_used": true,
+    "selftest_ok": "25 realized days, join 1000, IC mean 0.1815"
+  }
+}

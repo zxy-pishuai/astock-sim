@@ -1,0 +1,89 @@
+{
+ "generated_at": "2026-09-01 10:43:04",
+ "task": "X2 S1 vol-target 权重层独立实现交叉验证（2 窗）",
+ "meta": {
+  "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-27\\market.db",
+  "excluded_codes": 196,
+  "params_score": {
+   "buy_threshold": 25,
+   "max_positions": 3,
+   "position_pct": 0.3,
+   "slippage": 0.001,
+   "zt_eco_gate": false,
+   "dd_gate": false
+  },
+  "windows": [
+   [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   [
+    "2025-08-18",
+    "2026-08-21"
+   ]
+  ],
+  "win_names": [
+   "2023-24",
+   "牛市"
+  ],
+  "pool": "PIT（同 W3）",
+  "method": "独立实现 monkey-patch portfolio.compute_weights(x2_s1)",
+  "independence": "ATR14 固定窗口求和 + 独立权重公式；不 import sizing_lab",
+  "exec_mode": "process",
+  "workers": 2,
+  "prereg": "|Δret|<=1pp 且 |ΔMDD|<=2pp（vs bt_sizing_lab.json s1/w2,w3）"
+ },
+ "results": {
+  "w1": {
+   "widx": 1,
+   "window": "牛市",
+   "pit_key": "近1年",
+   "n_codes": 445,
+   "total_return": -0.0659,
+   "max_drawdown": -0.0969,
+   "sharpe": -0.904,
+   "trade_count": 523,
+   "daily_vol": 0.00463,
+   "cash_mean": 74872.08,
+   "elapsed": 174.3
+  },
+  "w0": {
+   "widx": 0,
+   "window": "2023-24",
+   "pit_key": "2023-24",
+   "n_codes": 426,
+   "total_return": -0.2599,
+   "max_drawdown": -0.2886,
+   "sharpe": -1.705,
+   "trade_count": 1158,
+   "daily_vol": 0.00557,
+   "cash_mean": 62223.1,
+   "elapsed": 477.0
+  }
+ },
+ "compare": {
+  "2023-24": {
+   "lab_ret": -0.2599,
+   "lab_mdd": -0.2886,
+   "replay_ret": -0.2599,
+   "replay_mdd": -0.2886,
+   "d_ret_pp": 0.0,
+   "d_mdd_pp": 0.0,
+   "pass": true
+  },
+  "牛市": {
+   "lab_ret": -0.0659,
+   "lab_mdd": -0.0969,
+   "replay_ret": -0.0659,
+   "replay_mdd": -0.0969,
+   "d_ret_pp": 0.0,
+   "d_mdd_pp": 0.0,
+   "pass": true
+  }
+ },
+ "pass": true,
+ "pass_detail": "2/2 窗满足 |Δret|<=1pp 且 |ΔMDD|<=2pp",
+ "cells_done": 2,
+ "cells_total": 2,
+ "elapsed_s": 477.5
+}

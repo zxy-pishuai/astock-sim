@@ -1,0 +1,5319 @@
+{
+ "universe": 700,
+ "signal_date": "2026-08-26",
+ "scored_now": 424,
+ "reason_counts": {
+  "OK": 424,
+  "R3_nan_features": 30,
+  "R2_lastdate_mismatch": 246
+ },
+ "median_bars": {
+  "OK": 1856,
+  "R3": 1856,
+  "R2": 1853
+ },
+ "median_amt20": {
+  "OK": 332284176.0,
+  "R3": 0.0,
+  "R2": 350096181.6
+ },
+ "na_cols_top15": [
+  [
+   "AMTRATIO5",
+   30
+  ],
+  [
+   "AMTRATIO10",
+   30
+  ],
+  [
+   "CORR_RA5",
+   28
+  ],
+  [
+   "AMTRATIO20",
+   28
+  ],
+  [
+   "AMTRATIO30",
+   28
+  ],
+  [
+   "CORR_RA10",
+   24
+  ],
+  [
+   "CORR_RA20",
+   24
+  ],
+  [
+   "CORR_RA30",
+   23
+  ],
+  [
+   "AMTRATIO60",
+   19
+  ],
+  [
+   "CORR_RA60",
+   11
+  ]
+ ],
+ "r3_na_width_hist": {
+  "4": 2,
+  "5": 1,
+  "7": 4,
+  "8": 11,
+  "9": 4,
+  "10": 8
+ },
+ "fix_F1_fillna0_tiers": {
+  "low_risk_le3cols": 0,
+  "mid_risk_4to10": 30,
+  "high_risk_gt10": 0
+ },
+ "fix_F2_minbars_100": {
+  "new_eligible_total": 1,
+  "note": "并入后仍 ORDER BY code LIMIT 700：新增票按代码序插入，会顶掉尾部的最大代码若干只；DB 内 ≥100 根总票数为 1981",
+  "new_codes_sample": [
+   "001257"
+  ]
+ },
+ "per_code": [
+  {
+   "code": "000001",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1300084774.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000002",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 408353514.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000006",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 150732012.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000007",
+   "bars": 1852,
+   "last_date": "2026-08-26",
+   "amt20": 125260463.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000008",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 83767755.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000009",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 408671644.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000011",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 90625361.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000012",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 87051413.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000014",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 65569259.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000017",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 129865102.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000019",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 135933086.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000020",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 104840432.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000021",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 4619669632.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000025",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 177062806.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000026",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 287043343.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000027",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 140637045.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000028",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 74760010.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000029",
+   "bars": 1408,
+   "last_date": "2026-08-26",
+   "amt20": 120554022.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000030",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 37971215.1,
+   "reason": "OK"
+  },
+  {
+   "code": "000031",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 81601546.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000032",
+   "bars": 1845,
+   "last_date": "2026-08-26",
+   "amt20": 653284598.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000034",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 972851499.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000035",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 167750242.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000036",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 102127658.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000037",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000039",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 23080499.2,
+   "reason": "R3_nan_features",
+   "na_count": 4,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10"
+   ]
+  },
+  {
+   "code": "000042",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 10,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000045",
+   "bars": 1843,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000048",
+   "bars": 1852,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 10,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000049",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60"
+   ]
+  },
+  {
+   "code": "000050",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 7,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "AMTRATIO60"
+   ]
+  },
+  {
+   "code": "000055",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 9,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60"
+   ]
+  },
+  {
+   "code": "000058",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 10,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000059",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 9,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000060",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000061",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000062",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 476391927.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000063",
+   "bars": 1855,
+   "last_date": "2026-08-26",
+   "amt20": 4188118860.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000065",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 235952082.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000066",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1610778902.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000068",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 38025012.3,
+   "reason": "OK"
+  },
+  {
+   "code": "000069",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 96169531.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000070",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 802374392.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000088",
+   "bars": 1840,
+   "last_date": "2026-08-26",
+   "amt20": 105712008.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000089",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 97613100.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000090",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 56932140.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000096",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 65245469.1,
+   "reason": "OK"
+  },
+  {
+   "code": "000099",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 106135575.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000100",
+   "bars": 1855,
+   "last_date": "2026-08-26",
+   "amt20": 2622762336.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000151",
+   "bars": 1848,
+   "last_date": "2026-08-26",
+   "amt20": 58746992.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000153",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 146558138.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000155",
+   "bars": 1836,
+   "last_date": "2026-08-26",
+   "amt20": 495072772.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000156",
+   "bars": 1847,
+   "last_date": "2026-08-26",
+   "amt20": 64222216.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000157",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 346404420.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000158",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 524988250.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000159",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 64148273.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000166",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 279054810.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000301",
+   "bars": 1845,
+   "last_date": "2026-08-26",
+   "amt20": 387565533.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000333",
+   "bars": 1845,
+   "last_date": "2026-08-26",
+   "amt20": 2384566464.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000338",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2515664633.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000400",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 432212822.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000401",
+   "bars": 1834,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 7,
+   "na_cols": [
+    "AMTRATIO5",
+    "AMTRATIO10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000402",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60"
+   ]
+  },
+  {
+   "code": "000403",
+   "bars": 1843,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 10,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000404",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 96106806.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000407",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 75384940.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000408",
+   "bars": 1849,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 10,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000409",
+   "bars": 1852,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 10,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000410",
+   "bars": 1839,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 9,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000411",
+   "bars": 1845,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000415",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 240024604.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000417",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 175479218.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000419",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2676073.6,
+   "reason": "R3_nan_features",
+   "na_count": 4,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10"
+   ]
+  },
+  {
+   "code": "000420",
+   "bars": 1839,
+   "last_date": "2026-08-26",
+   "amt20": 156624578.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000421",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 67063995.7,
+   "reason": "OK"
+  },
+  {
+   "code": "000422",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 323489097.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000423",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 370670848.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000425",
+   "bars": 1833,
+   "last_date": "2026-08-26",
+   "amt20": 919383908.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000426",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 3264289523.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000428",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 278003199.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000429",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 135094957.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000430",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 56536714.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000498",
+   "bars": 1845,
+   "last_date": "2026-08-26",
+   "amt20": 47505614.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000501",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 49966415.9,
+   "reason": "OK"
+  },
+  {
+   "code": "000503",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 154831594.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000504",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 59291979.3,
+   "reason": "OK"
+  },
+  {
+   "code": "000505",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 260239183.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000506",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 2003442979.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000507",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 46701727.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000509",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 83272769.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000510",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 833451214.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000513",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 238936598.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000514",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 40839329.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000516",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 101154508.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000517",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "AMTRATIO60"
+   ]
+  },
+  {
+   "code": "000518",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 5,
+   "na_cols": [
+    "AMTRATIO5",
+    "AMTRATIO10",
+    "AMTRATIO20",
+    "AMTRATIO30",
+    "AMTRATIO60"
+   ]
+  },
+  {
+   "code": "000519",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000520",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 10,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000521",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 7,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000523",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 9,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60"
+   ]
+  },
+  {
+   "code": "000524",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 101680290.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000525",
+   "bars": 1828,
+   "last_date": "2026-08-26",
+   "amt20": 144643899.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000526",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 244412957.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000528",
+   "bars": 1835,
+   "last_date": "2026-08-26",
+   "amt20": 216806399.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000529",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 21258326.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000530",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 62006559.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000531",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 49989435.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000532",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 55228211.5,
+   "reason": "OK"
+  },
+  {
+   "code": "000533",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1276769259.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000534",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 338566064.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000536",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 146176054.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000537",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 289603160.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000538",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 467064062.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000539",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 457151801.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000541",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 32571782.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000543",
+   "bars": 1855,
+   "last_date": "2026-08-26",
+   "amt20": 174631258.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000544",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 28537621.35,
+   "reason": "OK"
+  },
+  {
+   "code": "000545",
+   "bars": 1845,
+   "last_date": "2026-08-26",
+   "amt20": 81242070.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000546",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 74554446.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000547",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 10,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60",
+    "CORR_RA60"
+   ]
+  },
+  {
+   "code": "000548",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 7,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000550",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 60948914.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000551",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "CORR_RA10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30"
+   ]
+  },
+  {
+   "code": "000552",
+   "bars": 1835,
+   "last_date": "2026-08-26",
+   "amt20": 178234154.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000553",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 0.0,
+   "reason": "R3_nan_features",
+   "na_count": 8,
+   "na_cols": [
+    "AMTRATIO5",
+    "CORR_RA5",
+    "AMTRATIO10",
+    "AMTRATIO20",
+    "CORR_RA20",
+    "AMTRATIO30",
+    "CORR_RA30",
+    "AMTRATIO60"
+   ]
+  },
+  {
+   "code": "000554",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 117719517.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000555",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 288624417.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000557",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 28484550.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000558",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 85067710.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000559",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 425437185.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000560",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 373705897.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000561",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 65824656.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000563",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 122881663.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000564",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 451867144.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000565",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 62173660.3,
+   "reason": "OK"
+  },
+  {
+   "code": "000566",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 1133870889.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000567",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 107252205.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000568",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1004373203.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000570",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 53812438.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000571",
+   "bars": 1852,
+   "last_date": "2026-08-26",
+   "amt20": 246823703.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000572",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 162924682.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000573",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 62222325.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000576",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 54281634.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000581",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 135182854.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000582",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 577337753.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000586",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 70732412.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000589",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 107358128.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000590",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 36913654.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000591",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 169745545.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000592",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 959725400.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000593",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 605297934.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000595",
+   "bars": 1836,
+   "last_date": "2026-08-26",
+   "amt20": 391439805.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000596",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 635956748.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000597",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 137564748.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000598",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 134535768.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000599",
+   "bars": 1848,
+   "last_date": "2026-08-26",
+   "amt20": 60021420.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000600",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 225584924.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000601",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 299292783.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000603",
+   "bars": 1840,
+   "last_date": "2026-08-26",
+   "amt20": 2660757600.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000605",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 24121561.55,
+   "reason": "OK"
+  },
+  {
+   "code": "000607",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 49078570.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000608",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 243481741.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000612",
+   "bars": 1841,
+   "last_date": "2026-08-26",
+   "amt20": 386418463.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000617",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 702056200.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000619",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 26186515.5,
+   "reason": "OK"
+  },
+  {
+   "code": "000620",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 1073458577.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000623",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 223956159.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000625",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 496087792.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000626",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 92229592.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000628",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 478541410.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000629",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 292199188.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000630",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 2118182688.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000631",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 34893339.1,
+   "reason": "OK"
+  },
+  {
+   "code": "000633",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 38874401.1,
+   "reason": "OK"
+  },
+  {
+   "code": "000635",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 28367820.9,
+   "reason": "OK"
+  },
+  {
+   "code": "000636",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 10247969676.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000637",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 32065982.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000650",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 127880276.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000651",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 1958943494.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000652",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 39693237.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000655",
+   "bars": 1855,
+   "last_date": "2026-08-26",
+   "amt20": 45136702.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000656",
+   "bars": 1843,
+   "last_date": "2026-08-26",
+   "amt20": 229738805.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000657",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 6336793113.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000659",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 80526417.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000661",
+   "bars": 1847,
+   "last_date": "2026-08-26",
+   "amt20": 859514499.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000663",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 31207107.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000665",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 91028004.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000668",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 116873241.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000670",
+   "bars": 1244,
+   "last_date": "2026-08-26",
+   "amt20": 413051063.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000672",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 270950043.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000676",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 963120548.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000678",
+   "bars": 1847,
+   "last_date": "2026-08-26",
+   "amt20": 176944258.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000679",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 34722182.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000680",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 235068344.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000681",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 568535360.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000682",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 187140432.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000683",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 518865624.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000685",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 149995541.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000686",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 140335891.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000688",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 711787328.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000690",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 278430177.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000691",
+   "bars": 1848,
+   "last_date": "2026-08-26",
+   "amt20": 105558901.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000692",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 143519299.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000695",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 142673862.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000697",
+   "bars": 1847,
+   "last_date": "2026-08-26",
+   "amt20": 57288436.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000700",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 503091256.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000701",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 57791817.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000702",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 36268667.9,
+   "reason": "OK"
+  },
+  {
+   "code": "000703",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1779383689.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000710",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 276901734.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000712",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 329783764.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000716",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 208969619.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000725",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 10289626956.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000727",
+   "bars": 1847,
+   "last_date": "2026-08-26",
+   "amt20": 169602733.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000728",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 187002320.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000733",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 576388382.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000735",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 344854021.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000737",
+   "bars": 1843,
+   "last_date": "2026-08-26",
+   "amt20": 1103626206.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000739",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 703635153.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000751",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 372433920.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000756",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 203419720.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000759",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 539375078.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000762",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 356848584.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000766",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 318730954.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000768",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 492780762.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000776",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1226861459.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000778",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 192796990.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000779",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 867015516.3,
+   "reason": "OK"
+  },
+  {
+   "code": "000783",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 941591032.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000786",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 434946303.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000792",
+   "bars": 1542,
+   "last_date": "2026-08-26",
+   "amt20": 1790389331.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000795",
+   "bars": 251,
+   "last_date": "2026-08-26",
+   "amt20": 144084180.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000798",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 106799964.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000802",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 569758323.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000807",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2229159481.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000811",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1881337260.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000815",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 1916767168.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000823",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 733717516.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000830",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 390277152.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000831",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2453407078.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000833",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 473953254.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000837",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 340207786.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000858",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2460054214.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000860",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 111429256.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000876",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 248455004.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000878",
+   "bars": 1847,
+   "last_date": "2026-08-26",
+   "amt20": 791387225.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000880",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 323348312.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000887",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1190378406.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000893",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 723063320.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000902",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 180208169.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000917",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 250859689.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000921",
+   "bars": 302,
+   "last_date": "2026-08-26",
+   "amt20": 268834968.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000923",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 271056916.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000925",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 226798542.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000927",
+   "bars": 1835,
+   "last_date": "2026-08-26",
+   "amt20": 98986642.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000930",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 114430122.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000931",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 160636764.5,
+   "reason": "OK"
+  },
+  {
+   "code": "000933",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 1429955753.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000936",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 253019021.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000938",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 9480184358.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000949",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 297141206.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000950",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 278079461.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000957",
+   "bars": 1841,
+   "last_date": "2026-08-26",
+   "amt20": 91246226.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000960",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2185285920.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000962",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1629462736.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000963",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 883837992.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000967",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1130430377.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000968",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 204417704.0,
+   "reason": "OK"
+  },
+  {
+   "code": "000969",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 438253745.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000970",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 616502885.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000973",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 707464326.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000975",
+   "bars": 1841,
+   "last_date": "2026-08-26",
+   "amt20": 1695116963.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000977",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 5998102169.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000983",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 499702900.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000987",
+   "bars": 1849,
+   "last_date": "2026-08-26",
+   "amt20": 196863722.4,
+   "reason": "OK"
+  },
+  {
+   "code": "000988",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 5822544793.6,
+   "reason": "OK"
+  },
+  {
+   "code": "000989",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 336416556.8,
+   "reason": "OK"
+  },
+  {
+   "code": "000997",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 465119527.2,
+   "reason": "OK"
+  },
+  {
+   "code": "000998",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 366336617.6,
+   "reason": "OK"
+  },
+  {
+   "code": "001203",
+   "bars": 1288,
+   "last_date": "2026-08-26",
+   "amt20": 584931937.6,
+   "reason": "OK"
+  },
+  {
+   "code": "001210",
+   "bars": 1231,
+   "last_date": "2026-08-26",
+   "amt20": 227643485.2,
+   "reason": "OK"
+  },
+  {
+   "code": "001239",
+   "bars": 656,
+   "last_date": "2026-08-26",
+   "amt20": 24970159.75,
+   "reason": "OK"
+  },
+  {
+   "code": "001258",
+   "bars": 991,
+   "last_date": "2026-08-26",
+   "amt20": 2014617689.6,
+   "reason": "OK"
+  },
+  {
+   "code": "001267",
+   "bars": 1155,
+   "last_date": "2026-08-26",
+   "amt20": 1657564736.0,
+   "reason": "OK"
+  },
+  {
+   "code": "001268",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 77302626.0,
+   "reason": "OK"
+  },
+  {
+   "code": "001270",
+   "bars": 1023,
+   "last_date": "2026-08-26",
+   "amt20": 1031899518.4,
+   "reason": "OK"
+  },
+  {
+   "code": "001277",
+   "bars": 479,
+   "last_date": "2026-08-26",
+   "amt20": 94711833.7,
+   "reason": "OK"
+  },
+  {
+   "code": "001279",
+   "bars": 458,
+   "last_date": "2026-08-26",
+   "amt20": 21704933.1,
+   "reason": "OK"
+  },
+  {
+   "code": "001280",
+   "bars": 178,
+   "last_date": "2026-08-26",
+   "amt20": 579757732.8,
+   "reason": "OK"
+  },
+  {
+   "code": "001283",
+   "bars": 963,
+   "last_date": "2026-08-26",
+   "amt20": 133174860.6,
+   "reason": "OK"
+  },
+  {
+   "code": "001286",
+   "bars": 821,
+   "last_date": "2026-08-26",
+   "amt20": 264767744.0,
+   "reason": "OK"
+  },
+  {
+   "code": "001287",
+   "bars": 821,
+   "last_date": "2026-08-26",
+   "amt20": 478126175.2,
+   "reason": "OK"
+  },
+  {
+   "code": "001301",
+   "bars": 887,
+   "last_date": "2026-08-26",
+   "amt20": 370329135.2,
+   "reason": "OK"
+  },
+  {
+   "code": "001309",
+   "bars": 1009,
+   "last_date": "2026-08-26",
+   "amt20": 8047621376.0,
+   "reason": "OK"
+  },
+  {
+   "code": "001317",
+   "bars": 1145,
+   "last_date": "2026-08-26",
+   "amt20": 343680268.8,
+   "reason": "OK"
+  },
+  {
+   "code": "001330",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 332284176.0,
+   "reason": "OK"
+  },
+  {
+   "code": "001331",
+   "bars": 931,
+   "last_date": "2026-08-26",
+   "amt20": 477905171.2,
+   "reason": "OK"
+  },
+  {
+   "code": "001332",
+   "bars": 953,
+   "last_date": "2026-08-26",
+   "amt20": 58512334.6,
+   "reason": "OK"
+  },
+  {
+   "code": "001337",
+   "bars": 846,
+   "last_date": "2026-08-26",
+   "amt20": 1164310427.2,
+   "reason": "OK"
+  },
+  {
+   "code": "001339",
+   "bars": 978,
+   "last_date": "2026-08-26",
+   "amt20": 789394452.8,
+   "reason": "OK"
+  },
+  {
+   "code": "001359",
+   "bars": 586,
+   "last_date": "2026-08-26",
+   "amt20": 440128990.4,
+   "reason": "OK"
+  },
+  {
+   "code": "001369",
+   "bars": 159,
+   "last_date": "2026-08-26",
+   "amt20": 120338434.2,
+   "reason": "OK"
+  },
+  {
+   "code": "001387",
+   "bars": 635,
+   "last_date": "2026-08-26",
+   "amt20": 29628266.8,
+   "reason": "OK"
+  },
+  {
+   "code": "001389",
+   "bars": 583,
+   "last_date": "2026-08-26",
+   "amt20": 1256950150.4,
+   "reason": "OK"
+  },
+  {
+   "code": "001400",
+   "bars": 327,
+   "last_date": "2026-08-26",
+   "amt20": 221112080.0,
+   "reason": "OK"
+  },
+  {
+   "code": "001696",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 958966464.0,
+   "reason": "OK"
+  },
+  {
+   "code": "001896",
+   "bars": 1845,
+   "last_date": "2026-08-26",
+   "amt20": 1049818587.2,
+   "reason": "OK"
+  },
+  {
+   "code": "001965",
+   "bars": 251,
+   "last_date": "2026-08-26",
+   "amt20": 165317088.4,
+   "reason": "OK"
+  },
+  {
+   "code": "001979",
+   "bars": 1840,
+   "last_date": "2026-08-26",
+   "amt20": 629109696.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002001",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1093415072.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002007",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 204652092.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002008",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 4098294656.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002015",
+   "bars": 1855,
+   "last_date": "2026-08-26",
+   "amt20": 1309756950.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002017",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 354745820.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002019",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 166379905.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002020",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 244993703.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002025",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1114858188.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002027",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 939247504.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002028",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1631805664.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002031",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 875982564.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002032",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 83971037.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002034",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 107149336.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002036",
+   "bars": 251,
+   "last_date": "2026-08-26",
+   "amt20": 362662256.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002038",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 279355406.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002040",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 111457534.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002041",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 368878798.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002043",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 188146560.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002044",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 609261676.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002045",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 250119191.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002046",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 597627089.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002049",
+   "bars": 1835,
+   "last_date": "2026-08-26",
+   "amt20": 1461303302.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002050",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2327811513.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002051",
+   "bars": 1855,
+   "last_date": "2026-08-26",
+   "amt20": 231401115.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002052",
+   "bars": 1841,
+   "last_date": "2026-08-26",
+   "amt20": 133862300.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002056",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 656750416.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002064",
+   "bars": 1841,
+   "last_date": "2026-08-26",
+   "amt20": 539941016.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002069",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 40412850.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002073",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 113489394.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002074",
+   "bars": 1849,
+   "last_date": "2026-08-26",
+   "amt20": 722697998.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002075",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 153614178.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002078",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 211797252.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002080",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 2978610540.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002081",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1339745301.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002083",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 775394428.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002086",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 159897236.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002090",
+   "bars": 1849,
+   "last_date": "2026-08-26",
+   "amt20": 72950730.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002092",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 233255059.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002094",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 83798448.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002104",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 621573318.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002112",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 504925760.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002115",
+   "bars": 1838,
+   "last_date": "2026-08-26",
+   "amt20": 800549494.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002117",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 55195462.9,
+   "reason": "OK"
+  },
+  {
+   "code": "002119",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 862866508.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002121",
+   "bars": 1839,
+   "last_date": "2026-08-26",
+   "amt20": 113587320.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002125",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 271190205.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002126",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 724279136.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002129",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1066423622.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002130",
+   "bars": 251,
+   "last_date": "2026-08-26",
+   "amt20": 568890775.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002131",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 3943259852.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002132",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 356166812.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002138",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1865654486.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002139",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 190547556.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002140",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 56516471.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002141",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 1339527091.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002142",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 1000672214.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002146",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 149578487.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002149",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1608460841.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002150",
+   "bars": 1852,
+   "last_date": "2026-08-26",
+   "amt20": 207870375.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002153",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 402365291.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002155",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 1173023891.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002156",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 7619505126.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002165",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 668672485.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002167",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1454124934.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002170",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 197517194.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002171",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 425435884.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002172",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 410418836.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002173",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1285121249.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002174",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 432792618.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002176",
+   "bars": 1844,
+   "last_date": "2026-08-26",
+   "amt20": 727121688.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002177",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 236352655.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002179",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 833638923.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002185",
+   "bars": 1840,
+   "last_date": "2026-08-26",
+   "amt20": 5210554534.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002190",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 179142595.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002192",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 1428063644.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002194",
+   "bars": 1855,
+   "last_date": "2026-08-26",
+   "amt20": 434209784.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002195",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1292621652.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002202",
+   "bars": 1850,
+   "last_date": "2026-08-26",
+   "amt20": 3251798489.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002203",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 515452652.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002204",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 101137786.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002213",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 440891656.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002215",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 206062834.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002219",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 349887750.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002222",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1826299398.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002223",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 284306721.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002226",
+   "bars": 1845,
+   "last_date": "2026-08-26",
+   "amt20": 125035118.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002229",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 789986469.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002230",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 1883851116.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002235",
+   "bars": 1850,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002236",
+   "bars": 1853,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002237",
+   "bars": 1854,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002240",
+   "bars": 1853,
+   "last_date": "2026-08-25",
+   "amt20": 1458056470.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002241",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 1920085024.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002245",
+   "bars": 1851,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002248",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002251",
+   "bars": 1846,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002252",
+   "bars": 1840,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002258",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002261",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002262",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002264",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 127064362.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002269",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 66434462.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002271",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 535788593.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002272",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 477793030.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002273",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1311458233.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002274",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 141114353.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002277",
+   "bars": 250,
+   "last_date": "2026-08-24",
+   "amt20": 114695122.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002278",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 78480775.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002279",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 490442607.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002281",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 8269865344.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002284",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 230734219.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002287",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 53903880.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002289",
+   "bars": 1833,
+   "last_date": "2026-08-21",
+   "amt20": 214461938.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002290",
+   "bars": 1850,
+   "last_date": "2026-08-21",
+   "amt20": 492645582.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002292",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 392581232.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002294",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 909176761.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002297",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 914778185.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002311",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 451941871.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002317",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1111450640.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002320",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 108010302.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002322",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 130968637.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002326",
+   "bars": 1848,
+   "last_date": "2026-08-21",
+   "amt20": 755459091.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002329",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 384143673.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002335",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 734088020.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002340",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 614508688.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002345",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 326891524.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002346",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 219850825.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002350",
+   "bars": 1852,
+   "last_date": "2026-08-21",
+   "amt20": 234121860.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002352",
+   "bars": 1853,
+   "last_date": "2026-08-26",
+   "amt20": 662866195.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002353",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2562878535.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002354",
+   "bars": 1851,
+   "last_date": "2026-08-21",
+   "amt20": 2328430112.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002361",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 1493439987.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002364",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1695706969.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002365",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 545411136.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002370",
+   "bars": 1848,
+   "last_date": "2026-08-21",
+   "amt20": 244913146.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002371",
+   "bars": 3915,
+   "last_date": "2026-08-26",
+   "amt20": 6946872217.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002378",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1085004067.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002379",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 1310132560.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002384",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 15093341862.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002385",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 324595297.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002388",
+   "bars": 1846,
+   "last_date": "2026-08-21",
+   "amt20": 343174514.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002396",
+   "bars": 3722,
+   "last_date": "2026-08-25",
+   "amt20": 2682579281.53,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002400",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 988967929.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002402",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 568710472.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002407",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 6000858938.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002409",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 4310487553.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002412",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 279441037.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002414",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1159776118.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002415",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 3161142840.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002420",
+   "bars": 1847,
+   "last_date": "2026-08-21",
+   "amt20": 47225165.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002421",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 889472501.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002422",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1497998899.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002423",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002428",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 7807613913.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002429",
+   "bars": 1848,
+   "last_date": "2026-08-21",
+   "amt20": 586362964.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002430",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 287767664.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002432",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 2357820652.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002436",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 3854432796.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002437",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 1594298102.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002440",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 707518678.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002448",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 342887568.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002455",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 282568952.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002456",
+   "bars": 1840,
+   "last_date": "2026-08-25",
+   "amt20": 708566710.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002458",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 538191172.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002460",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 2069349965.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002463",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 5833097804.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002465",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 538926779.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002466",
+   "bars": 1848,
+   "last_date": "2026-08-24",
+   "amt20": 2240372640.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002467",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 268747716.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002471",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 406405096.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002472",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 937042707.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002474",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 271421510.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002475",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 7461578291.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002484",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 3130666056.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002487",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1006305129.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002490",
+   "bars": 1853,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002491",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 3861113248.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002493",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 679701086.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002496",
+   "bars": 1847,
+   "last_date": "2026-08-21",
+   "amt20": 46416770.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002497",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 695065784.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002498",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1182998555.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002515",
+   "bars": 1846,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002517",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1544909308.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002518",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 437598412.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002520",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 293641300.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002526",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 66726154.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002532",
+   "bars": 1842,
+   "last_date": "2026-08-21",
+   "amt20": 1340484467.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002536",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1933108705.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002537",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 147084849.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002539",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 246834526.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002540",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 51689176.9,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002543",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 81022801.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002545",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 390720839.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002550",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 225878639.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002552",
+   "bars": 1835,
+   "last_date": "2026-08-24",
+   "amt20": 1524662663.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002553",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 165654661.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002555",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 907232124.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002556",
+   "bars": 1842,
+   "last_date": "2026-08-21",
+   "amt20": 64224508.9,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002558",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 2573795280.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002562",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 144834061.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002571",
+   "bars": 1848,
+   "last_date": "2026-08-21",
+   "amt20": 59757811.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002575",
+   "bars": 1848,
+   "last_date": "2026-08-21",
+   "amt20": 221263315.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002578",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 122478705.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002579",
+   "bars": 1844,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002580",
+   "bars": 1853,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002582",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 423520648.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002585",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1069095225.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002589",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 460894238.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002590",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 60803236.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002591",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 52788292.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002594",
+   "bars": 3671,
+   "last_date": "2026-08-26",
+   "amt20": 2990636339.25,
+   "reason": "OK"
+  },
+  {
+   "code": "002600",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1209878757.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002601",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 291359040.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002602",
+   "bars": 1852,
+   "last_date": "2026-08-25",
+   "amt20": 1586452444.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002603",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 499385449.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002611",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 509680787.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002615",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 44521541.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002617",
+   "bars": 1852,
+   "last_date": "2026-08-21",
+   "amt20": 520266764.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002624",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 647475649.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002625",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 637335868.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002626",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 134433252.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002627",
+   "bars": 1834,
+   "last_date": "2026-08-25",
+   "amt20": 85226238.7,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002629",
+   "bars": 1835,
+   "last_date": "2026-08-21",
+   "amt20": 51773148.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002635",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 321200644.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002636",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 3345249685.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002637",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 183449786.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002639",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 371766187.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002645",
+   "bars": 1842,
+   "last_date": "2026-08-21",
+   "amt20": 798182152.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002647",
+   "bars": 1846,
+   "last_date": "2026-08-26",
+   "amt20": 359527468.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002648",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1197239631.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002649",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 319534287.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002651",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 122263268.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002653",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 504952730.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002654",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 706020865.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002655",
+   "bars": 1850,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002668",
+   "bars": 1843,
+   "last_date": "2026-08-21",
+   "amt20": 281313988.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002673",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 162911934.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002674",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 786605779.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002682",
+   "bars": 1841,
+   "last_date": "2026-08-21",
+   "amt20": 189351107.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002683",
+   "bars": 1843,
+   "last_date": "2026-08-21",
+   "amt20": 288602628.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002686",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 161442896.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002693",
+   "bars": 1841,
+   "last_date": "2026-08-21",
+   "amt20": 233914550.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002703",
+   "bars": 1851,
+   "last_date": "2026-08-26",
+   "amt20": 814542709.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002706",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 390172967.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002709",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 2405438873.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002714",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002716",
+   "bars": 1843,
+   "last_date": "2026-08-26",
+   "amt20": 2698667225.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002721",
+   "bars": 1849,
+   "last_date": "2026-08-21",
+   "amt20": 406809760.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002724",
+   "bars": 1851,
+   "last_date": "2026-08-21",
+   "amt20": 138083359.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002734",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 255738682.4,
+   "reason": "OK"
+  },
+  {
+   "code": "002736",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 202908479.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002738",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 1134918322.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002739",
+   "bars": 1847,
+   "last_date": "2026-08-21",
+   "amt20": 1316091952.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002741",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 768646155.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002745",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 667179608.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002747",
+   "bars": 1844,
+   "last_date": "2026-08-24",
+   "amt20": 2639720896.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002755",
+   "bars": 1844,
+   "last_date": "2026-08-21",
+   "amt20": 158899192.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002756",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 568532016.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002762",
+   "bars": 1841,
+   "last_date": "2026-08-21",
+   "amt20": 145276023.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002767",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 52330983.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002768",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 646167996.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002772",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 140251487.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002773",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 207286269.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002774",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 244460997.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002780",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 68797674.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002787",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 360286860.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002792",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1454218937.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002796",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 304594963.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002803",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 265589975.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002805",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 290886148.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002812",
+   "bars": 1841,
+   "last_date": "2026-08-26",
+   "amt20": 1156685811.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002815",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 510034241.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002820",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 105978983.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002821",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 2233500787.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002824",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 389405971.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002827",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 993894976.0,
+   "reason": "OK"
+  },
+  {
+   "code": "002830",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 42647426.7,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002831",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 262240191.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002832",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 430226848.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002837",
+   "bars": 2269,
+   "last_date": "2026-08-26",
+   "amt20": 2623274771.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002842",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002850",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 919528008.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002851",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 3505400615.6,
+   "reason": "OK"
+  },
+  {
+   "code": "002857",
+   "bars": 1851,
+   "last_date": "2026-08-21",
+   "amt20": 59743537.1,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002859",
+   "bars": 1843,
+   "last_date": "2026-08-21",
+   "amt20": 1598025977.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002860",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 350096181.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002879",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 470970080.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002880",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 47973247.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002881",
+   "bars": 250,
+   "last_date": "2026-08-24",
+   "amt20": 289244518.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002882",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 359745495.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002885",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 618640209.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002886",
+   "bars": 252,
+   "last_date": "2026-08-26",
+   "amt20": 266813332.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002891",
+   "bars": 1843,
+   "last_date": "2026-08-21",
+   "amt20": 448366147.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002896",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1093558091.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002897",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 546148366.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002900",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002903",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 471202186.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002906",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002907",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 207838984.8,
+   "reason": "OK"
+  },
+  {
+   "code": "002912",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 101764448.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002913",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 372777152.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002916",
+   "bars": 2109,
+   "last_date": "2026-08-25",
+   "amt20": 3720339337.84,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002920",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 845544830.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002922",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 480978464.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002925",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 309410871.2,
+   "reason": "OK"
+  },
+  {
+   "code": "002929",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 901780873.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002931",
+   "bars": 1831,
+   "last_date": "2026-08-21",
+   "amt20": 509212326.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002938",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002940",
+   "bars": 1843,
+   "last_date": "2026-08-21",
+   "amt20": 294897288.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002942",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 24286425.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002943",
+   "bars": 1838,
+   "last_date": "2026-08-21",
+   "amt20": 418860213.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002945",
+   "bars": 1842,
+   "last_date": "2026-08-21",
+   "amt20": 261438420.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002947",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002949",
+   "bars": 250,
+   "last_date": "2026-08-26",
+   "amt20": 50502916.9,
+   "reason": "OK"
+  },
+  {
+   "code": "002951",
+   "bars": 1803,
+   "last_date": "2026-08-21",
+   "amt20": 188935843.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002953",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 150273401.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002957",
+   "bars": 1716,
+   "last_date": "2026-08-21",
+   "amt20": 853697553.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002965",
+   "bars": 1657,
+   "last_date": "2026-08-21",
+   "amt20": 578650828.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002969",
+   "bars": 1614,
+   "last_date": "2026-08-21",
+   "amt20": 860605114.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002971",
+   "bars": 1602,
+   "last_date": "2026-08-21",
+   "amt20": 848503166.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002975",
+   "bars": 1593,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002979",
+   "bars": 1549,
+   "last_date": "2026-08-25",
+   "amt20": 883961633.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002980",
+   "bars": 1544,
+   "last_date": "2026-08-25",
+   "amt20": 909041959.61,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002987",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 265977204.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002988",
+   "bars": 1522,
+   "last_date": "2026-08-21",
+   "amt20": 115469479.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "002990",
+   "bars": 1517,
+   "last_date": "2026-08-21",
+   "amt20": 681153232.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003001",
+   "bars": 1424,
+   "last_date": "2026-08-21",
+   "amt20": 321156555.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003004",
+   "bars": 1390,
+   "last_date": "2026-08-21",
+   "amt20": 120427437.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003005",
+   "bars": 1428,
+   "last_date": "2026-08-21",
+   "amt20": 75344614.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003010",
+   "bars": 1432,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003018",
+   "bars": 1408,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003029",
+   "bars": 1372,
+   "last_date": "2026-08-21",
+   "amt20": 80558862.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003031",
+   "bars": 1359,
+   "last_date": "2026-08-26",
+   "amt20": 1519588037.6,
+   "reason": "OK"
+  },
+  {
+   "code": "003032",
+   "bars": 1360,
+   "last_date": "2026-08-25",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003035",
+   "bars": 250,
+   "last_date": "2026-08-24",
+   "amt20": 150701066.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003036",
+   "bars": 1350,
+   "last_date": "2026-08-25",
+   "amt20": 484059203.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "003040",
+   "bars": 1319,
+   "last_date": "2026-08-26",
+   "amt20": 296443394.0,
+   "reason": "OK"
+  },
+  {
+   "code": "003043",
+   "bars": 250,
+   "last_date": "2026-08-25",
+   "amt20": 422796659.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300001",
+   "bars": 1855,
+   "last_date": "2026-08-25",
+   "amt20": 676770457.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300003",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 439142469.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300004",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 271656231.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300005",
+   "bars": 1850,
+   "last_date": "2026-08-21",
+   "amt20": 671637540.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300006",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 191266339.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300009",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300012",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 529493177.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300014",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 2307482348.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300015",
+   "bars": 1847,
+   "last_date": "2026-08-21",
+   "amt20": 721765848.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300016",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300017",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 3288912403.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300019",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 100762211.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300024",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 652640555.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300026",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 324672648.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300033",
+   "bars": 4027,
+   "last_date": "2026-08-25",
+   "amt20": 3057554931.3,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300035",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 276268408.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300037",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1091890774.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300040",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 356261362.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300041",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 226038145.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300042",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 814650472.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300051",
+   "bars": 1836,
+   "last_date": "2026-08-21",
+   "amt20": 284538320.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300052",
+   "bars": 1842,
+   "last_date": "2026-08-21",
+   "amt20": 236251661.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300054",
+   "bars": 1851,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300058",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 6775274112.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300059",
+   "bars": 1856,
+   "last_date": "2026-08-26",
+   "amt20": 4499597811.2,
+   "reason": "OK"
+  },
+  {
+   "code": "300063",
+   "bars": 1843,
+   "last_date": "2026-08-21",
+   "amt20": 668418950.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300065",
+   "bars": 1838,
+   "last_date": "2026-08-21",
+   "amt20": 692362321.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300069",
+   "bars": 1818,
+   "last_date": "2026-08-21",
+   "amt20": 301828052.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300070",
+   "bars": 1844,
+   "last_date": "2026-08-21",
+   "amt20": 108835634.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300071",
+   "bars": 1847,
+   "last_date": "2026-08-21",
+   "amt20": 456742208.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300073",
+   "bars": 1843,
+   "last_date": "2026-08-21",
+   "amt20": 512040432.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300077",
+   "bars": 1848,
+   "last_date": "2026-08-21",
+   "amt20": 843072982.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300079",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 121310097.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300083",
+   "bars": 1843,
+   "last_date": "2026-08-21",
+   "amt20": 1282358857.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300085",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1255771916.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300088",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1125565516.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300093",
+   "bars": 1850,
+   "last_date": "2026-08-21",
+   "amt20": 280621141.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300097",
+   "bars": 1851,
+   "last_date": "2026-08-21",
+   "amt20": 140769042.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300102",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 652476542.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300109",
+   "bars": 1848,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300112",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 184794347.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300115",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 1086486384.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300118",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 348196548.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300120",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 353014536.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300122",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 0.0,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300124",
+   "bars": 1844,
+   "last_date": "2026-08-25",
+   "amt20": 1651396675.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300131",
+   "bars": 1833,
+   "last_date": "2026-08-21",
+   "amt20": 1070611910.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300132",
+   "bars": 1852,
+   "last_date": "2026-08-21",
+   "amt20": 121266120.8,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300136",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 3779799129.6,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300139",
+   "bars": 1854,
+   "last_date": "2026-08-24",
+   "amt20": 2467364467.2,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300142",
+   "bars": 1854,
+   "last_date": "2026-08-26",
+   "amt20": 1658383844.8,
+   "reason": "OK"
+  },
+  {
+   "code": "300149",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 514138010.4,
+   "reason": "R2_lastdate_mismatch"
+  },
+  {
+   "code": "300151",
+   "bars": 1853,
+   "last_date": "2026-08-21",
+   "amt20": 248704637.6,
+   "reason": "R2_lastdate_mismatch"
+  }
+ ]
+}

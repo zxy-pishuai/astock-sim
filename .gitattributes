@@ -1,0 +1,30 @@
+# ===== 天玑量化终端 EOL 政策（X4 git 卫生 2026-09-01）=====
+# 背景：Windows 工作区 CRLF 被基线提交 normalize 成 LF -> 工作区永久显脏。
+# 决策：文本统一 LF 入库并 eol=lf（checkout 输出 LF）；二进制 -text 保字节零触碰。
+# 依据：审计链哈希对行尾不敏感（app/audit.py record() 对 json.dumps payload
+#   + "|" + prev 算 sha256，换行仅作行分隔不入哈希；verify_chain() 先 line.strip()
+#   再 json.loads）-> renormalize 不会改变链指纹。
+# 2026-09-01 X4: 首次 hygiene 提交时一并 renormalize 收编 CRLF 假 diff。
+
+# ---- 文本：统一 LF（clean/checkout 均 LF）----
+*.py    text eol=lf
+*.json  text eol=lf
+*.jsonl text eol=lf
+*.md    text eol=lf
+*.html  text eol=lf
+*.css   text eol=lf
+*.js    text eol=lf
+*.mjs   text eol=lf
+*.txt   text eol=lf
+*.cmd   text eol=lf
+*.ps1   text eol=lf
+*.log   text eol=lf
+*.csv   text eol=lf
+*.orig  text eol=lf
+
+# ---- 二进制/字节敏感：保字节，禁任何行尾转换 ----
+*.db    -text
+*.png   -text
+*.ico   -text
+*.zst   -text
+*.bak_* -text

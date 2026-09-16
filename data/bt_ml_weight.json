@@ -1,0 +1,538 @@
+{
+ "meta": {
+  "pool": "bt_pool.json top500 (2026-08-21 成交额降序; engine 内滤 DATA_EXCLUDE_CODES)",
+  "params": {
+   "score": {
+    "buy_threshold": 25,
+    "max_positions": 3,
+    "position_pct": 0.3,
+    "slippage": 0.001
+   },
+   "board": {
+    "buy_threshold": 40,
+    "max_positions": 2,
+    "position_pct": 0.25,
+    "slippage": 0.001
+   }
+  },
+  "capital": 100000,
+  "factor": "ml_pred score 加权: bonus=(score-0.5)*2*weight*K, K=8 (config.ML_RANK_WEIGHT)",
+  "alignment": "weight=0 与 data/bt_clean_results.json 基线精确复现(fetch_quotes 置空+worker参数)"
+ },
+ "runs": {
+  "score_w0.0": {
+   "strategy": "score",
+   "weight": 0.0,
+   "windows": [
+    {
+     "window": "2019-20",
+     "total_return": -0.0765,
+     "max_drawdown": -0.2888,
+     "trade_count": 1331,
+     "win_rate": 0.6345,
+     "sharpe": -0.001,
+     "baseline_return": -0.0765,
+     "baseline_trades": 1331,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 608.5
+    },
+    {
+     "window": "2021-22",
+     "total_return": -0.2159,
+     "max_drawdown": -0.5189,
+     "trade_count": 1540,
+     "win_rate": 0.6119,
+     "sharpe": -0.335,
+     "baseline_return": -0.2159,
+     "baseline_trades": 1540,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 1488.7
+    },
+    {
+     "window": "2023-24",
+     "total_return": -0.3695,
+     "max_drawdown": -0.4506,
+     "trade_count": 1332,
+     "win_rate": 0.5624,
+     "sharpe": -0.832,
+     "baseline_return": -0.3695,
+     "baseline_trades": 1332,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 1430.4
+    },
+    {
+     "window": "2025-08~2026-08(牛市)",
+     "total_return": 0.3068,
+     "max_drawdown": -0.1415,
+     "trade_count": 809,
+     "win_rate": 0.6708,
+     "sharpe": 1.043,
+     "baseline_return": 0.3068,
+     "baseline_trades": 809,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 684.6
+    }
+   ]
+  },
+  "score_w0.5": {
+   "strategy": "score",
+   "weight": 0.5,
+   "windows": [
+    {
+     "window": "2019-20",
+     "total_return": -0.055,
+     "max_drawdown": -0.257,
+     "trade_count": 1328,
+     "win_rate": 0.6271,
+     "sharpe": 0.038,
+     "baseline_return": -0.0765,
+     "baseline_trades": 1331,
+     "delta_pp": 2.15,
+     "trade_change_pct": -0.2,
+     "elapsed_s": 630.6
+    },
+    {
+     "window": "2021-22",
+     "total_return": -0.4167,
+     "max_drawdown": -0.6118,
+     "trade_count": 1534,
+     "win_rate": 0.6038,
+     "sharpe": -0.916,
+     "baseline_return": -0.2159,
+     "baseline_trades": 1540,
+     "delta_pp": -20.08,
+     "trade_change_pct": -0.4,
+     "elapsed_s": 1507.3
+    },
+    {
+     "window": "2023-24",
+     "total_return": -0.4159,
+     "max_drawdown": -0.5034,
+     "trade_count": 1325,
+     "win_rate": 0.5582,
+     "sharpe": -0.951,
+     "baseline_return": -0.3695,
+     "baseline_trades": 1332,
+     "delta_pp": -4.64,
+     "trade_change_pct": -0.5,
+     "elapsed_s": 1444.2
+    },
+    {
+     "window": "2025-08~2026-08(牛市)",
+     "total_return": 0.4488,
+     "max_drawdown": -0.1652,
+     "trade_count": 811,
+     "win_rate": 0.6755,
+     "sharpe": 1.391,
+     "baseline_return": 0.3068,
+     "baseline_trades": 809,
+     "delta_pp": 14.2,
+     "trade_change_pct": 0.2,
+     "elapsed_s": 672.3
+    }
+   ]
+  },
+  "score_w1.0": {
+   "strategy": "score",
+   "weight": 1.0,
+   "windows": [
+    {
+     "window": "2019-20",
+     "total_return": -0.0566,
+     "max_drawdown": -0.257,
+     "trade_count": 1322,
+     "win_rate": 0.6277,
+     "sharpe": 0.032,
+     "baseline_return": -0.0765,
+     "baseline_trades": 1331,
+     "delta_pp": 1.99,
+     "trade_change_pct": -0.7,
+     "elapsed_s": 636.4
+    },
+    {
+     "window": "2021-22",
+     "total_return": -0.4251,
+     "max_drawdown": -0.6164,
+     "trade_count": 1543,
+     "win_rate": 0.6031,
+     "sharpe": -0.938,
+     "baseline_return": -0.2159,
+     "baseline_trades": 1540,
+     "delta_pp": -20.92,
+     "trade_change_pct": 0.2,
+     "elapsed_s": 1510.2
+    },
+    {
+     "window": "2023-24",
+     "total_return": -0.4126,
+     "max_drawdown": -0.5002,
+     "trade_count": 1318,
+     "win_rate": 0.5553,
+     "sharpe": -0.953,
+     "baseline_return": -0.3695,
+     "baseline_trades": 1332,
+     "delta_pp": -4.31,
+     "trade_change_pct": -1.1,
+     "elapsed_s": 1455.3
+    },
+    {
+     "window": "2025-08~2026-08(牛市)",
+     "total_return": 0.4507,
+     "max_drawdown": -0.1652,
+     "trade_count": 817,
+     "win_rate": 0.674,
+     "sharpe": 1.399,
+     "baseline_return": 0.3068,
+     "baseline_trades": 809,
+     "delta_pp": 14.39,
+     "trade_change_pct": 1.0,
+     "elapsed_s": 667.5
+    }
+   ]
+  },
+  "score_w1.5": {
+   "strategy": "score",
+   "weight": 1.5,
+   "windows": [
+    {
+     "window": "2019-20",
+     "total_return": -0.1124,
+     "max_drawdown": -0.257,
+     "trade_count": 1318,
+     "win_rate": 0.6214,
+     "sharpe": -0.075,
+     "baseline_return": -0.0765,
+     "baseline_trades": 1331,
+     "delta_pp": -3.59,
+     "trade_change_pct": -1.0,
+     "elapsed_s": 674.5
+    },
+    {
+     "window": "2021-22",
+     "total_return": -0.4539,
+     "max_drawdown": -0.6302,
+     "trade_count": 1532,
+     "win_rate": 0.5996,
+     "sharpe": -1.044,
+     "baseline_return": -0.2159,
+     "baseline_trades": 1540,
+     "delta_pp": -23.8,
+     "trade_change_pct": -0.5,
+     "elapsed_s": 1623.0
+    },
+    {
+     "window": "2023-24",
+     "total_return": -0.366,
+     "max_drawdown": -0.4598,
+     "trade_count": 1320,
+     "win_rate": 0.561,
+     "sharpe": -0.798,
+     "baseline_return": -0.3695,
+     "baseline_trades": 1332,
+     "delta_pp": 0.35,
+     "trade_change_pct": -0.9,
+     "elapsed_s": 1563.4
+    },
+    {
+     "window": "2025-08~2026-08(牛市)",
+     "total_return": 0.4507,
+     "max_drawdown": -0.1652,
+     "trade_count": 817,
+     "win_rate": 0.674,
+     "sharpe": 1.399,
+     "baseline_return": 0.3068,
+     "baseline_trades": 809,
+     "delta_pp": 14.39,
+     "trade_change_pct": 1.0,
+     "elapsed_s": 656.9
+    }
+   ]
+  },
+  "board_w0.0": {
+   "strategy": "board",
+   "weight": 0.0,
+   "windows": [
+    {
+     "window": "2019-20",
+     "total_return": -0.1177,
+     "max_drawdown": -0.2777,
+     "trade_count": 628,
+     "win_rate": 0.6202,
+     "sharpe": -0.288,
+     "baseline_return": -0.1177,
+     "baseline_trades": 628,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 4.5
+    },
+    {
+     "window": "2021-22",
+     "total_return": -0.0665,
+     "max_drawdown": -0.2141,
+     "trade_count": 747,
+     "win_rate": 0.6152,
+     "sharpe": -0.12,
+     "baseline_return": -0.0665,
+     "baseline_trades": 747,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 11.3
+    },
+    {
+     "window": "2023-24",
+     "total_return": -0.0166,
+     "max_drawdown": -0.257,
+     "trade_count": 616,
+     "win_rate": 0.6083,
+     "sharpe": 0.037,
+     "baseline_return": -0.0166,
+     "baseline_trades": 616,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 13.4
+    },
+    {
+     "window": "2025-08~2026-08(牛市)",
+     "total_return": 0.273,
+     "max_drawdown": -0.1266,
+     "trade_count": 448,
+     "win_rate": 0.684,
+     "sharpe": 1.229,
+     "baseline_return": 0.273,
+     "baseline_trades": 448,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 8.6
+    }
+   ]
+  },
+  "board_w0.5": {
+   "strategy": "board",
+   "weight": 0.5,
+   "windows": [
+    {
+     "window": "2019-20",
+     "total_return": -0.1177,
+     "max_drawdown": -0.2777,
+     "trade_count": 628,
+     "win_rate": 0.6202,
+     "sharpe": -0.288,
+     "baseline_return": -0.1177,
+     "baseline_trades": 628,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 5.1
+    },
+    {
+     "window": "2021-22",
+     "total_return": -0.0665,
+     "max_drawdown": -0.2141,
+     "trade_count": 747,
+     "win_rate": 0.6152,
+     "sharpe": -0.12,
+     "baseline_return": -0.0665,
+     "baseline_trades": 747,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 10.9
+    },
+    {
+     "window": "2023-24",
+     "total_return": -0.0166,
+     "max_drawdown": -0.257,
+     "trade_count": 616,
+     "win_rate": 0.6083,
+     "sharpe": 0.037,
+     "baseline_return": -0.0166,
+     "baseline_trades": 616,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 14.2
+    },
+    {
+     "window": "2025-08~2026-08(牛市)",
+     "total_return": 0.273,
+     "max_drawdown": -0.1266,
+     "trade_count": 448,
+     "win_rate": 0.684,
+     "sharpe": 1.229,
+     "baseline_return": 0.273,
+     "baseline_trades": 448,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 8.4
+    }
+   ]
+  },
+  "board_w1.0": {
+   "strategy": "board",
+   "weight": 1.0,
+   "windows": [
+    {
+     "window": "2019-20",
+     "total_return": -0.1177,
+     "max_drawdown": -0.2777,
+     "trade_count": 628,
+     "win_rate": 0.6202,
+     "sharpe": -0.288,
+     "baseline_return": -0.1177,
+     "baseline_trades": 628,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 5.2
+    },
+    {
+     "window": "2021-22",
+     "total_return": -0.0665,
+     "max_drawdown": -0.2141,
+     "trade_count": 747,
+     "win_rate": 0.6152,
+     "sharpe": -0.12,
+     "baseline_return": -0.0665,
+     "baseline_trades": 747,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 11.9
+    },
+    {
+     "window": "2023-24",
+     "total_return": -0.0166,
+     "max_drawdown": -0.257,
+     "trade_count": 616,
+     "win_rate": 0.6083,
+     "sharpe": 0.037,
+     "baseline_return": -0.0166,
+     "baseline_trades": 616,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 14.0
+    },
+    {
+     "window": "2025-08~2026-08(牛市)",
+     "total_return": 0.273,
+     "max_drawdown": -0.1266,
+     "trade_count": 448,
+     "win_rate": 0.684,
+     "sharpe": 1.229,
+     "baseline_return": 0.273,
+     "baseline_trades": 448,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 8.5
+    }
+   ]
+  },
+  "board_w1.5": {
+   "strategy": "board",
+   "weight": 1.5,
+   "windows": [
+    {
+     "window": "2019-20",
+     "total_return": -0.1177,
+     "max_drawdown": -0.2777,
+     "trade_count": 628,
+     "win_rate": 0.6202,
+     "sharpe": -0.288,
+     "baseline_return": -0.1177,
+     "baseline_trades": 628,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 5.6
+    },
+    {
+     "window": "2021-22",
+     "total_return": -0.0665,
+     "max_drawdown": -0.2141,
+     "trade_count": 747,
+     "win_rate": 0.6152,
+     "sharpe": -0.12,
+     "baseline_return": -0.0665,
+     "baseline_trades": 747,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 12.7
+    },
+    {
+     "window": "2023-24",
+     "total_return": -0.0166,
+     "max_drawdown": -0.257,
+     "trade_count": 616,
+     "win_rate": 0.6083,
+     "sharpe": 0.037,
+     "baseline_return": -0.0166,
+     "baseline_trades": 616,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 13.7
+    },
+    {
+     "window": "2025-08~2026-08(牛市)",
+     "total_return": 0.273,
+     "max_drawdown": -0.1266,
+     "trade_count": 448,
+     "win_rate": 0.684,
+     "sharpe": 1.229,
+     "baseline_return": 0.273,
+     "baseline_trades": 448,
+     "delta_pp": 0.0,
+     "trade_change_pct": 0.0,
+     "elapsed_s": 7.8
+    }
+   ]
+  }
+ },
+ "judgement": {
+  "score_w0.5": {
+   "improved_or_flat_windows": 2,
+   "cond_3of4_deltageq-1pp": false,
+   "bull_delta_pp": 14.2,
+   "cond_bull_ge-2pp": true,
+   "cond_trades_lt15pct": true,
+   "pass": false
+  },
+  "score_w1.0": {
+   "improved_or_flat_windows": 2,
+   "cond_3of4_deltageq-1pp": false,
+   "bull_delta_pp": 14.39,
+   "cond_bull_ge-2pp": true,
+   "cond_trades_lt15pct": true,
+   "pass": false
+  },
+  "score_w1.5": {
+   "improved_or_flat_windows": 2,
+   "cond_3of4_deltageq-1pp": false,
+   "bull_delta_pp": 14.39,
+   "cond_bull_ge-2pp": true,
+   "cond_trades_lt15pct": true,
+   "pass": false
+  },
+  "board_w0.5": {
+   "improved_or_flat_windows": 4,
+   "cond_3of4_deltageq-1pp": true,
+   "bull_delta_pp": 0.0,
+   "cond_bull_ge-2pp": true,
+   "cond_trades_lt15pct": true,
+   "pass": true
+  },
+  "board_w1.0": {
+   "improved_or_flat_windows": 4,
+   "cond_3of4_deltageq-1pp": true,
+   "bull_delta_pp": 0.0,
+   "cond_bull_ge-2pp": true,
+   "cond_trades_lt15pct": true,
+   "pass": true
+  },
+  "board_w1.5": {
+   "improved_or_flat_windows": 4,
+   "cond_3of4_deltageq-1pp": true,
+   "bull_delta_pp": 0.0,
+   "cond_bull_ge-2pp": true,
+   "cond_trades_lt15pct": true,
+   "pass": true
+  }
+ }
+}

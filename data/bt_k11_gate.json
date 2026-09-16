@@ -1,0 +1,222 @@
+{
+ "generated_at": "2026-09-16 18:02:40",
+ "pool": "bt_pool.json top500（滤 DATA_EXCLUDE_CODES）",
+ "windows": {
+  "IS": [
+   "2019-01-01",
+   "2023-12-31"
+  ],
+  "OOS": [
+   "2024-01-01",
+   "2026-08-31"
+  ]
+ },
+ "gates": {
+  "off": {
+   "on": false,
+   "mult": {}
+  },
+  "consv": {
+   "on": true,
+   "mult": {
+    "冰点": 1.0,
+    "发酵": 1.0,
+    "高潮": 0.9,
+    "退潮": 1.0
+   }
+  },
+  "orig": {
+   "on": true,
+   "mult": {
+    "冰点": 0.85,
+    "发酵": 1.0,
+    "高潮": 0.9,
+    "退潮": 0.3
+   }
+  }
+ },
+ "runs": {
+  "off|score|IS": {
+   "label": "off|score|IS",
+   "strategy": "score",
+   "win": "IS",
+   "gate": "off",
+   "total_return": -0.712,
+   "max_drawdown": -0.781,
+   "annual_return": -0.2213,
+   "trade_count": 3400,
+   "n_days": 1214,
+   "gate_triggers": 0,
+   "gate_detail": {}
+  },
+  "off|score|OOS": {
+   "label": "off|score|OOS",
+   "strategy": "score",
+   "win": "OOS",
+   "gate": "off",
+   "total_return": 1.2369,
+   "max_drawdown": -0.2847,
+   "annual_return": 0.356,
+   "trade_count": 1889,
+   "n_days": 645,
+   "gate_triggers": 0,
+   "gate_detail": {}
+  },
+  "off|board|IS": {
+   "label": "off|board|IS",
+   "strategy": "board",
+   "win": "IS",
+   "gate": "off",
+   "total_return": 0.0501,
+   "max_drawdown": -0.2898,
+   "annual_return": 0.0099,
+   "trade_count": 1695,
+   "n_days": 1214,
+   "gate_triggers": 0,
+   "gate_detail": {}
+  },
+  "off|board|OOS": {
+   "label": "off|board|OOS",
+   "strategy": "board",
+   "win": "OOS",
+   "gate": "off",
+   "total_return": 0.8971,
+   "max_drawdown": -0.1543,
+   "annual_return": 0.2741,
+   "trade_count": 971,
+   "n_days": 645,
+   "gate_triggers": 0,
+   "gate_detail": {}
+  },
+  "consv|score|IS": {
+   "label": "consv|score|IS",
+   "strategy": "score",
+   "win": "IS",
+   "gate": "consv",
+   "total_return": -0.6431,
+   "max_drawdown": -0.7384,
+   "annual_return": -0.187,
+   "trade_count": 3437,
+   "n_days": 1214,
+   "gate_triggers": 5,
+   "gate_detail": {
+    "高潮": 5
+   }
+  },
+  "consv|score|OOS": {
+   "label": "consv|score|OOS",
+   "strategy": "score",
+   "win": "OOS",
+   "gate": "consv",
+   "total_return": 1.1249,
+   "max_drawdown": -0.2847,
+   "annual_return": 0.3299,
+   "trade_count": 1888,
+   "n_days": 645,
+   "gate_triggers": 25,
+   "gate_detail": {
+    "高潮": 25
+   }
+  },
+  "consv|board|IS": {
+   "label": "consv|board|IS",
+   "strategy": "board",
+   "win": "IS",
+   "gate": "consv",
+   "total_return": 0.0503,
+   "max_drawdown": -0.2897,
+   "annual_return": 0.0099,
+   "trade_count": 1695,
+   "n_days": 1214,
+   "gate_triggers": 2,
+   "gate_detail": {
+    "高潮": 2
+   }
+  },
+  "consv|board|OOS": {
+   "label": "consv|board|OOS",
+   "strategy": "board",
+   "win": "OOS",
+   "gate": "consv",
+   "total_return": 0.8966,
+   "max_drawdown": -0.154,
+   "annual_return": 0.274,
+   "trade_count": 971,
+   "n_days": 645,
+   "gate_triggers": 16,
+   "gate_detail": {
+    "高潮": 16
+   }
+  },
+  "orig|score|IS": {
+   "label": "orig|score|IS",
+   "strategy": "score",
+   "win": "IS",
+   "gate": "orig",
+   "total_return": -0.6636,
+   "max_drawdown": -0.7303,
+   "annual_return": -0.1966,
+   "trade_count": 3405,
+   "n_days": 1214,
+   "gate_triggers": 1275,
+   "gate_detail": {
+    "冰点": 1270,
+    "高潮": 5
+   }
+  },
+  "orig|score|OOS": {
+   "label": "orig|score|OOS",
+   "strategy": "score",
+   "win": "OOS",
+   "gate": "orig",
+   "total_return": 1.1004,
+   "max_drawdown": -0.2515,
+   "annual_return": 0.3241,
+   "trade_count": 1870,
+   "n_days": 645,
+   "gate_triggers": 441,
+   "gate_detail": {
+    "冰点": 416,
+    "高潮": 23,
+    "退潮": 2
+   }
+  },
+  "orig|board|IS": {
+   "label": "orig|board|IS",
+   "strategy": "board",
+   "win": "IS",
+   "gate": "orig",
+   "total_return": 0.0145,
+   "max_drawdown": -0.2739,
+   "annual_return": 0.0029,
+   "trade_count": 1686,
+   "n_days": 1214,
+   "gate_triggers": 582,
+   "gate_detail": {
+    "冰点": 580,
+    "高潮": 2
+   }
+  },
+  "orig|board|OOS": {
+   "label": "orig|board|OOS",
+   "strategy": "board",
+   "win": "OOS",
+   "gate": "orig",
+   "total_return": 0.7723,
+   "max_drawdown": -0.1516,
+   "annual_return": 0.2417,
+   "trade_count": 967,
+   "n_days": 645,
+   "gate_triggers": 198,
+   "gate_detail": {
+    "冰点": 180,
+    "高潮": 16,
+    "退潮": 2
+   }
+  }
+ },
+ "meta": {
+  "caliber": "qg_zt_full=eco 权威口径（K11 2026-09-16）",
+  "rule": "IS=2019-01-01..2023-12-31 / OOS=2024-01-01..2026-08-31"
+ }
+}

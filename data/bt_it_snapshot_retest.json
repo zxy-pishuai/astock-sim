@@ -1,0 +1,323 @@
+{
+ "generated_at": "2026-09-13 16:30:41",
+ "phase": "73",
+ "snapshot_used": "2026-09-11",
+ "condition": "data/snapshots ≥3 个不同日期（实际 12）",
+ "errors": 0,
+ "table": [
+  {
+   "strategy": "score",
+   "window": "2019-20",
+   "on_ret": -0.1673,
+   "off_ret": -0.0243,
+   "delta_pp": -14.3,
+   "on_error": null,
+   "off_error": null
+  },
+  {
+   "strategy": "score",
+   "window": "2021-22",
+   "on_ret": -0.5076,
+   "off_ret": -0.525,
+   "delta_pp": 1.74,
+   "on_error": null,
+   "off_error": null
+  },
+  {
+   "strategy": "score",
+   "window": "2023-24",
+   "on_ret": -0.4025,
+   "off_ret": -0.4714,
+   "delta_pp": 6.89,
+   "on_error": null,
+   "off_error": null
+  },
+  {
+   "strategy": "score",
+   "window": "近1年",
+   "on_ret": 0.1136,
+   "off_ret": 0.1531,
+   "delta_pp": -3.95,
+   "on_error": null,
+   "off_error": null
+  },
+  {
+   "strategy": "board",
+   "window": "2019-20",
+   "on_ret": -0.099,
+   "off_ret": -0.1206,
+   "delta_pp": 2.16,
+   "on_error": null,
+   "off_error": null
+  },
+  {
+   "strategy": "board",
+   "window": "2021-22",
+   "on_ret": 0.0558,
+   "off_ret": 0.1693,
+   "delta_pp": -11.35,
+   "on_error": null,
+   "off_error": null
+  },
+  {
+   "strategy": "board",
+   "window": "2023-24",
+   "on_ret": 0.0272,
+   "off_ret": 0.0657,
+   "delta_pp": -3.85,
+   "on_error": null,
+   "off_error": null
+  },
+  {
+   "strategy": "board",
+   "window": "近1年",
+   "on_ret": 0.5052,
+   "off_ret": 0.7672,
+   "delta_pp": -26.2,
+   "on_error": null,
+   "off_error": null
+  }
+ ],
+ "runs": [
+  {
+   "arm": "on",
+   "strategy": "score",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "snapshot": "live",
+   "total_return": 0.1136,
+   "max_drawdown": -0.1301,
+   "sharpe": 0.565,
+   "trade_count": 696,
+   "elapsed": 455.0
+  },
+  {
+   "arm": "on",
+   "strategy": "board",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "snapshot": "live",
+   "total_return": -0.099,
+   "max_drawdown": -0.1665,
+   "sharpe": -0.469,
+   "trade_count": 550,
+   "elapsed": 7.8
+  },
+  {
+   "arm": "on",
+   "strategy": "board",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "snapshot": "live",
+   "total_return": 0.0558,
+   "max_drawdown": -0.1208,
+   "sharpe": 0.315,
+   "trade_count": 601,
+   "elapsed": 8.6
+  },
+  {
+   "arm": "on",
+   "strategy": "board",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "snapshot": "live",
+   "total_return": 0.0272,
+   "max_drawdown": -0.1655,
+   "sharpe": 0.185,
+   "trade_count": 480,
+   "elapsed": 8.2
+  },
+  {
+   "arm": "on",
+   "strategy": "board",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "snapshot": "live",
+   "total_return": 0.5052,
+   "max_drawdown": -0.0935,
+   "sharpe": 2.92,
+   "trade_count": 392,
+   "elapsed": 5.6
+  },
+  {
+   "arm": "on",
+   "strategy": "score",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "snapshot": "live",
+   "total_return": -0.1673,
+   "max_drawdown": -0.2681,
+   "sharpe": -0.315,
+   "trade_count": 1335,
+   "elapsed": 858.9
+  },
+  {
+   "arm": "on",
+   "strategy": "score",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "snapshot": "live",
+   "total_return": -0.5076,
+   "max_drawdown": -0.5549,
+   "sharpe": -1.702,
+   "trade_count": 1333,
+   "elapsed": 965.7
+  },
+  {
+   "arm": "on",
+   "strategy": "score",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "snapshot": "live",
+   "total_return": -0.4025,
+   "max_drawdown": -0.5034,
+   "sharpe": -1.224,
+   "trade_count": 1247,
+   "elapsed": 1013.9
+  },
+  {
+   "arm": "off",
+   "strategy": "score",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-09-11\\market.db",
+   "total_return": -0.0243,
+   "max_drawdown": -0.2987,
+   "sharpe": 0.089,
+   "trade_count": 1349,
+   "elapsed": 813.8
+  },
+  {
+   "arm": "off",
+   "strategy": "board",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-09-11\\market.db",
+   "total_return": -0.1206,
+   "max_drawdown": -0.1908,
+   "sharpe": -0.455,
+   "trade_count": 552,
+   "elapsed": 7.0
+  },
+  {
+   "arm": "off",
+   "strategy": "board",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-09-11\\market.db",
+   "total_return": 0.1693,
+   "max_drawdown": -0.1377,
+   "sharpe": 0.657,
+   "trade_count": 622,
+   "elapsed": 5.4
+  },
+  {
+   "arm": "off",
+   "strategy": "board",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-09-11\\market.db",
+   "total_return": 0.0657,
+   "max_drawdown": -0.1846,
+   "sharpe": 0.309,
+   "trade_count": 487,
+   "elapsed": 5.8
+  },
+  {
+   "arm": "off",
+   "strategy": "board",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-09-11\\market.db",
+   "total_return": 0.7672,
+   "max_drawdown": -0.0954,
+   "sharpe": 3.141,
+   "trade_count": 405,
+   "elapsed": 5.0
+  },
+  {
+   "arm": "off",
+   "strategy": "score",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-18"
+   ],
+   "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-09-11\\market.db",
+   "total_return": 0.1531,
+   "max_drawdown": -0.1464,
+   "sharpe": 0.615,
+   "trade_count": 709,
+   "elapsed": 419.4
+  },
+  {
+   "arm": "off",
+   "strategy": "score",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-09-11\\market.db",
+   "total_return": -0.525,
+   "max_drawdown": -0.578,
+   "sharpe": -1.433,
+   "trade_count": 1329,
+   "elapsed": 981.6
+  },
+  {
+   "arm": "off",
+   "strategy": "score",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-09-11\\market.db",
+   "total_return": -0.4714,
+   "max_drawdown": -0.5736,
+   "sharpe": -1.237,
+   "trade_count": 1247,
+   "elapsed": 1025.7
+  }
+ ]
+}

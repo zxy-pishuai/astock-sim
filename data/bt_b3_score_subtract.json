@@ -1,0 +1,229 @@
+{
+ "generated_at": "2026-08-27 04:56:07",
+ "phase": "B3",
+ "design": {
+  "mode": "纯减法（负IC权重→0，不重配预算、不改阈值）",
+  "entry": "scoring.FACTOR_WEIGHT_OVERRIDE（P66，进程内覆盖）",
+  "negative_keys": [
+   "breakout",
+   "ma_bullish",
+   "ma_cross",
+   "penalty_overbought",
+   "penalty_stall",
+   "rsrs_accel",
+   "rsrs_bullish",
+   "volume_price",
+   "vp_corr",
+   "vp_surge",
+   "vp_vol_slope",
+   "vp_vwap"
+  ],
+  "audit_source": "C:\\Users\\26838\\A股模拟盘\\data\\factor_ic_audit.json",
+  "bite_check": {
+   "base_score": 21,
+   "sub_score": 0,
+   "bites": true,
+   "base_signals": 4,
+   "sub_signals": 4
+  }
+ },
+ "windows": [
+  [
+   "2019-01-01",
+   "2020-12-31"
+  ],
+  [
+   "2021-01-01",
+   "2022-12-31"
+  ],
+  [
+   "2023-01-01",
+   "2024-12-31"
+  ],
+  [
+   "2025-08-18",
+   "2026-08-26"
+  ]
+ ],
+ "params": {
+  "buy_threshold": 25,
+  "max_positions": 3,
+  "position_pct": 0.3,
+  "slippage": 0.001
+ },
+ "table": [
+  {
+   "window": "2019-20",
+   "base_ret": -0.296,
+   "sub_ret": 0.0525,
+   "loss_pp": -34.85,
+   "base_trades": 1339,
+   "sub_trades": 54,
+   "rel_mdd_improve": 0.8794
+  },
+  {
+   "window": "2021-22",
+   "base_ret": -0.5317,
+   "sub_ret": -0.1018,
+   "loss_pp": -42.99,
+   "base_trades": 1361,
+   "sub_trades": 75,
+   "rel_mdd_improve": 0.8058
+  },
+  {
+   "window": "2023-24",
+   "base_ret": -0.2956,
+   "sub_ret": 0.0013,
+   "loss_pp": -29.69,
+   "base_trades": 1239,
+   "sub_trades": 136,
+   "rel_mdd_improve": 0.7257
+  },
+  {
+   "window": "近1年",
+   "base_ret": 0.2635,
+   "sub_ret": 0.0306,
+   "loss_pp": 23.29,
+   "base_trades": 744,
+   "sub_trades": 52,
+   "rel_mdd_improve": 0.7204
+  }
+ ],
+ "runs": [
+  {
+   "arm": "base",
+   "strategy": "score",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-26"
+   ],
+   "total_return": 0.2635,
+   "annual_return": 0.2576,
+   "max_drawdown": -0.1906,
+   "sharpe": 0.896,
+   "trade_count": 744,
+   "elapsed": 170.6
+  },
+  {
+   "arm": "base",
+   "strategy": "score",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": -0.296,
+   "annual_return": -0.1613,
+   "max_drawdown": -0.3631,
+   "sharpe": -0.498,
+   "trade_count": 1339,
+   "elapsed": 341.5
+  },
+  {
+   "arm": "base",
+   "strategy": "score",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": -0.2956,
+   "annual_return": -0.1619,
+   "max_drawdown": -0.4542,
+   "sharpe": -0.637,
+   "trade_count": 1239,
+   "elapsed": 374.0
+  },
+  {
+   "arm": "base",
+   "strategy": "score",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.5317,
+   "annual_return": -0.3173,
+   "max_drawdown": -0.5679,
+   "sharpe": -1.411,
+   "trade_count": 1361,
+   "elapsed": 385.4
+  },
+  {
+   "arm": "sub",
+   "strategy": "score",
+   "widx": 3,
+   "window": [
+    "2025-08-18",
+    "2026-08-26"
+   ],
+   "total_return": 0.0306,
+   "annual_return": 0.03,
+   "max_drawdown": -0.0533,
+   "sharpe": 0.581,
+   "trade_count": 52,
+   "elapsed": 202.1
+  },
+  {
+   "arm": "sub",
+   "strategy": "score",
+   "widx": 0,
+   "window": [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   "total_return": 0.0525,
+   "annual_return": 0.0259,
+   "max_drawdown": -0.0438,
+   "sharpe": 0.801,
+   "trade_count": 54,
+   "elapsed": 429.1
+  },
+  {
+   "arm": "sub",
+   "strategy": "score",
+   "widx": 1,
+   "window": [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   "total_return": -0.1018,
+   "annual_return": -0.0526,
+   "max_drawdown": -0.1103,
+   "sharpe": -1.113,
+   "trade_count": 75,
+   "elapsed": 455.4
+  },
+  {
+   "arm": "sub",
+   "strategy": "score",
+   "widx": 2,
+   "window": [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   "total_return": 0.0013,
+   "annual_return": 0.0007,
+   "max_drawdown": -0.1246,
+   "sharpe": 0.043,
+   "trade_count": 136,
+   "elapsed": 458.7
+  }
+ ],
+ "losses_pp": [
+  -34.85,
+  -42.99,
+  -29.69,
+  23.29
+ ],
+ "verdict": {
+  "rule": "landing_rule: >=3/4 窗口损失<=1pp 且 牛市窗口<=2pp",
+  "passed": false,
+  "detail": {
+   "windows_ok": 3,
+   "bull_ok": false
+  },
+  "recommendation": "维持 FACTOR_WEIGHT_OVERRIDE=None 不启用"
+ }
+}

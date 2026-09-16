@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-08-26 07:14:08",
+  "phase": "P66",
+  "tool": "tools/board_weight_ab.py",
+  "note_BOARD_MOMENTUM_MIN": "冻结 7.0（发布口径）",
+  "windows": [
+    [
+      "2019-01-01",
+      "2020-12-31"
+    ],
+    [
+      "2021-01-01",
+      "2022-12-31"
+    ],
+    [
+      "2023-01-01",
+      "2024-12-31"
+    ],
+    [
+      "2025-08-18",
+      "2026-08-21"
+    ]
+  ],
+  "window_tags": [
+    "2019-20",
+    "2021-22",
+    "2023-24",
+    "近1年"
+  ],
+  "variants": {
+    "baseline": null,
+    "vol_sweep_8": {
+      "vol_sweep": 8
+    },
+    "momentum_7_0": {
+      "momentum_7": 0
+    },
+    "both": {
+      "vol_sweep": 8,
+      "momentum_7": 0
+    }
+  },
+  "results": {
+    "baseline": {
+      "0": {
+        "total_return": 0.0275,
+        "max_drawdown": -0.1726,
+        "sharpe": 0.166,
+        "trade_count": 661,
+        "win_rate": 0.6523
+      },
+      "1": {
+        "total_return": 0.2334,
+        "max_drawdown": -0.1588,
+        "sharpe": 0.775,
+        "trade_count": 790,
+        "win_rate": 0.6338
+      },
+      "2": {
+        "total_return": 0.0749,
+        "max_drawdown": -0.1952,
+        "sharpe": 0.316,
+        "trade_count": 633,
+        "win_rate": 0.6247
+      },
+      "3": {
+        "total_return": 0.389,
+        "max_drawdown": -0.1127,
+        "sharpe": 1.798,
+        "trade_count": 472,
+        "win_rate": 0.6958
+      }
+    },
+    "vol_sweep_8": {
+      "0": {
+        "total_return": 0.0818,
+        "max_drawdown": -0.1583,
+        "sharpe": 0.346,
+        "trade_count": 612,
+        "win_rate": 0.6721
+      },
+      "1": {
+        "total_return": 0.4334,
+        "max_drawdown": -0.1426,
+        "sharpe": 1.294,
+        "trade_count": 714,
+        "win_rate": 0.6636
+      },
+      "2": {
+        "total_return": 0.3377,
+        "max_drawdown": -0.1393,
+        "sharpe": 1.096,
+        "trade_count": 541,
+        "win_rate": 0.6554
+      },
+      "3": {
+        "total_return": 0.4047,
+        "max_drawdown": -0.1075,
+        "sharpe": 1.893,
+        "trade_count": 434,
+        "win_rate": 0.703
+      }
+    },
+    "momentum_7_0": {
+      "0": {
+        "total_return": 0.0349,
+        "max_drawdown": -0.1375,
+        "sharpe": 0.195,
+        "trade_count": 554,
+        "win_rate": 0.6576
+      },
+      "1": {
+        "total_return": 0.1618,
+        "max_drawdown": -0.1862,
+        "sharpe": 0.603,
+        "trade_count": 683,
+        "win_rate": 0.6504
+      },
+      "2": {
+        "total_return": 0.0928,
+        "max_drawdown": -0.1842,
+        "sharpe": 0.395,
+        "trade_count": 529,
+        "win_rate": 0.6381
+      },
+      "3": {
+        "total_return": 0.4696,
+        "max_drawdown": -0.1261,
+        "sharpe": 2.074,
+        "trade_count": 438,
+        "win_rate": 0.7343
+      }
+    },
+    "both": {
+      "0": {
+        "total_return": 0.019,
+        "max_drawdown": -0.1067,
+        "sharpe": 0.138,
+        "trade_count": 500,
+        "win_rate": 0.6777
+      },
+      "1": {
+        "total_return": 0.1341,
+        "max_drawdown": -0.1254,
+        "sharpe": 0.559,
+        "trade_count": 564,
+        "win_rate": 0.6598
+      },
+      "2": {
+        "total_return": 0.381,
+        "max_drawdown": -0.1165,
+        "sharpe": 1.295,
+        "trade_count": 443,
+        "win_rate": 0.6863
+      },
+      "3": {
+        "total_return": 0.3992,
+        "max_drawdown": -0.0898,
+        "sharpe": 1.938,
+        "trade_count": 388,
+        "win_rate": 0.7292
+      }
+    }
+  },
+  "prereg": {
+    "主变体": "both (vol_sweep 15→8, momentum_7 10→0)",
+    "对比": "baseline",
+    "deltas_pp": [
+      -0.85,
+      -9.93,
+      30.61,
+      1.02
+    ],
+    "not_worse_windows": 2,
+    "mean_delta_pp": 5.21,
+    "criterion": "≥3 窗不恶化(Δ≥-0.5pp) 且 均值>0",
+    "verdict": "不建议落地"
+  },
+  "elapsed_sec": 99.3
+}

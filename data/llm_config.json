@@ -1,0 +1,7 @@
+{
+  "ollama_url": "http://127.0.0.1:11434",
+  "ollama_model": "",
+  "api_key": "sk-cl4cmuup3nq80cnjtsz06nklywv399eqo905mv01ygbmijwn",
+  "api_base": "https://api.xiaomimimo.com/v1",
+  "model": "mimo-v2.5"
+}

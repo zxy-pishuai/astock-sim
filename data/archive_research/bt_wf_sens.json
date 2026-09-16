@@ -1,0 +1,121 @@
+{
+ "wf_30_1y": {
+  "folds": [
+   {
+    "fold": 1,
+    "train": [
+     "2025-08-18",
+     "2025-11-16"
+    ],
+    "test": [
+     "2025-11-17",
+     "2026-02-15"
+    ],
+    "anchored": false,
+    "best_threshold": 30,
+    "best_params": {
+     "buy_threshold": 30,
+     "max_positions": 2
+    },
+    "is_return": -0.0315,
+    "oos_return": 0.3018,
+    "oos_sharpe": 3.729,
+    "oos_max_drawdown": -0.0512,
+    "oos_win_rate": 0.7945,
+    "oos_trades": 118,
+    "degradation": null
+   },
+   {
+    "fold": 2,
+    "train": [
+     "2025-11-17",
+     "2026-02-15"
+    ],
+    "test": [
+     "2026-02-16",
+     "2026-05-17"
+    ],
+    "anchored": false,
+    "best_threshold": 20,
+    "best_params": {
+     "buy_threshold": 20,
+     "max_positions": 2
+    },
+    "is_return": 0.424,
+    "oos_return": -0.0745,
+    "oos_sharpe": -1.027,
+    "oos_max_drawdown": -0.1959,
+    "oos_win_rate": 0.6027,
+    "oos_trades": 128,
+    "degradation": 1.1757
+   },
+   {
+    "fold": 3,
+    "train": [
+     "2026-02-16",
+     "2026-05-17"
+    ],
+    "test": [
+     "2026-05-18",
+     "2026-08-16"
+    ],
+    "anchored": false,
+    "best_threshold": 25,
+    "best_params": {
+     "buy_threshold": 25,
+     "max_positions": 2
+    },
+    "is_return": -0.0717,
+    "oos_return": -0.0138,
+    "oos_sharpe": 0.067,
+    "oos_max_drawdown": -0.2074,
+    "oos_win_rate": 0.6548,
+    "oos_trades": 139,
+    "degradation": null
+   }
+  ],
+  "summary": {
+   "folds": 3,
+   "window": {
+    "train_days": 91,
+    "test_days": 91,
+    "step_days": 91,
+    "anchored": false
+   },
+   "avg_oos_return": 0.0712,
+   "avg_degradation": 1.1757,
+   "positive_folds": 1,
+   "stable": false,
+   "verdict": "⚠️ 样本外不稳定：可能存在过拟合或策略失效"
+  }
+ },
+ "sens_30": [
+  {
+   "param": "buy_threshold",
+   "value": 500,
+   "total_return": 0.0,
+   "sharpe": 0.0,
+   "max_drawdown": 0.0,
+   "win_rate": 0.0,
+   "trade_count": 0
+  },
+  {
+   "param": "buy_threshold",
+   "value": 625,
+   "total_return": 0.0,
+   "sharpe": 0.0,
+   "max_drawdown": 0.0,
+   "win_rate": 0.0,
+   "trade_count": 0
+  },
+  {
+   "param": "buy_threshold",
+   "value": 750,
+   "total_return": 0.0,
+   "sharpe": 0.0,
+   "max_drawdown": 0.0,
+   "win_rate": 0.0,
+   "trade_count": 0
+  }
+ ]
+}

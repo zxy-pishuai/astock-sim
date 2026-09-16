@@ -1,0 +1,479 @@
+{
+ "generated_at": "2026-08-25 03:56:09",
+ "phase": "43",
+ "windows": [
+  [
+   "2019-01-01",
+   "2020-12-31"
+  ],
+  [
+   "2021-01-01",
+   "2022-12-31"
+  ],
+  [
+   "2023-01-01",
+   "2024-12-31"
+  ],
+  [
+   "2025-08-18",
+   "2026-08-18"
+  ]
+ ],
+ "params": {
+  "score": {
+   "buy_threshold": 25,
+   "max_positions": 3,
+   "position_pct": 0.3,
+   "slippage": 0.001
+  },
+  "board": {
+   "buy_threshold": 40,
+   "max_positions": 2,
+   "position_pct": 0.25,
+   "slippage": 0.001
+  }
+ },
+ "mult_down_grid": [
+  0.6,
+  0.7
+ ],
+ "baseline_source": "data/bt_dd_gate.json（已两次对齐验证）",
+ "baseline": {
+  "score": [
+   {
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "total_return": -0.0765,
+    "trade_count": 1331
+   },
+   {
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "total_return": -0.2159,
+    "trade_count": 1540
+   },
+   {
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "total_return": -0.3695,
+    "trade_count": 1332
+   },
+   {
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "total_return": 0.3068,
+    "trade_count": 809
+   }
+  ],
+  "board": [
+   {
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "total_return": -0.1177,
+    "trade_count": 628
+   },
+   {
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "total_return": -0.0665,
+    "trade_count": 747
+   },
+   {
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "total_return": -0.0166,
+    "trade_count": 616
+   },
+   {
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "total_return": 0.273,
+    "trade_count": 448
+   }
+  ]
+ },
+ "arms": [
+  {
+   "rows": [
+    {
+     "strategy": "score",
+     "mult_down": null,
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": 0.0171,
+     "max_drawdown": -0.242,
+     "calmar": 0.035,
+     "sharpe": 0.156,
+     "trade_count": 1290,
+     "mult_active_day_ratio": 1.0,
+     "elapsed_s": 1423
+    },
+    {
+     "strategy": "score",
+     "mult_down": null,
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.2773,
+     "max_drawdown": -0.4887,
+     "calmar": -0.309,
+     "sharpe": -0.641,
+     "trade_count": 1493,
+     "mult_active_day_ratio": 1.0,
+     "elapsed_s": 2838
+    },
+    {
+     "strategy": "score",
+     "mult_down": null,
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.2806,
+     "max_drawdown": -0.3882,
+     "calmar": -0.394,
+     "sharpe": -0.727,
+     "trade_count": 1308,
+     "mult_active_day_ratio": 0.8489,
+     "elapsed_s": 2785
+    },
+    {
+     "strategy": "score",
+     "mult_down": null,
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.2263,
+     "max_drawdown": -0.1256,
+     "calmar": 1.81,
+     "sharpe": 0.943,
+     "trade_count": 783,
+     "mult_active_day_ratio": 0.7603,
+     "elapsed_s": 1394
+    }
+   ],
+   "label": "score index_timing on(MD=0.8)",
+   "deltas_pp": [
+    9.36,
+    -6.14,
+    8.89,
+    -8.05
+   ],
+   "improved_or_flat_windows": 2,
+   "bull_delta_pp": -8.05,
+   "nonbull_best_improve_pp": 9.36,
+   "pass": false
+  },
+  {
+   "rows": [
+    {
+     "strategy": "board",
+     "mult_down": null,
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.1629,
+     "max_drawdown": -0.2029,
+     "calmar": -0.42,
+     "sharpe": -0.654,
+     "trade_count": 511,
+     "mult_active_day_ratio": 1.0,
+     "elapsed_s": 21
+    },
+    {
+     "strategy": "board",
+     "mult_down": null,
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": 0.0433,
+     "max_drawdown": -0.1587,
+     "calmar": 0.135,
+     "sharpe": 0.228,
+     "trade_count": 668,
+     "mult_active_day_ratio": 1.0,
+     "elapsed_s": 27
+    },
+    {
+     "strategy": "board",
+     "mult_down": null,
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": 0.0108,
+     "max_drawdown": -0.1675,
+     "calmar": 0.032,
+     "sharpe": 0.105,
+     "trade_count": 516,
+     "mult_active_day_ratio": 0.8489,
+     "elapsed_s": 22
+    },
+    {
+     "strategy": "board",
+     "mult_down": null,
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.2835,
+     "max_drawdown": -0.1447,
+     "calmar": 1.969,
+     "sharpe": 1.608,
+     "trade_count": 407,
+     "mult_active_day_ratio": 0.7603,
+     "elapsed_s": 12
+    }
+   ],
+   "label": "board index_timing on(MD=0.8)",
+   "deltas_pp": [
+    -4.52,
+    10.98,
+    2.74,
+    1.05
+   ],
+   "improved_or_flat_windows": 3,
+   "bull_delta_pp": 1.05,
+   "nonbull_best_improve_pp": 10.98,
+   "pass": true
+  },
+  {
+   "rows": [
+    {
+     "strategy": "score",
+     "mult_down": 0.6,
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.082,
+     "max_drawdown": -0.1961,
+     "calmar": -0.214,
+     "sharpe": -0.132,
+     "trade_count": 1323,
+     "mult_active_day_ratio": 1.0,
+     "elapsed_s": 1395
+    },
+    {
+     "strategy": "score",
+     "mult_down": 0.6,
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.1931,
+     "max_drawdown": -0.4091,
+     "calmar": -0.25,
+     "sharpe": -0.522,
+     "trade_count": 1524,
+     "mult_active_day_ratio": 1.0,
+     "elapsed_s": 2808
+    },
+    {
+     "strategy": "score",
+     "mult_down": 0.6,
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.2588,
+     "max_drawdown": -0.3639,
+     "calmar": -0.385,
+     "sharpe": -0.725,
+     "trade_count": 1332,
+     "mult_active_day_ratio": 0.8489,
+     "elapsed_s": 2763
+    },
+    {
+     "strategy": "score",
+     "mult_down": 0.6,
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.2461,
+     "max_drawdown": -0.1182,
+     "calmar": 2.091,
+     "sharpe": 1.014,
+     "trade_count": 789,
+     "mult_active_day_ratio": 0.7603,
+     "elapsed_s": 1399
+    }
+   ],
+   "label": "score index_timing on(MD=0.6)",
+   "deltas_pp": [
+    -0.55,
+    2.28,
+    11.07,
+    -6.07
+   ],
+   "improved_or_flat_windows": 3,
+   "bull_delta_pp": -6.07,
+   "nonbull_best_improve_pp": 11.07,
+   "pass": true
+  },
+  {
+   "rows": [
+    {
+     "strategy": "score",
+     "mult_down": 0.7,
+     "window": [
+      "2019-01-01",
+      "2020-12-31"
+     ],
+     "total_return": -0.0325,
+     "max_drawdown": -0.2031,
+     "calmar": -0.081,
+     "sharpe": 0.03,
+     "trade_count": 1325,
+     "mult_active_day_ratio": 1.0,
+     "elapsed_s": 1394
+    },
+    {
+     "strategy": "score",
+     "mult_down": 0.7,
+     "window": [
+      "2021-01-01",
+      "2022-12-31"
+     ],
+     "total_return": -0.1895,
+     "max_drawdown": -0.4303,
+     "calmar": -0.233,
+     "sharpe": -0.425,
+     "trade_count": 1533,
+     "mult_active_day_ratio": 1.0,
+     "elapsed_s": 2822
+    },
+    {
+     "strategy": "score",
+     "mult_down": 0.7,
+     "window": [
+      "2023-01-01",
+      "2024-12-31"
+     ],
+     "total_return": -0.2419,
+     "max_drawdown": -0.3426,
+     "calmar": -0.38,
+     "sharpe": -0.62,
+     "trade_count": 1330,
+     "mult_active_day_ratio": 0.8489,
+     "elapsed_s": 2277
+    },
+    {
+     "strategy": "score",
+     "mult_down": 0.7,
+     "window": [
+      "2025-08-18",
+      "2026-08-18"
+     ],
+     "total_return": 0.1519,
+     "max_drawdown": -0.1303,
+     "calmar": 1.171,
+     "sharpe": 0.691,
+     "trade_count": 781,
+     "mult_active_day_ratio": 0.7603,
+     "elapsed_s": 1040
+    }
+   ],
+   "label": "score index_timing on(MD=0.7)",
+   "deltas_pp": [
+    4.4,
+    2.64,
+    12.76,
+    -15.49
+   ],
+   "improved_or_flat_windows": 3,
+   "bull_delta_pp": -15.49,
+   "nonbull_best_improve_pp": 12.76,
+   "pass": true
+  }
+ ],
+ "verdict": {
+  "rule": ">=3/4 窗口 Δ>=-1pp 且 牛市窗口恶化<=2pp 且 非牛至少 1 窗改善>=3pp；★只建议不改 config",
+  "recommended": {
+   "strategy": "board index_timing on(MD=0.8)",
+   "params": {
+    "INDEX_TIMING_ENABLED": true
+   }
+  },
+  "enabled": true,
+  "reason": "board index_timing on(MD=0.8) 达标 → 建议开启（参数详见 JSON/报告）",
+  "arms_summary": [
+   {
+    "label": "score index_timing on(MD=0.8)",
+    "deltas_pp": [
+     9.36,
+     -6.14,
+     8.89,
+     -8.05
+    ],
+    "improved_or_flat_windows": 2,
+    "bull_delta_pp": -8.05,
+    "nonbull_best_improve_pp": 9.36,
+    "pass": false
+   },
+   {
+    "label": "board index_timing on(MD=0.8)",
+    "deltas_pp": [
+     -4.52,
+     10.98,
+     2.74,
+     1.05
+    ],
+    "improved_or_flat_windows": 3,
+    "bull_delta_pp": 1.05,
+    "nonbull_best_improve_pp": 10.98,
+    "pass": true
+   },
+   {
+    "label": "score index_timing on(MD=0.6)",
+    "deltas_pp": [
+     -0.55,
+     2.28,
+     11.07,
+     -6.07
+    ],
+    "improved_or_flat_windows": 3,
+    "bull_delta_pp": -6.07,
+    "nonbull_best_improve_pp": 11.07,
+    "pass": true
+   },
+   {
+    "label": "score index_timing on(MD=0.7)",
+    "deltas_pp": [
+     4.4,
+     2.64,
+     12.76,
+     -15.49
+    ],
+    "improved_or_flat_windows": 3,
+    "bull_delta_pp": -15.49,
+    "nonbull_best_improve_pp": 12.76,
+    "pass": true
+   }
+  ]
+ },
+ "note_config": "本阶段零代码修改；建议参数仅供验收方统一落配置"
+}

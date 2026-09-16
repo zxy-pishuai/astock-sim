@@ -1,0 +1,14 @@
+{
+  "day": "20260916",
+  "snapshot_count": 1,
+  "universe": 1878,
+  "parsed_n": 1229,
+  "coverage_pct": 65.4,
+  "thin_n_inst_removed": 348,
+  "usable_pct": 46.9,
+  "ey_n": 843,
+  "ey_med": 4.167,
+  "ey_p10": 0.91,
+  "ey_p90": 10.059,
+  "phase": "QC-only(<20日)"
+}

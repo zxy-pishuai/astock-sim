@@ -1,0 +1,1264 @@
+{
+ "meta": {
+  "pool": "bt_pool.json top500（滤 DATA_EXCLUDE_CODES）；fetch_quotes 置空；score 25/3/0.30/0.001、board 40/2/0.25、capital=10万",
+  "windows": [
+   [
+    "2019-01-01",
+    "2020-12-31"
+   ],
+   [
+    "2021-01-01",
+    "2022-12-31"
+   ],
+   [
+    "2023-01-01",
+    "2024-12-31"
+   ],
+   [
+    "2025-08-18",
+    "2026-08-18"
+   ]
+  ],
+  "phase1": "A=6%/10% × recovery=['default', 'cooldown', 'index_ma', 'half_cap']",
+  "phase2": "优胜 recovery=half_cap × B=8%/12%",
+  "judge_rules": {
+   "mdd_rel_improve_ge": 0.2,
+   "winrate_na": "",
+   "calmar_improve_windows_ge": 3,
+   "max_ret_loss_pp": 3.0,
+   "occupancy_max": 0.4,
+   "occ_formula": "(halt_days + 0.5*half_days)/window_days"
+  }
+ },
+ "baseline": {
+  "score_2019-20": {
+   "label": "baseline",
+   "strategy": "score",
+   "win": "2019-20",
+   "total_return": -0.1,
+   "max_drawdown": -0.2778,
+   "annual_return": -0.0514,
+   "trade_count": 1309,
+   "dd_half_days": 0,
+   "dd_halt_days": 0,
+   "occupancy": 0.0,
+   "n_days": 487
+  },
+  "score_2021-22": {
+   "label": "baseline",
+   "strategy": "score",
+   "win": "2021-22",
+   "total_return": -0.243,
+   "max_drawdown": -0.5084,
+   "annual_return": -0.1307,
+   "trade_count": 1525,
+   "dd_half_days": 0,
+   "dd_halt_days": 0,
+   "occupancy": 0.0,
+   "n_days": 485
+  },
+  "score_2023-24": {
+   "label": "baseline",
+   "strategy": "score",
+   "win": "2023-24",
+   "total_return": -0.4382,
+   "max_drawdown": -0.5259,
+   "annual_return": -0.2522,
+   "trade_count": 1316,
+   "dd_half_days": 0,
+   "dd_halt_days": 0,
+   "occupancy": 0.0,
+   "n_days": 484
+  },
+  "score_牛市": {
+   "label": "baseline",
+   "strategy": "score",
+   "win": "牛市",
+   "total_return": 0.1132,
+   "max_drawdown": -0.1382,
+   "annual_return": 0.1137,
+   "trade_count": 795,
+   "dd_half_days": 0,
+   "dd_halt_days": 0,
+   "occupancy": 0.0,
+   "n_days": 243
+  },
+  "board_2019-20": {
+   "label": "baseline",
+   "strategy": "board",
+   "win": "2019-20",
+   "total_return": -0.1177,
+   "max_drawdown": -0.2777,
+   "annual_return": -0.0608,
+   "trade_count": 628,
+   "dd_half_days": 0,
+   "dd_halt_days": 0,
+   "occupancy": 0.0,
+   "n_days": 487
+  },
+  "board_2021-22": {
+   "label": "baseline",
+   "strategy": "board",
+   "win": "2021-22",
+   "total_return": -0.0665,
+   "max_drawdown": -0.2141,
+   "annual_return": -0.034,
+   "trade_count": 747,
+   "dd_half_days": 0,
+   "dd_halt_days": 0,
+   "occupancy": 0.0,
+   "n_days": 485
+  },
+  "board_2023-24": {
+   "label": "baseline",
+   "strategy": "board",
+   "win": "2023-24",
+   "total_return": -0.0183,
+   "max_drawdown": -0.2585,
+   "annual_return": -0.0093,
+   "trade_count": 616,
+   "dd_half_days": 0,
+   "dd_halt_days": 0,
+   "occupancy": 0.0,
+   "n_days": 484
+  },
+  "board_牛市": {
+   "label": "baseline",
+   "strategy": "board",
+   "win": "牛市",
+   "total_return": 0.2924,
+   "max_drawdown": -0.1303,
+   "annual_return": 0.2937,
+   "trade_count": 452,
+   "dd_half_days": 0,
+   "dd_halt_days": 0,
+   "occupancy": 0.0,
+   "n_days": 243
+  }
+ },
+ "baseline_legacy_audit": {
+  "note": "与 bt_clean_results.json(8/23 发布) 的逐窗口比对；DRIFT 窗口系上游前复权修订历史收盘所致（证据见 revised_codes），判定一律用同数据现跑基线",
+  "windows": {
+   "score_2019-20": {
+    "data_revised_codes": 0,
+    "matches_legacy": false
+   },
+   "score_2021-22": {
+    "data_revised_codes": 0,
+    "matches_legacy": false
+   },
+   "score_2023-24": {
+    "data_revised_codes": 138,
+    "matches_legacy": false
+   },
+   "score_牛市": {
+    "data_revised_codes": 156,
+    "matches_legacy": false
+   },
+   "board_2019-20": {
+    "data_revised_codes": 0,
+    "matches_legacy": true
+   },
+   "board_2021-22": {
+    "data_revised_codes": 0,
+    "matches_legacy": true
+   },
+   "board_2023-24": {
+    "data_revised_codes": 138,
+    "matches_legacy": false
+   },
+   "board_牛市": {
+    "data_revised_codes": 156,
+    "matches_legacy": false
+   }
+  }
+ },
+ "runs": {
+  "A_default|score|2019-20": {
+   "label": "A_default",
+   "strategy": "score",
+   "win": "2019-20",
+   "total_return": -0.1075,
+   "max_drawdown": -0.1234,
+   "annual_return": -0.0554,
+   "trade_count": 44,
+   "dd_half_days": 6,
+   "dd_halt_days": 411,
+   "occupancy": 0.8501,
+   "n_days": 487
+  },
+  "A_default|score|2021-22": {
+   "label": "A_default",
+   "strategy": "score",
+   "win": "2021-22",
+   "total_return": -0.0957,
+   "max_drawdown": -0.134,
+   "annual_return": -0.0493,
+   "trade_count": 86,
+   "dd_half_days": 17,
+   "dd_halt_days": 461,
+   "occupancy": 0.968,
+   "n_days": 485
+  },
+  "A_default|score|2023-24": {
+   "label": "A_default",
+   "strategy": "score",
+   "win": "2023-24",
+   "total_return": -0.0949,
+   "max_drawdown": -0.1074,
+   "annual_return": -0.049,
+   "trade_count": 120,
+   "dd_half_days": 2,
+   "dd_halt_days": 437,
+   "occupancy": 0.905,
+   "n_days": 484
+  },
+  "A_default|score|牛市": {
+   "label": "A_default",
+   "strategy": "score",
+   "win": "牛市",
+   "total_return": 0.0392,
+   "max_drawdown": -0.1034,
+   "annual_return": 0.0394,
+   "trade_count": 184,
+   "dd_half_days": 15,
+   "dd_halt_days": 181,
+   "occupancy": 0.7757,
+   "n_days": 243
+  },
+  "A_default|board|2019-20": {
+   "label": "A_default",
+   "strategy": "board",
+   "win": "2019-20",
+   "total_return": -0.1008,
+   "max_drawdown": -0.1008,
+   "annual_return": -0.0518,
+   "trade_count": 24,
+   "dd_half_days": 12,
+   "dd_halt_days": 409,
+   "occupancy": 0.8522,
+   "n_days": 487
+  },
+  "A_default|board|2021-22": {
+   "label": "A_default",
+   "strategy": "board",
+   "win": "2021-22",
+   "total_return": -0.0828,
+   "max_drawdown": -0.1085,
+   "annual_return": -0.0426,
+   "trade_count": 92,
+   "dd_half_days": 43,
+   "dd_halt_days": 422,
+   "occupancy": 0.9144,
+   "n_days": 485
+  },
+  "A_default|board|2023-24": {
+   "label": "A_default",
+   "strategy": "board",
+   "win": "2023-24",
+   "total_return": -0.0087,
+   "max_drawdown": -0.1055,
+   "annual_return": -0.0044,
+   "trade_count": 240,
+   "dd_half_days": 99,
+   "dd_halt_days": 293,
+   "occupancy": 0.7076,
+   "n_days": 484
+  },
+  "A_default|board|牛市": {
+   "label": "A_default",
+   "strategy": "board",
+   "win": "牛市",
+   "total_return": -0.0351,
+   "max_drawdown": -0.1025,
+   "annual_return": -0.0352,
+   "trade_count": 318,
+   "dd_half_days": 133,
+   "dd_halt_days": 55,
+   "occupancy": 0.5,
+   "n_days": 243
+  },
+  "A_cooldown|score|2019-20": {
+   "label": "A_cooldown",
+   "strategy": "score",
+   "win": "2019-20",
+   "total_return": -0.1588,
+   "max_drawdown": -0.1921,
+   "annual_return": -0.083,
+   "trade_count": 346,
+   "dd_half_days": 58,
+   "dd_halt_days": 336,
+   "occupancy": 0.7495,
+   "n_days": 487
+  },
+  "A_cooldown|score|2021-22": {
+   "label": "A_cooldown",
+   "strategy": "score",
+   "win": "2021-22",
+   "total_return": -0.1626,
+   "max_drawdown": -0.2122,
+   "annual_return": -0.0854,
+   "trade_count": 372,
+   "dd_half_days": 58,
+   "dd_halt_days": 394,
+   "occupancy": 0.8722,
+   "n_days": 485
+  },
+  "A_cooldown|score|2023-24": {
+   "label": "A_cooldown",
+   "strategy": "score",
+   "win": "2023-24",
+   "total_return": -0.0206,
+   "max_drawdown": -0.1621,
+   "annual_return": -0.0105,
+   "trade_count": 710,
+   "dd_half_days": 105,
+   "dd_halt_days": 263,
+   "occupancy": 0.6519,
+   "n_days": 484
+  },
+  "A_cooldown|score|牛市": {
+   "label": "A_cooldown",
+   "strategy": "score",
+   "win": "牛市",
+   "total_return": 0.0424,
+   "max_drawdown": -0.1479,
+   "annual_return": 0.0426,
+   "trade_count": 363,
+   "dd_half_days": 56,
+   "dd_halt_days": 136,
+   "occupancy": 0.6749,
+   "n_days": 243
+  },
+  "A_cooldown|board|2019-20": {
+   "label": "A_cooldown",
+   "strategy": "board",
+   "win": "2019-20",
+   "total_return": -0.1427,
+   "max_drawdown": -0.1427,
+   "annual_return": -0.0743,
+   "trade_count": 159,
+   "dd_half_days": 73,
+   "dd_halt_days": 330,
+   "occupancy": 0.7526,
+   "n_days": 487
+  },
+  "A_cooldown|board|2021-22": {
+   "label": "A_cooldown",
+   "strategy": "board",
+   "win": "2021-22",
+   "total_return": -0.0859,
+   "max_drawdown": -0.1239,
+   "annual_return": -0.0442,
+   "trade_count": 149,
+   "dd_half_days": 84,
+   "dd_halt_days": 375,
+   "occupancy": 0.8598,
+   "n_days": 485
+  },
+  "A_cooldown|board|2023-24": {
+   "label": "A_cooldown",
+   "strategy": "board",
+   "win": "2023-24",
+   "total_return": -0.0501,
+   "max_drawdown": -0.1559,
+   "annual_return": -0.0256,
+   "trade_count": 287,
+   "dd_half_days": 126,
+   "dd_halt_days": 259,
+   "occupancy": 0.6653,
+   "n_days": 484
+  },
+  "A_cooldown|board|牛市": {
+   "label": "A_cooldown",
+   "strategy": "board",
+   "win": "牛市",
+   "total_return": -0.0406,
+   "max_drawdown": -0.1154,
+   "annual_return": -0.0408,
+   "trade_count": 336,
+   "dd_half_days": 141,
+   "dd_halt_days": 47,
+   "occupancy": 0.4835,
+   "n_days": 243
+  },
+  "A_index_ma|score|2019-20": {
+   "label": "A_index_ma",
+   "strategy": "score",
+   "win": "2019-20",
+   "total_return": -0.1075,
+   "max_drawdown": -0.1234,
+   "annual_return": -0.0554,
+   "trade_count": 44,
+   "dd_half_days": 6,
+   "dd_halt_days": 411,
+   "occupancy": 0.8501,
+   "n_days": 487
+  },
+  "A_index_ma|score|2021-22": {
+   "label": "A_index_ma",
+   "strategy": "score",
+   "win": "2021-22",
+   "total_return": -0.0957,
+   "max_drawdown": -0.134,
+   "annual_return": -0.0493,
+   "trade_count": 86,
+   "dd_half_days": 17,
+   "dd_halt_days": 461,
+   "occupancy": 0.968,
+   "n_days": 485
+  },
+  "A_index_ma|score|2023-24": {
+   "label": "A_index_ma",
+   "strategy": "score",
+   "win": "2023-24",
+   "total_return": -0.0718,
+   "max_drawdown": -0.1597,
+   "annual_return": -0.0369,
+   "trade_count": 476,
+   "dd_half_days": 68,
+   "dd_halt_days": 349,
+   "occupancy": 0.7913,
+   "n_days": 484
+  },
+  "A_index_ma|score|牛市": {
+   "label": "A_index_ma",
+   "strategy": "score",
+   "win": "牛市",
+   "total_return": 0.0654,
+   "max_drawdown": -0.1173,
+   "annual_return": 0.0657,
+   "trade_count": 625,
+   "dd_half_days": 103,
+   "dd_halt_days": 55,
+   "occupancy": 0.4383,
+   "n_days": 243
+  },
+  "A_index_ma|board|2019-20": {
+   "label": "A_index_ma",
+   "strategy": "board",
+   "win": "2019-20",
+   "total_return": -0.1008,
+   "max_drawdown": -0.1008,
+   "annual_return": -0.0518,
+   "trade_count": 24,
+   "dd_half_days": 12,
+   "dd_halt_days": 409,
+   "occupancy": 0.8522,
+   "n_days": 487
+  },
+  "A_index_ma|board|2021-22": {
+   "label": "A_index_ma",
+   "strategy": "board",
+   "win": "2021-22",
+   "total_return": -0.0828,
+   "max_drawdown": -0.1085,
+   "annual_return": -0.0426,
+   "trade_count": 92,
+   "dd_half_days": 43,
+   "dd_halt_days": 422,
+   "occupancy": 0.9144,
+   "n_days": 485
+  },
+  "A_index_ma|board|2023-24": {
+   "label": "A_index_ma",
+   "strategy": "board",
+   "win": "2023-24",
+   "total_return": -0.0038,
+   "max_drawdown": -0.1216,
+   "annual_return": -0.0019,
+   "trade_count": 344,
+   "dd_half_days": 162,
+   "dd_halt_days": 219,
+   "occupancy": 0.6198,
+   "n_days": 484
+  },
+  "A_index_ma|board|牛市": {
+   "label": "A_index_ma",
+   "strategy": "board",
+   "win": "牛市",
+   "total_return": -0.0303,
+   "max_drawdown": -0.1154,
+   "annual_return": -0.0304,
+   "trade_count": 350,
+   "dd_half_days": 146,
+   "dd_halt_days": 40,
+   "occupancy": 0.465,
+   "n_days": 243
+  },
+  "A_half_cap|score|2019-20": {
+   "label": "A_half_cap",
+   "strategy": "score",
+   "win": "2019-20",
+   "total_return": -0.1416,
+   "max_drawdown": -0.2034,
+   "annual_return": -0.0737,
+   "trade_count": 1306,
+   "dd_half_days": 304,
+   "dd_halt_days": 0,
+   "occupancy": 0.3121,
+   "n_days": 487
+  },
+  "A_half_cap|score|2021-22": {
+   "label": "A_half_cap",
+   "strategy": "score",
+   "win": "2021-22",
+   "total_return": -0.163,
+   "max_drawdown": -0.3986,
+   "annual_return": -0.0856,
+   "trade_count": 1522,
+   "dd_half_days": 342,
+   "dd_halt_days": 0,
+   "occupancy": 0.3526,
+   "n_days": 485
+  },
+  "A_half_cap|score|2023-24": {
+   "label": "A_half_cap",
+   "strategy": "score",
+   "win": "2023-24",
+   "total_return": -0.3299,
+   "max_drawdown": -0.4026,
+   "annual_return": -0.1828,
+   "trade_count": 1304,
+   "dd_half_days": 323,
+   "dd_halt_days": 0,
+   "occupancy": 0.3337,
+   "n_days": 484
+  },
+  "A_half_cap|score|牛市": {
+   "label": "A_half_cap",
+   "strategy": "score",
+   "win": "牛市",
+   "total_return": 0.1526,
+   "max_drawdown": -0.124,
+   "annual_return": 0.1533,
+   "trade_count": 795,
+   "dd_half_days": 140,
+   "dd_halt_days": 0,
+   "occupancy": 0.2881,
+   "n_days": 243
+  },
+  "A_half_cap|board|2019-20": {
+   "label": "A_half_cap",
+   "strategy": "board",
+   "win": "2019-20",
+   "total_return": -0.1229,
+   "max_drawdown": -0.1969,
+   "annual_return": -0.0636,
+   "trade_count": 605,
+   "dd_half_days": 325,
+   "dd_halt_days": 0,
+   "occupancy": 0.3337,
+   "n_days": 487
+  },
+  "A_half_cap|board|2021-22": {
+   "label": "A_half_cap",
+   "strategy": "board",
+   "win": "2021-22",
+   "total_return": -0.0681,
+   "max_drawdown": -0.1389,
+   "annual_return": -0.0349,
+   "trade_count": 733,
+   "dd_half_days": 360,
+   "dd_halt_days": 0,
+   "occupancy": 0.3711,
+   "n_days": 485
+  },
+  "A_half_cap|board|2023-24": {
+   "label": "A_half_cap",
+   "strategy": "board",
+   "win": "2023-24",
+   "total_return": -0.0195,
+   "max_drawdown": -0.1759,
+   "annual_return": -0.0099,
+   "trade_count": 596,
+   "dd_half_days": 332,
+   "dd_halt_days": 0,
+   "occupancy": 0.343,
+   "n_days": 484
+  },
+  "A_half_cap|board|牛市": {
+   "label": "A_half_cap",
+   "strategy": "board",
+   "win": "牛市",
+   "total_return": 0.027,
+   "max_drawdown": -0.1373,
+   "annual_return": 0.0271,
+   "trade_count": 402,
+   "dd_half_days": 169,
+   "dd_halt_days": 0,
+   "occupancy": 0.3477,
+   "n_days": 243
+  },
+  "B_half_cap|score|2019-20": {
+   "label": "B_half_cap",
+   "strategy": "score",
+   "win": "2019-20",
+   "total_return": -0.143,
+   "max_drawdown": -0.2163,
+   "annual_return": -0.0744,
+   "trade_count": 1305,
+   "dd_half_days": 292,
+   "dd_halt_days": 0,
+   "occupancy": 0.2998,
+   "n_days": 487
+  },
+  "B_half_cap|score|2021-22": {
+   "label": "B_half_cap",
+   "strategy": "score",
+   "win": "2021-22",
+   "total_return": -0.1497,
+   "max_drawdown": -0.4043,
+   "annual_return": -0.0783,
+   "trade_count": 1519,
+   "dd_half_days": 327,
+   "dd_halt_days": 0,
+   "occupancy": 0.3371,
+   "n_days": 485
+  },
+  "B_half_cap|score|2023-24": {
+   "label": "B_half_cap",
+   "strategy": "score",
+   "win": "2023-24",
+   "total_return": -0.347,
+   "max_drawdown": -0.4114,
+   "annual_return": -0.1933,
+   "trade_count": 1304,
+   "dd_half_days": 318,
+   "dd_halt_days": 0,
+   "occupancy": 0.3285,
+   "n_days": 484
+  },
+  "B_half_cap|score|牛市": {
+   "label": "B_half_cap",
+   "strategy": "score",
+   "win": "牛市",
+   "total_return": 0.1001,
+   "max_drawdown": -0.128,
+   "annual_return": 0.1005,
+   "trade_count": 796,
+   "dd_half_days": 116,
+   "dd_halt_days": 0,
+   "occupancy": 0.2387,
+   "n_days": 243
+  },
+  "B_half_cap|board|2019-20": {
+   "label": "B_half_cap",
+   "strategy": "board",
+   "win": "2019-20",
+   "total_return": -0.1504,
+   "max_drawdown": -0.2022,
+   "annual_return": -0.0784,
+   "trade_count": 605,
+   "dd_half_days": 324,
+   "dd_halt_days": 0,
+   "occupancy": 0.3326,
+   "n_days": 487
+  },
+  "B_half_cap|board|2021-22": {
+   "label": "B_half_cap",
+   "strategy": "board",
+   "win": "2021-22",
+   "total_return": -0.106,
+   "max_drawdown": -0.1596,
+   "annual_return": -0.0548,
+   "trade_count": 728,
+   "dd_half_days": 340,
+   "dd_halt_days": 0,
+   "occupancy": 0.3505,
+   "n_days": 485
+  },
+  "B_half_cap|board|2023-24": {
+   "label": "B_half_cap",
+   "strategy": "board",
+   "win": "2023-24",
+   "total_return": -0.0133,
+   "max_drawdown": -0.188,
+   "annual_return": -0.0067,
+   "trade_count": 595,
+   "dd_half_days": 332,
+   "dd_halt_days": 0,
+   "occupancy": 0.343,
+   "n_days": 484
+  },
+  "B_half_cap|board|牛市": {
+   "label": "B_half_cap",
+   "strategy": "board",
+   "win": "牛市",
+   "total_return": -0.0083,
+   "max_drawdown": -0.1641,
+   "annual_return": -0.0084,
+   "trade_count": 405,
+   "dd_half_days": 137,
+   "dd_halt_days": 0,
+   "occupancy": 0.2819,
+   "n_days": 243
+  }
+ },
+ "judgement_phase1": {
+  "A_default": {
+   "score": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1075,
+      "base_ret": -0.1,
+      "loss_pp": 0.75,
+      "mdd": -0.1234,
+      "base_mdd": -0.2778,
+      "mdd_rel_improve": 0.5558,
+      "calmar_improved": false,
+      "occupancy": 0.8501
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.0957,
+      "base_ret": -0.243,
+      "loss_pp": -14.73,
+      "mdd": -0.134,
+      "base_mdd": -0.5084,
+      "mdd_rel_improve": 0.7364,
+      "calmar_improved": false,
+      "occupancy": 0.968
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.0949,
+      "base_ret": -0.4382,
+      "loss_pp": -34.33,
+      "mdd": -0.1074,
+      "base_mdd": -0.5259,
+      "mdd_rel_improve": 0.7958,
+      "calmar_improved": true,
+      "occupancy": 0.905
+     },
+     {
+      "win": "牛市",
+      "ret": 0.0392,
+      "base_ret": 0.1132,
+      "loss_pp": 7.4,
+      "mdd": -0.1034,
+      "base_mdd": -0.1382,
+      "mdd_rel_improve": 0.2518,
+      "calmar_improved": false,
+      "occupancy": 0.7757
+     }
+    ],
+    "mdd_windows": 4,
+    "calmar_windows": 1,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": false,
+    "pass": false
+   },
+   "board": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1008,
+      "base_ret": -0.1177,
+      "loss_pp": -1.69,
+      "mdd": -0.1008,
+      "base_mdd": -0.2777,
+      "mdd_rel_improve": 0.637,
+      "calmar_improved": false,
+      "occupancy": 0.8522
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.0828,
+      "base_ret": -0.0665,
+      "loss_pp": 1.63,
+      "mdd": -0.1085,
+      "base_mdd": -0.2141,
+      "mdd_rel_improve": 0.4932,
+      "calmar_improved": false,
+      "occupancy": 0.9144
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.0087,
+      "base_ret": -0.0183,
+      "loss_pp": -0.96,
+      "mdd": -0.1055,
+      "base_mdd": -0.2585,
+      "mdd_rel_improve": 0.5919,
+      "calmar_improved": false,
+      "occupancy": 0.7076
+     },
+     {
+      "win": "牛市",
+      "ret": -0.0351,
+      "base_ret": 0.2924,
+      "loss_pp": 32.75,
+      "mdd": -0.1025,
+      "base_mdd": -0.1303,
+      "mdd_rel_improve": 0.2134,
+      "calmar_improved": false,
+      "occupancy": 0.5
+     }
+    ],
+    "mdd_windows": 4,
+    "calmar_windows": 0,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": false,
+    "pass": false
+   }
+  },
+  "A_cooldown": {
+   "score": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1588,
+      "base_ret": -0.1,
+      "loss_pp": 5.88,
+      "mdd": -0.1921,
+      "base_mdd": -0.2778,
+      "mdd_rel_improve": 0.3085,
+      "calmar_improved": false,
+      "occupancy": 0.7495
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.1626,
+      "base_ret": -0.243,
+      "loss_pp": -8.04,
+      "mdd": -0.2122,
+      "base_mdd": -0.5084,
+      "mdd_rel_improve": 0.5826,
+      "calmar_improved": false,
+      "occupancy": 0.8722
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.0206,
+      "base_ret": -0.4382,
+      "loss_pp": -41.76,
+      "mdd": -0.1621,
+      "base_mdd": -0.5259,
+      "mdd_rel_improve": 0.6918,
+      "calmar_improved": true,
+      "occupancy": 0.6519
+     },
+     {
+      "win": "牛市",
+      "ret": 0.0424,
+      "base_ret": 0.1132,
+      "loss_pp": 7.08,
+      "mdd": -0.1479,
+      "base_mdd": -0.1382,
+      "mdd_rel_improve": -0.0702,
+      "calmar_improved": false,
+      "occupancy": 0.6749
+     }
+    ],
+    "mdd_windows": 3,
+    "calmar_windows": 1,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": false,
+    "pass": false
+   },
+   "board": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1427,
+      "base_ret": -0.1177,
+      "loss_pp": 2.5,
+      "mdd": -0.1427,
+      "base_mdd": -0.2777,
+      "mdd_rel_improve": 0.4861,
+      "calmar_improved": false,
+      "occupancy": 0.7526
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.0859,
+      "base_ret": -0.0665,
+      "loss_pp": 1.94,
+      "mdd": -0.1239,
+      "base_mdd": -0.2141,
+      "mdd_rel_improve": 0.4213,
+      "calmar_improved": false,
+      "occupancy": 0.8598
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.0501,
+      "base_ret": -0.0183,
+      "loss_pp": 3.18,
+      "mdd": -0.1559,
+      "base_mdd": -0.2585,
+      "mdd_rel_improve": 0.3969,
+      "calmar_improved": false,
+      "occupancy": 0.6653
+     },
+     {
+      "win": "牛市",
+      "ret": -0.0406,
+      "base_ret": 0.2924,
+      "loss_pp": 33.3,
+      "mdd": -0.1154,
+      "base_mdd": -0.1303,
+      "mdd_rel_improve": 0.1144,
+      "calmar_improved": false,
+      "occupancy": 0.4835
+     }
+    ],
+    "mdd_windows": 3,
+    "calmar_windows": 0,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": false,
+    "pass": false
+   }
+  },
+  "A_index_ma": {
+   "score": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1075,
+      "base_ret": -0.1,
+      "loss_pp": 0.75,
+      "mdd": -0.1234,
+      "base_mdd": -0.2778,
+      "mdd_rel_improve": 0.5558,
+      "calmar_improved": false,
+      "occupancy": 0.8501
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.0957,
+      "base_ret": -0.243,
+      "loss_pp": -14.73,
+      "mdd": -0.134,
+      "base_mdd": -0.5084,
+      "mdd_rel_improve": 0.7364,
+      "calmar_improved": false,
+      "occupancy": 0.968
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.0718,
+      "base_ret": -0.4382,
+      "loss_pp": -36.64,
+      "mdd": -0.1597,
+      "base_mdd": -0.5259,
+      "mdd_rel_improve": 0.6963,
+      "calmar_improved": true,
+      "occupancy": 0.7913
+     },
+     {
+      "win": "牛市",
+      "ret": 0.0654,
+      "base_ret": 0.1132,
+      "loss_pp": 4.78,
+      "mdd": -0.1173,
+      "base_mdd": -0.1382,
+      "mdd_rel_improve": 0.1512,
+      "calmar_improved": false,
+      "occupancy": 0.4383
+     }
+    ],
+    "mdd_windows": 3,
+    "calmar_windows": 1,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": false,
+    "pass": false
+   },
+   "board": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1008,
+      "base_ret": -0.1177,
+      "loss_pp": -1.69,
+      "mdd": -0.1008,
+      "base_mdd": -0.2777,
+      "mdd_rel_improve": 0.637,
+      "calmar_improved": false,
+      "occupancy": 0.8522
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.0828,
+      "base_ret": -0.0665,
+      "loss_pp": 1.63,
+      "mdd": -0.1085,
+      "base_mdd": -0.2141,
+      "mdd_rel_improve": 0.4932,
+      "calmar_improved": false,
+      "occupancy": 0.9144
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.0038,
+      "base_ret": -0.0183,
+      "loss_pp": -1.45,
+      "mdd": -0.1216,
+      "base_mdd": -0.2585,
+      "mdd_rel_improve": 0.5296,
+      "calmar_improved": true,
+      "occupancy": 0.6198
+     },
+     {
+      "win": "牛市",
+      "ret": -0.0303,
+      "base_ret": 0.2924,
+      "loss_pp": 32.27,
+      "mdd": -0.1154,
+      "base_mdd": -0.1303,
+      "mdd_rel_improve": 0.1144,
+      "calmar_improved": false,
+      "occupancy": 0.465
+     }
+    ],
+    "mdd_windows": 3,
+    "calmar_windows": 1,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": false,
+    "pass": false
+   }
+  },
+  "A_half_cap": {
+   "score": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1416,
+      "base_ret": -0.1,
+      "loss_pp": 4.16,
+      "mdd": -0.2034,
+      "base_mdd": -0.2778,
+      "mdd_rel_improve": 0.2678,
+      "calmar_improved": false,
+      "occupancy": 0.3121
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.163,
+      "base_ret": -0.243,
+      "loss_pp": -8.0,
+      "mdd": -0.3986,
+      "base_mdd": -0.5084,
+      "mdd_rel_improve": 0.216,
+      "calmar_improved": true,
+      "occupancy": 0.3526
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.3299,
+      "base_ret": -0.4382,
+      "loss_pp": -10.83,
+      "mdd": -0.4026,
+      "base_mdd": -0.5259,
+      "mdd_rel_improve": 0.2345,
+      "calmar_improved": true,
+      "occupancy": 0.3337
+     },
+     {
+      "win": "牛市",
+      "ret": 0.1526,
+      "base_ret": 0.1132,
+      "loss_pp": -3.94,
+      "mdd": -0.124,
+      "base_mdd": -0.1382,
+      "mdd_rel_improve": 0.1027,
+      "calmar_improved": true,
+      "occupancy": 0.2881
+     }
+    ],
+    "mdd_windows": 3,
+    "calmar_windows": 3,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": true,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": true,
+    "pass": false
+   },
+   "board": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1229,
+      "base_ret": -0.1177,
+      "loss_pp": 0.52,
+      "mdd": -0.1969,
+      "base_mdd": -0.2777,
+      "mdd_rel_improve": 0.291,
+      "calmar_improved": false,
+      "occupancy": 0.3337
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.0681,
+      "base_ret": -0.0665,
+      "loss_pp": 0.16,
+      "mdd": -0.1389,
+      "base_mdd": -0.2141,
+      "mdd_rel_improve": 0.3512,
+      "calmar_improved": false,
+      "occupancy": 0.3711
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.0195,
+      "base_ret": -0.0183,
+      "loss_pp": 0.12,
+      "mdd": -0.1759,
+      "base_mdd": -0.2585,
+      "mdd_rel_improve": 0.3195,
+      "calmar_improved": false,
+      "occupancy": 0.343
+     },
+     {
+      "win": "牛市",
+      "ret": 0.027,
+      "base_ret": 0.2924,
+      "loss_pp": 26.54,
+      "mdd": -0.1373,
+      "base_mdd": -0.1303,
+      "mdd_rel_improve": -0.0537,
+      "calmar_improved": false,
+      "occupancy": 0.3477
+     }
+    ],
+    "mdd_windows": 3,
+    "calmar_windows": 0,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": true,
+    "pass": false
+   }
+  }
+ },
+ "judgement_phase2": {
+  "B_half_cap": {
+   "score": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.143,
+      "base_ret": -0.1,
+      "loss_pp": 4.3,
+      "mdd": -0.2163,
+      "base_mdd": -0.2778,
+      "mdd_rel_improve": 0.2214,
+      "calmar_improved": false,
+      "occupancy": 0.2998
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.1497,
+      "base_ret": -0.243,
+      "loss_pp": -9.33,
+      "mdd": -0.4043,
+      "base_mdd": -0.5084,
+      "mdd_rel_improve": 0.2048,
+      "calmar_improved": true,
+      "occupancy": 0.3371
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.347,
+      "base_ret": -0.4382,
+      "loss_pp": -9.12,
+      "mdd": -0.4114,
+      "base_mdd": -0.5259,
+      "mdd_rel_improve": 0.2177,
+      "calmar_improved": true,
+      "occupancy": 0.3285
+     },
+     {
+      "win": "牛市",
+      "ret": 0.1001,
+      "base_ret": 0.1132,
+      "loss_pp": 1.31,
+      "mdd": -0.128,
+      "base_mdd": -0.1382,
+      "mdd_rel_improve": 0.0738,
+      "calmar_improved": false,
+      "occupancy": 0.2387
+     }
+    ],
+    "mdd_windows": 3,
+    "calmar_windows": 2,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": true,
+    "pass": false
+   },
+   "board": {
+    "detail": [
+     {
+      "win": "2019-20",
+      "ret": -0.1504,
+      "base_ret": -0.1177,
+      "loss_pp": 3.27,
+      "mdd": -0.2022,
+      "base_mdd": -0.2777,
+      "mdd_rel_improve": 0.2719,
+      "calmar_improved": false,
+      "occupancy": 0.3326
+     },
+     {
+      "win": "2021-22",
+      "ret": -0.106,
+      "base_ret": -0.0665,
+      "loss_pp": 3.95,
+      "mdd": -0.1596,
+      "base_mdd": -0.2141,
+      "mdd_rel_improve": 0.2546,
+      "calmar_improved": false,
+      "occupancy": 0.3505
+     },
+     {
+      "win": "2023-24",
+      "ret": -0.0133,
+      "base_ret": -0.0183,
+      "loss_pp": -0.5,
+      "mdd": -0.188,
+      "base_mdd": -0.2585,
+      "mdd_rel_improve": 0.2727,
+      "calmar_improved": true,
+      "occupancy": 0.343
+     },
+     {
+      "win": "牛市",
+      "ret": -0.0083,
+      "base_ret": 0.2924,
+      "loss_pp": 30.07,
+      "mdd": -0.1641,
+      "base_mdd": -0.1303,
+      "mdd_rel_improve": -0.2594,
+      "calmar_improved": false,
+      "occupancy": 0.2819
+     }
+    ],
+    "mdd_windows": 3,
+    "calmar_windows": 1,
+    "c1_mdd_ge3of4": true,
+    "c2_calmar_ge3of4": false,
+    "c3_loss_le3pp": false,
+    "c4_occupancy_le40pct": true,
+    "pass": false
+   }
+  }
+ },
+ "best_recovery": "half_cap",
+ "elapsed_s": 6164.7
+}

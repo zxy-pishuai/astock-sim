@@ -1,0 +1,816 @@
+{
+ "generated_at": "2026-08-27 12:42:52",
+ "phase": "C-redespatch",
+ "meta": {
+  "snapshot": "C:\\Users\\26838\\A股模拟盘\\data\\snapshots\\2026-08-26\\market.db",
+  "pool_n": 500,
+  "params": {
+   "score": {
+    "buy_threshold": 25,
+    "max_positions": 3,
+    "position_pct": 0.3,
+    "slippage": 0.001,
+    "zt_eco_gate": false,
+    "dd_gate": false
+   },
+   "board": {
+    "buy_threshold": 40,
+    "max_positions": 2,
+    "position_pct": 0.25,
+    "slippage": 0.001,
+    "zt_eco_gate": false,
+    "dd_gate": false
+   }
+  },
+  "method": "Phase68：冻结快照+monkeypatch config+judge_kit 判定（≥3/4 窗 Δ≥−1pp 且牛市恶化≤2pp，事先写死）",
+  "variants": [
+   {
+    "label": "base_score",
+    "strategy": "score",
+    "patches": {}
+   },
+   {
+    "label": "C2_act8_T2",
+    "strategy": "score",
+    "patches": {
+     "TRAILING_ACTIVATE_PCT": 0.08,
+     "TRAILING_STOP_PCT": -0.04,
+     "TIME_STOP_DAYS": 2
+    }
+   },
+   {
+    "label": "C2_act8_T3",
+    "strategy": "score",
+    "patches": {
+     "TRAILING_ACTIVATE_PCT": 0.08,
+     "TRAILING_STOP_PCT": -0.04,
+     "TIME_STOP_DAYS": 3
+    }
+   },
+   {
+    "label": "C2_act8_T4",
+    "strategy": "score",
+    "patches": {
+     "TRAILING_ACTIVATE_PCT": 0.08,
+     "TRAILING_STOP_PCT": -0.04,
+     "TIME_STOP_DAYS": 4
+    }
+   },
+   {
+    "label": "C2_act12_T2",
+    "strategy": "score",
+    "patches": {
+     "TRAILING_ACTIVATE_PCT": 0.12,
+     "TRAILING_STOP_PCT": -0.05,
+     "TIME_STOP_DAYS": 2
+    }
+   },
+   {
+    "label": "C2_act12_T3",
+    "strategy": "score",
+    "patches": {
+     "TRAILING_ACTIVATE_PCT": 0.12,
+     "TRAILING_STOP_PCT": -0.05,
+     "TIME_STOP_DAYS": 3
+    }
+   },
+   {
+    "label": "C2_act12_T4",
+    "strategy": "score",
+    "patches": {
+     "TRAILING_ACTIVATE_PCT": 0.12,
+     "TRAILING_STOP_PCT": -0.05,
+     "TIME_STOP_DAYS": 4
+    }
+   },
+   {
+    "label": "C3_trig10_back5",
+    "strategy": "score",
+    "patches": {
+     "INTRADAY_HIGH_TRIGGER": 0.1,
+     "INTRADAY_PULLBACK": 0.05
+    }
+   },
+   {
+    "label": "C3_trig12_back6",
+    "strategy": "score",
+    "patches": {
+     "INTRADAY_HIGH_TRIGGER": 0.12,
+     "INTRADAY_PULLBACK": 0.06
+    }
+   },
+   {
+    "label": "base_board",
+    "strategy": "board",
+    "patches": {}
+   },
+   {
+    "label": "C5_board_T2_A1",
+    "strategy": "board",
+    "patches": {
+     "TRAILING_ACTIVATE_PCT": 0.08,
+     "TRAILING_STOP_PCT": -0.04,
+     "TIME_STOP_DAYS": 2
+    }
+   }
+  ],
+  "reconstruction": {
+   "at": "2026-08-31 21:55:14",
+   "corrupted_run": "2026-08-30 23:29:12 (BrokenProcessPool, 61.5s)",
+   "generated_at_note": "原 8/27 值不可精确恢复；以 tmp/c_lane.log mtime（saved 时刻 2026-08-27 12:42:52）为锚",
+   "source": [
+    "tmp/c_lane.log",
+    "docs/reports/c_lane_redispatch.md"
+   ],
+   "partial_fields": [
+    {
+     "field": "trades",
+     "null_cells": 42,
+     "known_cells": 2,
+     "known_from": "docs/reports/c_lane_redispatch.md §4 交易数（base_score.w2=1240, C2_act12_T4.w2=1089）"
+    },
+    {
+     "field": "max_drawdown",
+     "null_cells": 37,
+     "known_cells": 7,
+     "known_from": "docs/reports/c_lane_redispatch.md §4 回撤核查（7 个散点）"
+    }
+   ],
+   "method": "text-reconstruction, no re-run"
+  }
+ },
+ "c4_data_gate": {
+  "available": false,
+  "facts": {
+   "requirement": "逐票主力净流向日频序列：∩pool500 日均覆盖≥50% 且跨度≥2年",
+   "kinds": [
+    {
+     "kind": "north",
+     "rows": 299,
+     "distinct_codes": 299,
+     "date_min": "2026-06-30",
+     "date_max": "2026-06-30",
+     "avg_pool_codes_per_day": 160.0
+    },
+    {
+     "kind": "rzrq",
+     "rows": 1663,
+     "distinct_codes": 279,
+     "date_min": "2023-04-21",
+     "date_max": "2026-08-24",
+     "avg_pool_codes_per_day": 70.7
+    }
+   ],
+   "verdict_kinds_present": false
+  },
+  "conclusion": "快照无逐票主力净流向日频序列（north=单日截面、rzrq=两融且覆盖<20%池），C4 无法按任务书口径验证——记录等待原因，待 fflow 类日频历史积累后再启用"
+ },
+ "results": {
+  "base_score": {
+   "0": {
+    "variant": "base_score",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.0572,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "base_score",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.529,
+    "trades": null,
+    "max_drawdown": -0.566
+   },
+   "2": {
+    "variant": "base_score",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.3193,
+    "trades": 1240,
+    "max_drawdown": -0.468
+   },
+   "3": {
+    "variant": "base_score",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.2702,
+    "trades": null,
+    "max_drawdown": -0.186
+   }
+  },
+  "C2_act8_T2": {
+   "0": {
+    "variant": "C2_act8_T2",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.1163,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C2_act8_T2",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.5504,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "C2_act8_T2",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.3186,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "C2_act8_T2",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": -0.0224,
+    "trades": null,
+    "max_drawdown": null
+   }
+  },
+  "C2_act8_T3": {
+   "0": {
+    "variant": "C2_act8_T3",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.062,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C2_act8_T3",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.5938,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "C2_act8_T3",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.2591,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "C2_act8_T3",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.5121,
+    "trades": null,
+    "max_drawdown": null
+   }
+  },
+  "C2_act8_T4": {
+   "0": {
+    "variant": "C2_act8_T4",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": 0.0108,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C2_act8_T4",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.4057,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "C2_act8_T4",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.2292,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "C2_act8_T4",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.5459,
+    "trades": null,
+    "max_drawdown": -0.143
+   }
+  },
+  "C2_act12_T2": {
+   "0": {
+    "variant": "C2_act12_T2",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.0528,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C2_act12_T2",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.5471,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "C2_act12_T2",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.2605,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "C2_act12_T2",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": -0.1014,
+    "trades": null,
+    "max_drawdown": null
+   }
+  },
+  "C2_act12_T3": {
+   "0": {
+    "variant": "C2_act12_T3",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.082,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C2_act12_T3",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.46,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "C2_act12_T3",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.1753,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "C2_act12_T3",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.3918,
+    "trades": null,
+    "max_drawdown": null
+   }
+  },
+  "C2_act12_T4": {
+   "0": {
+    "variant": "C2_act12_T4",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.0217,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C2_act12_T4",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.4322,
+    "trades": null,
+    "max_drawdown": -0.543
+   },
+   "2": {
+    "variant": "C2_act12_T4",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.2415,
+    "trades": 1089,
+    "max_drawdown": -0.514
+   },
+   "3": {
+    "variant": "C2_act12_T4",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.5166,
+    "trades": null,
+    "max_drawdown": -0.14
+   }
+  },
+  "C3_trig10_back5": {
+   "0": {
+    "variant": "C3_trig10_back5",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.16,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C3_trig10_back5",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.5468,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "C3_trig10_back5",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.3363,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "C3_trig10_back5",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.2873,
+    "trades": null,
+    "max_drawdown": null
+   }
+  },
+  "C3_trig12_back6": {
+   "0": {
+    "variant": "C3_trig12_back6",
+    "strategy": "score",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.16,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C3_trig12_back6",
+    "strategy": "score",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": -0.5468,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "C3_trig12_back6",
+    "strategy": "score",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": -0.3363,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "C3_trig12_back6",
+    "strategy": "score",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.2873,
+    "trades": null,
+    "max_drawdown": null
+   }
+  },
+  "base_board": {
+   "0": {
+    "variant": "base_board",
+    "strategy": "board",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.1127,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "base_board",
+    "strategy": "board",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": 0.1693,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "base_board",
+    "strategy": "board",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": 0.0657,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "base_board",
+    "strategy": "board",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.631,
+    "trades": null,
+    "max_drawdown": null
+   }
+  },
+  "C5_board_T2_A1": {
+   "0": {
+    "variant": "C5_board_T2_A1",
+    "strategy": "board",
+    "widx": 0,
+    "window": "2019-20",
+    "total_return": -0.1226,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "1": {
+    "variant": "C5_board_T2_A1",
+    "strategy": "board",
+    "widx": 1,
+    "window": "2021-22",
+    "total_return": 0.2688,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "2": {
+    "variant": "C5_board_T2_A1",
+    "strategy": "board",
+    "widx": 2,
+    "window": "2023-24",
+    "total_return": 0.136,
+    "trades": null,
+    "max_drawdown": null
+   },
+   "3": {
+    "variant": "C5_board_T2_A1",
+    "strategy": "board",
+    "widx": 3,
+    "window": "牛市",
+    "total_return": 0.5412,
+    "trades": null,
+    "max_drawdown": null
+   }
+  }
+ },
+ "judgement": [
+  {
+   "variant": "C2_act8_T2",
+   "strategy": "score",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": 5.91
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": 2.14
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": -0.07
+    },
+    {
+     "win": "牛市",
+     "loss_pp": 29.26
+    }
+   ],
+   "windows_ok": 1,
+   "bull_loss_pp": 29.26,
+   "pass": false
+  },
+  {
+   "variant": "C2_act8_T3",
+   "strategy": "score",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": 0.48
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": 6.48
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": -6.02
+    },
+    {
+     "win": "牛市",
+     "loss_pp": -24.19
+    }
+   ],
+   "windows_ok": 3,
+   "bull_loss_pp": -24.19,
+   "pass": true
+  },
+  {
+   "variant": "C2_act8_T4",
+   "strategy": "score",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": -6.8
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": -12.33
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": -9.01
+    },
+    {
+     "win": "牛市",
+     "loss_pp": -27.57
+    }
+   ],
+   "windows_ok": 4,
+   "bull_loss_pp": -27.57,
+   "pass": true
+  },
+  {
+   "variant": "C2_act12_T2",
+   "strategy": "score",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": -0.44
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": 1.81
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": -5.88
+    },
+    {
+     "win": "牛市",
+     "loss_pp": 37.16
+    }
+   ],
+   "windows_ok": 2,
+   "bull_loss_pp": 37.16,
+   "pass": false
+  },
+  {
+   "variant": "C2_act12_T3",
+   "strategy": "score",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": 2.48
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": -6.9
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": -14.4
+    },
+    {
+     "win": "牛市",
+     "loss_pp": -12.16
+    }
+   ],
+   "windows_ok": 3,
+   "bull_loss_pp": -12.16,
+   "pass": true
+  },
+  {
+   "variant": "C2_act12_T4",
+   "strategy": "score",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": -3.55
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": -9.68
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": -7.78
+    },
+    {
+     "win": "牛市",
+     "loss_pp": -24.64
+    }
+   ],
+   "windows_ok": 4,
+   "bull_loss_pp": -24.64,
+   "pass": true
+  },
+  {
+   "variant": "C3_trig10_back5",
+   "strategy": "score",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": 10.28
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": 1.78
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": 1.7
+    },
+    {
+     "win": "牛市",
+     "loss_pp": -1.71
+    }
+   ],
+   "windows_ok": 1,
+   "bull_loss_pp": -1.71,
+   "pass": false
+  },
+  {
+   "variant": "C3_trig12_back6",
+   "strategy": "score",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": 10.28
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": 1.78
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": 1.7
+    },
+    {
+     "win": "牛市",
+     "loss_pp": -1.71
+    }
+   ],
+   "windows_ok": 1,
+   "bull_loss_pp": -1.71,
+   "pass": false
+  },
+  {
+   "variant": "C5_board_T2_A1",
+   "strategy": "board",
+   "detail": [
+    {
+     "win": "2019-20",
+     "loss_pp": 0.99
+    },
+    {
+     "win": "2021-22",
+     "loss_pp": -9.95
+    },
+    {
+     "win": "2023-24",
+     "loss_pp": -7.03
+    },
+    {
+     "win": "牛市",
+     "loss_pp": 8.98
+    }
+   ],
+   "windows_ok": 3,
+   "bull_loss_pp": 8.98,
+   "pass": false
+  }
+ ],
+ "elapsed_s": 7137
+}

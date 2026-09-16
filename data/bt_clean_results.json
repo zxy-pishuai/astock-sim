@@ -1,0 +1,144 @@
+{
+ "multi_window": {
+  "score": [
+   {
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "start": "2019-01-01",
+    "end": "2020-12-31",
+    "total_return": -0.0765,
+    "annual_return": -0.0391,
+    "sharpe": -0.001,
+    "max_drawdown": -0.2888,
+    "win_rate": 0.6345,
+    "trade_count": 1331,
+    "buy_count": 543,
+    "elapsed": 452.0
+   },
+   {
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "start": "2021-01-01",
+    "end": "2022-12-31",
+    "total_return": -0.2159,
+    "annual_return": -0.1152,
+    "sharpe": -0.335,
+    "max_drawdown": -0.5189,
+    "win_rate": 0.6119,
+    "trade_count": 1540,
+    "buy_count": 633,
+    "elapsed": 1130.0
+   },
+   {
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "start": "2023-01-01",
+    "end": "2024-12-31",
+    "total_return": -0.3695,
+    "annual_return": -0.2075,
+    "sharpe": -0.832,
+    "max_drawdown": -0.4506,
+    "win_rate": 0.5624,
+    "trade_count": 1332,
+    "buy_count": 571,
+    "elapsed": 1064.0
+   },
+   {
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "start": "2025-08-18",
+    "end": "2026-08-18",
+    "total_return": 0.3068,
+    "annual_return": 0.3083,
+    "sharpe": 1.043,
+    "max_drawdown": -0.1415,
+    "win_rate": 0.6708,
+    "trade_count": 809,
+    "buy_count": 320,
+    "elapsed": 475.0
+   }
+  ],
+  "board": [
+   {
+    "window": [
+     "2019-01-01",
+     "2020-12-31"
+    ],
+    "start": "2019-01-01",
+    "end": "2020-12-31",
+    "total_return": -0.1177,
+    "annual_return": -0.0608,
+    "sharpe": -0.288,
+    "max_drawdown": -0.2777,
+    "win_rate": 0.6202,
+    "trade_count": 628,
+    "buy_count": 262,
+    "elapsed": 3.0
+   },
+   {
+    "window": [
+     "2021-01-01",
+     "2022-12-31"
+    ],
+    "start": "2021-01-01",
+    "end": "2022-12-31",
+    "total_return": -0.0665,
+    "annual_return": -0.034,
+    "sharpe": -0.12,
+    "max_drawdown": -0.2141,
+    "win_rate": 0.6152,
+    "trade_count": 747,
+    "buy_count": 313,
+    "elapsed": 6.0
+   },
+   {
+    "window": [
+     "2023-01-01",
+     "2024-12-31"
+    ],
+    "start": "2023-01-01",
+    "end": "2024-12-31",
+    "total_return": -0.0166,
+    "annual_return": -0.0084,
+    "sharpe": 0.037,
+    "max_drawdown": -0.257,
+    "win_rate": 0.6083,
+    "trade_count": 616,
+    "buy_count": 256,
+    "elapsed": 6.0
+   },
+   {
+    "window": [
+     "2025-08-18",
+     "2026-08-18"
+    ],
+    "start": "2025-08-18",
+    "end": "2026-08-18",
+    "total_return": 0.273,
+    "annual_return": 0.2743,
+    "sharpe": 1.229,
+    "max_drawdown": -0.1266,
+    "win_rate": 0.684,
+    "trade_count": 448,
+    "buy_count": 179,
+    "elapsed": 4.0
+   }
+  ]
+ },
+ "walk_forward": {
+  "score_1y": {
+   "error": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\26838\\\\A股模拟盘\\\\data\\\\bt_clean_results\\\\wf_score_1y.json'"
+  },
+  "score_7y": {
+   "error": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\26838\\\\A股模拟盘\\\\data\\\\bt_clean_results\\\\wf_score_7y.json'"
+  }
+ }
+}
